@@ -1,0 +1,25 @@
+How can I change the author (name / email) of a commit?
+
+Tower Git Client
+https://www.git-tower.com › learn › git › faq › change...
+$ git commit --amend --author="John Doe <john@doe.org>" --no-edit $ git rebase --continue. Using git filter-branch. Another way is to use Git's "filter-branch ...
+‎Changing Your Git Author... · ‎Editing Past Commits... · ‎Using Git Filter-Branch
+
+How can I change the commit author for a single commit?
+
+Stack Overflow
+https://stackoverflow.com › questions › how-can-i-cha...
+Jun 15, 2010 — You can run git commit --amend to update the author, the message or the signature (e.g. git commit --amend -S --author="Your Name <your-email>" ) ...
+How to amend several commits in Git to change author
+8 answers
+Feb 12, 2011
+How do I properly change the author of a commit for ...
+4 answers
+Jul 14, 2021
+How do I change the author and committer name ...
+41 answers
+Apr 15, 2009
+How do I add a co-author to latest pushed git commit?
+5 answers
+Oct 12, 2020
+More results from stackoverflow.com
