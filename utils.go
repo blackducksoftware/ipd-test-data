@@ -17,3 +17,7 @@ func SetUpLogger(logLevelStr string) error {
 	logrus.Infof("log level set to '%s'", logrus.GetLevel())
 	return nil
 }
+
+func GetSomething() {
+	// TODO
+}
