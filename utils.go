@@ -33,3 +33,7 @@ func GetSomething3() {
 func GetSomething4() {
 	// TODO
 }
+
+func GetSomething5() {
+	// TODO
+}
