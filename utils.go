@@ -29,3 +29,7 @@ func GetSomethingElse() {
 func GetSomething3() {
 	// TODO
 }
+
+func GetSomething4() {
+	// TODO
+}
