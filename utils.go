@@ -21,3 +21,7 @@ func SetUpLogger(logLevelStr string) error {
 func GetSomething() {
 	// TODO
 }
+
+func GetSomethingElse() {
+	// TODO
+}
