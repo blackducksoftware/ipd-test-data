@@ -49,3 +49,8 @@ func GetSomething7() {
 func GetSomething8() {
 	// TODO
 }
+
+func GetSomething9() {
+	// TODO
+}
+
