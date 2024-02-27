@@ -1,0 +1,3 @@
+Taylor Swift's performance history includes numerous tours and live performances in stadiums and arenas all around the world. Some of her most notable tours include the Fearless Tour, Speak Now World Tour, Red Tour, 1989 World Tour, Reputation Stadium Tour, and Lover Fest. She has also performed at major music festivals such as Glastonbury and Coachella.
+
+As for her net worth, Taylor Swift is considered one of the wealthiest musicians in the world. As of 2021, her net worth is estimated to be around $400 million. She has earned her fortune through album sales, touring, endorsements, and business ventures. Additionally, she has a successful line of merchandise and a stake in the music streaming service, Spotify.
