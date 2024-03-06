@@ -16,4 +16,23 @@ sorted_arr = quicksort_desc(arr)
 print(sorted_arr)
 ```
 
-When you run this program, it will sort the list `[5, 3, 8, 1, 2, 7, 6, 4]` in descending order using the quicksort algorithm and output the sorted list `[8, 7, 6, 5, 4, 3, 2, 1]`.
+When you run this program, it will sort the list `[5, 3, 8, 1, 2, 7, 6, 4]` in descending order using the quicksort algorithm and output the sorted list `[8, 7, 6, 5, 4, 3, 2, 1]`.Here is a Python program that generates a Fibonacci sequence up to a user-specified number of terms:
+
+```python
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    
+    while len(fib_sequence) < n:
+        next_num = fib_sequence[-1] + fib_sequence[-2]
+        fib_sequence.append(next_num)
+    
+    return fib_sequence
+
+n = int(input("Enter the number of terms in the Fibonacci sequence: "))
+fib_seq = fibonacci(n)
+
+print("Fibonacci sequence up to", n, "terms:")
+print(fib_seq)
+```
+
+You can run this program and enter the number of terms you want in the Fibonacci sequence. The program will then generate and display the Fibonacci sequence up to that number of terms.
