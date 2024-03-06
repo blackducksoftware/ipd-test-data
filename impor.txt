@@ -24,4 +24,14 @@ for i in range(10):
     if all(grid[j][i] == 0 for j in range(10)) or all(grid[j][i] == 1 for j in range(10)):
         consecutive_count += 1
 
-print("Number of consecutive rows or columns with all 0s or all 1s:", consecutive_count)
+print("Number of consecutive rows or columns with all 0s or all 1s:", consecutive_count)import random
+import string
+
+def generate_password(length):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(random.choice(characters) for i in range(length))
+    return password
+
+length = int(input("Enter the length of the password: "))
+random_password = generate_password(length)
+print("Random password:", random_password)
