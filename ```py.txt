@@ -32,4 +32,15 @@ while True:
 
 In this program, the `get_user_choice` function prompts the user to enter their choice and validates the input. The `get_computer_choice` function generates a random choice for the computer. The `determine_winner` function determines the winner based on the rules of rock-paper-scissors. 
 
-The main part of the program runs in a loop, allowing the user to continue playing until they enter 'q' to quit. The computer's choice is displayed, along with the outcome of the game.
+The main part of the program runs in a loop, allowing the user to continue playing until they enter 'q' to quit. The computer's choice is displayed, along with the outcome of the game.```python
+def sort_numbers():
+    numbers = input("Enter a list of numbers separated by spaces: ")
+    numbers_list = numbers.split()
+    
+    unique_numbers = list(set(numbers_list)) # Remove duplicates
+    sorted_numbers = sorted(unique_numbers, key=int, reverse=True) # Sort in descending order
+    
+    print("Sorted list without duplicates: ", sorted_numbers)
+
+sort_numbers()
+```
