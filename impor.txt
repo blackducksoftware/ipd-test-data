@@ -8,4 +8,20 @@ def generate_password(length):
 
 length = int(input("Enter desired password length: "))
 password = generate_password(length)
-print("Your generated password is:", password)
+print("Your generated password is:", password)import random
+
+# Generate a random 10x10 grid filled with 0s and 1s
+grid = [[random.choice([0, 1]) for _ in range(10)] for _ in range(10]
+
+# Count the number of consecutive rows or columns with all 0s or all 1s
+consecutive_count = 0
+for i in range(10):
+    # Check rows
+    if all(grid[i][j] == 0 for j in range(10)) or all(grid[i][j] == 1 for j in range(10)):
+        consecutive_count += 1
+
+    # Check columns
+    if all(grid[j][i] == 0 for j in range(10)) or all(grid[j][i] == 1 for j in range(10)):
+        consecutive_count += 1
+
+print("Number of consecutive rows or columns with all 0s or all 1s:", consecutive_count)
