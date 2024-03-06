@@ -35,4 +35,19 @@ print("Fibonacci sequence up to", n, "terms:")
 print(fib_seq)
 ```
 
-You can run this program and enter the number of terms you want in the Fibonacci sequence. The program will then generate and display the Fibonacci sequence up to that number of terms.
+You can run this program and enter the number of terms you want in the Fibonacci sequence. The program will then generate and display the Fibonacci sequence up to that number of terms.Here is a function that checks if a given string is a palindrome in Python:
+
+```python
+def is_palindrome(s):
+    s = s.lower() # Convert string to lowercase
+    s = ''.join(e for e in s if e.isalnum()) # Remove non-alphanumeric characters
+    
+    return s == s[::-1] # Return True if the string is equal to its reverse, False otherwise
+
+# Test the function
+print(is_palindrome("A man, a plan, a canal, Panama")) # True
+print(is_palindrome("racecar")) # True
+print(is_palindrome("hello")) # False
+```
+
+This function converts the input string to lowercase and removes any non-alphanumeric characters. It then compares the modified string to its reverse and returns True if they are equal, indicating that the original string is a palindrome.
