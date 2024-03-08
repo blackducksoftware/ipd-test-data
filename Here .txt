@@ -100,4 +100,29 @@ output_list = filter_even_numbers(input_list)
 print(output_list)
 ```
 
-When you run this program with the provided input list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, it will output `[2, 4, 6, 8, 10]` which are the even numbers in the input list.
+When you run this program with the provided input list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, it will output `[2, 4, 6, 8, 10]` which are the even numbers in the input list.Here is the pseudo code for the program:
+
+1. Set starting_balance = 1000
+2. Display welcome message and options:
+   - Check balance
+   - Deposit money
+   - Withdraw money
+   - Exit program
+3. Start a loop to allow the user to continue making transactions:
+   - Ask user to input their choice
+   - If user chooses to check balance:
+     - Display current balance
+   - If user chooses to deposit money:
+     - Ask user to input the amount to deposit
+     - Update balance = balance + deposit amount
+   - If user chooses to withdraw money:
+     - Ask user to input the amount to withdraw
+     - If withdrawal amount > balance:
+       - Display error message
+     - Else:
+       - Update balance = balance - withdrawal amount
+   - If user chooses to exit program:
+     - Display goodbye message and exit loop
+4. End program
+
+You can implement this pseudo code in your programming language of choice to create a basic ATM machine simulation.
