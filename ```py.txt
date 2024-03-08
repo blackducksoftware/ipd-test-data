@@ -78,4 +78,28 @@ def play_game():
 play_game()
 ```
 
-This program simulates a dice game where two players take turns rolling a six-sided die. The game consists of 10 rounds, and after all rounds, the program displays the final scores of each player and determines the winner based on the highest score. Each time a player rolls the die, the program generates a random number between 1 and 6 as the roll result.
+This program simulates a dice game where two players take turns rolling a six-sided die. The game consists of 10 rounds, and after all rounds, the program displays the final scores of each player and determines the winner based on the highest score. Each time a player rolls the die, the program generates a random number between 1 and 6 as the roll result.```python
+def sum_even_numbers(numbers):
+    sum_even = 0
+    even_numbers = []
+    
+    for num in numbers:
+        if num % 2 == 0:
+            sum_even += num
+            even_numbers.append(num)
+    
+    return sum_even, max(numbers), min(numbers), even_numbers
+
+try:
+    numbers = [int(x) for x in input("Enter a list of numbers separated by spaces: ").split()]
+    result = sum_even_numbers(numbers)
+    
+    print(f"The sum of all even numbers in the list is: {result[0]}")
+    print(f"The maximum number in the list is: {result[1]}")
+    print(f"The minimum number in the list is: {result[2]}")
+    print(f"The even numbers in the list are: {result[3]}")
+    
+except ValueError:
+    print("Invalid input. Please enter valid numbers separated by spaces.")
+```
+This program takes a list of numbers as input, calculates the sum of all even numbers in the list, finds the maximum and minimum numbers, and prints out the results. It also includes error handling for invalid input. Feel free to test it with a sample list of numbers!
