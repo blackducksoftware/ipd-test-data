@@ -11,4 +11,19 @@ num_terms = int(input("Enter the number of terms for Fibonacci sequence: "))
 fibonacci(num_terms)
 ```
 
-To use this program, simply run it and input the desired number of terms for the Fibonacci sequence. The program will then generate and print the sequence up to the specified number of terms.
+To use this program, simply run it and input the desired number of terms for the Fibonacci sequence. The program will then generate and print the sequence up to the specified number of terms.Sure! Here's a simple Python program that takes user input and generates the Fibonacci sequence up to that number:
+
+```python
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    while fib_sequence[-1] + fib_sequence[-2] <= n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+        
+    return fib_sequence
+
+num = int(input("Enter a number: "))
+fib_sequence = fibonacci(num)
+print(fib_sequence)
+```
+
+When you run this program, it will prompt the user to enter a number. The program will then generate the Fibonacci sequence up to that number and print it out.
