@@ -102,4 +102,54 @@ try:
 except ValueError:
     print("Invalid input. Please enter valid numbers separated by spaces.")
 ```
-This program takes a list of numbers as input, calculates the sum of all even numbers in the list, finds the maximum and minimum numbers, and prints out the results. It also includes error handling for invalid input. Feel free to test it with a sample list of numbers!
+This program takes a list of numbers as input, calculates the sum of all even numbers in the list, finds the maximum and minimum numbers, and prints out the results. It also includes error handling for invalid input. Feel free to test it with a sample list of numbers!```python
+# Basic calculator program in Python
+
+# Function to add two numbers
+def add(x, y):
+    return x + y
+
+# Function to subtract two numbers
+def subtract(x, y):
+    return x - y
+
+# Function to multiply two numbers
+def multiply(x, y):
+    return x * y
+
+# Function to divide two numbers
+def divide(x, y):
+    if y == 0:
+        return "Error: Division by zero!"
+    else:
+        return x / y
+
+print("Welcome to the Basic Calculator Program!")
+
+while True:
+    try:
+        # Get user input for two numbers and operation
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        operation = input("Enter the operation (+, -, *, /): ")
+
+        # Perform the operation based on user input
+        if operation == '+':
+            result = add(num1, num2)
+        elif operation == '-':
+            result = subtract(num1, num2)
+        elif operation == '*':
+            result = multiply(num1, num2)
+        elif operation == '/':
+            result = divide(num1, num2)
+        else:
+            print("Invalid operation! Please try again.")
+            continue
+
+        print("Result: ", result)
+
+    except ValueError:
+        print("Invalid input! Please enter a valid number.")
+```
+
+This code snippet implements a basic calculator program in Python that allows the user to perform addition, subtraction, multiplication, and division. The program takes input from the user for two numbers and the operation to be performed, then displays the result. It also includes error handling for division by zero and invalid input.
