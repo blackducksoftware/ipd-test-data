@@ -26,4 +26,34 @@ fib_sequence = fibonacci(num)
 print(fib_sequence)
 ```
 
-When you run this program, it will prompt the user to enter a number. The program will then generate the Fibonacci sequence up to that number and print it out.
+When you run this program, it will prompt the user to enter a number. The program will then generate the Fibonacci sequence up to that number and print it out.Sure! Here is a Python program that generates a random password with the specified criteria:
+
+```python
+import random
+import string
+
+def generate_password():
+    password = []
+    
+    # Adding at least one uppercase letter, lowercase letter, number, and special character
+    password.append(random.choice(string.ascii_uppercase))
+    password.append(random.choice(string.ascii_lowercase))
+    password.append(random.choice(string.digits))
+    password.append(random.choice(string.punctuation))
+    
+    # Filling the rest of the password with random characters
+    length = random.randint(6, 10)
+    for _ in range(length - 4):
+        password.append(random.choice(string.ascii_letters + string.digits + string.punctuation))
+    
+    # Shuffling the password
+    random.shuffle(password)
+    
+    return ''.join(password)
+
+if __name__ == "__main__":
+    password = generate_password()
+    print(password)
+```
+
+You can run this program to generate a random password that meets the specified criteria. Let me know if you need any further customization!
