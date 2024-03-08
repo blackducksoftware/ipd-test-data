@@ -43,4 +43,39 @@ def sort_numbers():
     print("Sorted list without duplicates: ", sorted_numbers)
 
 sort_numbers()
+``````python
+import random
+
+def roll_die():
+    return random.randint(1, 6)
+
+def play_game():
+    player1_score = 0
+    player2_score = 0
+
+    for _ in range(10):  # Play 10 rounds
+        input("Player 1: Press Enter to roll the die.")
+        player1_roll = roll_die()
+        print("Player 1 rolled:", player1_roll)
+        player1_score += player1_roll
+
+        input("Player 2: Press Enter to roll the die.")
+        player2_roll = roll_die()
+        print("Player 2 rolled:", player2_roll)
+        player2_score += player2_roll
+
+    print("\nFinal Scores:")
+    print("Player 1 score:", player1_score)
+    print("Player 2 score:", player2_score)
+
+    if player1_score > player2_score:
+        print("Player 1 wins!")
+    elif player2_score > player1_score:
+        print("Player 2 wins!")
+    else:
+        print("It's a tie!")
+
+play_game()
 ```
+
+This program simulates a dice game where two players take turns rolling a six-sided die. The game consists of 10 rounds, and after all rounds, the program displays the final scores of each player and determines the winner based on the highest score. Each time a player rolls the die, the program generates a random number between 1 and 6 as the roll result.
