@@ -1,0 +1,15 @@
+# Define a function to calculate the average of a list of numbers
+def calculate_average(numbers):
+    if len(numbers) == 0:
+        return 0
+    
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# List of numbers to calculate average
+numbers = [10, 20, 30, 40, 50]
+
+# Call the function and print the result
+average = calculate_average(numbers)
+print("The average of the list of numbers is:", average)
