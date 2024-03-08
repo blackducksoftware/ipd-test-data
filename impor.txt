@@ -43,4 +43,36 @@ def generate_password(length=15):
     return password
 
 random_password = generate_password()
-print(random_password)
+print(random_password)import statistics
+
+def calculate_mean(numbers):
+    mean = sum(numbers) / len(numbers)
+    return mean
+
+def calculate_median(numbers):
+    numbers.sort()
+    n = len(numbers)
+    if n % 2 == 0:
+        median = (numbers[n // 2 - 1] + numbers[n // 2]) / 2
+    else:
+        median = numbers[n // 2]
+    return median
+
+def calculate_mode(numbers):
+    mode = max(set(numbers), key=numbers.count)
+    return mode
+
+def main():
+    numbers = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8]
+    
+    mean = calculate_mean(numbers)
+    median = calculate_median(numbers)
+    mode = calculate_mode(numbers)
+    
+    print("List of numbers:", numbers)
+    print("Mean:", mean)
+    print("Median:", median)
+    print("Mode:", mode)
+
+if __name__ == "__main__":
+    main()
