@@ -152,4 +152,25 @@ while True:
         print("Invalid input! Please enter a valid number.")
 ```
 
-This code snippet implements a basic calculator program in Python that allows the user to perform addition, subtraction, multiplication, and division. The program takes input from the user for two numbers and the operation to be performed, then displays the result. It also includes error handling for division by zero and invalid input.
+This code snippet implements a basic calculator program in Python that allows the user to perform addition, subtraction, multiplication, and division. The program takes input from the user for two numbers and the operation to be performed, then displays the result. It also includes error handling for division by zero and invalid input.```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def generate_prime_numbers(limit):
+    primes = []
+    for num in range(2, limit+1):
+        if is_prime(num):
+            primes.append(num)
+    return primes
+
+limit = int(input("Enter a limit: "))
+prime_numbers = generate_prime_numbers(limit)
+print("Prime numbers up to", limit, ":", prime_numbers)
+``` 
+
+You can run this program and input a limit to get a list of prime numbers up to that limit.
