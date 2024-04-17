@@ -1,0 +1,19 @@
+def is_palindrome(word):
+    return word == word[::-1]
+
+def create_palindrome(sentence):
+    words = sentence.split()
+    palindrome = ""
+    
+    for word in words:
+        temp = word
+        while not is_palindrome(temp):
+            temp = temp + temp[-2::-1]
+        
+        palindrome += temp + " "
+    
+    return palindrome.strip()
+
+sentence = input("Enter a sentence: ")
+palindrome = create_palindrome(sentence)
+print("Palindrome sentence: ", palindrome)
