@@ -1,0 +1,16 @@
+def create_employee_records(employees):
+    department_records = {}
+
+    for employee in employees:
+        # Check if all required keys are present in the employee dictionary
+        if not all(key in employee for key in ('name', 'age', 'department', 'salary')):
+            raise ValueError("Each employee dictionary must contain 'name', 'age', 'department', and 'salary' keys.")
+
+        # If the department is not already in the department_records dictionary, add it
+        if employee['department'] not in department_records:
+            department_records[employee['department']] = []
+
+        # Add the employee to their department's list
+        department_records[employee['department']].append(employee)
+
+    return department_records
