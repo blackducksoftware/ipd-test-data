@@ -1,0 +1,1 @@
+Message encrypted using a substitution cipher. Decryption key needed.
