@@ -1,0 +1,32 @@
+Message encrypted using a simple substitution cipher:
+
+A - C
+B - A
+C - Q
+D - T
+E - P
+F - E
+G - J
+H - J
+I - Z
+J - A
+K - Y
+L - S
+M - D
+N - M
+O - R
+P - Q
+Q - L
+R - G
+S - R
+T - V
+U - I
+V - A
+W - F
+X - S
+Y - H
+Z - W
+
+Decrypted message:
+
+CONGRATULATIONS ON SOLVING THE PUZZLE. YOUR REWARD AWAITS YOU AT THE SECRET LOCATION.
