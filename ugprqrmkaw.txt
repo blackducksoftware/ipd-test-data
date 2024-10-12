@@ -1,0 +1,1 @@
+This appears to be a message encrypted with a substitution cipher. In order to decrypt it, we would need to know the specific key or algorithm used to encrypt the text. Without that information, it would be difficult to decipher the message accurately.
