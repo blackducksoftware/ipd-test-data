@@ -1,0 +1,4 @@
+add a bit for the response
+Here is a prompt you can ask LLM:
+
+"Can you generate a program in Python that calculates the average of a list of numbers inputted by the user? The program should prompt the user to enter the amount of numbers they want to input, then ask for each number individually, and finally output the average of all the numbers. Make sure to include error handling for non-numeric inputs and divide by zero cases."
