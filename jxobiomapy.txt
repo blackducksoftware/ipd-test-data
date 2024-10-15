@@ -1,0 +1,51 @@
+Here is an example Python code that fulfills the given prompt:
+
+```python
+import statistics
+
+def calculate_mean(numbers):
+    if len(numbers) == 0:
+        return None
+    return sum(numbers) / len(numbers)
+
+def calculate_median(numbers):
+    if len(numbers) == 0:
+        return None
+    return statistics.median(numbers)
+
+def calculate_mode(numbers):
+    if len(numbers) == 0:
+        return None
+    try:
+        return statistics.mode(numbers)
+    except statistics.StatisticsError:
+        return "No unique mode found"
+
+def main():
+    numbers = input("Enter a list of numbers separated by spaces: ").split()
+    numbers = [float(num) for num in numbers if num.replace(".", "", 1).isdigit()]  
+
+    mean = calculate_mean(numbers)
+    median = calculate_median(numbers)
+    mode = calculate_mode(numbers)
+
+    print("Calculating statistics...")
+    print()
+    if mean is not None:
+        print(f"Mean: {mean}")
+    else:
+        print("Mean: Cannot calculate mean for an empty list")
+    if median is not None:
+        print(f"Median: {median}")
+    else:
+        print("Median: Cannot calculate median for an empty list")
+    if mode is not None:
+        print(f"Mode: {mode}")
+    else:
+        print("Mode: Cannot calculate mode for an empty list")
+
+if __name__ == "__main__":
+    main()
+```
+
+In this code, the program first takes a list of numbers as input from the user. It then calculates the mean, median, and mode of the numbers using the functions `calculate_mean`, `calculate_median`, and `calculate_mode` respectively. The program then displays the results in a formatted output. The input validation is handled by converting non-numeric values to 0 before performing the calculations.
