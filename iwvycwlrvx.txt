@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Can you write a program in Python that generates a list of prime numbers up to a specified limit using the Sieve of Eratosthenes algorithm?"
