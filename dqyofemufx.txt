@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate code in a popular programming language:
+
+Prompt: Create a function that takes in a list of numbers as input and returns the sum of all even numbers in the list. The function should ignore any odd numbers in the list.
+
+You can ask LLM to generate code in a language like Python, JavaScript, Java, C++, or any other popular programming language.
