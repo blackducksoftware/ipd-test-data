@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Can you write a program that generates a Fibonacci sequence up to a specified number using recursion in Python?"
