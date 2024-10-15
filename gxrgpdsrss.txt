@@ -1,0 +1,42 @@
+Here's a Python program that simulates a game of rock, paper, scissors against the computer:
+
+```python
+import random
+
+def get_user_choice():
+    while True:
+        user_choice = input("Enter your choice (rock, paper, or scissors): ").lower()
+        if user_choice in ['rock', 'paper', 'scissors']:
+            return user_choice
+        else:
+            print("Invalid input. Please enter either rock, paper, or scissors.")
+
+def get_computer_choice():
+    choices = ['rock', 'paper', 'scissors']
+    return random.choice(choices)
+
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return "It's a tie!"
+    elif (user_choice == 'rock' and computer_choice == 'scissors') or \
+         (user_choice == 'paper' and computer_choice == 'rock') or \
+         (user_choice == 'scissors' and computer_choice == 'paper'):
+        return "You win!"
+    else:
+        return "Computer wins!"
+
+def main():
+    user_choice = get_user_choice()
+    print("Your choice:", user_choice)
+
+    computer_choice = get_computer_choice()
+    print("Computer's choice:", computer_choice)
+
+    result = determine_winner(user_choice, computer_choice)
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```
+
+To play the game, run the program and follow the prompts to enter your choice. The computer's choice will be randomly generated, and the winner will be determined based on the rules of the game. Invalid inputs will be handled with an error message prompting the user to enter a correct choice.
