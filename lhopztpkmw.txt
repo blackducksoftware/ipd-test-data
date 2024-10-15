@@ -1,0 +1,16 @@
+```python
+def calculate_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+def main():
+    numbers = input("Enter a list of numbers separated by spaces: ")
+    numbers_list = [int(x) for x in numbers.split()]
+    result = calculate_sum(numbers_list)
+    print("Sum of the numbers in the list: {}".format(result))
+
+if __name__ == "__main__":
+    main()
+```
