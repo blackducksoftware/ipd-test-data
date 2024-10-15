@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate a program in Python that takes a list of numbers as input and returns the average of those numbers. Make sure to include error handling for empty lists or non-numeric values. The program should also print a message if the average is above a certain threshold, such as 50. You can use any additional functions or libraries as needed."
