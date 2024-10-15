@@ -1,0 +1,16 @@
+add a bit for the response
+Prompt: Create a program that generates a Fibonacci sequence of a specified length in Python, starting from 0 and 1. 
+
+Python code:
+```python
+def fibonacci_sequence(length):
+    sequence = [0, 1]
+    for i in range(2, length):
+        next_num = sequence[i-1] + sequence[i-2]
+        sequence.append(next_num)
+    return sequence
+
+length = 20
+fib_sequence = fibonacci_sequence(length)
+print(fib_sequence)
+```
