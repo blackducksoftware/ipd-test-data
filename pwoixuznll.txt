@@ -1,0 +1,1 @@
+Generate a Python program that takes a list of numbers as input, filters out the even numbers, squares the remaining odd numbers, and prints the result.
