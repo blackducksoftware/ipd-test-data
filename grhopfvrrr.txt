@@ -1,0 +1,20 @@
+Here is a Python program that takes a list of numbers as input and outputs the sum of all the numbers in the list:
+
+```python
+def calculate_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5]
+
+# Calculate the sum of the numbers in the list
+result = calculate_sum(numbers)
+
+# Output the sum
+print("Sum of numbers in the list:", result)
+```
+
+You can modify the `numbers` list with any list of numbers to calculate the sum.
