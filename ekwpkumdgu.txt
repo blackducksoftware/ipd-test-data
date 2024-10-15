@@ -1,0 +1,31 @@
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+def find_smallest(numbers):
+    smallest = min(numbers)
+    return smallest
+
+def find_largest(numbers):
+    largest = max(numbers)
+    return largest
+
+# Read in a list of numbers from the user
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers = list(map(float, numbers.split()))
+
+# Calculate the average of the list of numbers
+average = calculate_average(numbers)
+
+# Find the smallest and largest numbers in the list
+smallest = find_smallest(numbers)
+largest = find_largest(numbers)
+
+# Output the average, smallest, and largest numbers
+print(f"Average: {average}")
+print(f"Smallest: {smallest}")
+print(f"Largest: {largest}")
+```
+This program reads in a list of numbers from the user, calculates the average of those numbers, and outputs the smallest and largest numbers in the list.
