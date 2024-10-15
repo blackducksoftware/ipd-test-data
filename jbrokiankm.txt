@@ -1,0 +1,21 @@
+Here is an example of how you can create this program in Python:
+
+```python
+import math
+
+def factorial(num):
+    try:
+        num = int(num)
+        if num < 0:
+            print("Error: Factorial is not defined for negative numbers.")
+        else:
+            result = math.factorial(num)
+            print(f"The factorial of {num} is {result}")
+    except ValueError:
+        print("Error: Input must be a valid integer.")
+
+num = input("Enter a number to calculate the factorial: ")
+factorial(num)
+```
+
+You can run this program in a Python environment and input a number to calculate its factorial. The program will handle negative numbers and non-integer inputs with appropriate error messages.
