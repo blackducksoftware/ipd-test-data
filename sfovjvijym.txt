@@ -1,0 +1,24 @@
+Here's a Python program that generates a random password with the specified length:
+
+```python
+import string
+import random
+
+def generate_password(length):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    if length < 8:
+        print("Password length should be at least 8 characters.")
+        return
+    password = ''.join(random.choice(characters) for i in range(length))
+    return password
+
+if __name__ == "__main__":
+    length = int(input("Enter the length of the password: "))
+    password = generate_password(length)
+    if password:
+        print("Generated password:", password)
+```
+
+In this program, we first define the `generate_password` function that takes the desired length as a parameter. We generate a string containing all possible characters to choose from (uppercase letters, lowercase letters, digits, and punctuation). Then we check if the specified length is at least 8 characters, and if it is, we use a list comprehension to randomly select characters from the `characters` string and concatenate them to form the password.
+
+Finally, if a valid password is generated, we print it out. Feel free to adjust the error checking or modify the character sets to suit your needs.
