@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM for generating 20+ lines of code:
+
+"Can you please generate a program in Python that takes a list of numbers as input and calculates the mean, median, and mode of the numbers? Additionally, the program should print out the results in an easy-to-read format. Please include error handling for cases where the input list is empty or contains invalid values. Thank you!"
+
+Feel free to modify the prompt as needed or let me know if you would like a different type of program generated.
