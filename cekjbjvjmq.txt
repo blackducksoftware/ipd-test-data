@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a program that takes a list of numbers as input and outputs the maximum and minimum numbers from the list. The program should also calculate the average of all the numbers in the list and display it. Additionally, the program should sort the list in ascending order and display the sorted list. Use Python as the programming language.
