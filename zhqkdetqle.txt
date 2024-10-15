@@ -1,0 +1,50 @@
+Sure! Here is an example code for creating a simple calculator application in Python:
+
+```python
+def add(num1, num2):
+    return num1 + num2
+
+def subtract(num1, num2):
+    return num1 - num2
+
+def multiply(num1, num2):
+    return num1 * num2
+
+def divide(num1, num2):
+    if num2 == 0:
+        return "Error! Division by zero is not allowed."
+    else:
+        return num1 / num2
+
+print("Simple Calculator Application")
+
+while True:
+    print("\nOperation options:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
+
+    choice = input("Enter your choice (1/2/3/4/5): ")
+
+    if choice == '5':
+        print("Exiting the calculator application. Goodbye!")
+        break
+
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    if choice == '1':
+        print("Result: ", add(num1, num2))
+    elif choice == '2':
+        print("Result: ", subtract(num1, num2))
+    elif choice == '3':
+        print("Result: ", multiply(num1, num2))
+    elif choice == '4':
+        print("Result: ", divide(num1, num2))
+    else:
+        print("Invalid choice. Please try again.")
+```
+
+This code defines functions for each arithmetic operation (addition, subtraction, multiplication, and division) and allows the user to choose the operation they want to perform. The user can input two numbers and see the result of the chosen operation. The calculator will continue to run until the user chooses to exit.
