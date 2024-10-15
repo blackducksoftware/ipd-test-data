@@ -1,0 +1,33 @@
+```python
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    
+    for i in range(2, n):
+        fib_sequence.append(fib_sequence[i-1] + fib_sequence[i-2])
+    
+    return fib_sequence[:n]
+
+num_fibonacci = int(input("Enter the number of Fibonacci numbers to generate: "))
+
+fibonacci_sequence = fibonacci(num_fibonacci)
+
+print("Fibonacci Sequence:")
+for num in fibonacci_sequence:
+    print(num)
+```
+
+Example Output:
+```
+Enter the number of Fibonacci numbers to generate: 10
+Fibonacci Sequence:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+```
