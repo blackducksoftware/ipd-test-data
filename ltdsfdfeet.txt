@@ -1,0 +1,24 @@
+Sure! Here is a Python program that does exactly that:
+
+```python
+import random
+from statistics import mean, median, mode
+
+# Generate random list of 100 numbers between 1 and 1000
+random_list = [random.randint(1, 1000) for _ in range(100)]
+
+# Sort the list in ascending order
+random_list.sort()
+
+# Calculate the mean, median, and mode of the list
+mean_value = mean(random_list)
+median_value = median(random_list)
+mode_value = mode(random_list)
+
+print("Random List:", random_list)
+print("Mean:", mean_value)
+print("Median:", median_value)
+print("Mode:", mode_value)
+```
+
+You can run this program in a Python environment to generate a random list of 100 numbers, sort them in ascending order, and then calculate the mean, median, and mode of the list.
