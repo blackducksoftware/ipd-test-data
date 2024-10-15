@@ -1,0 +1,21 @@
+Here is a sample code for the program that calculates the average of a list of numbers input by the user:
+
+```python
+def calculate_average(num_list):
+    total = sum(num_list)
+    average = total / len(num_list)
+    return average
+
+num_elements = int(input("Enter the number of elements in the list: "))
+num_list = []
+
+for _ in range(num_elements):
+    num = float(input("Enter a number: "))
+    num_list.append(num)
+
+avg = calculate_average(num_list)
+
+print(f"The average of the list of numbers is: {avg}")
+```
+
+You can copy paste this code into a Python interpreter and run it to calculate the average of a list of numbers provided by the user.
