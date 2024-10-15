@@ -1,0 +1,20 @@
+Here is a Python code snippet that defines a function called `calculate_average` to achieve the specified task:
+
+```python
+def calculate_average(nums):
+    if not isinstance(nums, list) or not all(isinstance(num, int) for num in nums):
+        return "Error: Input must be a list of integers"
+    
+    if not nums:
+        return "Error: Input list cannot be empty"
+    
+    return sum(nums) / len(nums)
+
+# Test the function with valid and invalid inputs
+print(calculate_average([1, 2, 3, 4, 5]))  # Output: 3.0
+print(calculate_average([2, 4, 6, 8, 10]))  # Output: 6.0
+print(calculate_average([1, 2, 'three', 4, 5]))  # Output: Error: Input must be a list of integers
+print(calculate_average([]))  # Output: Error: Input list cannot be empty
+```
+
+You can use this code snippet to calculate the average of a list of integers while ensuring input validation. Let me know if you need any further assistance!
