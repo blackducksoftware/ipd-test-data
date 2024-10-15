@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM to generate 20+ lines of code in Python:
+
+"Generate a Python program that simulates a basic calculator. The program should be able to perform addition, subtraction, multiplication, and division operations on two numbers input by the user. It should also have a loop that asks the user if they would like to perform another calculation, and should continue running until the user enters 'N' or 'n'. The program should display the result of each calculation and handle any errors, such as division by zero."
