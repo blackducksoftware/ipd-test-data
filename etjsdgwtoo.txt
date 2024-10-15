@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Create a program that takes in a list of numbers and returns the average of all the numbers in the list. Use a loop to iterate through the list and calculate the sum of all numbers, then divide by the total number of elements in the list to find the average. Make sure to handle any potential errors, such as an empty list or non-numeric values in the list."
