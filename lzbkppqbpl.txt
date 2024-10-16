@@ -1,0 +1,23 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate 20+ lines of code in Python:
+
+Prompt: Write a program in Python that accepts a list of integers as input and calculates the average of all the elements in the list.
+
+LLM may generate a code like this:
+
+```
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+def main():
+    num_list = [int(x) for x in input("Enter a list of integers separated by a space: ").split()]
+    avg = calculate_average(num_list)
+    print(f"The average of the numbers in the list is: {avg}")
+
+if __name__ == "__main__":
+    main()
+``` 
+
+You can modify the prompt or provide additional requirements to generate a more tailored code snippet.
