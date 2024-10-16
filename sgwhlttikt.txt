@@ -1,0 +1,9 @@
+add a bit for the response
+Prompt: Write a function that takes in a list of numbers and returns only the even numbers in the list.
+
+LLM Output (Python):
+```python
+def get_even_numbers(lst):
+    even_numbers = [num for num in lst if num % 2 == 0]
+    return even_numbers
+```
