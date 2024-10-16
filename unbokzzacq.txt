@@ -1,0 +1,18 @@
+Sure! Here is an example program in Python that calculates the Fibonacci sequence up to a specified number of terms and prints the result:
+
+```python
+def fibonacci_sequence(num_terms):
+    fibonacci_series = []
+    a, b = 0, 1
+    for _ in range(num_terms):
+        fibonacci_series.append(a)
+        a, b = b, a + b
+    return fibonacci_series
+
+num_terms = int(input("Enter the number of terms in the Fibonacci sequence: "))
+fibonacci_series = fibonacci_sequence(num_terms)
+
+print("Fibonacci sequence up to", num_terms, "terms:", fibonacci_series)
+```
+
+You can run this program in a Python environment by copying and pasting the code into a Python file and executing it. The program will ask you to enter the number of terms in the Fibonacci sequence and then it will print the result.
