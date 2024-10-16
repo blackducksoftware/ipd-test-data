@@ -1,0 +1,6 @@
+add a bit for the response
+Sure, here's a prompt you can use:
+
+Write a program in Python that takes a list of numbers as input and returns the sum of all the numbers in the list. The program should prompt the user to enter the numbers one by one, and should continue taking input until the user enters a blank line. The program should then print out the sum of all the numbers entered.
+
+Feel free to adjust the prompt as needed to generate code in your preferred programming language.
