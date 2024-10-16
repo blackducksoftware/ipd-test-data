@@ -1,0 +1,19 @@
+Here is a Python program that checks if a given string is a palindrome:
+
+```python
+def is_palindrome(s):
+    s = s.lower().replace(' ', '')  # Convert all letters to lowercase and remove spaces
+    reverse_s = s[::-1]  # Reverse the string
+
+    if s == reverse_s:
+        return True
+    else:
+        return False
+
+# Test the program with some examples
+print(is_palindrome("racecar"))  # Output: True
+print(is_palindrome("hello"))    # Output: False
+print(is_palindrome("A man a plan a canal Panama"))  # Output: True
+```
+
+In this program, the `is_palindrome` function takes a string `s` as input and checks if it is a palindrome by removing spaces, converting all letters to lowercase, and comparing the reversed string with the original string. The program then tests the function with some examples to demonstrate its functionality.
