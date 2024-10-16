@@ -1,0 +1,12 @@
+Prompt: Write a program that takes a list of numbers as input and returns a new list with only the odd numbers in the input list.
+
+Expected output:
+```python
+def filter_odd_numbers(input_list):
+    odd_numbers = [num for num in input_list if num % 2 != 0]
+    return odd_numbers
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+output_list = filter_odd_numbers(input_list)
+print(output_list)
+```
