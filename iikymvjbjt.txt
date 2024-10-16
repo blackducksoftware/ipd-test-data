@@ -1,0 +1,31 @@
+Here is a simple Python program that takes user input for a list of numbers, sorts them in descending order using the bubble sort algorithm, and displays the sorted list to the user:
+
+```python
+def bubble_sort_descending(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] < arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+def get_input():
+    while True:
+        try:
+            numbers = input("Enter a list of numbers separated by spaces: ")
+            numbers = [int(num) for num in numbers.split()]
+            return numbers
+        except ValueError:
+            print("Invalid input. Please try again.")
+
+def main():
+    numbers = get_input()
+    bubble_sort_descending(numbers)
+    print("Sorted list in descending order:", numbers)
+
+if __name__ == '__main__':
+    main()
+```
+
+To run this program, copy and paste it into a Python IDE or a text editor and save it as a `.py` file. Then run the program and enter a list of numbers separated by spaces when prompted. The program will sort the numbers in descending order using the bubble sort algorithm and display the sorted list to the user.
+
+Make sure to handle additional error cases and include relevant comments for a more comprehensive program.
