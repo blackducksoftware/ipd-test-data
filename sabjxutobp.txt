@@ -1,0 +1,24 @@
+Here is a sample solution to the prompt:
+
+```python
+def squared_even_numbers(input_list):
+    even_squared = [num ** 2 for num in input_list if num % 2 == 0]
+    return even_squared
+
+def sum_of_squared_even_numbers(input_list):
+    even_squared = squared_even_numbers(input_list)
+    return sum(even_squared)
+
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Get new list with only even numbers squared
+new_list = squared_even_numbers(numbers)
+print("New list with only even numbers squared:", new_list)
+
+# Calculate and print sum of squared even numbers in the new list
+total_sum = sum_of_squared_even_numbers(numbers)
+print("Sum of squared even numbers in the new list:", total_sum)
+```
+
+You can run this code in any Python environment by providing a list of numbers as an input. Let me know if you need any modifications or further assistance!
