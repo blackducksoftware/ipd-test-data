@@ -1,0 +1,32 @@
+```python
+# Ask the user to enter a list of numbers separated by spaces
+input_numbers = input("Enter a list of numbers separated by spaces: ")
+
+# Convert the input string into a list of numbers
+numbers = list(map(float, input_numbers.split()))
+
+# Calculate the average of the list
+average = sum(numbers) / len(numbers)
+
+# Find the maximum value in the list
+max_value = max(numbers)
+
+# Find the minimum value in the list
+min_value = min(numbers)
+
+# Display the average, maximum, and minimum values
+print("Average value:", average)
+print("Maximum value:", max_value)
+print("Minimum value:", min_value)
+```
+Example input:
+```
+Enter a list of numbers separated by spaces: 10 20 30 40 50
+```
+
+Example output:
+```
+Average value: 30.0
+Maximum value: 50.0
+Minimum value: 10.0
+```
