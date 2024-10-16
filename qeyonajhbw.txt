@@ -1,0 +1,16 @@
+Sure! Here is an example Python program that generates a Fibonacci sequence:
+
+```python
+def fibonacci_sequence(n):
+    sequence = [0, 1]
+    for i in range(2, n):
+        next_number = sequence[i-1] + sequence[i-2]
+        sequence.append(next_number)
+    return sequence
+
+n = int(input("Enter the number of terms you want in the Fibonacci sequence: "))
+fib_sequence = fibonacci_sequence(n)
+print(fib_sequence)
+```
+
+You can run this program in any Python environment and enter the number of terms you want in the Fibonacci sequence. The program will then generate the sequence and print it out for you.
