@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Create a program that takes in a list of numbers and calculates the sum of all the numbers that are divisible by 3. The program should also output the count of how many numbers are divisible by 3 in the list.
+
+You can ask LLM to generate this program in a popular programming language like Python, Java, or JavaScript.
