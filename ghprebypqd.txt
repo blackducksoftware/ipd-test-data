@@ -1,0 +1,35 @@
+Sure, here is the generated Python code for reading a CSV file, filtering out rows where a specific column value is less than 100, and writing the filtered data to a new CSV file with error handling:
+
+```python
+import csv
+
+# Function to read, filter, and write CSV file
+def filter_csv(input_file, output_file, filter_column):
+    try:
+        with open(input_file, 'r') as file:
+            reader = csv.DictReader(file)
+            data = [row for row in reader if int(row[filter_column]) >= 100]
+        
+        with open(output_file, 'w', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=reader.fieldnames)
+            writer.writeheader()
+            writer.writerows(data)
+        
+        print(f'Filtered data has been written to {output_file}')
+
+    except FileNotFoundError:
+        print(f'Error: {input_file} not found!')
+    
+    except ValueError:
+        print('Error: Invalid file format. Please make sure the file contains numerical values in the specified column.')
+
+# Specify input and output file names
+input_file = 'input.csv'
+output_file = 'output.csv'
+filter_column = 'column_name'
+
+# Filter the CSV file
+filter_csv(input_file, output_file, filter_column)
+```
+
+You can replace 'input.csv' with the name of your input CSV file, 'output.csv' with the desired output file name, and 'column_name' with the column name you want to filter by. Make sure to have your input CSV file in the same directory as the script.
