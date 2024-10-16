@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Write a program in Python that reads in a list of numbers and adds them together, then calculates the average of the numbers. The program should then print out the sum of the numbers and the average."
+
+This prompt should generate at least 20 lines of code in Python.
