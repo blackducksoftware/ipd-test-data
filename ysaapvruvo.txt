@@ -1,0 +1,26 @@
+```python
+def fibonacci_sequence(n):
+    fib_list = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_list.append(a)
+        a, b = b, a + b
+    return fib_list
+
+def main():
+    try:
+        num = int(input("Enter a number to generate Fibonacci sequence: "))
+        if num <= 0:
+            print("Please enter a positive number")
+        else:
+            fib_sequence = fibonacci_sequence(num)
+            print("Fibonacci sequence up to", num, ":")
+            for num in fib_sequence:
+                print(num)
+    except ValueError:
+        print("Please enter a valid number")
+
+if __name__ == "__main__":
+    main()
+```
+This program defines a function `fibonacci_sequence` that generates the Fibonacci sequence up to a given number `n`. The `main` function prompts the user to enter a number, calls the `fibonacci_sequence` function, and prints the generated Fibonacci sequence. The program handles input validation to check if the user entered a positive number and catches any `ValueError` if the user input is invalid.
