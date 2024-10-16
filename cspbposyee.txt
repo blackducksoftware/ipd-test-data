@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate code for:
+
+Create a program in Python that prompts the user to enter a number and then prints out the Fibonacci sequence up to that number. Make sure to handle invalid inputs and provide a helpful error message if the user enters a negative number or a non-integer input.
