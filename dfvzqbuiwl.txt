@@ -1,0 +1,17 @@
+Sure! Here is a Python program that reads a list of numbers from the user, calculates the average, and outputs the result:
+
+```python
+# Read a list of numbers from the user
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+
+# Convert the input numbers to floats
+numbers = [float(num) for num in numbers]
+
+# Calculate the average of the numbers
+average = sum(numbers) / len(numbers)
+
+# Output the average value
+print("The average of the numbers is:", average)
+```
+
+You can run this program in a Python interpreter, enter a list of numbers separated by spaces, and it will calculate and output the average value.
