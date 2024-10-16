@@ -1,0 +1,24 @@
+Here is a program in Python that sorts a list of integers in ascending order using the bubble sort algorithm:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        if not swapped:
+            break
+    return arr
+
+# Test the function
+arr = [64, 34, 25, 12, 22, 11, 90]
+sorted_arr = bubble_sort(arr)
+print("Sorted array:", sorted_arr)
+```
+
+This program defines a function `bubble_sort` that takes a list of integers as input and sorts it using the bubble sort algorithm. The outer loop iterates over the list, while the inner loop compares adjacent elements and swaps them if they are not in the correct order. The function continues this process until the list is fully sorted.
+
+When you run this program with the test input `[64, 34, 25, 12, 22, 11, 90]`, it will output the sorted array `[11, 12, 22, 25, 34, 64, 90]`.
