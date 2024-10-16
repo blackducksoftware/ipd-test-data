@@ -1,0 +1,28 @@
+Here is a Python program that generates a list of Fibonacci numbers up to a user-specified limit:
+
+```python
+def fibonacci(limit):
+    sequence = []
+    a, b = 0, 1
+    while a <= limit:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+def main():
+    try:
+        limit = int(input("Enter the limit for the Fibonacci sequence: "))
+        if limit <= 0:
+            print("Please enter a positive integer.")
+        else:
+            fib_sequence = fibonacci(limit)
+            print("Fibonacci sequence up to {}:".format(limit))
+            print(fib_sequence)
+    except ValueError:
+        print("Please enter a valid integer.")
+
+if __name__ == "__main__":
+    main()
+```
+
+When you run this program, it will prompt you to enter the limit for the Fibonacci sequence. It will then generate the Fibonacci numbers up to that limit and display them. The program includes error handling to ensure that the user input is a positive integer.
