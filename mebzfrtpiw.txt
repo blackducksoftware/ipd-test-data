@@ -1,0 +1,22 @@
+LLM-generated code in C++:
+
+```cpp
+#include <iostream>
+#include <vector>
+
+int sumEvenNumbers(std::vector<int> numbers) {
+    int total = 0;
+    for (int num : numbers) {
+        if (num % 2 == 0) {
+            total += num;
+        }
+    }
+    return total;
+}
+
+int main() {
+    std::vector<int> numbers = {2, 5, 8, 10, 13, 6, 15};
+    std::cout << sumEvenNumbers(numbers) << std::endl;
+    return 0;
+}
+```
