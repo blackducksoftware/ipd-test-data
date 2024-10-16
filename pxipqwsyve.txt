@@ -1,0 +1,19 @@
+Here's a Python program that accomplishes the task:
+
+```python
+def sum_even_numbers(numbers):
+    sum = 0
+    for num in numbers:
+        try:
+            if int(num) % 2 == 0:
+                sum += int(num)
+        except ValueError:
+            print("Invalid input: '{}' is not a valid number".format(num))
+    return sum
+
+# Test the program
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+print("Sum of even numbers:", sum_even_numbers(numbers))
+```
+
+When you run this program, it will prompt you to enter a list of numbers separated by spaces. It will then calculate the sum of all the even numbers in the list and print the result. If any of the inputs are not valid numbers, it will handle the error and print a message indicating the invalid input.
