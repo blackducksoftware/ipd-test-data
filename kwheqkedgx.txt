@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a program in Python that takes a list of numbers as input and finds the sum of all prime numbers in the list. The program should also output the count of prime numbers found.
