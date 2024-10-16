@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that generates a random list of 20 integers between 1 and 100, then sorts the list in descending order and prints the result.
