@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program in Python that reads in a list of numbers from the user and then outputs the mean, median, and mode of the list. Display each of these values with an appropriate message. Make sure to handle any errors that may occur, such as if the user enters non-numeric values.
