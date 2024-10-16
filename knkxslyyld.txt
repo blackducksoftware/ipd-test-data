@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Write a program in Python that takes a list of numbers as input, calculates the sum of all even numbers in the list, and then outputs the result. Ensure to include error handling for non-numeric inputs and handle both positive and negative numbers."
