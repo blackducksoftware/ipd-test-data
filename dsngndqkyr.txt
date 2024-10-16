@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that calculates the average of a list of numbers input by the user and then outputs whether each number is above or below the average. Use Python for the implementation.
