@@ -1,0 +1,27 @@
+import math
+
+def calculate_statistics(numbers):
+    total_sum = sum(numbers)
+    average = total_sum / len(numbers)
+    maximum = max(numbers)
+    minimum = min(numbers)
+    
+    deviation = 0
+    for number in numbers:
+        deviation += (number - average) ** 2
+    deviation = math.sqrt(deviation / len(numbers))
+    
+    return total_sum, average, maximum, minimum, deviation
+
+def display_results(total_sum, average, maximum, minimum, deviation):
+    print("Sum:", total_sum)
+    print("Average:", average)
+    print("Maximum:", maximum)
+    print("Minimum:", minimum)
+    print("Standard Deviation:", deviation)
+
+# Taking list of numbers as input
+numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+
+total_sum, average, maximum, minimum, deviation = calculate_statistics(numbers)
+display_results(total_sum, average, maximum, minimum, deviation)
