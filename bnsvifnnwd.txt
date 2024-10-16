@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you write a program in Python that generates a Fibonacci sequence up to a specified number of terms? The program should take user input for the number of terms and output the sequence."
