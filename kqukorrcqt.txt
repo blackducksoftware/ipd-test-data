@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM to generate code in Python:
+
+Prompt: "Please generate a script in Python that takes a list of numbers as input and calculates the total sum of all the numbers in the list. The script should also return the average of the numbers. Make sure to include proper documentation and error handling in your code."
