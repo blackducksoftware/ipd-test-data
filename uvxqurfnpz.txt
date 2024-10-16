@@ -1,0 +1,6 @@
+add a bit for the response
+Sure, here is a prompt you can ask for generating 20+ lines of code in Python:
+
+Prompt: Create a program in Python that simulates a simple game of rock, paper, scissors. The program should allow the user to input their choice (rock, paper, or scissors), generate a random choice for the computer, determine the winner based on the rules of the game, and display the result to the user. Additionally, the program should keep track of the number of games played, the number of wins for the player, and the number of wins for the computer. The program should continue running until the user decides to quit. 
+
+You can adjust the prompt as needed for LLM to generate code in a different programming language.
