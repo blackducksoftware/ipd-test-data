@@ -1,0 +1,34 @@
+Here is a Python program that accomplishes the task:
+
+```python
+from collections import Counter
+
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+def calculate_median(numbers):
+    sorted_numbers = sorted(numbers)
+    n = len(sorted_numbers)
+    if n % 2 == 0:
+        return (sorted_numbers[n//2 - 1] + sorted_numbers[n//2]) / 2
+    else:
+        return sorted_numbers[n//2]
+
+def calculate_mode(numbers):
+    counter = Counter(numbers)
+    mode = counter.most_common(1)
+    return mode[0][0]
+
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+
+mean = calculate_mean(numbers)
+median = calculate_median(numbers)
+mode = calculate_mode(numbers)
+
+print("Mean:", mean)
+print("Median:", median)
+print("Mode:", mode)
+```
+
+You can run this program in a Python interpreter or save it as a .py file and run it. It will prompt you to enter a list of numbers separated by spaces, and then it will calculate and display the mean, median, and mode of the list.
