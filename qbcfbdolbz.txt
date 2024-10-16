@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Write a program that generates a random password for the user with at least 8 characters and includes uppercase letters, lowercase letters, numbers, and special characters."
