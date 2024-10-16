@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Write a program in Python that generates a list of prime numbers between 1 and 100. The program should take in two inputs, a starting number and an ending number, and should output a list of prime numbers within that range. Additionally, the program should include error handling to ensure that the inputs are valid integers.
