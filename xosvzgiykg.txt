@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Write a program in Python that takes in a list of numbers as input and returns a new list containing only the even numbers. If the input list is empty, the program should return an empty list as well. Make sure to include error handling for cases where the input is not a list of numbers."
