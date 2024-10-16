@@ -1,0 +1,38 @@
+Here's a Python program that fulfills your requirements:
+
+```python
+def sort_and_calculate_avg():
+    numbers = []
+    
+    # Getting user input for a list of numbers
+    while True:
+        try:
+            user_input = input("Please enter a number (press Enter to finish): ")
+            
+            if user_input == "":
+                if not numbers:
+                    raise ValueError("Empty list is not allowed.")
+                break
+            
+            number = float(user_input)
+            numbers.append(number)
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+    # Sorting the list in descending order
+    numbers.sort(reverse=True)
+    
+    # Calculating the average of the numbers in the list
+    average = sum(numbers) / len(numbers)
+    
+    return numbers, average
+
+try:
+    sorted_numbers, average_number = sort_and_calculate_avg()
+    print(f"Sorted numbers in descending order: {sorted_numbers}")
+    print(f"Average of the numbers: {average_number}")
+except ValueError as e:
+    print(f"Error: {e}")
+```
+
+You can copy and paste this code into a Python environment and run it to test the functionality. The program will prompt the user to enter numbers one by one, sort them in descending order, and calculate the average. It will also handle errors for non-numeric inputs or an empty list.
