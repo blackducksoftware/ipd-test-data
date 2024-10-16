@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use for LLM:
+
+"Write a program in Python that generates the first 20 prime numbers and stores them in a list. Also, create a function that checks if a given number is prime and returns True or False. Finally, write a loop that iterates through the list of prime numbers and prints each number along with the result of the prime-checking function for that number."
