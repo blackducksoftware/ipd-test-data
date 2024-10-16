@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! You can ask LLM to generate 20+ lines of code in Python for a program that calculates the Fibonacci sequence up to a user-specified number.
