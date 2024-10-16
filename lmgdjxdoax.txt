@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that reads in a list of integers and outputs the sum of all even numbers in the list in Python.
