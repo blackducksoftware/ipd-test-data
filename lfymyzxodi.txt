@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program in Python that takes a list of numbers as input and returns the sum of all the even numbers in the list. The program should have a function called `sum_even_numbers` that takes in the list as a parameter and returns the sum of the even numbers. The program should also include a main function that prompts the user to enter a list of numbers, calls the `sum_even_numbers` function, and prints the result.
