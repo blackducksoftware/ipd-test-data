@@ -1,0 +1,14 @@
+import statistics
+
+def calculate_average():
+    num_elements = int(input("Enter the number of elements in the list: "))
+    
+    num_list = []
+    for i in range(num_elements):
+        num = float(input(f"Enter element {i+1}: "))
+        num_list.append(num)
+    
+    average = statistics.mean(num_list)
+    print(f"The average of the numbers is: {average}")
+
+calculate_average()
