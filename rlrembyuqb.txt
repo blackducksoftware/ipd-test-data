@@ -1,0 +1,57 @@
+Sure, here is the Python code that accomplishes the task:
+
+```python
+from collections import Counter
+import math
+
+# Function to calculate mean of numbers
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+# Function to calculate median of numbers
+def calculate_median(numbers):
+    numbers.sort()
+    n = len(numbers)
+    if n % 2 == 0:
+        return (numbers[n//2 - 1] + numbers[n//2]) / 2
+    else:
+        return numbers[n//2]
+
+# Function to calculate mode of numbers
+def calculate_mode(numbers):
+    mode_dict = Counter(numbers)
+    mode = [k for k, v in mode_dict.items() if v == max(mode_dict.values())]
+    return mode
+
+# Function to calculate variance of numbers
+def calculate_variance(numbers):
+    mean = calculate_mean(numbers)
+    variance = sum([(x - mean) ** 2 for x in numbers]) / len(numbers)
+    return variance
+
+# Function to calculate standard deviation of numbers
+def calculate_standard_deviation(numbers):
+    variance = calculate_variance(numbers)
+    return math.sqrt(variance)
+
+# Main function
+def main():
+    numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+    mean = calculate_mean(numbers)
+    median = calculate_median(numbers)
+    mode = calculate_mode(numbers)
+    variance = calculate_variance(numbers)
+    standard_deviation = calculate_standard_deviation(numbers)
+
+    print(f"Mean: {mean}")
+    print(f"Median: {median}")
+    print(f"Mode: {mode}")
+    print(f"Variance: {variance}")
+    print(f"Standard Deviation: {standard_deviation}")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can copy and paste this code into a Python environment to run it. It will ask you to enter a list of numbers separated by spaces and then calculate the mean, median, mode, variance, and standard deviation of the numbers.
