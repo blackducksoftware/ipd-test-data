@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+Write a program in Python that generates a Fibonacci sequence up to a specified number of terms. The program should take an integer input from the user and output the Fibonacci sequence up to that number of terms. The Fibonacci sequence starts with 0 and 1, and each subsequent number is the sum of the previous two numbers. The program should handle the case of zero input gracefully and output an appropriate message.
