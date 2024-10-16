@@ -1,0 +1,27 @@
+Here is a Python program that reads a list of numbers from the user, calculates the average, and displays the minimum and maximum numbers:
+
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+def find_min(numbers):
+    return min(numbers)
+
+def find_max(numbers):
+    return max(numbers)
+
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+
+average = calculate_average(numbers)
+minimum = find_min(numbers)
+maximum = find_max(numbers)
+
+print("Average:", average)
+print("Minimum:", minimum)
+print("Maximum:", maximum)
+```
+
+You can run this program in a Python environment and enter the list of numbers when prompted. The program will calculate the average, display the minimum, and maximum numbers from the list.
