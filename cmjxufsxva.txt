@@ -1,0 +1,27 @@
+Here is a program in Python that accomplishes the task you described:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Read in a list of numbers
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers = [float(num) for num in numbers.split()]
+
+# Calculate the mean and standard deviation of the numbers
+mean = np.mean(numbers)
+std_dev = np.std(numbers)
+
+# Output the results
+print(f"Mean: {mean}")
+print(f"Standard Deviation: {std_dev}")
+
+# Create a histogram showing the distribution of the numbers
+plt.hist(numbers, bins=10, edgecolor='black')
+plt.xlabel('Numbers')
+plt.ylabel('Frequency')
+plt.title('Histogram of Numbers')
+plt.show()
+```
+
+You can run this program in a Python environment, input a list of numbers when prompted, and it will calculate the mean and standard deviation of the numbers while also displaying a histogram showing the distribution.
