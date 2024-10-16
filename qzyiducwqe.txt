@@ -1,0 +1,5 @@
+It defines a function `count_even_odd_numbers` that takes a list of numbers as input, iterates through each number in the list, and checks if it's even or odd using the modulus operator. Based on the result, it increments either the `even_count` or `odd_count` accordingly.
+
+After processing all numbers in the list, it then prints the count of even and odd numbers separately.
+
+You can test this function by providing a list of numbers and calling the `count_even_odd_numbers` function with that list.
