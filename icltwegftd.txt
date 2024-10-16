@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you create a program that simulates a simple bank account management system in Python? The program should have functions for depositing money, withdrawing money, checking the account balance, and transferring money between accounts. It should also have error handling for invalid inputs and display the current account balance after each transaction."
