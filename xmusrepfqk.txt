@@ -1,0 +1,24 @@
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    avg = total / len(numbers)
+    return avg
+
+def compare_to_average(numbers):
+    avg = calculate_average(numbers)
+    for num in numbers:
+        if num > avg:
+            print(f"{num} is above the average")
+        elif num < avg:
+            print(f"{num} is below the average")
+        else:
+            print(f"{num} is equal to the average")
+
+if __name__ == "__main__":
+    numbers = [5, 10, 15, 20, 25]
+    print(f"Numbers: {numbers}")
+    print(f"Average: {calculate_average(numbers)}")
+    compare_to_average(numbers)
+``` 
+
+This code will take a list of numbers `[5, 10, 15, 20, 25]` as input, calculate the average, and then print out each number in the list along with whether it is above or below the average.
