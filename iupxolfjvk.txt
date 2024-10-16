@@ -1,0 +1,16 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+current_year = 2022
+
+year_born = current_year - age
+
+print(f"Hello, {name}! You were born in {year_born}.")
+
+if age == 0:
+    print("Happy 0th Birthday!")
+else:
+    birthday = input("Is today your birthday? (yes/no): ")
+    if birthday.lower() == 'yes':
+        print(f"Happy {age} Birthday, {name}!")
+    else:
+        print("Have a great day!")
