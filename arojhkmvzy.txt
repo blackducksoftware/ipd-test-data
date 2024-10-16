@@ -1,0 +1,23 @@
+Sure! Here is a Python program that accomplishes that:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+def main():
+    numbers = input("Enter a list of numbers separated by spaces: ")
+    numbers = list(map(int, numbers.split()))
+
+    sorted_numbers = bubble_sort(numbers)
+    print("Sorted list:", sorted_numbers)
+
+if __name__ == "__main__":
+    main()
+```
+
+When you run this program and enter a list of numbers as input, it will sort the numbers in ascending order using the bubble sort algorithm and then print the sorted list.
