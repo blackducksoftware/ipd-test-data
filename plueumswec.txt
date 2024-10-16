@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! How about asking LLM to generate code for a simple calculator program in Python that can perform addition, subtraction, multiplication, and division?
