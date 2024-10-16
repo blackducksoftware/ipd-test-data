@@ -1,0 +1,15 @@
+Here is a sample code in Python that accomplishes the task described in the prompt:
+
+```python
+def find_numbers_greater_than_mean(num_list):
+    mean = sum(num_list) / len(num_list)
+    result = [num for num in num_list if num > mean]
+    return result
+
+# Example usage
+numbers = [10, 15, 20, 25, 30]
+result_list = find_numbers_greater_than_mean(numbers)
+print("Numbers greater than the mean:", result_list)
+```
+
+You can replace the `numbers` list with any list of numbers you want to test the code with. The function `find_numbers_greater_than_mean` calculates the mean of the input list of numbers and then creates a new list containing only those numbers that are greater than the mean. Finally, it prints out the numbers greater than the mean.
