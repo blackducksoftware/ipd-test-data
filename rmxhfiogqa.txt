@@ -1,0 +1,34 @@
+Here is a Python program that calculates the Fibonacci sequence up to a given number using a recursive function:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        sequence = fibonacci(n - 1)
+        sequence.append(sequence[-1] + sequence[-2])
+        return sequence
+
+def main():
+    n = input("Enter the number of terms in the Fibonacci sequence: ")
+    
+    try:
+        n = int(n)
+        if n <= 0:
+            print("Number of terms should be greater than 0.")
+        else:
+            result = fibonacci(n)
+            print("Fibonacci sequence up to", n, "terms:")
+            print(result)
+    except ValueError:
+        print("Please enter a valid integer for the number of terms.")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this program in a Python environment. It will prompt you to enter the number of terms you want in the Fibonacci sequence and then print out the sequence. It also handles edge cases such as negative numbers or non-integer inputs.
