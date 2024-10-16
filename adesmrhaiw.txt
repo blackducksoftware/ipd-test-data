@@ -1,0 +1,15 @@
+def sum_even_numbers(input_list):
+    try:
+        even_sum = 0
+        for num in input_list:
+            if isinstance(num, int) and num % 2 == 0:
+                even_sum += num
+        return even_sum
+    except Exception as e:
+        print("Error: ", e)
+
+# Example input list
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Output the sum of even numbers in the list
+print(sum_even_numbers(input_list))
