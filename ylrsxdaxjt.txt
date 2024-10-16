@@ -1,0 +1,4 @@
+add a bit for the response
+Prompt: Write a program that simulates a game of Rock, Paper, Scissors with a computer opponent. The program should allow the user to input their choice (Rock, Paper, or Scissors) and then generate a random choice for the computer. Finally, the program should determine the winner based on the rules of the game and display the result to the user. 
+
+Feel free to use any programming language of your choice.
