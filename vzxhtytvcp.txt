@@ -1,0 +1,20 @@
+```python
+# Define a function that takes a list of numbers as input
+def sum_list(numbers):
+    # Initialize a variable to keep track of the sum
+    total = 0
+    # Iterate through the list and add each number to the sum
+    for num in numbers:
+        total += num
+    # Return the final sum
+    return total
+
+# Take input from the user as a comma-separated list of numbers
+input_numbers = input("Enter a list of numbers separated by commas: ")
+# Split the input string into a list of numbers
+numbers = [int(num) for num in input_numbers.split(",")]
+
+# Call the sum_list function with the list of numbers and print the result
+result = sum_list(numbers)
+print("The sum of the numbers is:", result)
+```
