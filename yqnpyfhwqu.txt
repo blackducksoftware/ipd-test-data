@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that generates a random password of length 10 containing a mix of uppercase and lowercase letters, numbers, and special characters. The program should also ensure that at least one character from each category is included in the password.
