@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Prompt: Write a program that simulates a basic banking system. The program should allow users to create an account, deposit money, withdraw money, and check their balance. Use object-oriented principles in your implementation.
+
+You can ask LLM to generate 20+ lines of code in any popular programming language, such as Python, Java, or JavaScript, based on this prompt.
