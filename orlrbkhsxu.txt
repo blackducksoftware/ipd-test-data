@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that simulates a game of rock-paper-scissors between two players. The program should take user input for each player's choice (rock, paper, or scissors), compare the choices to determine the winner, and display the result. The program should continue to prompt for input until the user decides to quit the game.
