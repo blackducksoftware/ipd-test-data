@@ -1,0 +1,3 @@
+This program defines a function `fibonacci_sequence` that generates Fibonacci sequence up to a given number `n`. It initializes the sequence with `[0, 1]` and then continues adding the next Fibonacci numbers until the sum of the last two numbers is less than the given number `n`. 
+
+It then prompts the user to enter a number and generates the Fibonacci sequence up to that number using the function defined earlier. Finally, it prints the generated Fibonacci sequence.
