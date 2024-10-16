@@ -1,0 +1,24 @@
+Here is a Python program that generates a list of all prime numbers up to a given number n:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def generate_primes(n):
+    prime_list = []
+    for num in range(2, n+1):
+        if is_prime(num):
+            prime_list.append(num)
+    return prime_list
+
+n = int(input("Enter a number: "))
+print("Prime numbers up to", n, "are:")
+print(generate_primes(n))
+```
+
+You can run this program by copying and pasting it into a Python interpreter or a Python script file. The program first defines a function `is_prime` to check if a number is prime or not. Then, it defines a function `generate_primes` that generates a list of prime numbers up to a given number n. Finally, the program prompts the user to enter a number n and prints out the list of prime numbers up to n.
