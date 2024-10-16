@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Create a program that calculates the area of a circle given the radius as input. The program should take the radius as input from the user and then use the formula A = πr^2 to calculate the area. Finally, the program should output the calculated area to the user.
+
+You can ask LLM to generate the code in any popular programming language such as Python, Java, C++, or JavaScript.
