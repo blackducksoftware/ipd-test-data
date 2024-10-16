@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Write a program that takes a list of numbers as input and outputs the sum of all the numbers in the list. The program should also calculate the average of the numbers in the list and print both the sum and average to the console. Use any popular programming language of your choice to write the program."
