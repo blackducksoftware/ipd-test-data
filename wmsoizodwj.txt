@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's your prompt:
+
+Create a program in Python that generates a list of the first 20 Fibonacci numbers. Display the list to the user and include a function that calculates the sum of all the numbers in the list. Bonus points if you can also find the average of the Fibonacci numbers.
