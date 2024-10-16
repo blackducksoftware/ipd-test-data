@@ -1,0 +1,24 @@
+Here is an example of a Python program that accomplishes this task:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def generate_prime_list(n):
+    prime_list = []
+    for i in range(2, n+1):
+        if is_prime(i):
+            prime_list.append(i)
+    return prime_list
+
+n = int(input("Enter a number to find prime numbers up to: "))
+result = generate_prime_list(n)
+print("List of prime numbers up to", n, "is:", result)
+```
+
+You can run this program in a Python environment and input any number n to find the list of prime numbers up to that number.
