@@ -1,0 +1,30 @@
+Here is a Python program that takes in a list of names and sorts them alphabetically using the bubble sort algorithm:
+
+```python
+def bubble_sort(names):
+    n = len(names)
+    
+    for i in range(n):
+        swapped = False
+        
+        for j in range(0, n-i-1):
+            if names[j] > names[j+1]:
+                names[j], names[j+1] = names[j+1], names[j]
+                swapped = True
+        
+        if not swapped:
+            break
+    
+    return names
+
+# Input list of names
+names = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+# Sort the names using bubble sort
+sorted_names = bubble_sort(names)
+
+# Print the sorted list of names
+print("Sorted names:", sorted_names)
+```
+
+This program defines a function `bubble_sort` that implements the bubble sort algorithm to sort a list of names. It then takes an input list of names, sorts them using the `bubble_sort` function, and prints the sorted list of names.
