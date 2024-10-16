@@ -1,0 +1,49 @@
+add a bit for the response
+Prompt: Write a program that takes a list of numbers as input and returns the square of each number in the list. 
+
+LLM generated code in Python:
+
+```python
+def square_numbers(numbers):
+    squared_numbers = [num ** 2 for num in numbers]
+    return squared_numbers
+
+input_numbers = [2, 4, 6, 8, 10]
+squared_numbers = square_numbers(input_numbers)
+print(squared_numbers)
+```
+
+LLM generated code in Java:
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class SquaredNumbers {
+    public static List<Integer> squareNumbers(List<Integer> numbers) {
+        List<Integer> squaredNumbers = new ArrayList<>();
+        for(int num : numbers) {
+            squaredNumbers.add(num * num);
+        }
+        return squaredNumbers;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> inputNumbers = List.of(2, 4, 6, 8, 10);
+        List<Integer> squaredNumbers = squareNumbers(inputNumbers);
+        System.out.println(squaredNumbers);
+    }
+}
+```
+
+LLM generated code in JavaScript:
+
+```javascript
+function squareNumbers(numbers) {
+    return numbers.map(num => num ** 2);
+}
+
+let inputNumbers = [2, 4, 6, 8, 10];
+let squaredNumbers = squareNumbers(inputNumbers);
+console.log(squaredNumbers);
+```
