@@ -1,0 +1,26 @@
+import statistics
+
+def calculate_statistics(numbers):
+    if not numbers:
+        print("List is empty.")
+        return
+
+    try:
+        numbers = [float(num) for num in numbers]
+    except ValueError:
+        print("List contains non-numeric values.")
+        return
+
+    mean = statistics.mean(numbers)
+    median = statistics.median(numbers)
+    mode = statistics.mode(numbers)
+    std_dev = statistics.stdev(numbers)
+
+    print(f"Mean: {mean}")
+    print(f"Median: {median}")
+    print(f"Mode: {mode}")
+    print(f"Standard Deviation: {std_dev}")
+
+# Example input
+numbers = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9]
+calculate_statistics(numbers)
