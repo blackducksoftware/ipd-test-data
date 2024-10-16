@@ -1,0 +1,33 @@
+```python
+def get_age():
+    while True:
+        age = input("Please enter your age: ")
+        try:
+            age = int(age)
+            if age >= 0:
+                return age
+            else:
+                print("Please enter a valid age (a non-negative number).")
+        except ValueError:
+            print("Please enter a valid age (a number).")
+
+def check_age(age):
+    if age < 18:
+        print("You are still a minor")
+    elif age >= 18 and age < 65:
+        print("You are now an adult")
+    else:
+        print("You are a senior citizen")
+
+while True:
+    age = get_age()
+    check_age(age)
+    another_input = input("Do you want to check another age? (Enter 'yes' to continue or any other key to exit): ")
+    if another_input.lower() != 'yes':
+        break
+```
+In this program, we first define a function `get_age()` to get user input for their age and ensure it is a valid non-negative number. We use a `while` loop to keep prompting the user until a valid input is entered.
+
+Then, we define another function `check_age(age)` which takes the age as input and outputs the appropriate message based on the conditions.
+
+We then use a `while` loop to continuously ask the user for their age, check it, and ask if they want to check another age. The loop continues until the user decides to exit by entering any key other than 'yes'.
