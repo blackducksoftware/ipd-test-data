@@ -1,0 +1,27 @@
+Here's a Python script that fulfills the prompt:
+
+```python
+import random
+
+def filter_sort_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    even_numbers.sort(reverse=True)
+    return even_numbers
+
+def calculate_average(even_numbers):
+    if len(even_numbers) == 0:
+        return 0
+    return sum(even_numbers) / len(even_numbers)
+
+if __name__ == "__main__":
+    input_list = random.sample(range(1, 100), 10)  # Generate a list of 10 random numbers
+    print("Input list:", input_list)
+    
+    even_numbers = filter_sort_even_numbers(input_list)
+    print("Even numbers in descending order:", even_numbers)
+    
+    average = calculate_average(even_numbers)
+    print("Average of even numbers:", average)
+```
+
+You can run this script to generate a list of 10 random numbers, filter out the even numbers, sort them in descending order, and calculate the average of those even numbers.
