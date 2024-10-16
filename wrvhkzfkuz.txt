@@ -1,0 +1,16 @@
+Here is a Python program that accomplishes the task:
+
+```python
+def filter_and_sort_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    even_numbers.sort(reverse=True)
+    return even_numbers
+
+# Taking input from the user
+input_list = list(map(int, input("Enter a list of numbers separated by space: ").split()))
+
+filtered_list = filter_and_sort_even_numbers(input_list)
+print("Sorted even numbers in descending order:", filtered_list)
+```
+
+When you run this program, it will prompt you to enter a list of numbers separated by spaces. After entering the numbers, the program will filter out the even numbers, sort them in descending order, and then print the sorted list.
