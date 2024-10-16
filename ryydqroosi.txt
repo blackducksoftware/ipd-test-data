@@ -1,0 +1,35 @@
+Here's a Python program that follows the given prompt:
+
+```python
+def sum_even_numbers(numbers):
+    sum_even = sum(num for num in numbers if num % 2 == 0)
+    return sum_even
+
+def average_odd_numbers(numbers):
+    odd_numbers = [num for num in numbers if num % 2 != 0]
+    if len(odd_numbers) == 0:
+        return 0
+    avg_odd = sum(odd_numbers) / len(odd_numbers)
+    return avg_odd
+
+try:
+    input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    if all(isinstance(num, int) for num in input_list):
+        sum_even = sum_even_numbers(input_list)
+        avg_odd = average_odd_numbers(input_list)
+        print(f"Sum of even numbers: {sum_even}")
+        print(f"Average of odd numbers: {avg_odd}")
+    else:
+        print("Input list should contain only integers.")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+When you run this program with the input list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, it will output:
+
+```
+Sum of even numbers: 30
+Average of odd numbers: 5.0
+``` 
+
+This code calculates the sum of even numbers in the input list and the average of odd numbers in the input list as per the prompt requirements. It also includes error handling to ensure that the input list contains only integers. Let me know if you need any more help with this Python program!
