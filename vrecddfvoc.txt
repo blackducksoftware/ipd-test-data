@@ -1,0 +1,17 @@
+Here is a sample program that takes a list of numbers as input and returns the sum of all odd numbers in the list:
+
+```python
+def sum_of_odd_numbers(numbers):
+    sum_odd = 0
+    for num in numbers:
+        if num % 2 != 0:
+            sum_odd += num
+    return sum_odd
+
+# Example input
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = sum_of_odd_numbers(numbers)
+print(result)
+```
+
+You can run this program with your own list of numbers to calculate the sum of all odd numbers in the list.
