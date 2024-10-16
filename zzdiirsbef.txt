@@ -1,0 +1,21 @@
+Sure! Here is an example implementation of the Bubble Sort algorithm in Python:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+sorted_arr = bubble_sort(arr)
+print("Sorted array:", sorted_arr)
+```
+
+This program defines a function `bubble_sort` that takes an array of integers as input and sorts it in ascending order using the Bubble Sort algorithm. The main logic of the algorithm involves iterating over the array multiple times and swapping elements if they are in the wrong order.
+
+You can run this program with the provided array `[64, 34, 25, 12, 22, 11, 90]` and it will output the sorted array `[11, 12, 22, 25, 34, 64, 90]`.
+
+Feel free to customize this code or use it as inspiration for your own implementation!
