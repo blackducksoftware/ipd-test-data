@@ -1,0 +1,16 @@
+Hello! Here is a Python script for your prompt:
+
+```
+def sort_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    sorted_even_numbers = sorted(even_numbers, reverse=True)
+    return sorted_even_numbers
+
+# Taking input from the user
+input_list = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+
+result = sort_even_numbers(input_list)
+print("Even numbers in the list sorted in descending order:", result)
+```
+
+You can run this script in a Python environment and enter a list of numbers separated by spaces to get the even numbers in the list sorted in descending order. Let me know if you need any further assistance!
