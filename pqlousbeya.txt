@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can ask LLM: 
+
+"Write a program in Python that generates a list of prime numbers up to a given number n. The program should use the Sieve of Eratosthenes algorithm to efficiently find the prime numbers. Include comments explaining each step of the algorithm and how it is implemented in the code."
