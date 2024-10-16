@@ -1,0 +1,21 @@
+```python
+# Function to calculate the average temperature
+def average_temp(temps):
+    total = sum(temps)
+    num_temps = len(temps)
+    average = total / num_temps
+    return average
+
+# Get the list of temperatures from the user
+temps = input("Enter the list of temperatures separated by commas: ")
+
+# Convert the input string into a list of floats
+temps_list = [float(temp) for temp in temps.split(',')]
+
+# Calculate the average temperature
+avg_temp = average_temp(temps_list)
+
+print(f"The average temperature is: {avg_temp}")
+```
+
+This program prompts the user to enter a list of temperatures separated by commas, then calculates the average temperature of those temperatures and prints the result.
