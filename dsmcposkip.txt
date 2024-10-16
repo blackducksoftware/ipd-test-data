@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! You can ask LLM to generate code for a program that simulates a simple game of tic-tac-toe in Python.
