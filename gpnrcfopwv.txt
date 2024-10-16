@@ -1,0 +1,58 @@
+import random
+
+# Define rooms
+rooms = {
+    'start': {'name': 'Start Room', 'description': 'You are standing in the start room. There are doors to the north, east, and south.', 'exits': ['north', 'east', 'south']},
+    'north': {'name': 'North Room', 'description': 'You are in the north room. This room is empty.', 'exits': ['south']},
+    'east': {'name': 'East Room', 'description': 'You are in the east room. There is a locked chest in the corner.', 'exits': ['west']},
+    'south': {'name': 'South Room', 'description': 'You are in the south room. There is an NPC sitting at a table.', 'exits': ['north']}
+}
+
+# Define items
+items = ['key', 'sword', 'potion']
+
+# Define NPC
+npc = {'name': 'Jon', 'dialogue': 'Hey there! I have a quest for you. Can you find my lost ring?'}
+
+# Player inventory
+inventory = []
+
+# Function to move between rooms
+def move(direction):
+    current_room = player['current_room']
+    next_room = rooms[current_room]['exits'][direction]
+    player['current_room'] = next_room
+    print(rooms[next_room]['description'])
+
+# Function to check inventory
+def check_inventory():
+    print("Inventory:")
+    for item in inventory:
+        print(item)
+
+# Function to interact with NPC
+def talk_to_npc():
+    print(npc['dialogue'])
+    choice = input("Will you accept the quest? (y/n)")
+    if choice == 'y':
+        print("Great! Good luck on your quest.")
+    else:
+        print("That's too bad. Let me know if you change your mind.")
+
+# Main game loop
+player = {'current_room': 'start'}
+
+print(rooms['start']['description'])
+
+while True:
+    command = input("Enter a command (move, check inventory, talk to NPC): ")
+    
+    if command == 'move':
+        direction = input("Enter direction (north, east, south, west): ")
+        move(direction)
+    elif command == 'check inventory':
+        check_inventory()
+    elif command == 'talk to NPC':
+        talk_to_npc()
+    else:
+        print("Invalid command. Try again.")
