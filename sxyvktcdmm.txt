@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Generate a program in Python that takes a list of numbers and adds them together to find the total sum. The program should also calculate the average of the numbers in the list and display both the sum and average as output."
+
+You can use this prompt to ask LLM to generate code in Python that achieves the specified functionality.
