@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Generate a program that simulates a deck of cards and shuffles the deck before dealing out five cards to each player in a game of poker. The program should display each player's hand and determine the winner based on the combinations of cards they hold.
