@@ -1,0 +1,27 @@
+Certainly! Here's a Python function that calculates the average of a list of numbers and includes error handling:
+
+```python
+def calculate_average(numbers):
+    total = 0
+    count = 0
+    for num in numbers:
+        if not isinstance(num, (int, float)):
+            raise ValueError("Non-numeric value found in input list")
+        total += num
+        count += 1
+
+    if count == 0:
+        raise ValueError("Input list is empty")
+
+    return total / count
+
+# Example usage
+try:
+    numbers = [1, 2, 3, 4, 5]
+    average = calculate_average(numbers)
+    print(f"The average is: {average}")
+except ValueError as e:
+    print(e)
+```
+
+This function calculates the average of the input list by iterating over each element, checking if it is a numeric value, then summing up the total and counting the number of elements. If the input list is empty or contains non-numeric values, it raises a `ValueError` with an appropriate message.
