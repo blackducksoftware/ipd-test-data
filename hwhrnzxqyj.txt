@@ -1,0 +1,14 @@
+Sure! Here is a Python program that generates a Fibonacci sequence with 20 numbers:
+
+```python
+def fibonacci_sequence(n):
+    sequence = [0, 1]
+    while len(sequence) < n:
+        sequence.append(sequence[-1] + sequence[-2])
+    return sequence
+
+fibonacci_20 = fibonacci_sequence(20)
+print(fibonacci_20)
+```
+
+When you run this program, it will generate a Fibonacci sequence with 20 numbers and print it out.
