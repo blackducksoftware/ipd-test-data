@@ -1,0 +1,7 @@
+Explanation:
+- The `get_even_numbers` function takes in a list of numbers `num_list`.
+- It creates a new list `even_numbers` using list comprehension that contains only the numbers from `num_list` that are divisible by 2 (i.e., even numbers).
+- The function then returns this list of even numbers.
+- In this example, we have a list of numbers from 1 to 10 stored in the `numbers` variable.
+- We call the `get_even_numbers` function with the `numbers` list as an argument and store the result in the `even_numbers` variable.
+- Finally, we print the `even_numbers` list, which contains only the even numbers from the original list.
