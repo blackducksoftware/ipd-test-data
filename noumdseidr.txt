@@ -1,0 +1,52 @@
+Sure! Here is an example in Python:
+
+```python
+def add_item(item, price, cart):
+    cart[item] = price
+
+def view_cart(cart):
+    print("Items in your cart:")
+    for item, price in cart.items():
+        print(f"{item}: ${price}")
+
+def remove_item(item, cart):
+    if item in cart:
+        del cart[item]
+    else:
+        print("Item not found in cart")
+
+def calculate_total(cart):
+    total = sum(cart.values())
+    print(f"Total cost: ${total}")
+
+def main():
+    cart = {}
+    while True:
+        print("\n1. Add item to cart")
+        print("2. View cart")
+        print("3. Remove item from cart")
+        print("4. Calculate total cost")
+        print("5. Check out and exit")
+
+        choice = input("Enter choice: ")
+        
+        if choice == '1':
+            item = input("Enter item name: ")
+            price = float(input("Enter item price: "))
+            add_item(item, price, cart)
+        elif choice == '2':
+            view_cart(cart)
+        elif choice == '3':
+            item = input("Enter item name to remove: ")
+            remove_item(item, cart)
+        elif choice == '4':
+            calculate_total(cart)
+        elif choice == '5':
+            print("Thank you for shopping with us!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
+```
