@@ -1,0 +1,19 @@
+Sure! Here's a Python function that generates Fibonacci numbers up to a specified limit:
+
+```python
+def fibonacci(limit):
+    fib_list = [0, 1]
+    
+    while fib_list[-1] + fib_list[-2] <= limit:
+        next_number = fib_list[-1] + fib_list[-2]
+        fib_list.append(next_number)
+        
+    return fib_list
+
+# Specify the limit here
+limit = 100
+fibonacci_numbers = fibonacci(limit)
+print(fibonacci_numbers)
+```
+
+This function will generate Fibonacci numbers up to the specified limit and return them as a list. You can change the value of the `limit` variable to generate Fibonacci numbers up to a different limit.
