@@ -1,0 +1,4 @@
+add a bit for the response
+Prompt: Write a program that simulates a basic weather forecasting system. The program should include functions to generate random weather conditions such as sunny, cloudy, and rainy. It should also include functions to generate random temperature readings between 50 and 100 degrees Fahrenheit. Additionally, the program should have functions to display the current weather conditions and temperature, as well as predict the weather for the next day based on the current conditions. 
+
+Please provide a program that includes all of these functionalities in Python.
