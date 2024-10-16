@@ -1,0 +1,52 @@
+Sure, here is a Python script that fulfills the requirements provided in the prompt:
+
+```python
+import statistics
+
+# Function to sort a list of numbers in descending order
+def sort_descending(numbers):
+    return sorted(numbers, reverse=True)
+
+# Function to calculate the mean of a list of numbers
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+# Function to calculate the median of a list of numbers
+def calculate_median(numbers):
+    return statistics.median(numbers)
+
+# Function to calculate the mode of a list of numbers
+def calculate_mode(numbers):
+    return statistics.mode(numbers)
+
+# Function to calculate the standard deviation of a list of numbers
+def calculate_standard_deviation(numbers):
+    return statistics.stdev(numbers)
+
+# Function to calculate the variance of a list of numbers
+def calculate_variance(numbers):
+    return statistics.variance(numbers)
+
+# Main function to take input, sort the list, and calculate mean, median, mode, standard deviation, and variance
+def main():
+    numbers = [int(x) for x in input("Enter a list of numbers separated by spaces: ").split()]
+    sorted_numbers = sort_descending(numbers)
+    
+    mean = calculate_mean(numbers)
+    median = calculate_median(numbers)
+    mode = calculate_mode(numbers)
+    standard_deviation = calculate_standard_deviation(numbers)
+    variance = calculate_variance(numbers)
+    
+    print("Sorted numbers:", sorted_numbers)
+    print("Mean:", mean)
+    print("Median:", median)
+    print("Mode:", mode)
+    print("Standard Deviation:", standard_deviation)
+    print("Variance:", variance)
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this script in a Python environment and provide a list of numbers as input to test the functionality. Let me know if you need any further assistance!
