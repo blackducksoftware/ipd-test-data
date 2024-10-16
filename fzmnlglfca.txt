@@ -1,0 +1,35 @@
+```python
+def bubble_sort(arr):
+    # Get the length of the array
+    n = len(arr)
+    
+    # Loop through the entire array
+    for i in range(n):
+        # Flag to check if any swaps are made in this pass
+        swapped = False
+        
+        # Loop through the array up to n-i-1 because the last i elements are already sorted
+        for j in range(0, n-i-1):
+            # Compare adjacent elements and swap them if they are in the wrong order
+            if arr[j] < arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        
+        # If no swaps are made in this pass, then the array is already sorted
+        if not swapped:
+            break
+    
+    return arr
+
+# Take user input for the list of numbers
+nums = input("Enter the list of numbers separated by spaces: ")
+nums = list(map(int, nums.split()))
+
+# Sort the list in descending order using bubble sort
+sorted_nums = bubble_sort(nums)
+
+# Print the sorted list
+print("The sorted list in descending order is:", sorted_nums)
+```
+
+This program takes a list of numbers as input from the user, sorts them in descending order using the bubble sort algorithm, and prints the sorted list. The bubble sort algorithm works by repeatedly swapping adjacent elements if they are in the wrong order until the entire list is sorted.
