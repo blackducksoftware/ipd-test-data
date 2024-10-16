@@ -1,0 +1,15 @@
+```python
+def sort_names(names_list):
+    sorted_names = sorted(names_list)
+    return sorted_names
+
+# Input list of names
+names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
+sorted_names = sort_names(names)
+
+print("Sorted names:")
+for name in sorted_names:
+    print(name)
+```
+
+You can input any list of names into the `names` variable and the program will sort them in alphabetical order.
