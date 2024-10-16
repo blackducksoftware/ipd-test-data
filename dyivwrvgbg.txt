@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you write a program that takes a list of integers as input and returns the sum of all the positive numbers in the list in Python?"
