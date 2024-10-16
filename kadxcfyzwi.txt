@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you write a program in Python that generates a Fibonacci sequence up to 20 numbers and calculates the sum of all the numbers in the sequence?"
