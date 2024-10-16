@@ -1,0 +1,13 @@
+```
+def greet(names):
+    if not names:
+        print("No names provided.")
+    else:
+        for name in names:
+            print(f"Hello, {name}! Welcome to the program.")
+
+# Test cases
+greet(["Alice", "Bob", "Charlie"])
+greet([])
+```
+This code defines a function `greet` that takes a list of names as input. If the list is empty, it prints "No names provided." Otherwise, it iterates through the list and prints a personalized greeting message for each name. The code includes test cases to demonstrate how the function works for both scenarios of having names in the list and having an empty list.
