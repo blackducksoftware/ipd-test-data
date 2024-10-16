@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Generate code to create a simple calculator application in Python that can perform addition, subtraction, multiplication, and division operations. The application should take user input for two numbers and the operation to be performed, and then display the result of the operation. Include error handling for invalid inputs and division by zero."
