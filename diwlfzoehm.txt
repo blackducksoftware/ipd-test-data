@@ -1,0 +1,35 @@
+Sure! Here is a Python program that accomplishes the task described in the prompt:
+
+```python
+# Function to calculate square of a number
+def square_number(num):
+    return num * num
+
+# Function to remove negative numbers from a list
+def remove_negatives(input_list):
+    return [x for x in input_list if x >= 0]
+
+# Function to calculate squares of numbers in a list
+def calculate_squares(input_list):
+    squared_list = [square_number(x) for x in input_list]
+    return squared_list
+
+# Main function to take input, remove negatives, and calculate squares
+def main():
+    # Take input of list of numbers from user
+    input_list = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+
+    # Remove negative numbers from the list
+    input_list = remove_negatives(input_list)
+
+    # Calculate squares of the remaining numbers
+    squared_list = calculate_squares(input_list)
+
+    # Output the squared list
+    print("Squared list of numbers:", squared_list)
+
+if __name__ == "__main__":
+    main()
+```
+
+When you run this program and input a list of numbers, it will first remove any negative numbers from the list and then calculate and output the squares of the remaining numbers. Each section of the code is commented for clarity.
