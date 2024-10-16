@@ -1,0 +1,27 @@
+Sure thing! Here is a Python program that takes a list of numbers as input and returns the sum of all the even numbers in the list along with the count of even numbers:
+
+```
+def sum_of_even_numbers(numbers):
+    sum_of_evens = 0
+    count_of_evens = 0
+    
+    for num in numbers:
+        if num % 2 == 0:
+            sum_of_evens += num
+            count_of_evens += 1
+    
+    return sum_of_evens, count_of_evens
+
+# Taking user input for the list of numbers
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers_list = list(map(int, numbers.split()))
+
+# Calling the function and storing the results
+result_sum, result_count = sum_of_even_numbers(numbers_list)
+
+# Printing the results
+print("The sum of even numbers in the list is:", result_sum)
+print("The count of even numbers in the list is:", result_count)
+```
+
+You can simply copy and paste this code into a Python editor or IDE to test it out with different lists of numbers. Let me know if you need any further assistance or modifications!
