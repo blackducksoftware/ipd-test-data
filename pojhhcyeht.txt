@@ -1,0 +1,22 @@
+Here's a sample Python program that accomplishes this task:
+
+```python
+def sum_even_numbers(numbers):
+    total = 0
+    for num in numbers:
+        try:
+            if int(num) % 2 == 0:
+                total += int(num)
+        except ValueError:
+            return "Invalid input. Please enter a list of numbers."
+    return total
+
+# Example usage
+num_list = input("Enter a list of numbers separated by spaces: ").split()
+result = sum_even_numbers(num_list)
+print(f"The sum of all even numbers in the list is {result}")
+```
+
+In this program, `sum_even_numbers` is a function that takes in a list of numbers as input. It iterates through each number in the list, converting it to an integer and checking if it's even. If the conversion to integer fails (e.g., if the input is not a number), it returns an error message. Finally, it returns the sum of all even numbers in the list.
+
+You can run this program in a Python environment and enter a list of numbers separated by spaces to see the output.
