@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Write a program in Python that simulates a dice rolling game for two players. Each player should take turns rolling a six-sided dice, and the program should keep track of each player's score. The game should continue until one player reaches a score of 100 or higher. Print out the winner of the game and their final score."
+
+Feel free to modify the prompt to fit your specific needs or interests!
