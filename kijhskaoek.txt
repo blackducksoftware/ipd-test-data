@@ -1,0 +1,22 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM for generating code in Python:
+
+Prompt: "Can you generate a Python program that takes a list of numbers as input and returns a new list containing only the even numbers in the input list? Make sure the program includes error handling for non-numeric inputs."
+
+LLM might generate something like this:
+
+```python
+def filter_even_numbers(input_list):
+    try:
+        even_numbers = [num for num in input_list if num % 2 == 0]
+        return even_numbers
+    except TypeError:
+        print("Error: Non-numeric input found in the list")
+        return []
+
+input_list = [1, 2, 3, 4, '5']
+result = filter_even_numbers(input_list)
+print(result)
+```
+
+This code will take a list as input, filter out the even numbers, handle any non-numeric inputs, and return the list of even numbers.
