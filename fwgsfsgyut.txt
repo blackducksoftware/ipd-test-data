@@ -1,0 +1,4 @@
+add a bit for the response
+Prompt: Write a program that simulates a car racing game where players can choose different cars and compete in races against AI opponents. The program should include features such as selecting cars, displaying race results, and calculating the winner based on race times. Use object-oriented programming principles to model the cars and races in the game.
+
+This prompt should generate at least 20 lines of code when requested from LLM.
