@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Can you generate a Python script that reads a list of numbers from a file, calculates the average of the numbers, and then writes the result to an output file? Please include error handling for file reading and writing operations."
