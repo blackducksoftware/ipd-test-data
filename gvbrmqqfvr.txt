@@ -1,0 +1,55 @@
+Here is an example code for a simple shopping cart program in Python:
+
+```python
+class ShoppingCart:
+    def __init__(self):
+        self.cart = {}
+
+    def add_item(self, item, price):
+        if item in self.cart:
+            self.cart[item] += price
+        else:
+            self.cart[item] = price
+
+    def remove_item(self, item):
+        if item in self.cart:
+            del self.cart[item]
+        else:
+            print("Item not found in cart.")
+
+    def display_cart(self):
+        if not self.cart:
+            print("Your shopping cart is empty.")
+        else:
+            print("Your shopping cart:")
+            for item, price in self.cart.items():
+                print(f"{item}: ${price}")
+
+    def calculate_total(self):
+        total = sum(self.cart.values())
+        print(f"Total cost of all items in your cart: ${total}")
+
+
+# Test out the shopping cart functionality
+cart = ShoppingCart()
+
+cart.add_item("Apple", 2.50)
+cart.add_item("Banana", 1.00)
+cart.add_item("Orange", 3.00)
+
+cart.display_cart()
+
+cart.calculate_total()
+
+cart.remove_item("Banana")
+
+cart.display_cart()
+```
+
+You can customize this program further by adding features like:
+- Prompts for user input to add items to the cart
+- Error handling for invalid input
+- Option to update the quantity of items in the cart
+- Displaying the running total as items are added/removed
+
+Feel free to modify and expand upon this code based on your requirements!
