@@ -1,0 +1,13 @@
+import numpy as np
+
+def sum_even_numbers(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    return np.sum(even_numbers)
+
+# Test the function with a list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+print(sum_even_numbers(numbers))  # Output: 20
+
+# Test with negative numbers
+numbers = [-3, -2, -1, 0, 1, 2, 3]
+print(sum_even_numbers(numbers))  # Output: 0
