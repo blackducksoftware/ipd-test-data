@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a program that simulates a bank account management system. The program should have functions to allow users to check their balance, deposit money, withdraw money, and transfer funds to another account. It should also display a transaction history for each account. Be sure to include appropriate error handling for cases such as insufficient funds or incorrect account numbers. You can use any popular programming language for this task.
