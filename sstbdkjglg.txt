@@ -1,0 +1,4 @@
+add a bit for the response
+Create a program that generates a list of prime numbers up to a user-specified maximum value. The program should prompt the user to input the maximum value, then use a loop to iterate through all numbers up to that maximum value to check if they are prime. The program should output a list of all prime numbers found up to the specified maximum value. 
+
+Language: Python.
