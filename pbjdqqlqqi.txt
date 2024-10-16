@@ -1,0 +1,5 @@
+This Python program generates Fibonacci numbers up to a specified limit and calculates the sum of all even numbers in the list. The `fibonacci()` function generates Fibonacci numbers up to the limit provided and returns a list of Fibonacci numbers. The `sum_even_fibonacci()` function calculates the sum of all even Fibonacci numbers in the list. 
+
+In this example, the limit for Fibonacci numbers is set to 100. The program first generates Fibonacci numbers up to the specified limit using the `fibonacci()` function. Then, it calculates the sum of all even Fibonacci numbers using the `sum_even_fibonacci()` function.
+
+Finally, the program prints the list of Fibonacci numbers up to the limit and the sum of all even Fibonacci numbers.
