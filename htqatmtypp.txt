@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate 20+ lines of code in a popular programming language:
+
+Prompt: Write a program that takes an array of numbers as input and calculates the average of all the numbers, then outputs whether each number in the array is above or below the average.
+
+I hope this helps! Let me know if you need any more assistance.
