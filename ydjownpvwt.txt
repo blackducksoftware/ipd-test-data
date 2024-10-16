@@ -1,0 +1,16 @@
+# Python program to read in a list of numbers, sort them in descending order, remove duplicates, and output the final list
+
+# Read in a list of numbers from the user
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+
+# Convert the input numbers to integers
+numbers = [int(num) for num in numbers]
+
+# Sort the numbers in descending order
+numbers.sort(reverse=True)
+
+# Remove duplicates by converting the list to a set and back to a list
+numbers = list(set(numbers))
+
+# Output the final list
+print("Sorted list with duplicates removed:", numbers)
