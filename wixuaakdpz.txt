@@ -1,0 +1,28 @@
+Here's a Python program that does exactly that:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def sum_of_primes(numbers):
+    total = 0
+    for num in numbers:
+        if is_prime(num):
+            total += num
+    return total
+
+# Example input list of numbers
+input_list = [2, 3, 5, 7, 10, 12, 13, 15]
+
+# Calculate sum of prime numbers in the input list
+result = sum_of_primes(input_list)
+
+print(f"The sum of all prime numbers in the list is: {result}")
+```
+
+You can run this program and provide your own list of numbers as input. It will then calculate and output the sum of all prime numbers in the list.
