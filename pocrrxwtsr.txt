@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you please generate code to create a simple calculator application in Java that can perform addition, subtraction, multiplication, and division operations? The application should take user input for two numbers and the desired operation, and then output the result. Thank you!
