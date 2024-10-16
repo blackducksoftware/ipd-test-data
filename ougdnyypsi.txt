@@ -1,0 +1,28 @@
+```python
+def process_sentence(sentence):
+    # Remove punctuation
+    sentence = ''.join([char for char in sentence if char.isalnum() or char.isspace()])
+
+    # Convert to lowercase and split into words
+    words = sentence.lower().split()
+
+    # Create a dictionary to store word frequencies
+    word_freq = {}
+    for word in words:
+        if word in word_freq:
+            word_freq[word] += 1
+        else:
+            word_freq[word] = 1
+
+    # Sort the unique words in alphabetical order
+    unique_words = sorted(list(word_freq.keys()))
+
+    # Display the unique words with their frequencies
+    for word in unique_words:
+        print(f"{word}: {word_freq[word]}")
+
+# Test the program
+sentence = "Hello, World! This is a test sentence. Hello, world!"
+process_sentence(sentence)
+```
+This program takes a sentence as input, removes punctuation, converts all words to lowercase, and then displays the unique words in alphabetical order along with their frequencies. You can test the program by running it with a sample sentence.
