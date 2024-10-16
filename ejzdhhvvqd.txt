@@ -1,0 +1,10 @@
+def filter_and_square_even_numbers(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    squared_even_numbers = [num ** 2 for num in even_numbers]
+    new_list = even_numbers + squared_even_numbers
+    return new_list
+
+# Test the function with a list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = filter_and_square_even_numbers(numbers)
+print(result)  # Output: [2, 4, 6, 8, 10, 4, 16, 36, 64, 100]
