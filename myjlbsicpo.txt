@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Generate a program in Python that takes in a list of numbers as input and returns a new list that only contains the even numbers from the original list.
+
+Feel free to ask LLM for 20+ lines of code in any popular programming language based on this prompt!
