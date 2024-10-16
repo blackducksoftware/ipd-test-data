@@ -1,0 +1,23 @@
+Here is a Python program that generates the first 20 Fibonacci numbers using a loop and prints them out in a list format, along with calculating the sum of all the Fibonacci numbers generated:
+
+```python
+def generate_fibonacci_numbers(n):
+    fibonacci_numbers = []
+    a, b = 0, 1
+    total_sum = 0
+    for _ in range(n):
+        fibonacci_numbers.append(a)
+        total_sum += a
+        a, b = b, a + b
+    return fibonacci_numbers, total_sum
+
+n = 20
+fibonacci_numbers, total_sum = generate_fibonacci_numbers(n)
+
+print("First 20 Fibonacci numbers:")
+print(fibonacci_numbers)
+
+print("\nSum of all Fibonacci numbers generated:", total_sum)
+```
+
+You can run this program in any Python environment and it will output the first 20 Fibonacci numbers along with the sum of those numbers. Let me know if you need any further assistance!
