@@ -1,0 +1,37 @@
+Here is the Python script that scrapes data from a website using BeautifulSoup and saves it into a CSV file:
+
+```python
+import requests
+from bs4 import BeautifulSoup
+import csv
+
+# URL of the website to scrape
+url = 'http://example.com'
+
+try:
+    # Send a GET request to the website
+    response = requests.get(url)
+
+    # Parse the HTML content of the website
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    # Find and extract the data you want to scrape
+    data = []
+    for item in soup.find_all('div', class_='item'):
+        data.append(item.text)
+
+    # Save the data into a CSV file
+    with open('data.csv', 'w', newline='') as csvfile:
+        csv_writer = csv.writer(csvfile)
+        for row in data:
+            csv_writer.writerow([row])
+
+    print('Data scraped and saved successfully!')
+
+except requests.exceptions.RequestException as e:
+    print('Error: Failed to make a request to the website')
+except Exception as e:
+    print(f'Error: {e}')
+```
+
+Please note that you will need to replace the URL `'http://example.com'` and the HTML tags like `'div'` and class name `'item'` with the valid ones from the website you want to scrape.
