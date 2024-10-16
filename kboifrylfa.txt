@@ -1,0 +1,28 @@
+Here's a Python program that accomplishes the above task:
+
+```python
+def sum_of_even_numbers(numbers):
+    even_numbers = []
+    sum_even = 0
+    
+    for num in numbers:
+        if isinstance(num, int):
+            if num % 2 == 0:
+                even_numbers.append(num)
+                sum_even += num
+        else:
+            print("Error: Input list contains non-integer value")
+            return None
+    
+    print("List of even numbers:", even_numbers)
+    return sum_even
+
+# Test the program
+input_list = [1, 2, 3, 4, 5, 6, 'a']
+result = sum_of_even_numbers(input_list)
+
+if result is not None:
+    print("Sum of even numbers in the list:", result)
+```
+
+You can run this program by copying and pasting it into a Python environment. It will take the input list `[1, 2, 3, 4, 5, 6, 'a']`, find the even numbers in the list (`2, 4, 6`), calculate their sum (`12`), and print the list of even numbers and the sum. It will also handle the case where a non-integer value is present in the input list.
