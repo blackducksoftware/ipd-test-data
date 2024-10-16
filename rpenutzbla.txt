@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+Prompt: Create a Python program that reads a list of numbers from the user and calculates the sum, average, maximum, and minimum of the numbers. Ensure that the program can handle user input errors and display appropriate error messages.
+
+This prompt should generate a Python program with at least 20 lines of code that includes input validation, mathematical calculations, and output of the results.
