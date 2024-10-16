@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Write a program in Python that takes user input for a list of numbers, sorts the list in ascending order, and then calculates the sum of all the numbers in the sorted list. The program should then print the sorted list of numbers and the sum of the numbers as output.
