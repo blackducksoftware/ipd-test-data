@@ -1,0 +1,21 @@
+Here is a sample program in Python that takes in a list of names and ages and sorts the list by age in descending order:
+
+```python
+# Function to sort list by age in descending order
+def sort_by_age(names, ages):
+    sorted_list = [(name, age) for name, age in sorted(zip(names, ages), key=lambda x: x[1], reverse=True)]
+    return sorted_list
+
+# Main program
+if __name__ == "__main__":
+    names = ['Alice', 'Bob', 'Charlie', 'Dave']
+    ages = [25, 30, 22, 27]
+
+    sorted_list = sort_by_age(names, ages)
+
+    print("Sorted list by age in descending order:")
+    for name, age in sorted_list:
+        print(f"{name}: {age}")
+```
+
+This program defines a function `sort_by_age` that takes in two lists - `names` and `ages`. It then zips the two lists together, sorts the list of tuples by age in descending order using a lambda function, and then returns the sorted list. The main program initializes the lists of names and ages, calls the `sort_by_age` function, and prints the sorted list of names and ages.
