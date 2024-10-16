@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Write a program in Python that takes a list of numbers as input and calculates the sum, mean, median, minimum, and maximum of the numbers. Display the results in a user-friendly format."
