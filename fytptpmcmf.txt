@@ -1,0 +1,33 @@
+Here's an example implementation of the program in Python:
+
+```python
+import statistics
+
+# Function to calculate mean, median, mode, range, and check for normal distribution
+def calculate_stats(numbers):
+    mean = statistics.mean(numbers)
+    median = statistics.median(numbers)
+    mode = statistics.mode(numbers)
+    num_range = max(numbers) - min(numbers)
+    
+    if len(set(numbers)) == len(numbers):
+        is_normal_distribution = True
+    else:
+        is_normal_distribution = False
+    
+    return mean, median, mode, num_range, is_normal_distribution
+
+# User input
+numbers = input("Enter the list of numbers separated by spaces: ")
+numbers = list(map(int, numbers.split()))
+
+mean, median, mode, num_range, is_normal_distribution = calculate_stats(numbers)
+
+print(f"Mean: {mean}")
+print(f"Median: {median}")
+print(f"Mode: {mode}")
+print(f"Range: {num_range}")
+print(f"Is normally distributed: {is_normal_distribution}")
+```
+
+You can run this program in a Python environment and input a list of numbers separated by spaces when prompted. It will then calculate the mean, median, mode, range, and whether the numbers form a normally distributed set.
