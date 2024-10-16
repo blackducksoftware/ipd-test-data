@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate 20+ lines of code in Python:
+
+"Write a program in Python that simulates a dice rolling game. The program should allow the user to input the number of dice to roll and the number of sides on each dice. The program should then roll the dice and calculate the total sum of the dice rolls. Finally, the program should print out the individual dice rolls and the total sum."
