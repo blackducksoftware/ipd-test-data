@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate code in a popular programming language such as Python:
+
+Prompt: Write a program that takes user input for the radius of a circle and calculates the area of the circle. Print out the calculated area to the user.
+
+You can ask LLM to generate 20+ lines of Python code based on this prompt.
