@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate code for:
+
+"Write a program in Python that takes in a list of numbers as input and returns a new list with only the even numbers squared."
+
+You can adjust the prompt as needed based on the specific programming language you would like the code to be generated in.
