@@ -1,0 +1,30 @@
+Here is the Python code for the prompt you provided:
+
+```python
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def main():
+    try:
+        num = int(input("Please enter a number to check if it is prime: "))
+        if num < 0:
+            raise ValueError("Please enter a positive number")
+        
+        if is_prime(num):
+            print(f"{num} is a prime number")
+        else:
+            print(f"{num} is not a prime number")
+        
+    except ValueError as e:
+        print(f"Error: {e}")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can copy and paste this code into a Python environment to run it and test if it works as expected. Let me know if you need any further assistance!
