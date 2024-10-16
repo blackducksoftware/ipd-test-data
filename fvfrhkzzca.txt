@@ -1,0 +1,4 @@
+add a bit for the response
+Prompt:
+
+"Can you please generate a program that takes a list of numbers as input and outputs the sum and average of those numbers in Python?"
