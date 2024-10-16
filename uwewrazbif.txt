@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate 20+ lines of code in Python:
+
+Prompt: Create a program that calculates the Fibonacci sequence up to the nth term provided by the user. The Fibonacci sequence starts with 0 and 1, with each subsequent number being the sum of the previous two. Prompt the user to enter the number of terms they would like to see in the sequence and display the entire sequence up to that number.
+
+You can ask LLM to generate code based on this prompt in Python.
