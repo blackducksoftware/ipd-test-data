@@ -1,0 +1,14 @@
+Sure! Here's a sample program in Python that calculates the factorial of a given number:
+
+```python
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return num * factorial(num - 1)
+
+num = int(input("Enter a number to calculate its factorial: "))
+print("The factorial of", num, "is:", factorial(num))
+```
+
+You can run this program by entering a number when prompted, and it will calculate and print the factorial of that number.
