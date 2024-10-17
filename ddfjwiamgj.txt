@@ -1,0 +1,6 @@
+
+Sample Output:
+```
+Enter a list of numbers separated by spaces: 10 20 30 40 50
+The average is: 30.00
+```
