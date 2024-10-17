@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Write a Python program that generates a Fibonacci sequence up to a user-specified number, then calculates the sum of all the even numbers in the sequence. Include error handling for invalid input and print the result."
+
+You can adjust the prompt as needed or specify a different programming language if you prefer.
