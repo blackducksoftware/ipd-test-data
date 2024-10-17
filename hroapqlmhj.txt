@@ -1,0 +1,8 @@
+add a bit for the response
+Sure, here's a prompt you can ask LLM:
+Create a function in Python that takes in a list of numbers and returns a new list containing only the even numbers in the original list, multiplied by 2. The function should be named "double_even_numbers" and should have the following signature:
+
+def double_even_numbers(numbers):
+    #your code here
+
+This prompt should generate at least 20 lines of code in Python from LLM.
