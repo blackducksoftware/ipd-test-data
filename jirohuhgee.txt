@@ -1,0 +1,18 @@
+```python
+def generate_fibonacci(limit):
+    sequence = [0, 1]
+    
+    while sequence[-1] + sequence[-2] <= limit:
+        next_num = sequence[-1] + sequence[-2]
+        sequence.append(next_num)
+    
+    return sequence
+
+user_limit = int(input("Enter the limit for the Fibonacci sequence: "))
+fibonacci_sequence = generate_fibonacci(user_limit)
+
+print("Fibonacci sequence up to limit", user_limit, ":")
+for num in fibonacci_sequence:
+    print(num, end=" ")
+```
+This program takes a user-defined limit as input and generates a Fibonacci sequence up to that limit. It creates a list to store the sequence and iterates through to add the next number in the sequence until it reaches the limit. Finally, it prints out the Fibonacci sequence up to the user-defined limit.
