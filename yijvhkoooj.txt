@@ -1,0 +1,28 @@
+Here is the Python code that accomplishes the task:
+
+```python
+def fibonacci_sequence(num_terms):
+    if not isinstance(num_terms, int):
+        raise ValueError("Number of terms must be an integer.")
+    if num_terms <= 0:
+        return []
+    if num_terms > 20:
+        num_terms = 20
+    
+    fibonacci = [0, 1]
+    for _ in range(2, num_terms):
+        next_term = fibonacci[-1] + fibonacci[-2]
+        fibonacci.append(next_term)
+    
+    return fibonacci
+
+# Prompt user for input
+try:
+    num_terms = int(input("Enter the number of terms for Fibonacci sequence calculation (up to 20): "))
+    result = fibonacci_sequence(num_terms)
+    print("Fibonacci sequence:", result)
+except ValueError as e:
+    print("Error:", e)
+```
+
+You can run this code and input the number of terms you want to calculate the Fibonacci sequence up to, keeping in mind the limitation of a maximum of 20 terms. The code also includes error handling for non-integer inputs.
