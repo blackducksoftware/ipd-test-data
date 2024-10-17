@@ -1,0 +1,45 @@
+Here is a Python program that can do this:
+
+```python
+import statistics
+
+# Function to calculate the mean of a list of numbers
+def calculate_mean(nums):
+    return sum(nums) / len(nums)
+
+# Function to calculate the median of a list of numbers
+def calculate_median(nums):
+    return statistics.median(nums)
+
+# Function to calculate the mode of a list of numbers
+def calculate_mode(nums):
+    try:
+        return statistics.mode(nums)
+    except statistics.StatisticsError:
+        return "No mode found"
+
+# Function to calculate the standard deviation of a list of numbers
+def calculate_standard_deviation(nums):
+    return statistics.stdev(nums)
+
+# Input list of numbers
+numbers = [2, 4, 4, 4, 5, 5, 7, 9]
+
+# Calculate mean
+mean = calculate_mean(numbers)
+print(f"Mean: {mean}")
+
+# Calculate median
+median = calculate_median(numbers)
+print(f"Median: {median}")
+
+# Calculate mode
+mode = calculate_mode(numbers)
+print(f"Mode: {mode}")
+
+# Calculate standard deviation
+standard_deviation = calculate_standard_deviation(numbers)
+print(f"Standard Deviation: {standard_deviation}")
+```
+
+You can change the `numbers` list to any list of numbers you want to calculate the mean, median, mode, and standard deviation for. Just replace the existing list `[2, 4, 4, 4, 5, 5, 7, 9]` with your desired list of numbers.
