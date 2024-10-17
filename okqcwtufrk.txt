@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that generates a list of prime numbers within a user-specified range. The program should prompt the user to enter a starting number and an ending number, then output all prime numbers within that range. If the user enters invalid input (i.e. a non-numeric value or ending number less than the starting number), the program should display an error message and prompt the user to try again. The program should be written in Python.
