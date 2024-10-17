@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Generate a program in Python that takes a list of integers as input and returns a new list containing only the odd numbers from the original list. The program should include error handling for cases where the input is not a list or if the list does not contain any odd numbers.
