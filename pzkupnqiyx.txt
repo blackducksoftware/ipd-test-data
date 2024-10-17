@@ -1,0 +1,23 @@
+Here's a Python program that takes in a list of numbers and sorts them in descending order using the quicksort algorithm:
+
+```python
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less = [x for x in arr[1:] if x >= pivot]
+        greater = [x for x in arr[1:] if x < pivot]
+        return quicksort(greater) + [pivot] + quicksort(less)
+
+# Input list of numbers
+nums = [4, 2, 7, 1, 9, 3]
+
+# Sorting the numbers in descending order
+sorted_nums = quicksort(nums)
+
+# Printing the sorted list
+print(sorted_nums)
+```
+
+When you run this program with the input list `[4, 2, 7, 1, 9, 3]`, it will output `[9, 7, 4, 3, 2, 1]`, which is the list of numbers sorted in descending order.
