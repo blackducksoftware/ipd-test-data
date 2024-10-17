@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Generate a Python program that reads a list of numbers from the user, sorts the list in ascending order, finds the sum of all the numbers in the list, calculates the average of the numbers, and prints the sorted list, sum, and average to the console."
