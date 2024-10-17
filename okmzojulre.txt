@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM for generating code in a popular programming language:
+
+Prompt: Write a program in Python that takes a list of numbers as input and calculates the average of all the numbers in the list. The program should then print out the average rounded to two decimal places.
+
+Feel free to modify the prompt to fit your needs or choose a different programming language if you prefer.
