@@ -1,0 +1,20 @@
+Below is the Python program that fulfills the requirements mentioned in the prompt:
+
+```python
+def calculate_unique_sum(numbers):
+    sorted_numbers = sorted(numbers, reverse=True)
+    unique_numbers = list(set(sorted_numbers))
+    unique_sum = sum(unique_numbers)
+    
+    return unique_sum
+
+# Taking input from the user
+input_list = input("Enter a list of numbers separated by commas: ")
+numbers = [int(num) for num in input_list.split(',')]
+
+# Calculating the sum of unique numbers
+result = calculate_unique_sum(numbers)
+print(f"The sum of unique numbers in the list is: {result}")
+```
+
+You can copy and paste this code into a Python interpreter or a Python file to run the program. Let me know if you need any further assistance!
