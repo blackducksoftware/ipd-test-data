@@ -1,0 +1,33 @@
+Sure thing! Here is an example code in Python that takes in a list of integers and returns the sum of all the even numbers in the list:
+
+```python
+def sum_even_numbers(nums):
+    # Initialize sum to 0
+    total_sum = 0
+    
+    try:
+        for num in nums:
+            # Check if the number is even
+            if num % 2 == 0:
+                # Add the even number to the total sum
+                total_sum += num
+    except TypeError:
+        # Handle invalid inputs (e.g. if nums is not a list)
+        print("Invalid input. Please provide a list of integers.")
+    
+    return total_sum
+
+# Test the function with sample input
+numbers = [1, 2, 3, 4, 5, 6]
+print(sum_even_numbers(numbers)) # Output should be 12
+```
+
+In this code:
+1. We define a function called `sum_even_numbers` that takes a list of integers as input.
+2. We initialize a variable `total_sum` to keep track of the sum of even numbers.
+3. We iterate through the input list `nums` and check if each number is even by using the modulo operator `%`.
+4. If the number is even, we add it to the `total_sum`.
+5. We use a `try-except` block to handle potential `TypeError`s that could occur if the input is not a list.
+6. Finally, we return the `total_sum` after processing all the numbers in the list.
+
+You can run this code in a Python environment to see the sum of even numbers in the list `[1, 2, 3, 4, 5, 6]`.
