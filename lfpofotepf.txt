@@ -1,0 +1,37 @@
+Here is some example code for a simple web application in Python using the Flask framework:
+
+```python
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+books = {}
+
+@app.route('/book', methods=['POST'])
+def add_book():
+    data = request.get_json()
+    book_name = data.get('name')
+    rating = data.get('rating')
+
+    if not book_name or not rating:
+        return jsonify({'error': 'Missing data'}), 400
+
+    books[book_name] = books.get(book_name, [])
+    books[book_name].append(rating)
+
+    return jsonify({'message': 'Book added successfully'})
+
+@app.route('/book/<name>/average_rating', methods=['GET'])
+def get_average_rating(name):
+    if name not in books:
+        return jsonify({'error': 'Book not found'}), 404
+
+    average_rating = sum(books[name]) / len(books[name])
+
+    return jsonify({'average_rating': average_rating})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+You can run this code in a Python environment with Flask installed, and then make POST requests to /book to add books and ratings, and GET requests to /book/<name>/average_rating to get the average rating for a specific book.
