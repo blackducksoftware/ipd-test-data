@@ -1,0 +1,25 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM to generate 20+ lines of code in Python:
+
+Create a program that takes a list of numbers as input and returns the sum of all the even numbers in the list. The program should also calculate and display the average of the odd numbers in the list.
+
+```python
+def sum_even_numbers(numbers):
+    even_sum = sum(num for num in numbers if num % 2 == 0)
+    return even_sum
+
+def average_odd_numbers(numbers):
+    odd_numbers = [num for num in numbers if num % 2 != 0]
+    if len(odd_numbers) > 0:
+        odd_avg = sum(odd_numbers) / len(odd_numbers)
+    else:
+        odd_avg = 0
+    return odd_avg
+
+input_numbers = [2, 5, 8, 10, 15, 3, 7]
+even_sum = sum_even_numbers(input_numbers)
+odd_avg = average_odd_numbers(input_numbers)
+
+print("Sum of even numbers:", even_sum)
+print("Average of odd numbers:", odd_avg)
+```
