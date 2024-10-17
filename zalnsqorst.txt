@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Generate a program in Python that takes a list of numbers as input and outputs only the even numbers from the list. Make sure to include error handling for non-numeric inputs and keep the program interactive by allowing the user to input the list of numbers."
