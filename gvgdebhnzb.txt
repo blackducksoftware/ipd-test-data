@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you help me to write a program that calculates the average of a list of 10 numbers in Python?"
