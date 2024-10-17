@@ -1,0 +1,28 @@
+Here is the Python code for the prompt:
+
+```python
+def fibonacci_sequence(n):
+    sequence = []
+    a, b = 0, 1
+    while a < n:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+def main():
+    try:
+        number = int(input("Enter a number to generate the Fibonacci sequence up to: "))
+        if number <= 0:
+            print("Please enter a positive number.")
+        else:
+            fib_sequence = fibonacci_sequence(number)
+            print("Fibonacci sequence up to", number, ":")
+            print(fib_sequence)
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this code in any Python interpreter and test it by entering a number to generate the Fibonacci sequence up to that number. Feel free to modify or enhance the code based on your requirements.
