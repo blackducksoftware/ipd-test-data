@@ -1,0 +1,30 @@
+Certainly! Here is a simple Python program that generates a Fibonacci sequence of a specified length:
+
+```python
+def fibonacci_sequence(length):
+    sequence = []
+    
+    if length <= 0:
+        return sequence
+    elif length == 1:
+        return [0]
+    elif length == 2:
+        return [0, 1]
+        
+    sequence = [0, 1]
+    
+    for i in range(2, length):
+        next_num = sequence[i-1] + sequence[i-2]
+        sequence.append(next_num)
+        
+    return sequence
+
+# specify the length of the Fibonacci sequence
+length = 10
+
+# generate and print the Fibonacci sequence
+result = fibonacci_sequence(length)
+print(result)
+```
+
+You can change the value of the `length` variable to specify the desired length of the Fibonacci sequence. This program will generate and print the Fibonacci sequence of that length.
