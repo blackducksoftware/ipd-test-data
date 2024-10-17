@@ -1,0 +1,5 @@
+
+When you run this program, the output will be:
+```
+The average of the numbers is: 15.0
+```
