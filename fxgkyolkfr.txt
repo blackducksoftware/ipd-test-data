@@ -1,0 +1,18 @@
+Here is the Python program that accomplishes this task:
+
+```python
+def sum_even_numbers(lst):
+    even_sum = 0
+    for num in lst:
+        if num % 2 == 0:
+            even_sum += num
+    return even_sum
+
+input_list = [1, 2, 3, 4, 5, 6]
+output = sum_even_numbers(input_list)
+print(output)
+```
+
+This program defines a function `sum_even_numbers` that takes a list as input and returns the sum of all the even numbers in the list. It iterates through the list and adds up the even numbers to the `even_sum` variable. Finally, it returns the sum of even numbers.
+
+You can test this program by changing the `input_list` to any list of numbers containing both positive and negative values.
