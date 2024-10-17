@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a function that takes in a list of integers and returns the sum of all numbers in the list that are multiples of both 3 and 5.
