@@ -1,0 +1,69 @@
+
+
+Sure thing! Here is a basic outline of the program in Python that simulates a basic banking system:
+
+```python
+class Account:
+    def __init__(self, name, balance=0):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("Insufficient funds")
+
+    def check_balance(self):
+        return self.balance
+
+def main():
+    accounts = {}
+
+    while True:
+        print("Options: create account, deposit, withdraw, check balance, switch account, exit")
+        choice = input("Enter your choice: ")
+
+        if choice == 'create account':
+            name = input("Enter account name: ")
+            accounts[name] = Account(name)
+            print(f"Account {name} created")
+
+        elif choice == 'deposit':
+            name = input("Enter account name: ")
+            amount = float(input("Enter amount to deposit: "))
+            accounts[name].deposit(amount)
+            print(f"Deposited {amount} to account {name}")
+
+        elif choice == 'withdraw':
+            name = input("Enter account name: ")
+            amount = float(input("Enter amount to withdraw: "))
+            accounts[name].withdraw(amount)
+            print(f"Withdrew {amount} from account {name}")
+
+        elif choice == 'check balance':
+            name = input("Enter account name: ")
+            balance = accounts[name].check_balance()
+            print(f"Account {name} balance: {balance}")
+
+        elif choice == 'switch account':
+            name = input("Enter account name to switch to: ")
+            if name in accounts:
+                print(f"Switched to account {name}")
+            else:
+                print("Account not found")
+
+        elif choice == 'exit':
+            break
+
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == '__main__':
+    main()
+```
+
+This is a basic implementation of a banking system in Python. You can further enhance it by adding more features like transfer funds, view transaction history, etc. Feel free to modify and improve upon this program!
