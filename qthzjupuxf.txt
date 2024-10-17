@@ -1,0 +1,15 @@
+Here is a Python function that accomplishes this:
+
+```python
+def calculate_sum(numbers):
+    sum = 0
+    for num in numbers:
+        sum += num
+    return sum
+
+# Test the function
+numbers = [1, 2, 3, 4, 5]
+print(calculate_sum(numbers))  # Output: 15
+```
+
+This function `calculate_sum` iterates through each number in the input list `numbers` and adds it to a running sum. Finally, it returns the total sum of all the numbers.
