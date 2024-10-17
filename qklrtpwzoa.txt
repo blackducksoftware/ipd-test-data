@@ -1,0 +1,19 @@
+Here is a Python program that accomplishes the task:
+
+```python
+def filter_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    return even_numbers
+
+# Taking input from the user
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+
+# Function call to filter even numbers
+result = filter_even_numbers(numbers)
+
+# Printing the result
+print("The even numbers in the input list are:", result)
+```
+
+You can run this program and input a list of numbers separated by spaces. It will then return a new list containing only the even numbers from the input list.
