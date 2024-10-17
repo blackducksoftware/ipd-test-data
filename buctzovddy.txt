@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Write a program that generates a list of prime numbers between 1 and 100 in the programming language of your choice. The output should display each prime number on a new line.
