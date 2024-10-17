@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Write a program in Python that simulates a blackjack game. The program should have functions for dealing cards, calculating the total value of a player's hand, checking for a win or loss condition, and allowing the player to hit or stand. The program should also have a simple text-based interface for the player to interact with.
