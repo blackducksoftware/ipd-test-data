@@ -1,0 +1,39 @@
+add a bit for the response
+Prompt: Write a program that takes a list of numbers as input and returns the average of the numbers in the list. The program should also calculate and display the maximum and minimum numbers in the list.
+
+Expected output:
+- Calculated average of the list of numbers
+- Maximum number in the list
+- Minimum number in the list
+
+Language: Python
+
+Example input:
+[10, 20, 30, 40, 50]
+
+Example output:
+Average: 30.0
+Maximum: 50
+Minimum: 10
+
+Code:
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    return total / len(numbers)
+
+def find_maximum(numbers):
+    return max(numbers)
+
+def find_minimum(numbers):
+    return min(numbers)
+
+numbers = [10, 20, 30, 40, 50]
+average = calculate_average(numbers)
+maximum = find_maximum(numbers)
+minimum = find_minimum(numbers)
+
+print(f"Average: {average}")
+print(f"Maximum: {maximum}")
+print(f"Minimum: {minimum}")
+```
