@@ -1,0 +1,3 @@
+Output:
+Sum of even numbers: 30
+Maximum number in the list: 10
