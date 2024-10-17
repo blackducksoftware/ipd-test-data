@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that calculates the average of a list of numbers inputted by the user in Python. Include error handling for non-numeric inputs and ensure the program can handle an arbitrary number of inputs.
