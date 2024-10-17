@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Generate a program in Java that simulates a car rental system. The program should have classes for Car, Customer, Rental, and Main. The Car class should have attributes such as make, model, year, and price. The Customer class should have attributes such as name, age, and address. The Rental class should have attributes such as renter, car, rental date, return date, and total cost. The Main class should have a menu system that allows the user to rent a car, return a car, view available cars, and view rental history. Make sure to include error handling for invalid inputs and calculate the total cost based on the number of days the car is rented."
