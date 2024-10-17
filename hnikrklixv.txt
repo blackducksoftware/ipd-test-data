@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that takes in a list of numbers and calculates the average of all the numbers in the list. The program should include error handling for cases where the input is not a valid list of numbers.
