@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt for generating code in Python:
+
+Write a program that takes a list of numbers as input and returns a new list with only the even numbers in the original list. The program should also output the sum of all the even numbers in the list.
