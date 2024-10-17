@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Write a program in Python that simulates a deck of cards and allows the user to shuffle the deck, draw a card, and see all the cards in the deck. Include functions for shuffling the deck, drawing a card, and displaying the current deck of cards. Ensure that each card in the deck is represented as a string with the format 'value of suit' (e.g. 'Ace of Spades')."
+
+Hope this helps! Let me know if you need more prompts.
