@@ -1,0 +1,26 @@
+Here is a Python program that calculates the sum of all prime numbers up to a given number inputted by the user:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def sum_of_primes(up_to):
+    total_sum = 0
+    for i in range(2, up_to + 1):
+        if is_prime(i):
+            total_sum += i
+    return total_sum
+
+user_input = int(input("Enter a number: "))
+
+result = sum_of_primes(user_input)
+
+print(f"The sum of all prime numbers up to {user_input} is: {result}")
+```
+
+You can run this program and enter a number to calculate the sum of all prime numbers up to the given number.
