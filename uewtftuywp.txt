@@ -1,0 +1,26 @@
+Here is a Python program that generates a list of prime numbers up to a given number N:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num/2) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def generate_primes_up_to_N(N):
+    prime_numbers = []
+    for i in range(2, N+1):
+        if is_prime(i):
+            prime_numbers.append(i)
+    return prime_numbers
+
+N = int(input("Enter a number N: "))
+prime_numbers = generate_primes_up_to_N(N)
+
+print("Prime numbers up to", N, "are:")
+print(prime_numbers)
+```
+
+You can run this program and input a number N to generate a list of prime numbers up to that number.
