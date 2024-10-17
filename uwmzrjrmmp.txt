@@ -1,0 +1,16 @@
+Here is a sample Python program that accomplishes the task:
+
+```python
+def get_even_numbers(input_list):
+    try:
+        new_list = [num for num in input_list if num % 2 == 0]
+        return new_list
+    except TypeError:
+        print("Invalid input! Please provide a list of integers.")
+
+# Test the function
+input_list = [1, 2, 3, 4, 5, 6]
+print(get_even_numbers(input_list))
+```
+
+When you run this program with the provided input list, it will output `[2, 4, 6]`, which are the even numbers in the original list. If you pass a non-integer input, it will display the error message "Invalid input! Please provide a list of integers."
