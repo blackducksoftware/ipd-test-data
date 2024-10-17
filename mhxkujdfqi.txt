@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate a program in Python that takes a list of numbers as input and returns a new list with only the even numbers squared. The program should include error handling for invalid inputs and should be able to handle lists of any length. It should also include comments explaining each step of the code."
