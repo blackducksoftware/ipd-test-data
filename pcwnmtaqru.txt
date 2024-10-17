@@ -1,0 +1,20 @@
+Sure thing! Here is a Python program that does exactly that:
+
+```python
+def sum_even_numbers(numbers):
+    total = 0
+    for num in numbers:
+        if num % 2 == 0:
+            total += num
+    return total
+
+def main():
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    result = sum_even_numbers(numbers)
+    print(f"The sum of even numbers in the list is: {result}")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this program by saving it in a Python file (e.g., `sum_even_numbers.py`) and then running it using a Python interpreter. This program defines a function `sum_even_numbers` that calculates the sum of even numbers in a list and a `main` function that creates a list of numbers and calls the `sum_even_numbers` function to calculate the sum of even numbers.
