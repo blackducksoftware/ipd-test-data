@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you write a program in Python to simulate a simple game of Blackjack, where the player competes against the computer as the dealer? The program should include functions for dealing cards, calculating the total value of the player's hand, determining the winner of each round, and allowing the player to hit (take another card) or stand (keep their current hand).
