@@ -1,0 +1,6 @@
+add a bit for the response
+Sure, here's a prompt you can ask LLM:
+
+"Please generate a program in Python that takes a list of numbers as input, squares each number in the list, and then returns a new list with the squared numbers."
+
+This should generate at least 20 lines of code in Python.
