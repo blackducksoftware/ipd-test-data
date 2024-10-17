@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Please generate 20+ lines of Python code that reads a text file, counts the frequency of each word, and then prints out the top 10 most common words along with their frequencies. Bonus points if you can also include a function to remove common stop words from the analysis."
