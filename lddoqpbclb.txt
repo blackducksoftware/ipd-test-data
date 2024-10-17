@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM to generate code for in a popular programming language:
+
+Prompt: Write a program that takes in a list of numbers and calculates the sum of all odd numbers in the list. The program should output the sum of the odd numbers.
+
+Feel free to specify the programming language you want the code to be generated in, such as Python, JavaScript, Java, C++, etc.
