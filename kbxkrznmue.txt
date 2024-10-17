@@ -1,0 +1,11 @@
+def filter_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    even_sum = sum(even_numbers)
+    return even_numbers, even_sum
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers, even_sum = filter_even_numbers(input_list)
+
+print("Input List:", input_list)
+print("Even Numbers:", even_numbers)
+print("Sum of Even Numbers:", even_sum)
