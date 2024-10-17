@@ -1,0 +1,22 @@
+Here's the Python function I generated based on your prompt:
+
+```python
+def sum_of_even_numbers(input_list):
+    # Initialize a variable to store the sum of even numbers
+    sum_of_evens = 0
+    
+    # Iterate through each element in the input list
+    for num in input_list:
+        # Check if the number is even
+        if num % 2 == 0:
+            # Add the even number to the sum
+            sum_of_evens += num
+    
+    return sum_of_evens
+
+# Test the function with a sample input list
+sample_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum_of_even_numbers(sample_list))  # Output: 30
+```
+
+This function will take a list of integers as input, iterate through each number in the list, and sum up all the even numbers. You can test it with the sample input list provided above. Let me know if you need any further modifications or details!
