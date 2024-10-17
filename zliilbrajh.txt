@@ -1,0 +1,27 @@
+Here is a Python program that takes user input of a number and returns all the prime numbers up to that number:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+try:
+    user_input = int(input("Enter a number: "))
+    if user_input < 2:
+        print("There are no prime numbers up to", user_input)
+    else:
+        print("Prime numbers up to", user_input, ":")
+        for i in range(2, user_input + 1):
+            if is_prime(i):
+                print(i, end=' ')
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+```
+
+When you run this program and enter a number, it will display all the prime numbers up to that number. If the input is invalid (such as a non-integer value), proper error handling will be displayed.
+
+Hope this helps! Let me know if you need any further assistance.
