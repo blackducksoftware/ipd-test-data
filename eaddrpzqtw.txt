@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Please generate 20+ lines of Python code that reads a text file named 'input.txt', counts the frequency of each word in the file, and then writes the word frequencies to a new text file named 'output.txt' in the format 'word: frequency' on each line."
