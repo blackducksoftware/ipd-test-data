@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+Write a program in Python that takes in a list of numbers and returns a new list containing only the even numbers, sorted in descending order. The program should also calculate the average of the even numbers and print it out.
