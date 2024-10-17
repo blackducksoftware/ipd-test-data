@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Write a Python program that prompts the user to enter a list of numbers separated by spaces, then calculate the sum of all the numbers in the list and print the result. The program should also calculate and print the average of the numbers in the list. Lastly, the program should find and print the largest number in the list. The program should handle both integer and float inputs.
+
+Feel free to adjust the prompt as needed for your specific needs!
