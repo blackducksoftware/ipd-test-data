@@ -1,0 +1,21 @@
+Sure, here is an example Python code that accomplishes that task:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def sum_of_primes(numbers):
+    primes = [num for num in numbers if is_prime(num)]
+    return sum(primes)
+
+numbers = [2, 3, 5, 7, 10, 13, 17]
+result = sum_of_primes(numbers)
+print(result)
+```
+
+This code defines a function `is_prime` that checks whether a given number is a prime number. Then, the `sum_of_primes` function takes a list of numbers, filters out the prime numbers using the `is_prime` function, and returns the sum of those prime numbers. Finally, we call the `sum_of_primes` function with the `numbers` list `[2, 3, 5, 7, 10, 13, 17]` and print the result.
