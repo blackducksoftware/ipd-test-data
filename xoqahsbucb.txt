@@ -1,0 +1,31 @@
+```python
+def get_numbers():
+    while True:
+        try:
+            numbers = input("Enter a list of numbers separated by spaces: ").split()
+            numbers = [float(num) for num in numbers]
+            return numbers
+        except ValueError:
+            print("Invalid input. Please enter numerical values only.")
+
+def calculate_sum(numbers):
+    return sum(numbers)
+
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+def print_results(numbers, total, average):
+    numbers.sort(reverse=True)
+    print(f"Sum of numbers: {total}")
+    print(f"Average of numbers: {average}")
+    print(f"Numbers in descending order: {', '.join(map(str, numbers))}")
+
+def main():
+    numbers = get_numbers()
+    total = calculate_sum(numbers)
+    average = calculate_average(numbers)
+    print_results(numbers, total, average)
+
+if __name__ == "__main__":
+    main()
+```
