@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that generates a random list of 50 numbers between 1 and 100, then calculates the average, maximum, and minimum values in the list.
