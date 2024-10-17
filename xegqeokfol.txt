@@ -1,0 +1,23 @@
+```python
+def fibonacci(n):
+    fib_list = [0, 1]
+    for i in range(2, n):
+        next_num = fib_list[i-1] + fib_list[i-2]
+        fib_list.append(next_num)
+    return fib_list
+
+def sum_even_numbers(fib_list):
+    even_sum = 0
+    for num in fib_list:
+        if num % 2 == 0:
+            even_sum += num
+    return even_sum
+
+# Create a list of the first 20 Fibonacci numbers
+fib_list = fibonacci(20)
+print("Fibonacci numbers:", fib_list)
+
+# Calculate the sum of all even numbers in the list
+even_sum = sum_even_numbers(fib_list)
+print("Sum of even numbers:", even_sum)
+```
