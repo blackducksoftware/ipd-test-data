@@ -1,0 +1,15 @@
+Sure! Here is the Python code generated based on the prompt:
+
+```python
+# Input list of numbers
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Using list comprehension to filter even numbers
+output_list = [num for num in input_list if num % 2 == 0]
+
+# Output the new list containing only even numbers
+print("Input List:", input_list)
+print("Even Numbers List:", output_list)
+```
+
+This code takes a list of numbers as input and outputs a new list containing only the even numbers from the original list using list comprehension.
