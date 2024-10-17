@@ -1,0 +1,17 @@
+```python
+def filter_even_numbers(nums):
+    even_nums = []
+    for num in nums:
+        if num % 2 == 0:  # Check if the number is even
+            even_nums.append(num)  # Add the even number to the list
+    return even_nums
+
+# Take list of numbers as input from the user
+nums = [int(num) for num in input("Enter a list of numbers separated by spaces: ").split()]
+
+# Call the function to filter even numbers
+even_nums = filter_even_numbers(nums)
+
+# Print the list of even numbers
+print("Even numbers from the list:", even_nums)
+```
