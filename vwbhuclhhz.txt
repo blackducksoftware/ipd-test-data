@@ -1,0 +1,63 @@
+Here is a sample implementation of a Tic-Tac-Toe game in Python:
+
+```python
+def display_board(board):
+    print("-------------")
+    for i in range(3):
+        print("| " + " | ".join(board[i]) + " |")
+        print("-------------")
+
+
+def check_winner(board, player):
+    for i in range(3):
+        if all([cell == player for cell in board[i]]): # check rows
+            return True
+        if all([board[j][i] == player for j in range(3)]): # check columns
+            return True
+    if all([board[i][i] == player for i in range(3)]) or all([board[i][2-i] == player for i in range(3)]): # check diagonals
+        return True
+    return False
+
+
+def take_input(player):
+    while True:
+        try:
+            row = int(input("Player " + player + ", enter row (0-2): "))
+            col = int(input("Player " + player + ", enter column (0-2): "))
+            if row < 0 or row > 2 or col < 0 or col > 2:
+                raise ValueError
+            return row, col
+        except ValueError:
+            print("Invalid input. Please enter numbers between 0 and 2.")
+
+
+def main():
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    players = ['X', 'O']
+    current_player = 0
+
+    while True:
+        display_board(board)
+        row, col = take_input(players[current_player])
+        if board[row][col] != " ":
+            print("That position is already taken. Try again.")
+            continue
+        board[row][col] = players[current_player]
+
+        if check_winner(board, players[current_player]):
+            display_board(board)
+            print("Player " + players[current_player] + " wins!")
+            break
+
+        if all([cell != " " for row in board for cell in row]):
+            display_board(board)
+            print("It's a tie!")
+            break
+
+        current_player = (current_player + 1) % 2
+
+if __name__ == "__main__":
+    main()
+```
+
+You can copy and paste this code into a Python file and run it to play a game of Tic-Tac-Toe. The program will display the current state of the board, prompt players to enter their moves, check for a winner, and declare the winner or a tie at the end of the game.
