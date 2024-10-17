@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask Language Model for developing a code in Python:
+
+"Write a Python program that takes a list of numbers as input and calculates the sum of all even numbers in the list. Output the total sum as the result."
+
+You can adjust the prompt as needed to generate more than 20 lines of code.
