@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that takes in a list of numbers and returns a new list with only the even numbers squared. Use a popular programming language of your choice.
