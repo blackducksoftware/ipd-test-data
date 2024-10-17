@@ -1,0 +1,14 @@
+Sure thing! Here is the Python program to generate the first 20 Fibonacci numbers:
+
+```
+def generate_fibonacci(n):
+    fib_list = [0, 1]
+    for i in range(2, n):
+        fib_list.append(fib_list[i-1] + fib_list[i-2])
+    return fib_list
+
+fibonacci_numbers = generate_fibonacci(20)
+print(fibonacci_numbers)
+```
+
+This program defines a function `generate_fibonacci` that takes a parameter `n` (number of Fibonacci numbers to generate) and returns a list of Fibonacci numbers. It then calls the function with `n=20` and prints the resulting list of the first 20 Fibonacci numbers.
