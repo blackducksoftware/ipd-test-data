@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can ask LLM:
+
+Write a program that generates a Fibonacci sequence of numbers up to a specified limit, and then calculates the sum of all the even numbers in the sequence. The program should allow the user to input the limit of the Fibonacci sequence and output the sum of the even numbers. Use any popular programming language of your choice.
