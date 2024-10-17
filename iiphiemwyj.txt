@@ -1,0 +1,32 @@
+```python
+import statistics
+
+# Function to input list of numbers from user
+def input_numbers():
+    numbers = input("Enter a list of numbers separated by space: ")
+    numbers = list(map(float, numbers.split()))
+    return numbers
+
+# Function to calculate mean, median, and mode
+def calculate_statistics(numbers):
+    mean = statistics.mean(numbers)
+    median = statistics.median(numbers)
+    mode = statistics.mode(numbers)
+    return mean, median, mode
+
+# Main program
+numbers = input_numbers()
+mean, median, mode = calculate_statistics(numbers)
+
+print("Mean:", mean)
+print("Median:", median)
+print("Mode:", mode)
+```
+
+Example output:
+```
+Enter a list of numbers separated by space: 2 4 6 4 8
+Mean: 4.8
+Median: 4
+Mode: 4
+```
