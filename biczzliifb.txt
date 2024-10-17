@@ -1,0 +1,15 @@
+add a bit for the response
+Prompt: Generate a program in Python that takes a list of numbers as input and returns the sum of all odd numbers in the list. 
+
+LLM Response: 
+
+```python
+def sum_of_odd_numbers(numbers):
+    odd_numbers = [num for num in numbers if num % 2 != 0]
+    sum_odd_numbers = sum(odd_numbers)
+    return sum_odd_numbers
+
+numbers = [2, 5, 7, 10, 13, 16, 19, 20]
+result = sum_of_odd_numbers(numbers)
+print("Sum of odd numbers in the list:", result)
+```
