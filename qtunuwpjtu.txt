@@ -1,0 +1,24 @@
+Here is a Python program that takes a list of numbers as input and returns the sum of all the even numbers in the list as well as the average of all the numbers in the list:
+
+```python
+def sum_even_and_average(numbers):
+    even_sum = 0
+    total_sum = 0
+    
+    for num in numbers:
+        total_sum += num
+        if num % 2 == 0:
+            even_sum += num
+    
+    average = total_sum / len(numbers)
+    
+    return even_sum, average
+
+numbers = [2, 4, 6, 8, 10, 1, 3, 5, 7, 9]
+even_sum, average = sum_even_and_average(numbers)
+
+print(f"Sum of even numbers: {even_sum}")
+print(f"Average of all numbers: {average}")
+```
+
+You can run this program with any list of numbers as input and it will output the sum of all the even numbers in the list and the average of all the numbers in the list.
