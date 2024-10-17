@@ -1,0 +1,14 @@
+Here is a Python function that takes a list of integers as input and returns a new list containing only the even numbers in the input list:
+
+```python
+def filter_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    return even_numbers
+
+# Test the function
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = filter_even_numbers(input_list)
+print(result)
+```
+
+In this function, a list comprehension is used to filter out only the even numbers from the input list by checking if each number is divisible by 2 without a remainder. The resulting list of even numbers is then returned.
