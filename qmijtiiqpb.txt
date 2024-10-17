@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Write a program in Python that takes a list of numbers as input and calculates the average of all the numbers. The program should then output the average to the user. Make sure to include error handling in case the user enters non-numeric values."
+
+This prompt should generate at least 20 lines of Python code from LLM.
