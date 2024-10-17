@@ -1,0 +1,22 @@
+import csv
+
+# Read in the CSV file containing student grades
+with open('student_grades.csv', 'r') as file:
+    reader = csv.reader(file)
+    header = next(reader)  # Skip the header row
+    data = [row for row in reader]
+
+# Calculate the average grade for each student
+average_grades = []
+for row in data:
+    student = row[0]
+    grades = [int(grade) for grade in row[1:]]
+    average_grade = sum(grades) / len(grades)
+    average_grades.append([student, average_grade])
+
+# Write the results to a new CSV file
+with open('average_grades.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['Student', 'Average Grade'])
+    for row in average_grades:
+        writer.writerow(row)
