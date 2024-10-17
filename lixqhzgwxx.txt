@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Could you please generate a function in Python that takes in a list of numbers and returns a new list with only the even numbers squared?"
