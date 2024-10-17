@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program in Python that takes in a list of numbers and returns a new list where each element is multiplied by 2. Use functions to separate the logic of multiplying each element and returning the new list.
