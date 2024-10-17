@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you write a program that takes in a list of numbers, removes any duplicates, and then sorts the remaining numbers in descending order? Please write this program in Python."
