@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that calculates the average of a list of numbers in Python, handling both integer and floating-point numbers.
