@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that takes in a list of numbers and calculates the mean, median, and mode of the list in Python.
