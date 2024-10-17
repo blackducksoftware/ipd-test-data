@@ -1,0 +1,16 @@
+```python
+# Input list of numbers from user
+numbers = input("Enter numbers separated by spaces: ")
+numbers_list = numbers.split()
+
+# Convert numbers from string to float
+numbers_list = [float(num) for num in numbers_list]
+
+# Calculate average
+avg = sum(numbers_list) / len(numbers_list)
+
+# Print average
+print("Average: ", avg)
+``` 
+
+This program prompts the user to enter a list of numbers separated by spaces, then splits the input string into a list of numbers. It then calculates the average of these numbers by summing them up and dividing by the total count of numbers. Finally, it prints out the average value.
