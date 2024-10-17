@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM for generating 20+ lines of code in Python:
+
+"Generate a Python program that takes a list of numbers as input and calculates the sum, average, maximum, and minimum of the numbers. The program should also include a function that sorts the list in ascending order and another function that removes duplicates from the list. Finally, the program should have error-handling to handle cases where the input is not a list of numbers."
+
+Feel free to modify the prompt as needed for your specific requirements!
