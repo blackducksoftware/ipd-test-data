@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Can you generate 20+ lines of code in Python that takes a list of numbers as input and outputs the sum of all the positive numbers in the list?"
