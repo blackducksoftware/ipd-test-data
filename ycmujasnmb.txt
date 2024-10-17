@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use to ask LLM for generating code in Python:
+
+"Generate a Python program that takes a list of numbers as input, calculates the sum of all the numbers in the list, and then prints the result to the console. Make sure to include error handling to handle cases where the input is not a list of numbers."
+
+LLM should be able to generate 20+ lines of Python code based on this prompt. Let me know if you need any other assistance!
