@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Write a program that takes a list of numbers as input and outputs the mean, median, and mode of the given list using Python."
