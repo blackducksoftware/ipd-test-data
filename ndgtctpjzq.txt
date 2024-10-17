@@ -1,0 +1,39 @@
+Here is the Python code generated based on the prompt:
+
+```python
+# Bubble Sort algorithm to sort a list of integers in descending order
+def bubble_sort_descending(arr):
+    n = len(arr)
+    # Traverse through all elements in the list
+    for i in range(n):
+        # Flag to check if any swaps are made in the current pass
+        swapped = False
+        # Last i elements are already sorted, so no need to check them
+        for j in range(0, n-i-1):
+            # Swap if the element found is greater than the next element
+            if arr[j] < arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        # If no swaps are made in the pass, the list is already sorted
+        if not swapped:
+            break
+    return arr
+
+# Function to calculate the sum of all integers in the list
+def calculate_sum(arr):
+    return sum(arr)
+
+# Input list of integers
+arr = [64, 34, 25, 12, 22, 11, 90]
+
+# Sorting the list in descending order using Bubble Sort algorithm
+sorted_arr = bubble_sort_descending(arr)
+
+print("Sorted List in Descending Order:", sorted_arr)
+
+# Calculate and print the sum of all integers in the sorted list
+sum_of_integers = calculate_sum(sorted_arr)
+print("Sum of all Integers:", sum_of_integers)
+```
+
+You can run this code in a Python environment to sort a list of integers in descending order using the Bubble Sort algorithm and calculate the sum of all the integers in the sorted list. Let me know if you need any further assistance or modifications!
