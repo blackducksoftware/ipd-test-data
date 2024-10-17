@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Create a program in Python that asks the user to enter a number and then prints out all the prime numbers up to that number."
