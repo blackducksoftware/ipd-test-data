@@ -1,0 +1,29 @@
+Here is a Python program that takes a list of numbers as input and outputs the average, minimum, and maximum numbers in the list:
+
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+def find_min(numbers):
+    return min(numbers)
+
+def find_max(numbers):
+    return max(numbers)
+
+# Input list of numbers
+numbers = [int(x) for x in input("Enter a list of numbers separated by a space: ").split()]
+
+# Calculate average, minimum, and maximum
+average = calculate_average(numbers)
+min_num = find_min(numbers)
+max_num = find_max(numbers)
+
+# Output results
+print("Average:", average)
+print("Minimum:", min_num)
+print("Maximum:", max_num)
+```
+
+You can run this program by copying and pasting it into a Python interpreter or an IDE like PyCharm. When prompted, enter a list of numbers separated by a space, and the program will output the average, minimum, and maximum of those numbers.
