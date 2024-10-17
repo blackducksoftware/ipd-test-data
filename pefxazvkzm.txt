@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Write a program that takes a list of integers as input and returns a new list containing only the odd numbers from the original list. Use a popular programming language for implementation."
