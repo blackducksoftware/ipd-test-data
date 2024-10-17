@@ -1,0 +1,29 @@
+Sure! Here is an example of how you can implement this program in Python:
+
+```python
+def calculate_average(numbers):
+    try:
+        if not numbers:
+            raise ValueError("Input list is empty")
+        
+        total = 0
+        count = 0
+        
+        for num in numbers:
+            if not isinstance(num, (int, float)):
+                raise ValueError("Non-numeric input found")
+            total += num
+            count += 1
+        
+        avg = total / count
+        return avg
+        
+    except ValueError as e:
+        return str(e)
+
+# Test the function with a list of numbers
+numbers = [1, 2, 3, 4, 5]
+print(calculate_average(numbers))
+```
+
+You can run this code in a Python environment and provide a list of numbers to test it out. Let me know if you need the code in another language.
