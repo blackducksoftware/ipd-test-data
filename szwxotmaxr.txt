@@ -1,0 +1,43 @@
+```python
+def bubble_sort(arr, ascending=True):
+    n = len(arr)
+    
+    # Traverse through all array elements
+    for i in range(n):
+        # Flag to check if any swapping is done in current iteration
+        swapped = False
+        
+        # Last i elements are already in place, so we don't need to check them
+        for j in range(n - i - 1):
+            # If current element is greater than the next element for ascending order
+            if ascending and arr[j] > arr[j+1]:
+                # Swap the elements
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+            
+            # If current element is smaller than the next element for descending order
+            if not ascending and arr[j] < arr[j+1]:
+                # Swap the elements
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        
+        # If no swapping is done in the current iteration, array is already sorted
+        if not swapped:
+            break
+    
+    return arr
+
+
+# Test the bubble_sort function
+arr = [64, 34, 25, 12, 22, 11, 90]
+sorted_arr_ascending = bubble_sort(arr.copy(), ascending=True)
+sorted_arr_descending = bubble_sort(arr.copy(), ascending=False)
+
+print("Original Array:", arr)
+print("Sorted Array (Ascending):", sorted_arr_ascending)
+print("Sorted Array (Descending):", sorted_arr_descending)
+```
+
+This program implements the bubble sort algorithm in Python. The `bubble_sort` function takes in a list `arr` and an optional boolean parameter `ascending` to determine whether the list should be sorted in ascending or descending order. The function iterates over the list elements and compares adjacent elements, swapping them if they are in the wrong order. The sorting process continues until no more swaps are needed.
+
+The program tests the `bubble_sort` function with an example list `arr` and prints out the original array, the sorted array in ascending order, and the sorted array in descending order.
