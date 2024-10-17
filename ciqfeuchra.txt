@@ -1,0 +1,19 @@
+Here is a program in Python that does this:
+
+```python
+def sum_even_numbers(numbers):
+    sum_even = 0
+    for number in numbers:
+        if number % 2 == 0:
+            sum_even += number
+    return sum_even
+
+# Taking input from the user
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers = list(map(int, numbers.split()))
+
+# Outputting the sum of all even numbers in the list
+print("Sum of even numbers in the list: ", sum_even_numbers(numbers))
+```
+
+You can run this program in a Python environment and input a list of numbers separated by spaces to get the sum of all the even numbers in that list.
