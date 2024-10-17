@@ -1,0 +1,46 @@
+add a bit for the response
+Prompt: Write a program that takes user input for a number and then generates a Fibonacci sequence using that number as the length. 
+
+LLM response in Python:
+```python
+def fibonacci_sequence(length):
+    sequence = [0, 1]
+    while len(sequence) < length:
+        next_num = sequence[-1] + sequence[-2]
+        sequence.append(next_num)
+    return sequence
+
+user_input = int(input("Enter the length of the Fibonacci sequence: "))
+fib_sequence = fibonacci_sequence(user_input)
+print(fib_sequence)
+```
+
+LLM response in Java:
+```java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class FibonacciSequence {
+    public static ArrayList<Integer> generateFibonacciSequence(int length) {
+        ArrayList<Integer> sequence = new ArrayList<>();
+        sequence.add(0);
+        sequence.add(1);
+        
+        while(sequence.size() < length) {
+            int nextNum = sequence.get(sequence.size() - 1) + sequence.get(sequence.size() - 2);
+            sequence.add(nextNum);
+        }
+        
+        return sequence;
+    }
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the length of the Fibonacci sequence: ");
+        int userLength = input.nextInt();
+        
+        ArrayList<Integer> fibSequence = generateFibonacciSequence(userLength);
+        System.out.println(fibSequence);
+    }
+}
+```
