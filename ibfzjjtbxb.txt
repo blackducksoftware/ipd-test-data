@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Write a program in Python that takes a list of numbers as input, sorts the list in ascending order, removes any duplicate numbers, and then calculates the average of the remaining numbers in the list. Print the sorted list without duplicates and the average of the numbers.
+
+Please provide the list of numbers as input to the program.
