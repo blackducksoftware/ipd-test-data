@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Please generate a program that takes in a list of numbers as input and outputs the square of each number in the list. The program should include error handling to ensure that only numbers are accepted as input. Choose any popular programming language for this task. Thank you!"
