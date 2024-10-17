@@ -1,0 +1,23 @@
+def calculate_average(num_list):
+    if not num_list:
+        return "List is empty"
+
+    total = 0
+    count = 0
+
+    for num in num_list:
+        if not isinstance(num, int):
+            return "Error: List contains non-integer values"
+        total += num
+        count += 1
+
+    if count == 0:
+        return "Error: List contains no integers"
+    
+    return total / count
+
+# Test Cases
+print(calculate_average([1, 2, 3, 4, 5]))  # Output: 3.0
+print(calculate_average([]))  # Output: List is empty
+print(calculate_average([1, 2, 'a', 4, 'b']))  # Output: Error: List contains non-integer values
+print(calculate_average(['a', 'b', 'c']))  # Output: Error: List contains non-integer values
