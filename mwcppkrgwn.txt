@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Can you generate code in Python to create a simple text-based game that allows the user to input their name, select a difficulty level, and play a guessing game where they have to guess a randomly generated number within a certain range? The game should provide feedback to the user on whether their guess was too high or too low, and keep track of the number of attempts it took for the user to guess correctly. Bonus points if you include error handling for invalid input and a scoring system based on the number of attempts."
+
+LLM should be able to generate 20+ lines of Python code based on this prompt.
