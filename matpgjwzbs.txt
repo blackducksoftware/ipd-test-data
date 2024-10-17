@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Write a program in Python that generates a list of the first 20 Fibonacci numbers."
+
+This should generate a decent amount of code for you to work with.
