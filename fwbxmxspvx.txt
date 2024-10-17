@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that generates a random password consisting of a combination of uppercase and lowercase letters, numbers, and symbols. The program should prompt the user for the length of the password and then display the randomly generated password.
