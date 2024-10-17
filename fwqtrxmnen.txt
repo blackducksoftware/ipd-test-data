@@ -1,0 +1,24 @@
+```python
+# Function to calculate average of a list of numbers
+def calculate_average(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+
+    average = total / len(numbers)
+    return average
+
+# Get input from user
+num_list = []
+num_count = int(input("Enter the number of elements in the list: "))
+
+for i in range(num_count):
+    num = float(input(f"Enter number {i+1}: "))
+    num_list.append(num)
+
+# Call the calculate_average function and print the result
+avg = calculate_average(num_list)
+print("The average of the list is:", avg)
+```
+
+This program first defines a function `calculate_average` that takes a list of numbers as input and returns the average of those numbers. It then prompts the user to enter the number of elements in the list and the list of numbers itself. Finally, it calculates the average of the list using the `calculate_average` function and prints the result.
