@@ -1,0 +1,26 @@
+Here is a Python program that fulfills the given prompt:
+
+```python
+def sum_even_numbers(numbers):
+    total = 0
+    
+    for num in numbers:
+        if isinstance(num, int):
+            if num % 2 == 0:
+                total += num
+        else:
+            raise ValueError("Invalid input. Please provide a list of integers.")
+
+    return total
+
+# Example input
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+try:
+    result = sum_even_numbers(numbers)
+    print(f"The sum of even numbers in the list is: {result}")
+except ValueError as e:
+    print(e)
+```
+
+This Python program defines a function `sum_even_numbers` that takes a list of numbers as input and returns the sum of all the even numbers in the list. It includes error handling to ensure that the input is valid (i.e., a list of integers). The program then demonstrates the function by calculating the sum of even numbers in the example input list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
