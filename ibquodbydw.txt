@@ -1,0 +1,25 @@
+Here is a Python code snippet that fulfills the prompt:
+
+```python
+def get_even_numbers(input_list):
+    try:
+        # Check if input_list is a valid list of integers
+        if not all(isinstance(x, int) for x in input_list):
+            raise ValueError('Input should be a list of integers')
+
+        # Filter even numbers from the input list
+        even_numbers = [x for x in input_list if x % 2 == 0]
+
+        return even_numbers
+    except ValueError as e:
+        print(e)
+
+# Test the function
+input_list = [1, 2, 3, 4, 5, 6]
+print(get_even_numbers(input_list))  # Output: [2, 4, 6]
+
+input_list = [1, '2', 3, 4, 5, 6]
+print(get_even_numbers(input_list))  # Output: Input should be a list of integers
+```
+
+You can test the `get_even_numbers` function with different input lists to verify its functionality. Let me know if you need any further assistance or modifications!
