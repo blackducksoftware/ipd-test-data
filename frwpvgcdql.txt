@@ -1,0 +1,7 @@
+Both the Python and Java programs above accomplish the same task of computing the average of a list of numbers entered by the user. 
+
+The Python program uses a list to store the numbers and calculates the total sum of all numbers in the list. It then divides this total sum by the number of entries to compute the average. Finally, it prints out the average to the user.
+
+The Java program achieves the same by using a Scanner object to read input from the user. It also calculates the total sum of the numbers entered and then computes the average by dividing the total sum by the number of entries. The average is then displayed to the user. 
+
+Both programs are straightforward and efficient in calculating the average of a list of numbers provided by the user.
