@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM: 
+
+"Can you please generate a program in Python that uses a for loop to print out the first 20 numbers of the Fibonacci sequence?" 
+
+This should result in LLM generating over 20 lines of Python code that calculates and prints out the Fibonacci sequence.
