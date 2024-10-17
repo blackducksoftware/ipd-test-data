@@ -1,0 +1,4 @@
+add a bit for the response
+Here is a prompt you can ask LLM: 
+
+"Can you generate a Python program that simulates a simple text-based tic-tac-toe game? The program should allow two players to take turns inputting their moves on a 3x3 grid, and should check for a winner after each move. If there is a winner, the program should declare the winner and end the game. If the game ends in a tie, the program should declare a tie and end the game. The program should also display the current state of the grid after each move. Thank you!"
