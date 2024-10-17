@@ -1,0 +1,6 @@
+add a bit for the response
+Prompt: Write a program that takes a list of numbers as input and outputs the sum of all the even numbers in the list. 
+
+Expected output: A program that loops through the list, identifies even numbers, and adds them together to produce the sum of all even numbers in the list. 
+
+Programming language: Python
