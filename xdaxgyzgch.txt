@@ -1,0 +1,17 @@
+```python
+def generate_fibonacci(limit):
+    fibonacci_list = []
+    a, b = 0, 1
+    
+    while a <= limit:
+        fibonacci_list.append(a)
+        a, b = b, a + b
+        
+    return fibonacci_list
+
+limit = int(input("Enter the limit for Fibonacci numbers: "))
+fibonacci_numbers = generate_fibonacci(limit)
+print(fibonacci_numbers)
+``` 
+
+When you run the above program, it will ask you to enter the limit for Fibonacci numbers. After you enter the limit, the program will generate a list of Fibonacci numbers up to that limit and print them out.
