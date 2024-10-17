@@ -1,0 +1,21 @@
+Sure! Here's a Python script that uses a for loop to iterate over a list of numbers and calculates the sum of all the even numbers in the list:
+
+```python
+# Define a list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Initialize a variable to store the sum of even numbers
+even_sum = 0
+
+# Iterate over the list of numbers
+for num in numbers:
+    # Check if the number is even
+    if num % 2 == 0:
+        # Add the even number to the sum
+        even_sum += num
+
+# Print the total sum of even numbers
+print("The sum of even numbers in the list is:", even_sum)
+```
+
+This script will iterate over the list of numbers, check if each number is even, and add the even numbers to the `even_sum` variable. Finally, it will print out the total sum of all the even numbers in the list.
