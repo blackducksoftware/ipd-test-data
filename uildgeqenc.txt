@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a program in Python that simulates a simple banking system. The program should allow users to create an account, deposit funds, withdraw funds, check their balance, and transfer funds to other accounts. Make sure to include error-checking and validation for user inputs, as well as appropriate feedback messages for each action performed.
