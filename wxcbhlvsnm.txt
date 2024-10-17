@@ -1,0 +1,20 @@
+Sure! Here is a Python program based on the prompt you provided:
+
+```python
+# Read a list of integers from user input
+numbers = list(map(int, input("Enter a list of integers separated by spaces: ").split()))
+
+# Calculate the sum of all numbers in the list
+sum_numbers = sum(numbers)
+
+# Find the maximum and minimum numbers in the list
+max_number = max(numbers)
+min_number = min(numbers)
+
+# Print the sum, maximum, and minimum numbers
+print(f"Sum of all numbers: {sum_numbers}")
+print(f"Maximum number: {max_number}")
+print(f"Minimum number: {min_number}")
+```
+
+This program will prompt the user to enter a list of integers separated by spaces, calculate the sum of all the numbers in the list, and then print the sum along with the maximum and minimum numbers in the list. Feel free to run this program and make modifications as needed!
