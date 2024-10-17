@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Generate a function in Python that takes a list of numbers as input and returns the sum of all even numbers in the list. Include error handling to account for non-numeric inputs and return an error message if any are found.
