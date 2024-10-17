@@ -1,0 +1,27 @@
+```python
+def fibonacci_sequence(n):
+    fib_sequence = [0, 1]
+    
+    for i in range(2, n):
+        next_num = fib_sequence[i-1] + fib_sequence[i-2]
+        if next_num <= n:
+            fib_sequence.append(next_num)
+        else:
+            break
+    
+    return fib_sequence
+
+user_input = int(input("Enter a number: "))
+fibonacci_numbers = fibonacci_sequence(user_input)
+
+print("Fibonacci sequence up to", user_input, ":")
+for num in fibonacci_numbers:
+    print(num, end=' ')
+```
+(example) 
+
+```
+Enter a number: 30
+Fibonacci sequence up to 30 :
+0 1 1 2 3 5 8 13 21 
+```
