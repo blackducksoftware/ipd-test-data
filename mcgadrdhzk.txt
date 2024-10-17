@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program that generates a Fibonacci sequence of numbers up to a user-specified limit. The program should prompt the user to enter a number N, and then output the Fibonacci sequence up to the Nth number. The program should be written in Python.
