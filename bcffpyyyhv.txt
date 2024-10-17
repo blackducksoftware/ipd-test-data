@@ -1,0 +1,24 @@
+Sure! Here's an example script that achieves the task you described:
+
+```python
+import pandas as pd
+
+try:
+    # Read the CSV file 'data.csv' into a DataFrame
+    df = pd.read_csv('data.csv')
+    
+    # Extract the 'name' column from the DataFrame
+    names = df['name'].unique().tolist()
+    
+    # Print the list of unique values in the 'name' column
+    print(names)
+    
+except FileNotFoundError:
+    print("Error: The file 'data.csv' was not found.")
+except KeyError:
+    print("Error: The 'name' column was not found in the CSV file.")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
+```
+
+You can run this script in a Python environment with the 'pandas' library installed to read the CSV file and output the unique values in the 'name' column. Make sure to replace 'data.csv' with the actual path to your CSV file. Let me know if you need any further assistance!
