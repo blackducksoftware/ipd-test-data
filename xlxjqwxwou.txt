@@ -1,0 +1,16 @@
+Sure! Here is an example of a program in Python that does this:
+
+```python
+def sum_even_numbers(numbers):
+    total = 0
+    for num in numbers:
+        if num % 2 == 0:
+            total += num
+    return total
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = sum_even_numbers(numbers)
+print("The sum of all even numbers in the list is:", result)
+```
+
+This program defines a function `sum_even_numbers` that takes a list of numbers as input. It then iterates over each number in the list and checks if it is even by dividing it by 2 and checking if there is a remainder. If the number is even, it adds it to the `total` variable. Finally, it returns the total sum of all even numbers in the list. The program then creates a list of numbers and calls the `sum_even_numbers` function with that list, printing the result.
