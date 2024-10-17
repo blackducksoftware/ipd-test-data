@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate code for:
+
+Prompt: Generate code in Python that reads a list of numbers from a file, sorts the list in ascending order, removes any duplicates, and then calculates the average of the remaining numbers.
+
+LLM should be able to generate 20+ lines of Python code based on this prompt.
