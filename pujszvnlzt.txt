@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Prompt: Write a program that takes in a list of integers and returns the sum of all even integers in the list.
+
+You can ask LLM to generate the code in a popular programming language such as Python, Java, C++, or JavaScript.
