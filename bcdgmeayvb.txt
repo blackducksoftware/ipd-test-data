@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! You can ask LLM to generate code that calculates the Fibonacci sequence up to a certain number in Python. Here's a prompt you can use:
+
+"Write a Python program that calculates and prints the Fibonacci sequence up to the 20th number. Your code should use a loop or recursion to generate the sequence."
