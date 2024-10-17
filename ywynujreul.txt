@@ -1,0 +1,16 @@
+Here's a Python program that generates the first 20 Fibonacci numbers:
+
+```python
+def generate_fibonacci(n):
+    fib_list = [0, 1]
+    
+    while len(fib_list) < n:
+        fib_list.append(fib_list[-1] + fib_list[-2])
+    
+    return fib_list
+
+fibonacci_numbers = generate_fibonacci(20)
+print(fibonacci_numbers)
+```
+
+Copy and paste this code into a Python environment (e.g. Jupyter Notebook, Python shell) and run it to see the first 20 Fibonacci numbers printed out.
