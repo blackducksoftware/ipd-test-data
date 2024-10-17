@@ -1,0 +1,14 @@
+Here is a Python program that takes in a list of numbers and returns a new list containing only the even numbers, sorted in descending order:
+
+```python
+def even_sorted(numbers):
+    even_numbers = [x for x in numbers if x % 2 == 0]
+    even_numbers.sort(reverse=True)
+    return even_numbers
+
+numbers = [23, 56, 11, 78, 45, 32, 41, 88]
+result = even_sorted(numbers)
+print(result)
+```
+
+When you run this program with the input list `[23, 56, 11, 78, 45, 32, 41, 88]`, it will output `[88, 78, 56, 32]`, which contains only the even numbers sorted in descending order.
