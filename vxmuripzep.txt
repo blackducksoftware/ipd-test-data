@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Write a program in Python that takes a list of numbers as input and outputs the square of each number in the list. The program should also calculate the sum of all the squared numbers and print the result."
+
+This prompt should generate at least 20 lines of Python code.
