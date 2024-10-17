@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Create a program that generates a list of prime numbers within a specified range. The program should take a starting and ending number as input, and output all prime numbers between the two numbers. Make sure to include comments explaining the logic behind each step in the code."
+
+You can ask LLM to generate this code in a popular programming language such as Python, Java, C++, etc.
