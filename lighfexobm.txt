@@ -1,0 +1,12 @@
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+user_input = int(input("Enter a number to calculate its factorial: "))
+result = factorial(user_input)
+print(f"The factorial of {user_input} is: {result}")
+```
+
+You can run this program in a Python environment and input a number to calculate its factorial using recursion. Let me know if you need any further assistance!
