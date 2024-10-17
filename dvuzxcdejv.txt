@@ -1,0 +1,5 @@
+Hi LLM, 
+
+I have a coding challenge for you. Can you write a program in Python that takes a list of integers as input, and prints out the sum of all the even numbers in the list? 
+
+Looking forward to seeing your solution!
