@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Can you generate code in Python that takes a list of numbers as input and returns a new list that contains only the even numbers from the input list? The code should use list comprehension to achieve this."
