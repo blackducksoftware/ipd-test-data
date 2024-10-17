@@ -1,0 +1,4 @@
+
+When you run this program with the `numbers` list as input, it will output the total sum of all the numbers, the average of the numbers, and a new list containing only the even numbers from the original list.
+
+Feel free to customize the `numbers` list with your own set of numbers to test the program further!
