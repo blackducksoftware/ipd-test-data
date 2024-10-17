@@ -1,0 +1,32 @@
+```python
+import statistics
+
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+def calculate_median(numbers):
+    return statistics.median(numbers)
+
+def calculate_mode(numbers):
+    try:
+        return statistics.mode(numbers)
+    except statistics.StatisticsError:
+        return "No mode found"
+
+def main():
+    numbers = input("Enter a list of numbers (separated by spaces): ").split()
+    numbers = [int(num) for num in numbers]
+
+    mean = calculate_mean(numbers)
+    median = calculate_median(numbers)
+    mode = calculate_mode(numbers)
+
+    print("Mean:", mean)
+    print("Median:", median)
+    print("Mode:", mode)
+
+if __name__ == "__main__":
+    main()
+```
+
+To use this program, run it in a Python environment and follow the prompt to enter a list of numbers separated by spaces. The program will then calculate and display the mean, median, and mode of the given list of numbers.
