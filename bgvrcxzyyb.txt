@@ -1,0 +1,57 @@
+Here is an example program in Python that implements the simple shopping cart simulation:
+
+```python
+class Item:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def remove_item(self, item):
+        self.items.remove(item)
+
+    def display_items(self):
+        for item in self.items:
+            print(f"{item.name}: ${item.price}")
+
+    def calculate_total(self):
+        total = sum([item.price for item in self.items])
+        print(f"Total cost: ${total}")
+
+    def checkout(self):
+        self.calculate_total()
+        print("Thank you for shopping with us!")
+        self.items = []
+
+# Create some items
+item1 = Item("Banana", 1)
+item2 = Item("Apple", 2)
+item3 = Item("Orange", 3)
+
+# Create a shopping cart
+cart = ShoppingCart()
+
+# Add items to the cart
+cart.add_item(item1)
+cart.add_item(item2)
+cart.add_item(item3)
+
+# Display items in the cart
+cart.display_items()
+
+# Calculate total cost
+cart.calculate_total()
+
+# Checkout
+cart.checkout()
+```
+
+This program defines two classes, `Item` and `ShoppingCart`, to model the items and the shopping cart. Items have a name and a price, and the shopping cart has a list of items. The methods in the `ShoppingCart` class allow you to add and remove items, display items in the cart, calculate the total cost, and complete the purchase.
+
+You can run this program in a Python environment to simulate a simple shopping cart. Feel free to customize and expand on this program to add more features and functionalities!
