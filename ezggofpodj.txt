@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Write a program that simulates a game of hangman. The program should randomly choose a word from a list of predefined words, display the word as a series of underscores to indicate the number of letters in the word, allow the user to guess individual letters, and update the displayed word with the correctly guessed letters. The program should also keep track of the number of incorrect guesses made by the user and display a hangman figure as a visual representation of the number of incorrect guesses. The game should continue until the user either guesses the word correctly or runs out of incorrect guesses."
