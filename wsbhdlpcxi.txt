@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a programming prompt you can use to ask LLM to generate 20+ lines of code in any popular programming language:
+
+Prompt: Create a program that simulates a simple banking system. The program should allow users to create accounts, deposit and withdraw funds, and check their balance. Be sure to include error handling for invalid inputs and account balances. You can use any programming language of your choice.
+
+Feel free to adjust the prompt as needed, and LLM should be able to generate code based on your specifications.
