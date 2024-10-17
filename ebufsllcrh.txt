@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you please generate 20+ lines of code in Python that creates a simple web scraper to extract data from a specific website and saves it to a CSV file?"
