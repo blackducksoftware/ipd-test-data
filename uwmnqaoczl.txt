@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! You can ask LLM to generate code for implementing a basic calculator in Python. Here is a prompt you can use:
+
+"Generate Python code for a basic calculator program that can add, subtract, multiply, and divide two numbers input by the user. The program should continue running until the user chooses to exit. Please use appropriate error handling for division by zero and invalid input."
+
+This prompt should be enough to generate 20+ lines of Python code for a simple calculator program.
