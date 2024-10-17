@@ -1,0 +1,21 @@
+Here is a sample Python program that fulfills the given prompt:
+
+```python
+def calculate_median(numbers):
+    numbers.sort(reverse=True)
+    n = len(numbers)
+    if n % 2 == 0:
+        median = (numbers[n//2 - 1] + numbers[n//2]) / 2
+    else:
+        median = numbers[n//2]
+    return median
+
+user_input = input("Enter a list of numbers separated by spaces: ")
+numbers = [int(num) for num in user_input.split()]
+
+median = calculate_median(numbers)
+print(f"The sorted list is: {sorted(numbers, reverse=True)}")
+print(f"The median of the sorted list is: {median}")
+```
+
+You can run this program in a Python environment and input a list of numbers. It will then sort them in descending order and calculate the median of the sorted list. Feel free to modify or expand upon this program as needed!
