@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Write a program in Python that calculates the Fibonacci sequence up to a user-specified number of terms and prints the result. Bonus points if you can include error handling for invalid inputs."
+
+Feel free to adjust the prompt as needed for your specific requirements.
