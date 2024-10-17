@@ -1,0 +1,35 @@
+Here's an example Python program that accomplishes this task:
+
+```python
+import statistics
+
+def calculate_stats(input_list):
+    try:
+        if not input_list:
+            raise ValueError("Input list is empty")
+        
+        numbers = [float(num) for num in input_list]
+        
+        mean = sum(numbers) / len(numbers)
+
+        median = statistics.median(numbers)
+
+        mode = statistics.multimode(numbers)
+
+        print(f"Mean: {mean}")
+        print(f"Median: {median}")
+        print(f"Mode(s): {', '.join([str(m) for m in mode])}")
+
+    except ValueError as e:
+        print(f"Error: {e}")
+    except statistics.StatisticsError:
+        print("Error: No mode found in the input list")
+    except Exception as e:
+        print(f"Error: {e}")
+
+# Test the program
+test_list = [1, 2, 3, 4, 4, 5, 6, 6, 6]
+calculate_stats(test_list)
+```
+
+This program defines a function `calculate_stats` that takes a list of numbers as input, calculates the mean, median, and mode using the `statistics` module in Python, and then displays the results. It includes error handling for empty lists, non-numeric values, and cases where there are no mode found in the input list. Finally, it tests the program with a sample list `[1, 2, 3, 4, 4, 5, 6, 6, 6]`.
