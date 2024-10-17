@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Please generate a program in Python that simulates a banking system. The program should include classes for a bank account, with methods for deposit, withdrawal, and checking the balance. It should also include error handling for insufficient funds and a user interface for interacting with the account."
