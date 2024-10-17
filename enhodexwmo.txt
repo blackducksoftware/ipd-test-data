@@ -1,0 +1,39 @@
+```python
+import random
+
+def roll_dice(num_dice, num_sides):
+    rolls = []
+    total = 0
+    
+    for _ in range(num_dice):
+        roll = random.randint(1, num_sides)
+        rolls.append(roll)
+        total += roll
+        
+    return rolls, total
+
+def dice_game():
+    num_dice = int(input("Enter the number of dice: "))
+    num_sides = int(input("Enter the number of sides on each dice: "))
+    
+    num_rolls = 0
+    total_sum = 0
+    
+    while True:
+        rolls, total = roll_dice(num_dice, num_sides)
+        num_rolls += 1
+        total_sum += total
+        
+        print(f"Roll {num_rolls}: {rolls} Total: {total}")
+        
+        play_again = input("Do you want to roll again? (Y/N): ")
+        if play_again.lower() != 'y':
+            break
+    
+    average_roll = total_sum / num_rolls
+    print(f"Average roll result: {average_roll}")
+    
+dice_game()
+```
+
+This program allows the user to input the number of dice and sides on each dice, and then simulates a dice roll game where the user can roll the dice multiple times. The program keeps track of the number of rolls and displays the total sum of all the rolls. At the end of the game, the program calculates the average roll result and displays it to the user.
