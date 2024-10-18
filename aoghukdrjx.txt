@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Generate code in Python that takes a list of numbers as input and calculates the mean, median, and mode of the numbers. Make sure to handle cases where there is no mode or multiple modes. Include comments to explain each step of the calculation process."
