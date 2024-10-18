@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Write a program that generates a Fibonacci sequence up to a specified number of terms. The program should take user input for the number of terms and output the resulting Fibonacci sequence. You can choose any popular programming language to implement this program."
