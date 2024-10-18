@@ -1,0 +1,22 @@
+add a bit for the response
+Prompt: Write a program in Python that takes a list of numbers as input and calculates the average of the positive numbers in the list. If there are no positive numbers, the program should return 0.
+
+LLM-generated code (Python):
+
+```
+def calculate_average_positive_numbers(numbers):
+    positive_numbers = [num for num in numbers if num > 0]
+    
+    if len(positive_numbers) == 0:
+        return 0
+    
+    sum_positive_numbers = sum(positive_numbers)
+    average_positive_numbers = sum_positive_numbers / len(positive_numbers)
+    
+    return average_positive_numbers
+    
+numbers = [10, -5, 3, -2, 7, -9]
+
+average = calculate_average_positive_numbers(numbers)
+print("The average of positive numbers in the list is:", average)
+```
