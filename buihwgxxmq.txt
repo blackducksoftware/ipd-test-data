@@ -1,0 +1,14 @@
+```python
+def filter_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    even_sum = sum(even_numbers)
+    return even_numbers, even_sum
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers_list, even_sum = filter_even_numbers(input_list)
+
+print("Even numbers from the original list:", even_numbers_list)
+print("Sum of even numbers in the new list:", even_sum)
+```
+
+This program will take the input list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, filter out the even numbers, and then print the new list of even numbers along with the sum of all even numbers in the list.
