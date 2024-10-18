@@ -1,0 +1,21 @@
+Here's a Python program that achieves this:
+
+```python
+from itertools import combinations
+
+def find_combinations(nums):
+    result = []
+    for r in range(2, len(nums)+1):
+        for comb in combinations(nums, r):
+            result.append(comb)
+    return result
+
+# Test the program with an example list of integers
+nums = [1, 2, 3]
+combinations_list = find_combinations(nums)
+print(combinations_list)
+```
+
+This program defines a function `find_combinations` that takes a list of integers as input and returns all possible unique combinations of those integers, with each combination containing at least two numbers. The program uses the `combinations` function from the `itertools` module to generate all possible combinations of the integers in the input list. The program then iterates over different values of `r` (number of integers in each combination) to generate combinations of varying lengths. Finally, the program prints the list of all generated combinations. 
+
+You can test this program by running it with a list of integers of your choice.
