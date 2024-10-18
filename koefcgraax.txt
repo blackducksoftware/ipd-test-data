@@ -1,0 +1,30 @@
+Sure! Here's a sample code that does exactly that:
+
+```python
+def create_movie_lists():
+    movies = {}
+    
+    while True:
+        movie_title = input("Enter the title of your favorite movie (type 'done' to finish): ")
+        if movie_title.lower() == 'done':
+            break
+        genre = input("Enter the genre of the movie: ")
+        
+        if genre in movies:
+            movies[genre].append(movie_title)
+        else:
+            movies[genre] = [movie_title]
+    
+    return movies
+
+favorite_movies = create_movie_lists()
+
+for genre, movies_list in favorite_movies.items():
+    print(f"\n{genre} movies:")
+    for movie in movies_list:
+        print(movie)
+```
+
+This code defines a function `create_movie_lists` which prompts the user to input their favorite movies along with their genres. It then creates a dictionary `favorite_movies` where each key is a genre and the corresponding value is a list of movies in that genre. Finally, it prints out the movies organized by genre.
+
+You can run this code in a Python environment and test it out by entering your favorite movies and their genres when prompted. Let me know if you need any further assistance!
