@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt to ask LLM to generate 20+ lines of code in Python:
+
+Write a program that takes a list of numbers as input and calculates the average of those numbers. Then, create a function that takes two parameters: a list of numbers and a target number. The function should return True if the target number is in the list, and False otherwise. Finally, create a loop that asks the user to input a target number and uses the function to check if the target number is in the list. Print out whether the target number was found or not.
