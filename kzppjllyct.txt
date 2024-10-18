@@ -1,0 +1,31 @@
+Sure! Here is the Python program that accomplishes that task:
+
+```python
+def check_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def generate_primes_up_to(limit):
+    primes = []
+    for i in range(2, limit + 1):
+        if check_prime(i):
+            primes.append(i)
+    return primes
+
+def main():
+    limit = int(input("Enter a number to generate prime numbers up to: "))
+    prime_list = generate_primes_up_to(limit)
+    print("Prime numbers up to", limit, ":", prime_list)
+    
+    prime_sum = sum(prime_list)
+    print("Sum of prime numbers up to", limit, ":", prime_sum)
+
+if __name__ == "__main__":
+    main()
+```
+
+When you run this program and input a number, it will generate a list of prime numbers up to that number and then calculate the sum of all prime numbers in the list.
