@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use to generate code in a popular programming language:
+
+Prompt: Write a program that calculates the sum of all even numbers up to a given input number. Display the total sum at the end.
+
+This prompt can be used to generate 20+ lines of code in languages like Python, JavaScript, Java, C++, or any other language of your choice.
