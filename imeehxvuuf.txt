@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that takes in a list of integers and returns the sum of all the even numbers in the list.
