@@ -1,0 +1,37 @@
+```python
+# Function to sort list in descending order
+def sort_descending(input_list):
+    input_list.sort(reverse=True)
+    return input_list
+
+# Function to calculate average of elements in list
+def calculate_average(input_list):
+    return sum(input_list) / len(input_list)
+
+try:
+    # Taking user input for number of elements in list
+    num_elements = int(input("Enter the number of elements in the list: "))
+    
+    # Creating an empty list to store elements
+    elements = []
+    
+    # Taking user input for each element
+    for i in range(num_elements):
+        element = int(input(f"Enter element {i+1}: "))
+        elements.append(element)
+    
+    # Sorting the list in descending order
+    sorted_list = sort_descending(elements)
+    
+    # Calculating and printing the average of elements
+    average = calculate_average(elements)
+    
+    print(f"Sorted list in descending order: {sorted_list}")
+    print(f"Average of elements in the list: {average}")
+    
+except ValueError:
+    print("Error: Please enter a valid number.")
+except:
+    print("Error: An unknown error occurred. Please try again.")
+```
+This program takes user input for the number of elements in a list, prompts the user to enter each element, sorts the list in descending order, calculates the average of the elements, and displays the results. It includes appropriate comments and error handling for invalid input.
