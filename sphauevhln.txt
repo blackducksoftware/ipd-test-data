@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you please write a program in Python that takes a list of numbers as input, sorts them in descending order, removes any duplicates, and then calculates the average of the remaining numbers?
