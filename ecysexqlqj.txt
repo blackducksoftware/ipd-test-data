@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Generate a program in Python that reads a text file, counts the frequency of each word in the file, and sorts the words in descending order of frequency. Additionally, print out the top 10 most commonly occurring words in the file.
