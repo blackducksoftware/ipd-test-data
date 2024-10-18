@@ -1,0 +1,19 @@
+```python
+def calculate_square(numbers):
+    squares = [num**2 for num in numbers]
+    return squares
+
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5]
+
+# Calculate the square of each number
+result = calculate_square(numbers)
+
+# Output the results
+print(result)
+```
+
+Output:
+```
+[1, 4, 9, 16, 25]
+```
