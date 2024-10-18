@@ -1,0 +1,23 @@
+Here's one way you could write a Python program to generate a list of the first 20 prime numbers:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+prime_numbers = []
+num = 2
+
+while len(prime_numbers) < 20:
+    if is_prime(num):
+        prime_numbers.append(num)
+    num += 1
+
+print(prime_numbers)
+```
+
+This program defines a function `is_prime()` that checks whether a given number is prime. It then initializes an empty list `prime_numbers` and starts checking numbers starting from 2 (the smallest prime number) until the list contains 20 prime numbers. Finally, it prints the list of the first 20 prime numbers.
