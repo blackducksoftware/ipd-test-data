@@ -1,0 +1,25 @@
+```python
+def generate_fibonacci(limit):
+    fib_sequence = [0, 1]
+    
+    while True:
+        next_num = fib_sequence[-1] + fib_sequence[-2]
+        if next_num <= limit:
+            fib_sequence.append(next_num)
+        else:
+            break
+    
+    return fib_sequence
+
+# Get user input for the limit
+limit = int(input("Enter the limit for the Fibonacci sequence: "))
+
+if limit < 0:
+    print("Please enter a positive number.")
+else:
+    fibonacci_sequence = generate_fibonacci(limit)
+    print("Fibonacci sequence up to {}:".format(limit))
+    print(fibonacci_sequence)
+```
+
+This program defines a function `generate_fibonacci()` that generates the Fibonacci sequence up to a user-specified limit. It then takes user input for the limit, generates the Fibonacci sequence, and prints it out.
