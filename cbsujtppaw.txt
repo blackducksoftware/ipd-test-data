@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate a program in Python that takes a list of numbers as input, finds the sum of the even numbers in the list, and prints the result. The program should also include a function that calculates the sum of all the numbers in the list."
