@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM for generating code in a popular programming language:
+
+"Can you create a program in Python that takes a list of integers as input and outputs the total sum of the even numbers in the list? Additionally, provide a function that calculates the average of all numbers in the list. Make sure to include comments to explain the logic behind each function."
