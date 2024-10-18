@@ -1,0 +1,29 @@
+Here is an example code in Python:
+
+```python
+import random
+import string
+
+def generate_password(length, use_numbers, use_special_characters, use_uppercase):
+    chars = string.ascii_letters
+    if use_numbers:
+        chars += string.digits
+    if use_special_characters:
+        chars += string.punctuation
+    if use_uppercase:
+        chars += string.ascii_uppercase
+
+    password = ''.join(random.choice(chars) for _ in range(length))
+    return password
+
+length = int(input("Enter the desired length of the password: "))
+use_numbers = input("Include numbers? (y/n): ") == 'y'
+use_special_characters = input("Include special characters? (y/n): ") == 'y'
+use_uppercase = input("Include uppercase letters? (y/n): ") == 'y'
+
+password = generate_password(length, use_numbers, use_special_characters, use_uppercase)
+
+print("Generated password: " + password)
+```
+
+You can copy and paste this code into a Python environment and run it. It will prompt the user for the desired length and preferences for numbers, special characters, and uppercase letters, then generate a random password based on their preferences.
