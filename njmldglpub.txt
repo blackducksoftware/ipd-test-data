@@ -1,0 +1,35 @@
+Here is a Python program that accomplishes the given prompt:
+
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    return total / len(numbers)
+
+def determine_above_below_average(numbers, avg):
+    result = []
+    for num in numbers:
+        if num > avg:
+            result.append("above")
+        elif num < avg:
+            result.append("below")
+        else:
+            result.append("equal")
+    return result
+
+# Get input from the user
+num_list = input("Enter a list of numbers separated by spaces: ")
+numbers = [int(num) for num in num_list.split()]
+
+# Calculate the average
+avg = calculate_average(numbers)
+
+# Determine if each number is above or below the average
+result = determine_above_below_average(numbers, avg)
+
+# Print the results
+print(f"The average of the numbers is: {avg}")
+for i, num in enumerate(numbers):
+    print(f"{num} is {result[i]} the average.")
+```
+
+You can run this program in any Python environment and input a list of numbers separated by spaces when prompted. The program will then calculate the average of the numbers and determine if each number is above or below the average.
