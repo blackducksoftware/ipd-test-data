@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you help me write a program that calculates the average of a list of numbers in Python?"
