@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you help me generate code that reads a CSV file, filters out all rows where the value in the 'price' column is less than $50, and then saves the filtered data to a new CSV file in Python?"
