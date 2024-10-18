@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program in Python that takes a list of numbers as input and sorts the list in descending order using the bubble sort algorithm. The program should prompt the user to enter the numbers as comma-separated values. Display the sorted list as output.
