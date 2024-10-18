@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that reads in a list of numbers from a file, calculates the average of those numbers, and then outputs the average to the user in [programming language of choice].
