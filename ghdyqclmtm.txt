@@ -1,0 +1,64 @@
+Here is a simple implementation of a blackjack game in Python:
+
+```python
+import random
+
+def deal_card():
+    cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11]
+    return random.choice(cards)
+
+def calculate_score(cards):
+    score = sum(cards)
+    if score > 21 and 11 in cards:
+        cards.remove(11)
+        cards.append(1)
+        score = sum(cards)
+    return score
+
+def blackjack_game():
+    player_cards = [deal_card(), deal_card()]
+    dealer_cards = [deal_card(), deal_card()]
+
+    print("Welcome to Blackjack!")
+    print(f"Player's cards: {player_cards}")
+    print(f"Dealer's cards: [{dealer_cards[0]}, X]")
+
+    player_score = calculate_score(player_cards)
+    dealer_score = calculate_score(dealer_cards)
+
+    if player_score == 21:
+        print("Blackjack! You win!")
+        return
+
+    while player_score < 21:
+        choice = input("Do you want to hit or stand? ").lower()
+        if choice == "hit":
+            player_cards.append(deal_card())
+            player_score = calculate_score(player_cards)
+            print(f"Player's cards: {player_cards}")
+            print(f"Player's score: {player_score}")
+        elif choice == "stand":
+            break
+
+    while dealer_score < 17:
+        dealer_cards.append(deal_card())
+        dealer_score = calculate_score(dealer_cards)
+
+    print(f"Player's final score: {player_score}")
+    print(f"Dealer's final score: {dealer_score}")
+
+    if player_score > 21:
+        print("Bust! You lose.")
+    elif dealer_score > 21:
+        print("Dealer busts! You win!")
+    elif player_score > dealer_score:
+        print("You win!")
+    elif player_score < dealer_score:
+        print("You lose.")
+    else:
+        print("It's a tie.")
+
+blackjack_game()
+```
+
+You can run this program in a Python environment to play the game. The player is prompted to choose between hitting (drawing a card) or standing (keeping their hand as is). The game ends when the player busts (goes over 21), the dealer busts, or both player and dealer stand. The outcome of the game is determined based on the final scores of the player and the dealer.
