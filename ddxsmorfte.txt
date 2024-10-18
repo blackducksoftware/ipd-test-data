@@ -1,0 +1,71 @@
+Sure! Here's a sample code snippet in Python for the bank account management system:
+
+```python
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("Insufficient funds!")
+
+    def check_balance(self):
+        return self.balance
+
+    def transfer(self, recipient, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+            recipient.deposit(amount)
+        else:
+            print("Insufficient funds!")
+
+accounts = {}
+
+def create_account():
+    account_number = input("Enter account number: ")
+    balance = float(input("Enter initial balance: "))
+    accounts[account_number] = BankAccount(account_number, balance)
+
+def main_menu():
+    while True:
+        print("1. Create new account")
+        print("2. Deposit money")
+        print("3. Withdraw money")
+        print("4. Check balance")
+        print("5. Transfer money")
+        print("6. Exit")
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            create_account()
+        elif choice == "2":
+            account_number = input("Enter account number: ")
+            amount = float(input("Enter amount to deposit: "))
+            accounts[account_number].deposit(amount)
+        elif choice == "3":
+            account_number = input("Enter account number: ")
+            amount = float(input("Enter amount to withdraw: "))
+            accounts[account_number].withdraw(amount)
+        elif choice == "4":
+            account_number = input("Enter account number: ")
+            print("Balance:", accounts[account_number].check_balance())
+        elif choice == "5":
+            sender = input("Enter sender account number: ")
+            recipient = input("Enter recipient account number: ")
+            amount = float(input("Enter amount to transfer: "))
+            accounts[sender].transfer(accounts[recipient], amount)
+        elif choice == "6":
+            break
+        else:
+            print("Invalid option!")
+
+main_menu()
+```
+
+This code snippet provides a basic implementation of a bank account management system that allows users to perform various operations on their accounts. Feel free to customize and expand on this code for additional features and functionalities.
