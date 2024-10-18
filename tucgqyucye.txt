@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Write a program in Python that generates a list of all prime numbers up to a given number. The program should take a user input for the maximum number and output the list of prime numbers. Make sure to include error handling for invalid input."
+
+This prompt should generate 20+ lines of Python code.
