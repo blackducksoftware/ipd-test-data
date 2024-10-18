@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Write a program that takes a list of numbers as input and returns the sum of all positive numbers in the list. If the input list is empty, the program should return 0. Use a for loop to iterate through the list and filter out the positive numbers. Write a function called 'sum_positive_numbers' that takes the list as input and returns the sum."
