@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Can you generate code for a basic ecommerce website in Python using Flask as the web framework, including functionality for users to create accounts, add items to a shopping cart, and complete a purchase process with a payment gateway integration?"
