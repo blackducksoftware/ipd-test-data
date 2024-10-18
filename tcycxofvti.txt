@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Generate a program in Python that takes a list of integers as input and returns a new list with only the even numbers squared. The program should also implement error handling by catching any input that is not a valid integer and printing an error message. The program should have proper documentation and comments to explain the functionality of each section of the code.
