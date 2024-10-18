@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM to generate code for:
+
+Create a program that simulates a basic ATM machine. The program should allow the user to check their balance, deposit money, withdraw money, and view their transaction history. The program should also include error handling for invalid inputs and should display appropriate messages for each action taken. The program should be written in Python.
