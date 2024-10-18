@@ -1,0 +1,15 @@
+Sure, here's a simple Python program that generates a Fibonacci sequence up to a specified number:
+
+```python
+def generate_fibonacci_sequence(n):
+    fibonacci_sequence = [0, 1]
+    while fibonacci_sequence[-1] + fibonacci_sequence[-2] <= n:
+        fibonacci_sequence.append(fibonacci_sequence[-1] + fibonacci_sequence[-2])
+    return fibonacci_sequence
+
+n = int(input("Enter a number: "))
+fibonacci_sequence = generate_fibonacci_sequence(n)
+print("Fibonacci sequence up to", n, "is:", fibonacci_sequence)
+```
+
+You can run this program in a Python environment like Jupyter Notebook or an online Python compiler to see the Fibonacci sequence up to the specified number. Just enter a number when prompted, and the program will generate the sequence for you.
