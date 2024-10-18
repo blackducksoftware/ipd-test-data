@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Write a program that takes an input list of numbers and returns a new list containing only the prime numbers from the original list. The program should also include a function to check if a number is prime.
