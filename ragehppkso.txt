@@ -1,0 +1,54 @@
+Sure! Here's an example code snippet in Python that implements a simple text-based maze game:
+
+```python
+import random
+
+def create_maze(size):
+    maze = [[' ' for _ in range(size)] for _ in range(size)]
+    for _ in range(size):
+        row = random.randint(0, size-1)
+        col = random.randint(0, size-1)
+        maze[row][col] = 'X'
+    maze[random.randint(0, size-1)][random.randint(0, size-1)] = 'S'  # Start position
+    maze[random.randint(0, size-1)][random.randint(0, size-1)] = 'E'  # End position
+    return maze
+
+def print_maze(maze):
+    for row in maze:
+        print(' '.join(row))
+
+def is_valid_move(maze, row, col):
+    return 0 <= row < len(maze) and 0 <= col < len(maze) and maze[row][col] != 'X'
+
+def play_game():
+    size = 5
+    maze = create_maze(size)
+    player_row = player_col = 0
+    score = 0
+    while True:
+        print_maze(maze)
+        
+        move = input("Enter your move (u/d/l/r): ")
+        if move == 'u' and is_valid_move(maze, player_row-1, player_col):
+            player_row -= 1
+        elif move == 'd' and is_valid_move(maze, player_row+1, player_col):
+            player_row += 1
+        elif move == 'l' and is_valid_move(maze, player_row, player_col-1):
+            player_col -= 1
+        elif move == 'r' and is_valid_move(maze, player_row, player_col+1):
+            player_col += 1
+
+        if maze[player_row][player_col] == 'E':
+            print("Congratulations! You reached the end of the maze.")
+            print("Your final score is:", score)
+            break
+        elif maze[player_row][player_col] == 'X':
+            print("Oops! You hit an obstacle.")
+            score -= 1
+        
+        score += 1
+
+play_game()
+```
+
+This code creates a simple text-based maze game where the player can move up, down, left, and right to navigate through the maze. The player needs to reach the end ('E') while avoiding obstacles ('X'). The game keeps track of the player's score and displays it at the end. You can customize the size of the maze and the difficulty by adjusting the `size` variable and the obstacle placement logic in the `create_maze` function. Enjoy playing!
