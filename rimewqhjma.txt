@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate code in a popular programming language:
+
+Prompt: Write a function in Python that takes a list of numbers as input and returns the sum of all odd numbers in the list.
+
+Feel free to use this prompt when asking LLM for code generation!
