@@ -1,0 +1,4 @@
+add a bit for the response
+Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Please generate a program that implements a basic shopping cart functionality. The program should allow the user to add items to the cart, view the items in the cart, remove items from the cart, and calculate the total cost of the items in the cart. The program should have functions for adding items, removing items, and calculating the total cost. Please make sure to include comments in the code to explain each section."
