@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate code in a popular programming language like Python:
+
+"Create a function that takes in a list of numbers as input and returns the sum of all the numbers in the list. If the sum is greater than 100, return 'Sum is too high', otherwise return the sum. Make sure to include error handling for non-numeric inputs."
+
+You can ask LLM to generate code based on this prompt and specify the programming language you would like the code to be written in.
