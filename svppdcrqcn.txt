@@ -1,0 +1,14 @@
+Certainly! Here is a Python program that takes in a list of numbers and returns the average of those numbers:
+
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+numbers = [10, 20, 30, 40, 50]
+average = calculate_average(numbers)
+print("The average of the numbers is:", average)
+```
+
+You can input any list of numbers by changing the `numbers` list in the program, and it will calculate and output the average of those numbers.
