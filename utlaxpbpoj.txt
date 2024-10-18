@@ -1,0 +1,24 @@
+def calculate_average(numbers):
+    if not numbers:
+        return 0
+    total = sum(numbers)
+    return total / len(numbers)
+
+# Test cases
+print(calculate_average([1, 2, 3, 4, 5])) # Output: 3.0
+print(calculate_average([10, 20, 30])) # Output: 20.0
+print(calculate_average([])) # Output: 0
+
+# Alternative implementation using reduce function
+from functools import reduce
+
+def calculate_average(numbers):
+    if not numbers:
+        return 0
+    total = reduce(lambda x, y: x + y, numbers)
+    return total / len(numbers)
+
+# Test cases
+print(calculate_average([1, 2, 3, 4, 5])) # Output: 3.0
+print(calculate_average([10, 20, 30])) # Output: 20.0
+print(calculate_average([])) # Output: 0
