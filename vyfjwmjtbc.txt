@@ -1,0 +1,2 @@
+add a bit for the response
+Generate a program in Python that calculates the Fibonacci sequence up to a certain number input by the user.
