@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! Ask LLM to generate a program that calculates the Fibonacci sequence up to a specified number in Python.
