@@ -1,0 +1,30 @@
+Sure! Here is an example Python program that sorts an array of integers using the bubble sort algorithm:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    # Traverse through all elements in the array
+    for i in range(n):
+        # Flag to check if any swapping has been done in the current iteration
+        swapped = False
+        # Traverse the array from 0 to n-i-1
+        for j in range(0, n-i-1):
+            # Swap if the element found is greater than the next element
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+
+        # If no elements were swapped in this pass, then the array is sorted
+        if not swapped:
+            break
+
+    return arr
+
+# Example usage
+arr = [64, 34, 25, 12, 22, 11, 90]
+sorted_arr = bubble_sort(arr)
+
+print("Sorted array:", sorted_arr)
+```
+
+This program defines a function `bubble_sort` that takes an array of integers as input and sorts it using the bubble sort algorithm. It iterates through the array multiple times, comparing adjacent elements and swapping them if they are in the wrong order. The process is repeated until no more swaps are needed, indicating that the array is fully sorted.
