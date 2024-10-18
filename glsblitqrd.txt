@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use to ask LLM to generate code in a popular programming language:
+
+"Generate a program in Python that takes a list of numbers as input and returns the sum of all the positive numbers in the list. Include error handling to check if the input is a list of numbers and handle any exceptions that may occur. The program should also include comments to explain each step of the process."
+
+You can customize this prompt for any programming language or specific requirements you have in mind.
