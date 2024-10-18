@@ -1,0 +1,28 @@
+Sure! Here is the Python code that accomplishes the task:
+
+```python
+def calculate_average(numbers):
+    total = 0
+    count = 0
+    for num in numbers:
+        if isinstance(num, (int, float)):
+            total += num
+            count += 1
+
+    if count == 0:
+        return "Invalid input: list is empty or contains non-numeric values"
+    else:
+        return total / count
+
+# Test the function
+input_list = [1, 2, 3, 4, 5]
+print("Average:", calculate_average(input_list))
+
+input_list = [3, "a", 6, "b", 9]
+print("Average:", calculate_average(input_list))
+
+input_list = []
+print("Average:", calculate_average(input_list))
+```
+
+This code defines a function `calculate_average` that takes a list of numbers as input, calculates the average of the numeric values in the list, and returns it. It also includes handling for cases where the input list is empty or contains non-numeric values.
