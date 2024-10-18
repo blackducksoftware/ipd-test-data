@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can use:
+
+"Create a program that takes in a list of numbers and returns the sum of all the even numbers in the list. If there are no even numbers in the list, the program should return 0. The program should be written in Python."
