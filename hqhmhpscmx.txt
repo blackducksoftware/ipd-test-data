@@ -1,0 +1,79 @@
+# Data structure to store book information
+inventory = []
+
+# Function to add new book to inventory
+def add_book():
+    title = input("Enter book title: ")
+    author = input("Enter book author: ")
+    genre = input("Enter book genre: ")
+    price = float(input("Enter book price: "))
+    quantity = int(input("Enter book quantity: "))
+    
+    book = {
+        "title": title,
+        "author": author,
+        "genre": genre,
+        "price": price,
+        "quantity": quantity
+    }
+    
+    inventory.append(book)
+    print("Book added to inventory.")
+
+# Function to update existing book information
+def update_book():
+    title = input("Enter the title of the book to update: ")
+    for book in inventory:
+        if book["title"] == title:
+            print("Current book information:")
+            print(book)
+            book["title"] = input("Enter updated title: ")
+            book["author"] = input("Enter updated author: ")
+            book["genre"] = input("Enter updated genre: ")
+            book["price"] = float(input("Enter updated price: "))
+            book["quantity"] = int(input("Enter updated quantity: "))
+            print("Book information updated.")
+            return
+    print("Book not found in inventory.")
+
+# Function to delete book from inventory
+def delete_book():
+    title = input("Enter the title of the book to delete: ")
+    for book in inventory:
+        if book["title"] == title:
+            inventory.remove(book)
+            print("Book deleted from inventory.")
+            return
+    print("Book not found in inventory.")
+
+# Function to display all books in inventory
+def display_inventory():
+    if len(inventory) == 0:
+        print("Inventory is empty.")
+    else:
+        for book in inventory:
+            print(book)
+
+# Main program loop
+while True:
+    print("\nBookstore Inventory System")
+    print("1. Add new book")
+    print("2. Update book information")
+    print("3. Delete book")
+    print("4. Display all books")
+    print("5. Exit")
+    
+    choice = input("Enter your choice: ")
+    
+    if choice == "1":
+        add_book()
+    elif choice == "2":
+        update_book()
+    elif choice == "3":
+        delete_book()
+    elif choice == "4":
+        display_inventory()
+    elif choice == "5":
+        break
+    else:
+        print("Invalid choice. Please try again.")
