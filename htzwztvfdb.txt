@@ -1,0 +1,9 @@
+Output example:
+Random numbers in descending order:
+998
+994
+992
+...
+7
+6
+4
