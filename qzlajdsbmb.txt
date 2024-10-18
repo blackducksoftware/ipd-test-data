@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Can you write a Python program that takes a list of numbers as input, calculates the sum of all the numbers in the list, and then prints out the average of the numbers rounded to two decimal places?"
