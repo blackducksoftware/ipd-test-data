@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can ask LLM:
+
+"Generate a function in Python that takes in a list of numbers and returns the sum of all the numbers in the list. Also, include error handling to account for any non-numeric values in the list. The function should be able to handle lists of any length."
