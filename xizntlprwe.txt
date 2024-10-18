@@ -1,0 +1,46 @@
+Sure! Here is a simple code to create a grocery list application in Python:
+
+```python
+# Define an empty list to store the grocery items
+grocery_list = []
+
+# Function to add items to the grocery list
+def add_item(item):
+    grocery_list.append(item)
+    print(f"{item} added to the grocery list")
+
+# Function to display the grocery list
+def display_list():
+    print("Grocery List:")
+    for item in grocery_list:
+        print("- " + item)
+
+# Function to remove an item from the grocery list
+def remove_item(item):
+    if item in grocery_list:
+        grocery_list.remove(item)
+        print(f"{item} removed from the grocery list")
+    else:
+        print(f"{item} not found in the grocery list")
+
+# Main loop to interact with the user
+while True:
+    print("\n1. Add item\n2. Display list\n3. Remove item\n4. Exit")
+    choice = input("Enter your choice (1/2/3/4): ")
+
+    if choice == '1':
+        item = input("Enter the item to add: ")
+        add_item(item)
+    elif choice == '2':
+        display_list()
+    elif choice == '3':
+        item = input("Enter the item to remove: ")
+        remove_item(item)
+    elif choice == '4':
+        print("Exiting the grocery list application")
+        break
+    else:
+        print("Invalid choice. Try again.")
+```
+
+You can run this code in a Python interpreter to create a simple grocery list application.
