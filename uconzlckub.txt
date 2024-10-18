@@ -1,0 +1,48 @@
+Here's a Python program that simulates a simple ATM machine:
+
+```python
+# ATM simulation program
+
+def display_options():
+    print("1. Check Balance")
+    print("2. Deposit Money")
+    print("3. Withdraw Money")
+    print("4. Exit")
+    choice = int(input("Enter your choice: "))
+    return choice
+
+balance = 1000  # initial balance
+
+while True:
+    print("\nWelcome to the ATM Machine")
+    print("----------------------------")
+    
+    choice = display_options()
+    
+    if choice == 1:
+        print(f"Your balance is: ${balance}")
+    elif choice == 2:
+        amount = float(input("Enter the amount to deposit: $"))
+        if amount > 0:
+            balance += amount
+            print(f"${amount} deposited successfully")
+        else:
+            print("Invalid amount. Please try again.")
+    elif choice == 3:
+        amount = float(input("Enter the amount to withdraw: $"))
+        if amount > balance:
+            print("Insufficient balance")
+        elif amount < 0:
+            print("Invalid amount. Please try again.")
+        else:
+            balance -= amount
+            print(f"${amount} withdrawn successfully")
+    elif choice == 4:
+        print("Thank you for using the ATM Machine")
+        break
+    else:
+        print("Invalid choice. Please try again.")
+
+```
+
+This program creates a simple ATM machine simulation where users can check their balance, deposit money, withdraw money, and exit the program. Error handling is included to prevent invalid inputs and overdrawing from the account. The program will continue running until the user chooses to exit.
