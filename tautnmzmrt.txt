@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Write a Python program that takes a list of integers as input and returns a new list containing only the even numbers from the input list, squared. The program should also print out the sum of all the squared even numbers in the new list."
+
+This prompt should generate a Python program that filters out the even numbers from the input list, squares them, and then calculates the sum of all the squared even numbers in the new list.
