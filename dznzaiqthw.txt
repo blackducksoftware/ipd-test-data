@@ -1,0 +1,36 @@
+Here is a Python program that fulfills the requirements of the prompt:
+
+```python
+def calculate_stats(numbers):
+    highest = max(numbers)
+    lowest = min(numbers)
+    total = sum(numbers)
+    average = total / len(numbers)
+    num_elements = len(numbers)
+    
+    return highest, lowest, total, average, num_elements
+
+def main():
+    numbers = []
+    
+    while True:
+        try:
+            num = float(input("Enter a number (or 'q' to quit): "))
+            numbers.append(num)
+        except ValueError:
+            if input("Do you want to quit? (y/n): ").lower() == 'y':
+                break
+    
+    highest, lowest, total, average, num_elements = calculate_stats(numbers)
+    
+    print(f"Highest number: {highest}")
+    print(f"Lowest number: {lowest}")
+    print(f"Sum of numbers: {total}")
+    print(f"Average of numbers: {average}")
+    print(f"Total number of elements: {num_elements}")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this program, input a list of numbers (end by typing 'q'), and it will calculate and display the highest number, lowest number, sum of the numbers, average of the numbers, and the total number of elements in the list.
