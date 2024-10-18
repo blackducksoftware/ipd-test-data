@@ -1,0 +1,36 @@
+LLM stands for Language Model, which I am. I can certainly help you with that Python program prompt you provided. Here is the Python program that fulfills the requirements:
+
+```python
+from collections import Counter
+from statistics import median
+
+def calculate_mean(numbers):
+    mean = sum(numbers) / len(numbers)
+    return mean
+
+def calculate_median(numbers):
+    median_value = median(numbers)
+    return median_value
+
+def calculate_mode(numbers):
+    mode_count = Counter(numbers)
+    modes = [num for num, count in mode_count.items() if count == max(mode_count.values())]
+    return modes
+
+def main():
+    numbers = [int(num) for num in input("Enter a list of numbers separated by spaces: ").split()]
+    numbers.sort()
+    
+    mean = calculate_mean(numbers)
+    median_value = calculate_median(numbers)
+    modes = calculate_mode(numbers)
+    
+    print(f'Mean: {mean}')
+    print(f'Median: {median_value}')
+    print(f'Mode: {modes}')
+
+if __name__ == '__main__':
+    main()
+```
+
+You can copy and paste this code into a Python environment and run it. It will prompt you to enter a list of numbers separated by spaces, and then it will calculate the mean, median, and mode of the input numbers. It handles both even and odd number of elements in the list. Hope this helps! Let me know if you have any questions.
