@@ -1,0 +1,22 @@
+Here is a sample Python program that calculates the factorial of a given number using recursion:
+
+```python
+def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers."
+    elif n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+try:
+    num = int(input("Enter a number to calculate its factorial: "))
+    result = factorial(num)
+    print(f"The factorial of {num} is {result}")
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+```
+
+This program defines a recursive function `factorial` that calculates the factorial of a given number. It also includes error handling for negative numbers and invalid inputs.
+
+You can run this program in a Python interpreter or a Python IDE by copying and pasting the code.
