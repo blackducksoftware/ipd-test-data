@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that takes a list of integers as input and outputs the sum of only the even numbers in the list.
