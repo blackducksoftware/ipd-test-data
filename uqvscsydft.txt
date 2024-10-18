@@ -1,0 +1,22 @@
+add a bit for the response
+Prompt: Create a program that takes in a list of numbers and calculates the sum of all the even numbers in the list. If the sum is greater than 100, the program should print "The sum is greater than 100", otherwise it should print "The sum is less than or equal to 100". 
+
+Language: Python
+
+Code:
+
+```python
+def calculate_even_sum(numbers):
+    even_sum = 0
+    for number in numbers:
+        if number % 2 == 0:
+            even_sum += number
+    if even_sum > 100:
+        print("The sum is greater than 100")
+    else:
+        print("The sum is less than or equal to 100")
+
+# Test the program with a list of numbers
+numbers_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+calculate_even_sum(numbers_list)
+```
