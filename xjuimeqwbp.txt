@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Prompt: Write a program that calculates the factorial of a given number using recursion in Python. 
+
+LLM will generate more than 20 lines of Python code that implements the factorial calculation using recursion.
