@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can use:
+
+Write a program that generates a list of the first 20 Fibonacci numbers. The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, starting with 0 and 1. Your program should output the list of Fibonacci numbers in order.
