@@ -1,0 +1,28 @@
+Sure! Here is a simple program that generates a random password with the specified criteria:
+
+```python
+import random
+import string
+
+def generate_password(length):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password = ''
+    for _ in range(length):
+        password += random.choice(characters)
+    return password
+
+while True:
+    length = int(input("Enter the length of the password (at least 10 characters): "))
+    
+    if length < 10:
+        print("Password length must be at least 10 characters.")
+    else:
+        break
+
+password = generate_password(length)
+print("Generated Password:", password)
+```
+
+This program first imports the necessary modules (`random` and `string`) and defines a function `generate_password` that takes a length parameter. It then generates a random password by randomly selecting characters from uppercase and lowercase letters, numbers, and special characters.
+
+The program then prompts the user to enter the desired length of the password (at least 10 characters) and generates the random password accordingly.
