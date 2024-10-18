@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Increase the size of an array by 50% in Python using list comprehension and ensure the original array elements are preserved in the new array. Include error handling for cases where the input array is empty or not iterable. Bonus points for implementing this in a way that is both efficient and readable."
