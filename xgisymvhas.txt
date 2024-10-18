@@ -1,0 +1,24 @@
+Sure! Here is a sample Python program that accomplishes the task:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return "Invalid input. Please enter a positive integer."
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fib_seq = fibonacci(n - 1)
+        fib_seq.append(fib_seq[-1] + fib_seq[-2])
+        return fib_seq
+
+try:
+    num = int(input("Enter a number to generate Fibonacci sequence: "))
+    result = fibonacci(num)
+    print("Fibonacci sequence up to", num, ":", result)
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+```
+
+This program takes a user input for a number, calculates the Fibonacci sequence up to that number using recursion, and handles invalid inputs with appropriate error messages.
