@@ -1,0 +1,22 @@
+Here's an example code in Python for the given prompt:
+
+```python
+def personalized_message():
+    name = input("Enter your name: ")
+    try:
+        age = int(input("Enter your age: "))
+        if age < 0:
+            raise ValueError
+        if age < 18:
+            print(f"Hi {name}! You are under 18.")
+        elif age >= 18 and age <= 65:
+            print(f"Hello {name}! You are between 18 and 65.")
+        else:
+            print(f"Good day, {name}! You are over 65.")
+    except ValueError:
+        print("Invalid input. Please enter a valid age (a positive integer).")
+        
+personalized_message()
+```
+
+You can copy and paste this code into a Python compiler and run it to see the program in action. Feel free to modify the code as needed or ask for help with any specific programming language you prefer.
