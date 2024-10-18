@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program that takes a list of numbers as input and calculates the average of all the numbers in the list. Display the average as output. You can choose any popular programming language for implementing this program.
