@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Write a program in Python that generates the first 20 Fibonacci numbers and stores them in a list. Print out the list of Fibonacci numbers."
