@@ -1,0 +1,36 @@
+Here is the Python program that reads a list of numbers from user input, calculates the mean, median, and mode of the list, and then outputs the results:
+
+```python
+import statistics
+
+# Function to calculate the mode of a list
+def calculate_mode(numbers):
+    counts = {}
+    for num in numbers:
+        if num in counts:
+            counts[num] += 1
+        else:
+            counts[num] = 1
+    mode = max(counts, key=counts.get)
+    return mode
+
+# Read the list of numbers from user input
+try:
+    numbers = input("Enter a list of numbers separated by spaces: ")
+    numbers = list(map(float, numbers.split()))
+except ValueError:
+    print("Invalid input. Please enter numbers separated by spaces.")
+    exit()
+
+# Calculate the mean, median, and mode of the list
+mean = statistics.mean(numbers)
+median = statistics.median(numbers)
+mode = calculate_mode(numbers)
+
+# Output the results
+print(f"Mean: {mean}")
+print(f"Median: {median}")
+print(f"Mode: {mode}")
+```
+
+This program uses the `statistics` module in Python to calculate the mean and median of the list of numbers. It also includes a function `calculate_mode` to calculate the mode of the list. Error handling is included to handle cases where the user enters invalid input. Each section of the code is explained with comments for clarity.
