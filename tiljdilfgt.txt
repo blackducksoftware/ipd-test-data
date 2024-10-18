@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is the prompt you can ask LLM:
+
+"Generate a program in Python that simulates a simple bank account system. The program should include functions to deposit money, withdraw money, check balance, and display transaction history. It should also have error handling for invalid inputs and a loop to allow the user to perform multiple transactions. Please include comments to explain the purpose of each function and any key logic in the program."
