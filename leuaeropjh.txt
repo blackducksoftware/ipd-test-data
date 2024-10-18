@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program in Python that takes in a list of numbers and returns a new list of only the even numbers in the original list, squared. Be sure to handle input validation and error checking for non-numeric inputs.
