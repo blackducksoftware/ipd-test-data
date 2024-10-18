@@ -1,0 +1,21 @@
+```python
+def filter_and_double_even_numbers(input_list):
+    output_list = []
+    
+    for num in input_list:
+        if num % 2 == 0:
+            output_list.append(num * 2)
+    
+    return output_list
+
+# Example input
+input_list = [1, 2, 3, 4, 5, 6]
+
+output_list = filter_and_double_even_numbers(input_list)
+print(output_list)
+```
+
+Output:
+```
+[4, 8, 12]
+```
