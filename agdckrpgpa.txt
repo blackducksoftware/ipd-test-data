@@ -1,0 +1,15 @@
+Sure, here is a simple Python program that takes a list of numbers as input and calculates the average of those numbers:
+
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+if __name__ == "__main__":
+    numbers = [int(x) for x in input("Enter a list of numbers separated by spaces: ").split()]
+    average = calculate_average(numbers)
+    print(f"The average of the numbers is: {average}")
+```
+
+You can run this program and provide a list of numbers separated by spaces as input. The program will then calculate the average of those numbers and output it.
