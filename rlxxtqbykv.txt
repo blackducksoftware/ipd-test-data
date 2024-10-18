@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can use: 
+
+"Write a program in Python that takes a list of numbers as input and returns a new list with only the even numbers doubled. Make sure to handle input validation for non-numeric inputs and provide a meaningful error message."
