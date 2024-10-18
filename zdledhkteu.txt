@@ -1,0 +1,5 @@
+The Python code uses a function `sum_of_even_numbers` to calculate the sum of even numbers, while the Java code uses a static method `sumOfEvenNumbers` in a class called `SumOfEvenNumbers`. Both codes iterate through the input list of numbers, check if each number is even using the modulo operator `%`, and add it to the sum if it is even.
+
+After calculating the sum of even numbers, both codes print the result to the console.
+
+You can run either the Python or Java code to get the sum of even numbers in the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
