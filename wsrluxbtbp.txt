@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program that takes in a list of numbers and returns the sum of all the even numbers in the list. The program should also be able to handle any errors, such as if the input is not a list or if the list contains non-numeric values. You can use any popular programming language to solve this problem.
