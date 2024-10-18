@@ -1,0 +1,15 @@
+add a bit for the response
+Prompt: Write a program in Python that takes a list of numbers as input and returns the sum of all the even numbers in the list.
+
+LLM code:
+```
+def sum_even_numbers(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    sum_even = sum(even_numbers)
+    return sum_even
+    
+# Test the function
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = sum_even_numbers(numbers)
+print(result)
+```
