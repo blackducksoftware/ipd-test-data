@@ -1,0 +1,14 @@
+import statistics
+
+def calculate_average(numbers):
+    if not numbers:
+        return 0
+    try:
+        return statistics.mean(numbers)
+    except:
+        return "Error: Please provide a list of numeric values only"
+
+# Test cases
+print(calculate_average([1, 2, 3, 4, 5]))  # Output: 3.0
+print(calculate_average([]))  # Output: 0
+print(calculate_average([1, 2, 'a', 4]))  # Output: Error: Please provide a list of numeric values only
