@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate a program that calculates the Fibonacci sequence up to a given number n in Python. The program should prompt the user to enter a number and then output the Fibonacci sequence up to that number. Ensure the program handles invalid inputs gracefully. Use comments to explain each step of the process and include error handling where necessary."
