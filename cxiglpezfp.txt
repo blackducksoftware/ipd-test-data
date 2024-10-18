@@ -1,0 +1,33 @@
+Sure! Here's a simple program in Python that simulates a game of rock-paper-scissors:
+
+```python
+import random
+
+def get_user_choice():
+    user_choice = input("Enter your choice (rock, paper, or scissors): ")
+    while user_choice.lower() not in ['rock', 'paper', 'scissors']:
+        user_choice = input("Invalid choice. Please enter rock, paper, or scissors: ")
+    return user_choice.lower()
+
+def get_computer_choice():
+    return random.choice(['rock', 'paper', 'scissors'])
+
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return "It's a tie!"
+    elif (user_choice == 'rock' and computer_choice == 'scissors') or (user_choice == 'paper' and computer_choice == 'rock') or (user_choice == 'scissors' and computer_choice == 'paper'):
+        return "You win!"
+    else:
+        return "Computer wins!"
+
+def main():
+    user_choice = get_user_choice()
+    computer_choice = get_computer_choice()
+    print(f"Computer chose: {computer_choice}")
+    print(determine_winner(user_choice, computer_choice))
+
+if __name__ == "__main__":
+    main()
+```
+
+You can copy and paste this code into a Python file and run it. The program will prompt the user to enter their choice, generate a random choice for the computer, determine the winner based on the rules of rock-paper-scissors, and display the result to the user. Let me know if you have any questions or need further clarification!
