@@ -1,0 +1,22 @@
+Sure, I can help with that. Here is the Python program for the prompt you provided:
+
+```python
+def sum_of_even_numbers(numbers):
+    even_sum = 0
+    even_count = 0
+    
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+            even_count += 1
+    
+    return even_sum, even_count
+
+input_list = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_sum, even_count = sum_of_even_numbers(input_list)
+
+print(f"The sum of all even numbers in the list is: {even_sum}")
+print(f"The count of even numbers in the list is: {even_sum}")
+```
+
+You can run this program by providing a list of numbers as input_list and it will return the sum of all even numbers in the list along with the count of even numbers. Let me know if you need any further assistance.
