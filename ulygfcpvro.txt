@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Prompt: "Generate a program in Python that takes a list of numbers, sorts them in descending order, and then calculates the sum of the first 10 numbers in the sorted list."
+
+You can ask LLM to generate the code based on this prompt and it should produce 20+ lines of Python code for you.
