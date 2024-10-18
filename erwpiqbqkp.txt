@@ -1,0 +1,50 @@
+Here is a sample code in Python that simulates a deck of playing cards:
+
+```python
+import random
+
+class Deck:
+    def __init__(self):
+        self.suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+        self.values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        self.deck = [{'value': value, 'suit': suit} for value in self.values for suit in self.suits]
+        
+    def shuffle(self):
+        random.shuffle(self.deck)
+        
+    def deal_cards(self, num_players, num_cards):
+        players = [[] for _ in range(num_players)]
+        for _ in range(num_cards):
+            for player in players:
+                card = self.deck.pop()
+                player.append(card)
+        return players
+    
+    def display_cards(self, players):
+        for i, player in enumerate(players):
+            print(f"Player {i+1} cards:")
+            for card in player:
+                print(f"{card['value']} of {card['suit']}")
+            print()
+    
+    def reset_deck(self):
+        self.__init__()
+
+# Create a deck object
+deck = Deck()
+
+# Shuffle the deck
+deck.shuffle()
+
+# Deal 5 cards to 4 players
+players = deck.deal_cards(4, 5)
+
+# Display the cards that have been dealt
+deck.display_cards(players)
+
+# Reset the deck and shuffle
+deck.reset_deck()
+deck.shuffle()
+```
+
+You can run this code in a Python environment to test the functionality of the Deck class in simulating a deck of playing cards.
