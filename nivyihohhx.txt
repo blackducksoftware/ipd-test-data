@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you could use to ask LLM to generate 20+ lines of code in Python:
+
+"Can you generate a Python program that takes a list of numbers as input, sorts it in descending order, calculates the mean and standard deviation of the numbers, and then prints out the sorted list, mean, and standard deviation?"
+
+Feel free to modify or provide any specific requirements as needed!
