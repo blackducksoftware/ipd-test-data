@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Can you please generate code for a program that calculates the average of a list of numbers in Python? The program should take in a list of numbers as input, calculate the average, and print out the result. Make sure to include error handling for cases where the input list is empty or contains non-numeric values. Additionally, the program should be able to handle large lists of numbers efficiently."
