@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Write a program in Python that simulates a deck of playing cards. The program should have functions for shuffling the deck, dealing a certain number of cards, and checking the remaining cards in the deck. Additionally, the program should include a loop that allows the user to continue dealing cards until the deck is empty. Bonus points if you can add functionality for aces high/low and the ability to add jokers to the deck."
