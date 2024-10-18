@@ -1,0 +1,35 @@
+Sure! Here's a Python program that simulates a deck of cards, shuffles them, and deals out a hand of five cards to two players:
+
+```python
+import random
+
+# Create a deck of cards
+suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
+
+deck = []
+for suit in suits:
+    for rank in ranks:
+        deck.append(f"{rank} of {suit}")
+
+# Shuffle the deck
+random.shuffle(deck)
+
+# Deal out a hand of five cards to two players
+player1_hand = []
+player2_hand = []
+
+for _ in range(5):
+    player1_hand.append(deck.pop())
+    player2_hand.append(deck.pop())
+
+print("Player 1's hand:")
+for card in player1_hand:
+    print(card)
+
+print("\nPlayer 2's hand:")
+for card in player2_hand:
+    print(card)
+```
+
+You can run this program to see the shuffled deck of cards and the hands dealt out to two players. Let me know if you have any questions or need further assistance!
