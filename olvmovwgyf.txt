@@ -1,0 +1,25 @@
+Here is a Python program that fulfills the given prompt:
+
+```
+def calculate_statistics(numbers):
+    sum_numbers = sum(numbers)
+    average = sum_numbers / len(numbers)
+    max_value = max(numbers)
+    min_value = min(numbers)
+    sorted_numbers = sorted(numbers)
+    unique_numbers = list(set(numbers))
+
+    print("Original list of numbers:", numbers)
+    print("Sum of the numbers:", sum_numbers)
+    print("Average of the numbers:", average)
+    print("Maximum value in the list:", max_value)
+    print("Minimum value in the list:", min_value)
+    print("Sorted list of numbers:", sorted_numbers)
+    print("List of unique numbers:", unique_numbers)
+
+numbers = [5, 3, 8, 2, 6, 3, 9, 7, 8, 2]
+
+calculate_statistics(numbers)
+```
+
+You can input any list of numbers into the `numbers` list variable and run the program to see the desired output.
