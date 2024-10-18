@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Please generate a Python script that reads a CSV file named 'data.csv', calculates the average value in each column, and then creates a new CSV file named 'averages.csv' with the calculated averages written to it. Please make sure to include error handling code to handle cases where the file does not exist or the data is not in the correct format."
+
+Feel free to modify the prompt based on your specific requirements or programming language preferences.
