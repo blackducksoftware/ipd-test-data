@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! You can ask LLM to generate code for a simple game like Tic-Tac-Toe. Here is a prompt you can use:
+
+"Write a program in Python that allows two players to play a game of Tic-Tac-Toe. The program should display a 3x3 grid where players can take turns marking X and O, and should check for a winner after each move. The game should continue until one player wins, or the grid is full with no winner. Please provide comments to explain the logic of your code."
