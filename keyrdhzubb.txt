@@ -1,0 +1,30 @@
+```python
+def get_number_input():
+    while True:
+        try:
+            num = float(input("Enter a number: "))
+            return num
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+def calculate_sum(numbers):
+    return sum(numbers)
+
+def main():
+    numbers = []
+    
+    num_count = int(input("Enter the number of elements in the list: "))
+    
+    for _ in range(num_count):
+        num = get_number_input()
+        numbers.append(num)
+    
+    total_sum = calculate_sum(numbers)
+    
+    print("The sum of the numbers in the list is: ", total_sum)
+
+if __name__ == "__main__":
+    main()
+```
+
+This Python program takes input from the user for a list of numbers, calculates the sum of all the numbers in the list, and outputs the sum to the user. It includes error handling to ensure that the user input is a valid number. The program prompts the user to enter the number of elements in the list, then iterates through each element while calling `get_number_input()` to get a valid number input. Finally, it calculates the sum of all the numbers in the list using `calculate_sum()` and outputs the result to the user.
