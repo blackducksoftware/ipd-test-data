@@ -1,0 +1,20 @@
+Here is a Python program that calculates the factorial of a given number:
+
+```python
+def factorial(num):
+    if num < 0:
+        return "Factorial is not defined for negative numbers."
+    elif num == 0:
+        return 1
+    else:
+        fact = 1
+        for i in range(1, num + 1):
+            fact *= i
+        return fact
+
+num = int(input("Enter a number to calculate its factorial: "))
+result = factorial(num)
+print(f"The factorial of {num} is: {result}")
+```
+
+You can run this program in any Python environment. You can enter a number, and it will output the factorial of that number. It also handles edge cases such as negative numbers and zero. Let me know if you need any further help with this!
