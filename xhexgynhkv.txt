@@ -1,0 +1,52 @@
+Sure! Here is a sample program in Python that simulates a shopping cart:
+
+```python
+class ShoppingCart:
+    def __init__(self):
+        self.cart = {}
+
+    def add_item(self, item, price):
+        if item in self.cart:
+            self.cart[item] += price
+        else:
+            self.cart[item] = price
+
+    def remove_item(self, item):
+        if item in self.cart:
+            del self.cart[item]
+        else:
+            print("Item not found in the cart")
+
+    def view_cart(self):
+        for item, price in self.cart.items():
+            print(f"{item}: ${price}")
+
+    def calculate_total(self):
+        total = sum(self.cart.values())
+        return total
+
+    def apply_discount(self, item, discount):
+        if item in self.cart:
+            self.cart[item] *= (1 - discount)
+
+    def checkout(self):
+        print("Receipt:")
+        self.view_cart()
+        total_cost = self.calculate_total()
+        print(f"Total cost: ${total_cost}")
+
+# Main program
+cart = ShoppingCart()
+
+cart.add_item("Apple", 1.00)
+cart.add_item("Banana", 0.50)
+cart.add_item("Orange", 1.25)
+
+cart.view_cart()
+
+cart.apply_discount("Apple", 0.10)
+
+cart.checkout()
+```
+
+This code defines a `ShoppingCart` class with methods to add items, remove items, view the cart, calculate the total cost, apply discounts, and checkout. You can customize and expand this program as needed to suit your requirements.
