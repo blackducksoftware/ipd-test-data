@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+Prompt: Create a Python program that prompts the user to enter a number, calculates the square of that number, and then displays the result. Additionally, the program should include a function that checks if the calculated square is a perfect square or not. If it is a perfect square, the program should print a message saying that the number is a perfect square. Otherwise, it should print a message saying that the number is not a perfect square.
+
+This prompt should generate at least 20 lines of Python code.
