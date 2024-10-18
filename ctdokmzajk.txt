@@ -1,0 +1,23 @@
+```python
+def sum_of_evens(numbers):
+    sum = 0
+    for num in numbers:
+        if num % 2 == 0:
+            sum += num
+    return sum
+
+# Get the list of numbers as input
+numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+
+# Calculate the sum of even numbers
+result = sum_of_evens(numbers)
+
+# Output the result
+print("The sum of all even numbers in the list is:", result)
+```
+
+Example:
+```
+Enter a list of numbers separated by spaces: 1 2 3 4 5 6
+The sum of all even numbers in the list is: 12
+```
