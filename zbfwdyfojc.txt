@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Write a program in Python that takes a list of integers as input and returns a new list containing only the even numbers from the original list. The program should also sort the new list in ascending order and remove any duplicates. Make sure to include comments explaining each step of the code."
