@@ -1,0 +1,22 @@
+```python
+# Define a function to generate a Fibonacci sequence up to the nth term
+def fibonacci(n):
+    if n <= 0: # Check for invalid input
+        return "Invalid input"
+    elif n == 1: # Base case for Fibonacci sequence with 1 term
+        return [0]
+    elif n == 2: # Base case for Fibonacci sequence with 2 terms
+        return [0, 1]
+    else: # Generate Fibonacci sequence for n > 2
+        fib_sequence = [0, 1] # Initialize Fibonacci sequence
+        for i in range(2, n): # Generate Fibonacci sequence up to nth term
+            fib_sequence.append(fib_sequence[i-1] + fib_sequence[i-2])
+        return fib_sequence
+
+# Define the value of n for Fibonacci sequence
+n = 20
+# Generate Fibonacci sequence up to the 20th term
+result = fibonacci(n)
+# Print the generated Fibonacci sequence
+print(result)
+```
