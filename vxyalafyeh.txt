@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a script that sorts a list of integers in ascending order using the bubble sort algorithm.
