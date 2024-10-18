@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Write a program that takes a list of numbers as input and outputs the average of all the numbers in the list. The program should also display the highest and lowest numbers in the list."
+
+You can ask LLM to generate code in a popular programming language such as Python, Java, C++, or JavaScript.
