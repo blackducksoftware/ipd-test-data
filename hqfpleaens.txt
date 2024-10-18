@@ -1,0 +1,19 @@
+```python
+def sum_of_even_numbers(number_list):
+    sum_even = 0
+    for num in number_list:
+        if num % 2 == 0:
+            print(f"Even number found: {num}")
+            sum_even += num
+    return sum_even
+
+try:
+    user_input = input("Enter a list of numbers separated by spaces: ")
+    number_list = [int(num) for num in user_input.split()]
+    result = sum_of_even_numbers(number_list)
+    print(f"The sum of all even numbers in the list is: {result}")
+except ValueError:
+    print("Invalid input. Please enter a valid list of numbers.")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
