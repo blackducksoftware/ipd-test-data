@@ -1,0 +1,14 @@
+Here's the Python function code:
+
+```python
+def sum_even_numbers(numbers):
+    even_sum = 0
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+    return even_sum
+
+# Example usage:
+numbers = [2, 5, 8, 10, 3, 6]
+print(sum_even_numbers(numbers))  # Output: 26
+```
