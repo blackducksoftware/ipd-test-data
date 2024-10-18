@@ -1,0 +1,20 @@
+Great prompt! I will type out the code for this program:
+
+```python
+def calculate_even_sum(numbers):
+    even_sum = 0
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+    return even_sum
+
+input_numbers = input("Enter a list of numbers separated by commas: ")
+numbers_list = [int(num) for num in input_numbers.split(',')]
+
+result = calculate_even_sum(numbers_list)
+print("Sum of even numbers in the list:", result)
+```
+
+This program defines a function `calculate_even_sum` that takes in a list of numbers, loops through the list and adds up all even numbers. It then prompts the user to enter a list of numbers separated by commas, converts the input into a list of integers, calls the `calculate_even_sum` function with the input list, and finally prints out the sum of all even numbers in the list.
+
+You can run this program in a Python environment to test it out! Let me know if you have any questions or if you need further assistance.
