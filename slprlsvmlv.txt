@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a program that takes in a list of numbers as input and outputs the average of those numbers. The program should also calculate and output the sum of all the numbers in the list. Make sure to implement error handling to account for any non-numeric inputs. Choose any popular programming language for this task.
