@@ -1,0 +1,21 @@
+Here is a Python program that takes in a list of numbers and outputs the sum of all odd numbers in the list:
+
+```python
+def sum_of_odd_numbers(numbers):
+    odd_sum = 0
+    for num in numbers:
+        if num % 2 != 0:
+            odd_sum += num
+    return odd_sum
+
+# Taking input from the user
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers_list = list(map(int, numbers.split()))
+
+# Calculating the sum of odd numbers
+result = sum_of_odd_numbers(numbers_list)
+
+print("Sum of all odd numbers in the list is:", result)
+```
+
+You can run this program and enter a list of numbers separated by spaces when prompted. The program will then calculate the sum of all odd numbers in the list and display the result.
