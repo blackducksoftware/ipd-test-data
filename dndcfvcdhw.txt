@@ -1,0 +1,16 @@
+Sure! Here is the Python code for the program that calculates the factorial of a given number using recursion:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Test the program with a given number
+num = 5
+result = factorial(num)
+print(f"The factorial of {num} is: {result}")
+```
+
+You can run this code in a Python environment to calculate the factorial of a given number. Just replace the `num` variable with the number you want to calculate the factorial for.
