@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can give to LLM:
+
+Write a program in Python that takes a list of numbers as input and returns a new list containing only the even numbers from the original list. The program should then iterate over the new list and print each even number on a separate line.
