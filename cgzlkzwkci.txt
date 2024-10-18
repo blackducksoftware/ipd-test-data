@@ -1,0 +1,17 @@
+Sure! Here is an example of a Python program that generates a Fibonacci sequence up to a certain number input by the user:
+
+```python
+def fibonacci_sequence(n):
+    a, b = 0, 1
+    fibonacci_seq = [a, b]
+    while b < n:
+        a, b = b, a + b
+        fibonacci_seq.append(b)
+    return fibonacci_seq
+
+n = int(input("Enter a number: "))
+fibonacci_seq = fibonacci_sequence(n)
+print(f"Fibonacci sequence up to {n}: {fibonacci_seq}")
+```
+
+When you run this program, it will prompt you to enter a number. It will then generate and print the Fibonacci sequence up to the number you entered.
