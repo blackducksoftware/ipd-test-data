@@ -1,0 +1,3 @@
+The program checks if the user's choice is valid (Rock, Paper, or Scissors) and handles ties, user wins, and computer wins accordingly. The user can input their choice in any case (lowercase or uppercase) as the program converts it to lowercase for comparison.
+
+Overall, this program effectively simulates a game of Rock, Paper, Scissors against the computer with a user-friendly interface.
