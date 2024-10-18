@@ -1,0 +1,29 @@
+Here is a Python program that fulfills the given prompt:
+
+```python
+def square_even_numbers(numbers):
+    # Check if the input is a list
+    if not isinstance(numbers, list):
+        raise TypeError("Input must be a list of numbers")
+    
+    # Initialize an empty list to store squared even numbers
+    squared_even_numbers = []
+    
+    # Iterate through the list of numbers
+    for num in numbers:
+        # Check if the number is even
+        if num % 2 == 0:
+            # Square the even number and append it to the new list
+            squared_even_numbers.append(num**2)
+    
+    return squared_even_numbers
+
+# Test the program with an example input
+try:
+    numbers = [1, 2, 3, 4, 5, 6]
+    print(square_even_numbers(numbers))
+except TypeError as e:
+    print(f"Error: {e}")
+```
+
+Save the code in a Python file and run it in a Python environment to test it with different inputs. This program will return a new list with only the even numbers squared from the input list. If the input is not a list of numbers, it will raise a `TypeError` with a helpful error message.
