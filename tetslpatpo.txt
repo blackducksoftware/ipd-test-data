@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask for 20+ lines of code in a popular programming language:
+
+"Hello LLM, can you please generate 20+ lines of code in Python that creates a simple calculator program that can add, subtract, multiply, and divide two numbers? Please include comments explaining each section of the code. Thank you!"
