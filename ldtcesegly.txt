@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Write a program that takes in a list of numbers as input and outputs a new list containing only the even numbers from the original list. The program should also calculate the sum of all the even numbers in the list and display it as the final output. 
+
+Feel free to ask LLM to generate this program in a popular programming language of your choice!
