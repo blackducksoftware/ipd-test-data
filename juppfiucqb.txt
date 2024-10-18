@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here's a prompt you can ask LLM:
+
+Create a program in Python that takes in a list of numbers and sorts them in descending order using the Bubble Sort algorithm. Make sure to include comments explaining each step of the algorithm and testing the program with a sample list of numbers.
