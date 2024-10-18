@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that simulates a vending machine. The program should allow the user to input the amount of money they have, display a list of available items with prices, prompt the user to select an item, deduct the item's price from the user's total amount, and dispense the item if the user has enough money. The program should also handle cases where the user does not have enough money, displays a message indicating the remaining balance, and allows the user to continue adding more money or selecting a different item.
