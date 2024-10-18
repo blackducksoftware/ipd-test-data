@@ -1,0 +1,6 @@
+lst = [5, 10, 15, 20, 25]
+
+total = sum(lst)
+average = total / len(lst)
+
+print("The average of the list is:", average)
