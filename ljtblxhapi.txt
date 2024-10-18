@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program in Python that generates a random list of 10 numbers and then sorts them in descending order. Next, create a function that takes this sorted list as input and returns a new list containing only the even numbers from the original list. Finally, create a loop that prints each even number in the new list on a new line.
