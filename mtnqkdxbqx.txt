@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Please write a program that calculates the average of a list of numbers inputted by the user in Python."
