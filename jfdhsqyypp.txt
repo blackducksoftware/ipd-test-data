@@ -1,0 +1,15 @@
+```python
+def odd_numbers(input_list):
+    odd_list = [num for num in input_list if num % 2 != 0]
+    odd_list.sort(reverse=True)
+    return odd_list
+
+# Taking input from the user
+input_list = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+
+# Getting the new list containing only odd numbers in descending order
+new_list = odd_numbers(input_list)
+
+# Displaying the new list
+print(new_list)
+```
