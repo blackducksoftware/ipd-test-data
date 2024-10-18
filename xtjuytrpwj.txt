@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! You can ask LLM to write a program that generates a Fibonacci sequence up to a certain number of terms. This will result in a program with at least 20 lines of code in a popular programming language such as Python, Java, or C++.
