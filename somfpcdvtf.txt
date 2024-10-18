@@ -1,0 +1,12 @@
+# Function to calculate the average of a list of numbers
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# Input list of numbers
+numbers = list(map(float, input("Enter a list of numbers separated by spaces: ").split()))
+
+# Calculate and output the average
+average = calculate_average(numbers)
+print("The average of the numbers is:", average)
