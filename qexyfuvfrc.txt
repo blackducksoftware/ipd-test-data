@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Write a program that takes a list of numbers as input and returns the sum of all the even numbers in the list. Make sure to include error handling for cases where the input is not a valid list of numbers. Use Python as the programming language for this task."
