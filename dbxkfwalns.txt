@@ -1,0 +1,22 @@
+
+
+LLM Response in Java:
+```java
+public class SumOfEvenNumbers {
+    public static int sumOfEvenNumbers(int[] nums) {
+        int total = 0;
+        for (int num : nums) {
+            if (num % 2 == 0) {
+                total += num;
+            }
+        }
+        return total;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {2, 3, 6, 8, 9, 12, 15, 18, 20};
+        int result = sumOfEvenNumbers(numbers);
+        System.out.println(result);
+    }
+}
+```
