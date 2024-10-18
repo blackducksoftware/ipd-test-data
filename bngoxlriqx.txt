@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Write a Python program that simulates a simple game of rock-paper-scissors. The program should prompt the user to enter their choice (rock, paper, or scissors), generate a random choice for the computer, compare the choices, and determine the winner. The program should also keep track of the number of wins, losses, and ties for the user, and allow them to play again if they choose.
