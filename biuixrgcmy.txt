@@ -1,0 +1,13 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a program that simulates a bank account system. The program should have the following functionalities:
+
+1. Allow the user to create a new account with a unique account number and initial balance.
+2. Allow the user to deposit money into their account.
+3. Allow the user to withdraw money from their account.
+4. Display the current balance of the account.
+5. Allow the user to transfer money from one account to another.
+6. Display a transaction history for each account.
+
+The program should be written in a popular programming language such as Python, Java, C++, or JavaScript.
