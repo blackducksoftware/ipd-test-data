@@ -1,0 +1,14 @@
+import random
+
+def sum_even_numbers(numbers):
+    even_sum = 0
+    for number in numbers:
+        if number % 2 == 0:
+            even_sum += number
+    return even_sum
+
+random_numbers = [random.randint(1, 100) for _ in range(10)]
+print("Random numbers:", random_numbers)
+
+even_sum = sum_even_numbers(random_numbers)
+print("Sum of even numbers:", even_sum)
