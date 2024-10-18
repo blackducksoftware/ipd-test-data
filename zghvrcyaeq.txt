@@ -1,0 +1,20 @@
+```python
+def even_numbers_sum(input_list):
+    if not isinstance(input_list, list):
+        return "Input is not a list"
+    
+    even_numbers = []
+    list_sum = 0
+    for num in input_list:
+        if isinstance(num, (int, float)) and num % 2 == 0:
+            even_numbers.append(num)
+            list_sum += num
+
+    return even_numbers, list_sum
+
+# Test the program
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = even_numbers_sum(input_list)
+print(f"Even numbers in the list: {result[0]}")
+print(f"Sum of even numbers: {result[1]}")
+```
