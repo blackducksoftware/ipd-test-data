@@ -1,0 +1,5 @@
+This Python program takes a user-specified limit as input and generates a Fibonacci sequence of numbers up to that limit. 
+
+It defines a function `fibonacci_sequence` that takes the limit as a parameter and then initializes the sequence with `[0, 1]`. It then calculates the next number in the sequence by adding the last two numbers and appends it to the sequence until the next number exceeds the limit. 
+
+Finally, it prints the Fibonacci sequence up to the specified limit.
