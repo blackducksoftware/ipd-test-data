@@ -1,0 +1,27 @@
+```python
+def calculate_sum_of_even_and_average_of_odd(numbers):
+    try:
+        if not all(isinstance(num, (int, float)) for num in numbers):
+            raise ValueError("Input list must contain only numbers.")
+        
+        even_sum = sum(num for num in numbers if num % 2 == 0)
+        
+        odd_numbers = [num for num in numbers if num % 2 != 0]
+        odd_average = sum(odd_numbers) / len(odd_numbers) if odd_numbers else 0
+        
+        return even_sum, odd_average
+    except ValueError as e:
+        return str(e)
+
+# Sample input
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+result = calculate_sum_of_even_and_average_of_odd(numbers)
+
+if isinstance(result, tuple):
+    even_sum, odd_average = result
+    print(f"Sum of even numbers: {even_sum}")
+    print(f"Average of odd numbers: {odd_average}")
+else:
+    print(result)
+```
+You can run this program by providing a list of numbers as input and it will compute the sum of even numbers and the average of odd numbers in the list with error handling for invalid inputs.
