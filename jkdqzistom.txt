@@ -1,0 +1,27 @@
+Here is a Python program that takes in a list of numbers, calculates the mean, median, and mode:
+
+```python
+from statistics import mode, median
+
+def calculate_mean(list):
+    return sum(list) / len(list)
+
+def calculate_median(list):
+    return median(list)
+
+def calculate_mode(list):
+    return mode(list)
+
+if __name__ == "__main__":
+    numbers = [5, 10, 15, 20, 25, 30, 25, 20, 15, 10, 5]
+    
+    mean = calculate_mean(numbers)
+    median = calculate_median(numbers)
+    mode = calculate_mode(numbers)
+    
+    print(f"Mean: {mean}")
+    print(f"Median: {median}")
+    print(f"Mode: {mode}")
+```
+
+You can replace the `numbers` list with any list of numbers to calculate the mean, median, and mode for that list.
