@@ -1,0 +1,21 @@
+```python
+def calculate_sum():
+    numbers = []
+    
+    while True:
+        num = input("Enter a number (or enter 'done' to finish): ")
+        
+        if num.lower() == 'done':
+            break
+        
+        try:
+            num = float(num)
+            numbers.append(num)
+        except ValueError:
+            print("Please enter a valid number.")
+    
+    total = sum(numbers)
+    print(f"The sum of the numbers entered is: {total}")
+
+calculate_sum()
+```
