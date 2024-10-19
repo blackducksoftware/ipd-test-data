@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate code to create a simple CRUD (Create, Read, Update, Delete) application in Python using SQLAlchemy and Flask, with proper error handling and input validation. Include functions/methods for adding a new record, retrieving all records, updating a record by ID, and deleting a record by ID."
