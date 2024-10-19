@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate a program in Python that takes in a list of numbers and returns the average of all the numbers. Include error handling for cases where the input list is empty or contains non-numeric values. Additionally, create functions for calculating the sum of the numbers and finding the length of the list."
