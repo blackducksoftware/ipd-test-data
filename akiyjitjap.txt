@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program in Python that generates a list of prime numbers up to a user-defined limit, and then calculates the sum of those prime numbers.
