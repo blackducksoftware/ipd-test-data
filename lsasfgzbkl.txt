@@ -1,0 +1,20 @@
+Sure, here is an example program in Python that takes a list of numbers as input and outputs the sum of all the even numbers in the list:
+
+```python
+def sum_of_even_numbers(numbers):
+    sum_even = 0
+    for num in numbers:
+        if num % 2 == 0:
+            sum_even += num
+    return sum_even
+
+# Example input list
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Output the sum of even numbers in the list
+print(sum_of_even_numbers(numbers))
+```
+
+This program defines a function `sum_of_even_numbers` that takes a list of numbers as input, calculates the sum of all the even numbers in the list, and returns the result. The example input list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` is used to demonstrate the functionality of the program.
+
+Hope this helps! Let me know if you have any questions or need further assistance.
