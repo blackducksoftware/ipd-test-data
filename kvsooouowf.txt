@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that takes a list of user-inputted numbers and outputs the average, median, mode, range, and standard deviation of the numbers. Add functionality to also allow the user to choose to calculate only certain statistics. Use Python for this program.
