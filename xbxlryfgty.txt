@@ -1,0 +1,15 @@
+Here is a simple Python code that prompts the user for the length of the Fibonacci sequence and then generates the sequence up to that length:
+
+```python
+def fibonacci_sequence(length):
+    sequence = [0, 1]
+    while len(sequence) < length:
+        sequence.append(sequence[-1] + sequence[-2])
+    return sequence
+
+length = int(input("Enter the length of the Fibonacci sequence: "))
+fibonacci_seq = fibonacci_sequence(length)
+print(fibonacci_seq)
+```
+
+You can copy and paste this code into a Python interpreter or IDE and run it to generate the Fibonacci sequence of the specified length.
