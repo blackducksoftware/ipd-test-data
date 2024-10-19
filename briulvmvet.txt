@@ -1,0 +1,25 @@
+import sys
+
+def remove_duplicates_sort_descending(numbers):
+    # Remove duplicates
+    numbers = list(set(numbers))
+    
+    # Sort in descending order
+    numbers.sort(reverse=True)
+    
+    return numbers
+
+def main():
+    try:
+        numbers = input("Enter a list of numbers separated by spaces: ").split()
+        numbers = [int(num) for num in numbers]
+    except ValueError:
+        print("Please enter valid numbers.")
+        sys.exit(1)
+    
+    sorted_numbers = remove_duplicates_sort_descending(numbers)
+    
+    print("Sorted list with duplicates removed: {}".format(sorted_numbers))
+
+if __name__ == "__main__":
+    main()
