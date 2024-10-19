@@ -1,0 +1,1 @@
+This program calculates the average score of a list of student grades by summing up all the grades and then dividing by the total number of grades.
