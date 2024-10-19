@@ -1,0 +1,31 @@
+import numpy as np
+import statistics
+import matplotlib.pyplot as plt
+
+def calculate_stats(numbers):
+    average = np.mean(numbers)
+    median = np.median(numbers)
+    mode = statistics.mode(numbers)
+    std_dev = np.std(numbers)
+    
+    return average, median, mode, std_dev
+
+def plot_histogram(numbers):
+    plt.hist(numbers, bins=10, color='blue', edgecolor='black')
+    plt.xlabel('Numbers')
+    plt.ylabel('Frequency')
+    plt.title('Histogram of Numbers')
+    plt.show()
+
+# Taking input from the user
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers = list(map(int, numbers.split()))
+
+average, median, mode, std_dev = calculate_stats(numbers)
+
+print(f'Average: {average}')
+print(f'Median: {median}')
+print(f'Mode: {mode}')
+print(f'Standard Deviation: {std_dev}')
+
+plot_histogram(numbers)
