@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate code for:
+
+Prompt: Write a program in Python that reads a list of numbers from user input, removes all even numbers from the list, squares each remaining number, and then prints the final list.
+
+This prompt will likely generate at least 20 lines of Python code.
