@@ -1,0 +1,24 @@
+Sure! Here is a Python program that accomplishes this:
+
+```python
+def sum_numbers(numbers):
+    total = sum(numbers)
+    return total
+
+def average_numbers(numbers):
+    avg = sum(numbers) / len(numbers)
+    return avg
+
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5] # Can be integers or floating-point numbers
+
+# Calculate sum of numbers
+total_sum = sum_numbers(numbers)
+print("Sum of numbers:", total_sum)
+
+# Calculate average of numbers
+avg_num = average_numbers(numbers)
+print("Average of numbers:", avg_num)
+```
+
+You can run this program by providing a list of numbers as input and it will calculate the sum and average of the numbers in the list. Feel free to modify the `numbers` list to test different inputs. Let me know if you have any questions or need further clarification!
