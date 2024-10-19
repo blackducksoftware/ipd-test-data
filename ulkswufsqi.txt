@@ -1,0 +1,24 @@
+Here's a Python program that implements the prompt:
+
+```python
+def count_vowels(input_str):
+    vowels = 'aeiouAEIOU'
+    num_vowels = 0
+    total_chars = 0
+
+    for char in input_str:
+        if char.isalpha():
+            total_chars += 1
+            if char in vowels:
+                num_vowels += 1
+
+    vowel_percentage = (num_vowels / total_chars) * 100 if total_chars > 0 else 0
+
+    print(f'Number of vowels: {num_vowels}')
+    print(f'Vowel percentage: {vowel_percentage:.2f}%')
+
+input_str = input('Enter a string: ')
+count_vowels(input_str)
+```
+
+You can run this program in a Python environment and input any string you want. The program will count the number of vowels in the string and display the percentage of vowels present. Let me know if you need further clarification or assistance!
