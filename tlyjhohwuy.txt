@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+"Create a Python program that takes a list of integers as input and calculates the average of all the numbers in the list. Then, remove any numbers that are below the average and print the updated list."
+
+Feel free to adjust the prompt as needed!
