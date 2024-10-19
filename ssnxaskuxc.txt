@@ -1,0 +1,17 @@
+Certainly! Here is a Python program that generates a list of Fibonacci numbers up to a specified value entered by the user:
+
+```python
+def generate_fibonacci(limit):
+    fibonacci_numbers = [0, 1]
+    while fibonacci_numbers[-1] + fibonacci_numbers[-2] <= limit:
+        fibonacci_numbers.append(fibonacci_numbers[-1] + fibonacci_numbers[-2])
+    return fibonacci_numbers
+
+user_input = int(input("Enter a value to generate Fibonacci numbers up to: "))
+
+fibonacci_sequence = generate_fibonacci(user_input)
+print(f"Fibonacci numbers up to {user_input}:")
+print(fibonacci_sequence)
+```
+
+When you run this program, it will ask the user for a value and then generate the list of Fibonacci numbers up to that value. The `generate_fibonacci` function calculates the Fibonacci numbers up to the specified limit and returns a list of those numbers.
