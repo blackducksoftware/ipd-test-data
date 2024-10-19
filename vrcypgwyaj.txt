@@ -1,0 +1,24 @@
+import numpy as np
+
+def calculate_values(numbers):
+    total_sum = sum(numbers)
+    average = np.mean(numbers)
+    product = np.prod(numbers)
+    minimum = min(numbers)
+    maximum = max(numbers)
+    
+    print(f"Sum: {total_sum}")
+    print(f"Average: {average}")
+    print(f"Product: {product}")
+    print(f"Minimum: {minimum}")
+    print(f"Maximum: {maximum}")
+
+def add_numbers(x, y):
+    return x + y
+
+numbers = [1, 2, 3, 4, 5]
+calculate_values(numbers)
+
+for i in range(len(numbers)-1):
+    result = add_numbers(numbers[i], numbers[i+1])
+    print(f"Result of adding {numbers[i]} and {numbers[i+1]}: {result}")
