@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Could you please generate 20+ lines of code in Python that implements a linked list data structure with methods for adding and removing elements, as well as a method for reversing the list?
