@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! You can ask LLM to generate code for a simple web scraper that extracts data from a given website and saves it to a CSV file.
