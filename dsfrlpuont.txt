@@ -1,0 +1,36 @@
+```python
+def fibonacci_sequence(length):
+    sequence = [0, 1]  # Seed values for Fibonacci sequence
+
+    if length <= 0:
+        return []
+
+    elif length == 1:
+        return [0]
+
+    elif length == 2:
+        return sequence
+
+    else:
+        for i in range(2, length):
+            next_number = sequence[i-1] + sequence[i-2]
+            sequence.append(next_number)
+
+    return sequence
+
+# Get user input for the length of Fibonacci sequence
+while True:
+    try:
+        n = int(input("Enter the length of the Fibonacci sequence: "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+
+# Generate Fibonacci sequence
+fibonacci = fibonacci_sequence(n)
+
+# Display the generated Fibonacci sequence
+print("Fibonacci sequence up to length", n, ":", fibonacci)
+```
+
+This program takes user input for the length of a Fibonacci sequence and generates the sequence up to that length. It utilizes a function `fibonacci_sequence` to calculate the Fibonacci numbers and then displays the generated sequence to the user.
