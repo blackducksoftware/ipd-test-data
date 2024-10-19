@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program that takes a list of integers as input and sorts the list in descending order using the bubble sort algorithm. Display the sorted list as output.
