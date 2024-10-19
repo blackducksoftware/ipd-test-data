@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+Create a program in Python that generates a list of prime numbers up to a given integer. The program should take user input for the upper limit of the prime numbers and output a list of all prime numbers up to that limit. The program should also include error handling for invalid input and should be able to handle large numbers efficiently.
