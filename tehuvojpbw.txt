@@ -1,0 +1,24 @@
+Here is your Python program that implements the Bubble Sort algorithm to sort a list of numbers in ascending order:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    
+    return arr
+
+# Input list containing at least 10 numbers
+input_list = [64, 34, 25, 12, 22, 11, 90, 45, 67, 89]
+
+print("Input list:", input_list)
+sorted_list = bubble_sort(input_list)
+print("Sorted list:", sorted_list)
+```
+
+This program defines a `bubble_sort` function that implements the Bubble Sort algorithm to sort a list of numbers in place. The input list provided contains at least 10 numbers, and the program outputs the sorted list in ascending order.
+
+Feel free to run this program in your Python environment to see the sorted list output!
