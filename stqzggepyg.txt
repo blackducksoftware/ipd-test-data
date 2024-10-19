@@ -1,0 +1,15 @@
+Here is a possible prompt you can ask LLM:
+
+```
+Can you solve the following coding challenge:
+
+Create a function in Python that takes in a list of integers and returns a new list with only the even numbers squared. Additionally, the function should sort the resulting list in descending order.
+
+For example:
+Input: [1, 2, 3, 4, 5, 6, 7, 8]
+Output: [64, 36, 16, 4]
+
+Please provide both the function code and an example test case.
+
+Thank you!
+```
