@@ -1,0 +1,26 @@
+That's a great prompt! Here is a simple Python program that accomplishes this task:
+
+```python
+def main():
+    # Read the list of numbers from the input file
+    with open('input.txt', 'r') as file:
+        numbers = [int(num) for num in file.read().split()]
+
+    # Sort the numbers in descending order
+    numbers.sort(reverse=True)
+
+    # Remove duplicates
+    numbers = list(set(numbers))
+
+    # Write the final list to the output file
+    with open('output.txt', 'w') as file:
+        for num in numbers:
+            file.write(f'{num}\n')
+
+if __name__ == '__main__':
+    main()
+```
+
+To use this program, create a text file named `input.txt` and add the list of numbers you want to sort, with each number on a new line. Then run the program, and it will generate a new text file named `output.txt` with the sorted and deduplicated list of numbers.
+
+Feel free to ask LLM for any further assistance or modifications!
