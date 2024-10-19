@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you please write a program that simulates a simple shopping cart system in Python? The program should allow the user to add items to the cart, view the items in the cart, remove items from the cart, and calculate the total cost of all items in the cart. Thank you!
