@@ -1,0 +1,14 @@
+```python
+def fibonacci(n):
+    fib_seq = [0, 1]
+    while fib_seq[-1] + fib_seq[-2] <= n:
+        fib_seq.append(fib_seq[-1] + fib_seq[-2])
+    
+    return fib_seq
+
+num = int(input("Enter a number: "))
+fibonacci_seq = fibonacci(num)
+print(fibonacci_seq)
+```
+
+This Python program takes a user input of a number and then generates a Fibonacci sequence up to that number. The `fibonacci` function generates the Fibonacci sequence up to the input number `n`, and the `fibonacci_seq` variable stores the generated sequence. Finally, the program prints the generated Fibonacci sequence.
