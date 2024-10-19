@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that generates a random sequence of numbers between 1 and 100, and then sorts that sequence in ascending order using the bubble sort algorithm.
