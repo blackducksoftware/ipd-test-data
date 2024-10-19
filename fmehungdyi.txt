@@ -1,0 +1,45 @@
+add a bit for the response
+Prompt: Write a program that accepts a list of integers as input and returns the sum of all positive numbers in the list.
+
+LLM's generated code in Python:
+```
+def sum_positive_numbers(nums):
+    total = 0
+    for num in nums:
+        if num > 0:
+            total += num
+    return total
+
+input_list = [3, -5, 7, -1, 9, -2]
+print(sum_positive_numbers(input_list))
+```
+
+LLM's generated code in Java:
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> nums = new ArrayList<>();
+        nums.add(3);
+        nums.add(-5);
+        nums.add(7);
+        nums.add(-1);
+        nums.add(9);
+        nums.add(-2);
+        
+        System.out.println(sumPositiveNumbers(nums));
+    }
+    
+    public static int sumPositiveNumbers(List<Integer> nums) {
+        int total = 0;
+        for (int num : nums) {
+            if (num > 0) {
+                total += num;
+            }
+        }
+        return total;
+    }
+}
+```
