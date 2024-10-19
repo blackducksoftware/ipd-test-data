@@ -1,0 +1,23 @@
+Sure! Here's the Python function that calculates the factorial of a given number using recursion:
+
+```python
+def factorial(n):
+    if not isinstance(n, int):
+        raise ValueError("Input must be an integer")
+    if n < 0:
+        raise ValueError("Input must be a non-negative integer")
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+
+# Test the function
+try:
+    print(factorial(5))  # Output: 120
+    print(factorial(0))  # Output: 1
+    print(factorial(-1))  # Error: Input must be a non-negative integer
+    print(factorial(5.5))  # Error: Input must be an integer
+except ValueError as e:
+    print(e)
+```
+
+This function will calculate the factorial of a given non-negative integer using recursion. It also includes error handling for non-integer inputs and negative numbers. Let me know if you have any questions or need further explanation!
