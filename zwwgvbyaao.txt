@@ -1,0 +1,11 @@
+add a bit for the response
+Sure, here's a prompt you can ask LLM:
+
+Create a function that takes in a list of integers and returns a new list containing only the even numbers in the original list. The function should be named "get_even_numbers" and should have the following signature:
+
+```python
+def get_even_numbers(nums):
+    # Your code here
+```
+
+Make sure to include input validation to handle cases where the input is not a list or if the list does not contain any integers. Additionally, make sure the function is easy to read and understand.
