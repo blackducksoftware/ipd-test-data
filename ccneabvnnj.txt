@@ -1,0 +1,21 @@
+import sys
+
+def generate_fibonacci(limit):
+    fibonacci_series = []
+    a, b = 0, 1
+    while a < limit:
+        fibonacci_series.append(a)
+        a, b = b, a + b
+    return fibonacci_series
+
+if __name__ == "__main__":
+    try:
+        limit = int(input("Enter the limit for Fibonacci numbers: "))
+        if limit <= 0:
+            print("Limit must be a positive integer")
+            sys.exit(1)
+        fibonacci_numbers = generate_fibonacci(limit)
+        print("Fibonacci numbers up to limit", limit, ":", fibonacci_numbers)
+    except ValueError:
+        print("Limit must be a positive integer")
+        sys.exit(1)
