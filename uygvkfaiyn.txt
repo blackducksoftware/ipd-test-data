@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Prompt: Can you generate code for a simple text-based game in Python that allows the player to navigate a maze and collect items while avoiding obstacles? The game should have multiple levels of increasing difficulty and incorporate random generation of obstacles and items. Thank you!
