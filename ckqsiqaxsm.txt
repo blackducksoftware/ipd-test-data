@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM to generate 20+ lines of code in Python:
+
+"Create a program that takes in a list of numbers as input and outputs the sum of all the even numbers in the list. The program should first ask the user for the number of elements in the list and then prompt the user to enter each number one by one. Make sure to handle any errors that may occur, such as non-numeric inputs. Once the list is complete, calculate the sum of all the even numbers and print the result."
+
+You can replace "Python" with any other popular programming language if you'd like the code to be generated in a different language.
