@@ -1,0 +1,37 @@
+def double_even_numbers(input_list):
+    output_list = []
+    for num in input_list:
+        if num % 2 == 0:
+            output_list.append(num * 2)
+    return output_list
+
+def calculate_average(input_list):
+    if len(input_list) == 0:
+        return 0
+    total = sum(input_list)
+    return total / len(input_list)
+
+def main():
+    try:
+        input_list = []
+        while True:
+            num = input("Enter a number (press 'q' to quit): ")
+            if num.lower() == 'q':
+                break
+            input_list.append(int(num))
+        
+        if len(input_list) == 0:
+            print("No numbers entered.")
+        else:
+            doubled_even_numbers = double_even_numbers(input_list)
+            avg = calculate_average(doubled_even_numbers)
+            
+            print("Original list:", input_list)
+            print("Doubled even numbers list:", doubled_even_numbers)
+            print("Average of doubled even numbers:", avg)
+    
+    except ValueError:
+        print("Invalid input. Please enter only numbers.")
+
+if __name__ == "__main__":
+    main()
