@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you please write a program in Python that generates the Fibonacci sequence up to 20 numbers?"
