@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Create a program in Python that takes a list of numbers as input and calculates the mean, median, and mode of the numbers. The program should then print out the results in a formatted manner. Additionally, the program should have error handling in case the input is not valid. Include comments to explain each section of the code."
