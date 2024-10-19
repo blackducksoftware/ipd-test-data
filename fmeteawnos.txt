@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+Prompt: Write a program that implements a basic calculator in Python. The program should allow the user to input two numbers and choose between addition, subtraction, multiplication, and division operations. The program should then display the result of the chosen operation.
+
+You can adjust the prompt for your specific needs or requirements.
