@@ -1,0 +1,24 @@
+Here is an example of a program in Python that generates a list of prime numbers up to a given input number:
+
+```python
+def check_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def generate_primes(up_to):
+    prime_list = []
+    for i in range(2, up_to+1):
+        if check_prime(i):
+            prime_list.append(i)
+    return prime_list
+
+input_number = int(input("Enter a number: "))
+prime_numbers = generate_primes(input_number)
+print("Prime numbers up to", input_number, "are:", prime_numbers)
+```
+
+You can run this program in a Python environment, enter a number, and it will output all prime numbers up to that number.
