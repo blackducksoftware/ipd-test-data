@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Can you help me create a program that takes user input for a list of numbers, sorts the list in descending order, removes any duplicates, and then calculates the average of the remaining numbers? Please write the code in Python."
