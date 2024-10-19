@@ -1,0 +1,5 @@
+This is a great solution! It covers the requirements of generating a Fibonacci sequence up to a user-specified number, allowing the user to choose between displaying the sequence on the console or saving it to a file. The functions are well-defined and easy to follow.
+
+If you would like to enhance the program further, you could consider adding error handling for user input validations, such as checking if the entered number is valid or if the file name is valid. Additionally, you could provide more options for the user, such as the ability to specify the starting numbers of the Fibonacci sequence.
+
+Overall, this program is a solid implementation of the Fibonacci sequence generator in Python. Well done!
