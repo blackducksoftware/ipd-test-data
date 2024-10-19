@@ -1,0 +1,14 @@
+Certainly! Below is a Python program that accomplishes this:
+
+```python
+# Ask user for their name
+name = input("What is your name? ")
+
+# Ask user for their age
+age = input("How old are you? ")
+
+# Print a message with the user's name and age
+print("Hello " + name + ", you are " + age + " years old")
+```
+
+When you run this program, it will prompt you to enter your name and age, and then it will print out a message saying "Hello [name], you are [age] years old" with the values provided by the user.
