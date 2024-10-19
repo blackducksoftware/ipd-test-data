@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Generate a program in Python that reads a list of integers from the user, removes any duplicates from the list, and then calculates the sum of all numbers in the modified list. Make sure to include error handling for invalid inputs and to display the final sum to the user.
