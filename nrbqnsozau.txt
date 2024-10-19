@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you help me write a program in Python that calculates the average of a list of numbers and then displays whether each number is above or below the average?"
