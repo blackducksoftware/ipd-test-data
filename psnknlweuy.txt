@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use to ask LLM for generating code in Python:
+
+"Write a Python program that takes a list of numbers as input and returns the square of each number in the list. If the number is even, return the square of the number divided by 2. If the number is odd, return the square of the number multiplied by 2. Make sure to handle any potential errors in the input."
