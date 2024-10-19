@@ -1,0 +1,26 @@
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+    return arr
+
+# Get user input for list of numbers
+input_nums = input("Enter a list of numbers separated by spaces: ")
+nums = list(map(int, input_nums.split()))
+
+# Sort the list using bubble sort
+sorted_nums = bubble_sort(nums)
+
+# Display the sorted list to the user
+print("Sorted list:", sorted_nums)
+```
+
+Example Input/Output:
+```
+Enter a list of numbers separated by spaces: 5 2 8 1 3
+Sorted list: [1, 2, 3, 5, 8]
+```
