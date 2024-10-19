@@ -1,0 +1,19 @@
+# Function to generate Fibonacci sequence up to a user-defined limit
+def generate_fibonacci_sequence(limit):
+    fibonacci_sequence = []
+    a, b = 0, 1
+
+    while a <= limit:
+        fibonacci_sequence.append(a)
+        a, b = b, a + b
+
+    return fibonacci_sequence
+
+# Get user input for the limit
+limit = int(input("Enter the limit for Fibonacci sequence generation: "))
+
+# Generate Fibonacci sequence up to the limit
+sequence = generate_fibonacci_sequence(limit)
+
+# Print the generated Fibonacci sequence
+print("Fibonacci sequence up to limit", limit, ":", sequence)
