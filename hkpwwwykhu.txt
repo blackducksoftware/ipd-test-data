@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Write a function in Python that takes in a list of numbers and returns the sum of all the even numbers in the list. Additionally, the function should ignore any negative numbers in the list and only consider positive ones."
