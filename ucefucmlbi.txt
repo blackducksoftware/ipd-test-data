@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Hey LLM, can you generate a function in Python that takes in a list of numbers and returns the sum of all even numbers in the list? Make sure to include comments for clarity and error handling."
