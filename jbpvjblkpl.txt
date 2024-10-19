@@ -1,0 +1,20 @@
+add a bit for the response
+Prompt: "Write a function that takes in an array of integers and returns the average of the positive numbers in the array. If there are no positive numbers, return 0."
+
+LLM response in Python:
+
+```python
+def average_positive(numbers):
+    positive_nums = [num for num in numbers if num > 0]
+    
+    if not positive_nums:
+        return 0
+    
+    average = sum(positive_nums) / len(positive_nums)
+    return average
+
+# Test the function
+test_array = [-1, 2, 3, -4, 5, -6]
+result = average_positive(test_array)
+print(result)
+```
