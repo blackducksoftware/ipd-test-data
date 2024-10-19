@@ -1,0 +1,18 @@
+```python
+def sum_of_even_numbers(numbers):
+    even_sum = 0
+    even_found = False
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+            even_found = True
+    if even_found:
+        return even_sum
+    else:
+        return "No even numbers found."
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum_of_even_numbers(numbers))
+```
+
+You can test this program by providing a list of numbers as input and see if it correctly sums all the even numbers in the list!
