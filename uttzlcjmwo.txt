@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program in Python that sorts a list of numbers in descending order using the bubble sort algorithm.
