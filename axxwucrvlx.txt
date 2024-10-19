@@ -1,0 +1,50 @@
+```python
+def filter_even_numbers(numbers):
+    even_numbers = []
+    for num in numbers:
+        if num % 2 == 0:
+            even_numbers.append(num)
+    return even_numbers
+
+input_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+output_numbers = filter_even_numbers(input_numbers)
+print(output_numbers)
+
+# Additional functionality to handle edge cases
+def filter_even_numbers(numbers):
+    if not numbers:
+        return []
+    
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    return even_numbers
+
+# Test with an empty list
+input_numbers = []
+output_numbers = filter_even_numbers(input_numbers)
+print(output_numbers)
+
+# Test with negative numbers
+input_numbers = [-3, -2, -1, 0, 1, 2, 3]
+output_numbers = filter_even_numbers(input_numbers)
+print(output_numbers)
+
+# Test with only odd numbers
+input_numbers = [1, 3, 5, 7, 9]
+output_numbers = filter_even_numbers(input_numbers)
+print(output_numbers)
+
+# Test with only even numbers
+input_numbers = [2, 4, 6, 8, 10]
+output_numbers = filter_even_numbers(input_numbers)
+print(output_numbers)
+
+# Test with mix of positive and negative numbers
+input_numbers = [-2, 3, -4, 5, 6, -7, 8]
+output_numbers = filter_even_numbers(input_numbers)
+print(output_numbers)
+
+# Test with large numbers
+input_numbers = [1000, 2001, 3002, 4003, 5004]
+output_numbers = filter_even_numbers(input_numbers)
+print(output_numbers)
+```
