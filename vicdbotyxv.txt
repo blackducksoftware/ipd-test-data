@@ -1,0 +1,27 @@
+Here is an example solution to the prompt:
+
+```python
+def calculate_statistics(numbers):
+    average = sum(numbers) / len(numbers)
+    minimum = min(numbers)
+    maximum = max(numbers)
+    sorted_numbers = sorted(numbers)
+    
+    return average, minimum, maximum, sorted_numbers
+
+def main():
+    numbers = input("Enter a list of numbers separated by spaces: ").split()
+    numbers = [int(num) for num in numbers]
+    
+    average, minimum, maximum, sorted_numbers = calculate_statistics(numbers)
+    
+    print(f"Average: {average}")
+    print(f"Minimum: {minimum}")
+    print(f"Maximum: {maximum}")
+    print(f"Sorted list: {sorted_numbers}")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this code in a Python environment, input a list of numbers, and the program will calculate the average, minimum, and maximum numbers in the list, sort the list in ascending order, and display the results.
