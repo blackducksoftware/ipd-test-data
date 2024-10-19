@@ -1,0 +1,20 @@
+import math
+
+def fibonacci_sequence(num_terms):
+    sequence = [0, 1]
+    for i in range(2, num_terms):
+        next_num = sequence[i - 1] + sequence[i - 2]
+        sequence.append(next_num)
+    return sequence
+
+def main():
+    num_terms = int(input("Enter the number of terms in the Fibonacci sequence: "))
+    if num_terms <= 0:
+        print("Number of terms should be greater than 0.")
+    else:
+        sequence = fibonacci_sequence(num_terms)
+        print("Fibonacci sequence up to", num_terms, "terms:")
+        print(sequence)
+
+if __name__ == "__main__":
+    main()
