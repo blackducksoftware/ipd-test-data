@@ -1,0 +1,30 @@
+add a bit for the response
+Prompt: Write a program that takes a list of numbers as input and calculates the sum of all even numbers in the list. If the sum is greater than 100, the program should return "The sum is greater than 100", otherwise it should return the sum of even numbers.
+
+Expected output:
+```
+Input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Output: 30
+
+Input: [10, 20, 30, 40, 50]
+Output: "The sum is greater than 100"
+```
+
+Code:
+```python
+def sum_of_even_numbers(numbers):
+    sum = 0
+    for num in numbers:
+        if num % 2 == 0:
+            sum += num
+    if sum > 100:
+        return "The sum is greater than 100"
+    else:
+        return sum
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum_of_even_numbers(input_list))
+
+input_list = [10, 20, 30, 40, 50]
+print(sum_of_even_numbers(input_list))
+```
