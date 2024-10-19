@@ -1,0 +1,26 @@
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return num * factorial(num - 1)
+
+def validate_input(user_input):
+    try:
+        num = int(user_input)
+        if num < 0:
+            raise ValueError
+        return num
+    except ValueError:
+        print("Input must be a positive integer.")
+        return None
+
+def main():
+    user_input = input("Enter a positive integer to calculate its factorial: ")
+    num = validate_input(user_input)
+    
+    if num is not None:
+        result = factorial(num)
+        print(f"The factorial of {num} is {result}")
+
+if __name__ == "__main__":
+    main()
