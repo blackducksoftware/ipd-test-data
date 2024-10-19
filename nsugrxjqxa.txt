@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Write a program that simulates a basketball game between two teams. The program should keep track of the score, fouls, timeouts, and game clock. It should also have functions for shooting, passing, dribbling, and defending. Use object-oriented programming principles to represent players, teams, and the game itself. Bonus points if you can implement a playoff bracket system to determine the overall winner of a tournament."
