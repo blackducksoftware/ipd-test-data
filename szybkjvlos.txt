@@ -1,0 +1,21 @@
+Here is a Python program that reads a list of numbers from user input, calculates the mean and median of the numbers, and prints the result to the console. It also handles exceptions for invalid input and sorts the list before calculating the median:
+
+```python
+import statistics
+
+try:
+    numbers = input("Enter a list of numbers separated by spaces: ").split()
+    numbers = [float(num) for num in numbers]
+    sorted_numbers = sorted(numbers)
+    
+    mean = statistics.mean(sorted_numbers)
+    median = statistics.median(sorted_numbers)
+    
+    print(f"Mean: {mean}")
+    print(f"Median: {median}")
+    
+except ValueError:
+    print("Invalid input. Please enter valid numbers separated by spaces.")
+```
+
+This program first reads a list of numbers from the user, converts the input into a list of floats, sorts the list, calculates the mean and median using the `statistics` module, and prints the results to the console. It also handles the `ValueError` exception in case the user inputs invalid values.
