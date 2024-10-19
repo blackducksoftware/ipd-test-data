@@ -1,0 +1,4 @@
+add a bit for the response
+Here is a prompt you can use:
+
+"Hey LLM, can you please generate a program that accepts user input for a list of numbers, then calculates the sum of all numbers in the list and outputs the result? Please use Python programming language for this task. Thank you!"
