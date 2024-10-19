@@ -1,0 +1,31 @@
+Here is an example Python program that generates a random password of a certain length using a combination of letters, numbers, and special characters based on the user's input:
+
+```python
+import random
+import string
+
+def generate_password(length, use_uppercase):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    if not use_uppercase:
+        characters = string.ascii_lowercase + string.digits + string.punctuation
+    
+    password = ''.join(random.choice(characters) for i in range(length))
+    return password
+
+def main():
+    length = int(input("Enter the length of the password: "))
+    use_uppercase = input("Include uppercase letters? (yes/no): ").lower()
+    
+    if use_uppercase == 'yes':
+        use_uppercase = True
+    else:
+        use_uppercase = False
+
+    password = generate_password(length, use_uppercase)
+    print("Generated Password:", password)
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this program in a Python environment to generate a random password of a specified length with or without uppercase letters.
