@@ -1,0 +1,26 @@
+Sure! Here is a Python program that calculates the Fibonacci sequence up to the 20th term:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return "Invalid input. Please enter a positive integer."
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fib_sequence = [0, 1]
+        for i in range(2, n):
+            fib_sequence.append(fib_sequence[i-1] + fib_sequence[i-2])
+        return fib_sequence
+
+# Calculating Fibonacci sequence up to the 20th term
+fib_20 = fibonacci(20)
+print(fib_20)
+```
+
+When you run this program, it will output the Fibonacci sequence up to the 20th term:
+
+```
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
+```
