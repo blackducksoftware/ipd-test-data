@@ -1,0 +1,4 @@
+add a bit for the response
+Certainly! Here is a prompt you can ask LLM:
+
+"Please generate a program in Python that calculates the Fibonacci sequence up to a user-defined number of terms. The program should prompt the user to enter the number of terms they want to generate and then output the Fibonacci sequence up to that number. Use loops to calculate the sequence and print each term on a new line. Ensure that the program handles input validation to only accept positive integers as input. Thank you!"
