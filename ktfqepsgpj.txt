@@ -1,0 +1,32 @@
+Here's a Python program that solves the prompt:
+
+```python
+def calculate_average(numbers):
+    total = 0
+    count = 0
+    
+    for number in numbers:
+        if isinstance(number, (int, float)):
+            total += number
+            count += 1
+    
+    if count == 0:
+        return "Cannot calculate average for an empty list or a list containing non-numeric values."
+    
+    average = total / count
+    return average
+
+# Test the function with some sample input
+numbers = [1, 2, 3, 4, 5]
+print(calculate_average(numbers))
+
+numbers = [10, "hello", 20, 30, "world"]
+print(calculate_average(numbers))
+
+numbers = []
+print(calculate_average(numbers))
+```
+
+This program defines a function `calculate_average` that takes a list of numbers as input and returns the average of all the numeric values in the list. It uses a loop to iterate through the numbers, summing up the numeric values and counting the number of valid values. If the input list is empty or does not contain any numeric values, the program returns an error message. 
+
+You can test the program with different input lists to see how it handles cases where the list is empty or contains non-numeric values.
