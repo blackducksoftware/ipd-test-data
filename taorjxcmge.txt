@@ -1,0 +1,14 @@
+Sure! Here is the solution in Python:
+
+```python
+def filter_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    even_numbers.sort(reverse=True)
+    return even_numbers
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = filter_even_numbers(input_list)
+print(result)
+```
+
+If you need a solution in another programming language, please let me know which language you prefer!
