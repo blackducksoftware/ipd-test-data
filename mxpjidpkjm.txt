@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Write a program in Python that takes a list of numbers as input and returns a new list containing only the even numbers, squared. The program should include error handling to check if the input is a list of numbers and handle any invalid inputs appropriately."
