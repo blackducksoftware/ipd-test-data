@@ -1,0 +1,26 @@
+Here is a Python script that accomplishes the task:
+
+```python
+def sort_file(input_file, output_file):
+    data = []
+    
+    # Read input file line by line and store data in a list
+    with open(input_file, 'r') as f:
+        for line in f:
+            data.append(line.strip())
+    
+    # Sort the list in reverse order
+    data.sort(reverse=True)
+    
+    # Write the sorted data to an output file
+    with open(output_file, 'w') as f:
+        for item in data:
+            f.write(item + '\n')
+            
+# Example usage
+input_file = 'input.txt'
+output_file = 'output.txt'
+sort_file(input_file, output_file)
+```
+
+You can save this script in a Python file (e.g., `sort_file.py`) and run it by providing an input file (`input.txt` in this case) and an output file where the sorted data will be written. Make sure to adjust the file names accordingly in the script.
