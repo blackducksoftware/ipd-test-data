@@ -1,0 +1,12 @@
+```python
+def sum_of_even_numbers(numbers):
+    total = 0
+    for num in numbers:
+        if num % 2 == 0:
+            total += num
+    return total
+
+# Test the function
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum_of_even_numbers(input_list))  # Output should be 30
+```
