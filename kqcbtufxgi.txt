@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Create a program that takes in a user's name as input and then generates a personalized greeting. The program should check if the user's name is in a list of names and if it is, output a special message for that person. If the name is not found in the list, the program should output a generic greeting. The program should be written in Python.
