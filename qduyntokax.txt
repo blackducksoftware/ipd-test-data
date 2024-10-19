@@ -1,0 +1,18 @@
+Sure! Here is a Python program that generates a Fibonacci sequence up to a user-specified number of terms:
+
+```python
+def fibonacci_sequence(n):
+    sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+num_terms = int(input("Enter the number of terms in the Fibonacci sequence: "))
+fib_sequence = fibonacci_sequence(num_terms)
+print("Fibonacci sequence up to {} terms:".format(num_terms))
+print(fib_sequence)
+```
+
+You can run this program in a Python environment and enter the number of terms you want in the Fibonacci sequence. The program will then generate the Fibonacci sequence up to that number of terms and print it out for you.
