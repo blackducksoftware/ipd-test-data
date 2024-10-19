@@ -1,0 +1,21 @@
+add a bit for the response
+Prompt: Write a program in Python that prompts the user to enter a list of numbers, then outputs the sum of all the numbers entered.
+
+LKM's generated code could be:
+
+```
+# Prompt user to enter a list of numbers
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+
+# Initialize a variable to hold the sum of the numbers
+sum_numbers = 0
+
+# Iterate through the list of numbers and calculate the sum
+for num in numbers:
+    sum_numbers += int(num)
+
+# Output the sum of the numbers
+print("The sum of the numbers is:", sum_numbers)
+```
+
+This code will prompt the user to enter a list of numbers, split the input into individual numbers, calculate the sum of all the numbers, and finally output the sum to the user.
