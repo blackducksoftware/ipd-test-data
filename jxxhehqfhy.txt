@@ -1,0 +1,22 @@
+Here is a sample Python program that implements the bubble sort algorithm to sort a list of numbers in descending order:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] < arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+# Input list of numbers
+numbers = [64, 34, 25, 12, 22, 11, 90]
+
+# Sort the list in descending order using bubble sort
+sorted_numbers = bubble_sort(numbers)
+
+# Print the sorted list
+print("Sorted list in descending order:", sorted_numbers)
+```
+
+You can run this program in any Python environment to see the list of numbers sorted in descending order using the bubble sort algorithm. Feel free to modify the input list of numbers to test with different inputs.
