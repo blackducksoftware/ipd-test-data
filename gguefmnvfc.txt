@@ -1,0 +1,31 @@
+Here is the Python program that fulfills the given prompt:
+
+```python
+def sum_of_odd_numbers(numbers):
+    odd_sum = 0
+    
+    for num in numbers:
+        if not isinstance(num, int):
+            raise TypeError("All elements in the list must be integers.")
+        
+        if num % 2 != 0:
+            odd_sum += num
+    
+    return odd_sum
+
+try:
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    odd_sum = sum_of_odd_numbers(numbers)
+    print("Sum of odd numbers in the list:", odd_sum)
+    
+    numbers_with_strings = [1, 2, 'three', 4, 5, 6, 'seven', 8, 9]
+    odd_sum_with_strings = sum_of_odd_numbers(numbers_with_strings)
+    print("Sum of odd numbers in the list with strings:", odd_sum_with_strings)
+    
+except TypeError as e:
+    print(f"Error: {e}")
+```
+
+This Python program defines a function `sum_of_odd_numbers` that takes a list of numbers as input, checks if all elements in the list are integers, and calculates the sum of all odd numbers in the list. It includes error handling to raise a `TypeError` if non-integer elements are found in the list.
+
+You can run this program in a Python environment to see the sum of odd numbers in the provided list and the error message for the list that contains non-integer elements.
