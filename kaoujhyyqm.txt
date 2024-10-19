@@ -1,0 +1,24 @@
+Sure! Here is a Python program that reads in a list of numbers from the user, calculates their average, and then prints out the numbers that are above the average:
+
+```
+# Function to calculate average of a list of numbers
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+# Function to print numbers above average
+def print_numbers_above_average(numbers, avg):
+    above_avg = [num for num in numbers if num > avg]
+    print("Numbers above average are:", above_avg)
+
+# Main program
+if __name__ == "__main__":
+    numbers = input("Enter a list of numbers separated by spaces: ").split()
+    numbers = [int(num) for num in numbers]
+
+    avg = calculate_average(numbers)
+    print("Average is:", avg)
+
+    print_numbers_above_average(numbers, avg)
+```
+
+This Python program reads in a list of numbers from the user, calculates their average using the `calculate_average` function, and then prints out the numbers that are above the average using the `print_numbers_above_average` function. The program prompts the user to enter a list of numbers separated by spaces and converts the input into a list of integers before calculating the average and printing out the numbers above the average.
