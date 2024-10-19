@@ -1,0 +1,50 @@
+Here is a Python program that accomplishes the given task:
+
+```python
+from collections import Counter
+import statistics
+
+def calculate_average(nums):
+    return sum(nums) / len(nums)
+
+def calculate_median(nums):
+    return statistics.median(nums)
+
+def calculate_mode(nums):
+    return statistics.mode(nums)
+
+def calculate_range(nums):
+    return max(nums) - min(nums)
+
+def find_outliers(nums):
+    outliers = []
+    q1 = statistics.median(sorted(nums)[:len(nums)//2])
+    q3 = statistics.median(sorted(nums)[(len(nums)+1)//2:])
+    iqr = q3 - q1
+    outlier_low = q1 - 1.5 * iqr
+    outlier_high = q3 + 1.5 * iqr
+    for num in nums:
+        if num < outlier_low or num > outlier_high:
+            outliers.append(num)
+    return outliers
+
+def main():
+    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # Example List of Numbers
+
+    average = calculate_average(nums)
+    median = calculate_median(nums)
+    mode = calculate_mode(nums)
+    num_range = calculate_range(nums)
+    outliers = find_outliers(nums)
+
+    print("Average:", average)
+    print("Median:", median)
+    print("Mode:", mode)
+    print("Range:", num_range)
+    print("Outliers:", outliers)
+
+if __name__ == "__main__":
+    main()
+```
+
+This program takes in a list of numbers, calculates the average, median, mode, and range of the numbers, and detects any outliers using the Interquartile Range (IQR) method. It then outputs these values along with the outliers. You can replace the example list of numbers `nums` with any list of numbers you want to analyze.
