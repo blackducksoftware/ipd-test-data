@@ -1,0 +1,53 @@
+Here's a simple example program in Python that simulates a basic banking system:
+
+```python
+class BankAccount:
+    def __init__(self, name, balance=0):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        if amount < 0:
+            print("Invalid deposit amount. Please enter a positive number.")
+        else:
+            self.balance += amount
+            print(f"Deposit of ${amount} successful. New balance: ${self.balance}")
+
+    def withdraw(self, amount):
+        if amount < 0:
+            print("Invalid withdrawal amount. Please enter a positive number.")
+        elif amount > self.balance:
+            print("Insufficient funds. Withdrawal unsuccessful.")
+        else:
+            self.balance -= amount
+            print(f"Withdrawal of ${amount} successful. New balance: ${self.balance}")
+
+    def transfer(self, recipient, amount):
+        if amount < 0:
+            print("Invalid transfer amount. Please enter a positive number.")
+        elif amount > self.balance:
+            print("Insufficient funds. Transfer unsuccessful.")
+        else:
+            self.balance -= amount
+            recipient.balance += amount
+            print(f"Transfer of ${amount} to {recipient.name} successful. Your new balance: ${self.balance}")
+
+    def check_balance(self):
+        print(f"Current balance for {self.name}: ${self.balance}")
+
+# Main program
+account1 = BankAccount("Alice")
+account2 = BankAccount("Bob")
+
+account1.deposit(100)
+account1.check_balance()
+
+account1.transfer(account2, 50)
+account1.check_balance()
+account2.check_balance()
+
+account1.withdraw(200)
+account1.check_balance()
+```
+
+You can run this program in a Python environment to test out the functionalities of the basic banking system simulation. Feel free to customize or expand upon this program to fit your needs!
