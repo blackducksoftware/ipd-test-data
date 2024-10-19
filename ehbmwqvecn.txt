@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate a program in Python that calculates the average of a list of numbers. The program should take in user input for the list of numbers and output the average. Make sure to handle input validation in case the user enters non-numeric values. Include comments to explain each step of the code for clarity."
