@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! You could ask LLM to generate 20+ lines of Python code to sort a list of numbers in ascending order using Bubble Sort.
