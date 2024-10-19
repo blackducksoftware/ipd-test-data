@@ -1,0 +1,25 @@
+Sure! Here is a simple program in Python that calculates Fibonacci numbers:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return "Please enter a positive integer"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Taking user input
+num = int(input("Enter the number of terms: "))
+
+if num <= 0:
+    print("Please enter a positive integer")
+else:
+    print("Fibonacci sequence:")
+    for i in range(1, num+1):
+        print(fibonacci(i))
+```
+
+You can run this program in your Python environment by copying and pasting the code above. Hope this helps!
