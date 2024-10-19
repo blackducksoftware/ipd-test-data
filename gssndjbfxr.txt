@@ -1,0 +1,27 @@
+```python
+# Function to filter even numbers from a list
+def filter_even_numbers(input_list):
+    # Initialize an empty list to store even numbers
+    even_numbers = []
+    
+    # Iterate through the input list
+    for num in input_list:
+        # Check if the number is even
+        if num % 2 == 0:
+            # Add the even number to the new list
+            even_numbers.append(num)
+    
+    # Return the list of even numbers
+    return even_numbers
+
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Call the function to filter even numbers
+even_numbers_list = filter_even_numbers(numbers)
+
+# Print the list of even numbers
+print("List of even numbers:", even_numbers_list)
+```
+
+When you run this program with the input list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, it will create a new list that contains only the even numbers `[2, 4, 6, 8, 10]` and print it out. Feel free to test it with different input lists!
