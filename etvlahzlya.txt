@@ -1,0 +1,15 @@
+```python
+def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    elif n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+num = int(input("Enter a number: "))
+result = factorial(num)
+print(f"The factorial of {num} is {result}")
+```
+
+This program defines a recursive function `factorial` that calculates the factorial of a given number. The function handles edge cases such as negative numbers and zero by returning appropriate messages. The user is asked to input a number, and the program calculates and prints the factorial of that number using the recursive function.
