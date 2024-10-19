@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use to generate 20+ lines of code in Python:
+
+Prompt: Write a Python program that takes a list of numbers as input from the user and calculates the sum, average, minimum, and maximum values of the list.
+
+You can ask LLM to generate the code with this prompt to see how it interprets and implements the solution in Python.
