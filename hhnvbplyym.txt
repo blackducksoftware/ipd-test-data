@@ -1,0 +1,9 @@
+
+
+When you run this program, the output will be:
+
+```
+38
+```
+
+This is because the even numbers in the list `[2, 3, 6, 8, 5, 10, 12]` are 2, 6, 8, 10, and 12, and their sum is 38.
