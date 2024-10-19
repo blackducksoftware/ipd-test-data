@@ -1,0 +1,26 @@
+import sys
+
+def sum_even_numbers():
+    try:
+        num_elements = int(input("Enter the number of elements in the list: "))
+        if num_elements <= 0:
+            print("Invalid input. Number of elements should be a positive integer.")
+            sys.exit()
+        
+        numbers = []
+        for i in range(num_elements):
+            number = int(input("Enter number {}: ".format(i+1)))
+            numbers.append(number)
+        
+        even_numbers = [num for num in numbers if num % 2 == 0]
+        if len(even_numbers) == 0:
+            print("No even numbers found")
+        else:
+            sum_even = sum(even_numbers)
+            print("Sum of even numbers in the list: {}".format(sum_even))
+    
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+        sys.exit()
+
+sum_even_numbers()
