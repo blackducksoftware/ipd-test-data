@@ -1,0 +1,15 @@
+add a bit for the response
+Prompt: Write a program in Python that generates a Fibonacci sequence up to 20 numbers.
+
+LLM-generated code in Python:
+
+```python
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    while len(fib_sequence) < n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
+
+n = 20
+print(fibonacci(n))
+```
