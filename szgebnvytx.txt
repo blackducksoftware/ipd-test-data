@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you please write a program that takes in a list of numbers and outputs the sum of all even numbers in the list? You can use any programming language you're comfortable with."
