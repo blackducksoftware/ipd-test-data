@@ -1,0 +1,6 @@
+add a bit for the response
+Sure, here's a prompt you can use:
+
+Write a program that calculates the average of a list of numbers. The program should take in a list of numbers as input and output the average of those numbers. Make sure to include error checking for empty lists and non-numeric input.
+
+You can ask LLM to generate code in a popular programming language such as Python, Java, or C++.
