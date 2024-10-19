@@ -1,0 +1,21 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate code for:
+
+Prompt: Create a program in Python that takes a list of numbers as input and returns a new list with only the even numbers multiplied by 2.
+
+Expected Output:
+```python
+def multiply_even_numbers(input_list):
+    output_list = []
+    for num in input_list:
+        if num % 2 == 0:
+            output_list.append(num * 2)
+    return output_list
+
+# Example usage:
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+result = multiply_even_numbers(input_list)
+print(result)
+```
+
+You can change the programming language or modify the prompt as needed.
