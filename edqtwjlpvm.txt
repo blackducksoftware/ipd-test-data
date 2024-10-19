@@ -1,0 +1,14 @@
+def find_largest_smallest_average(numbers):
+    largest = max(numbers)
+    smallest = min(numbers)
+    average = sum(numbers) / len(numbers)
+    
+    return largest, smallest, average
+
+# Test the function with a list of numbers
+numbers = [10, 5, 15, 20, 8]
+largest, smallest, average = find_largest_smallest_average(numbers)
+
+print("The largest number is: {}".format(largest))
+print("The smallest number is: {}".format(smallest))
+print("The average of all the numbers is: {}".format(average))
