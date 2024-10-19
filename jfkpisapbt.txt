@@ -1,0 +1,25 @@
+Sure! Here is an example code for a simple Flask web application that accomplishes this task:
+
+```python
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        return f'<h1>Hello, {name}! Welcome to the Flask web application!</h1>'
+    return '''
+        <form method="post">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name">
+            <button type="submit">Submit</button>
+        </form>
+    '''
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+You can save this code in a file named `app.py`, install Flask using `pip install Flask`, and then run the application using `python app.py`. The application will run on `http://127.0.0.1:5000/` and users can input their name in the form to see a personalized greeting message on the screen.
