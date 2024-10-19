@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that generates a random password for the user, taking into account the user's preferences for password length, including uppercase and lowercase letters, numbers, and special characters. The program should also include an option for the user to specify a list of characters they do not want to be included in the password.
