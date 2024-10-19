@@ -1,0 +1,33 @@
+import math
+
+# Function to check if a number is prime
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(math.sqrt(num)) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Function to generate Fibonacci numbers
+def generate_fibonacci(n):
+    fibonacci_numbers = [0, 1]
+    for i in range(2, n):
+        fibonacci_numbers.append(fibonacci_numbers[i-1] + fibonacci_numbers[i-2])
+    return fibonacci_numbers
+
+# Filter out non-prime Fibonacci numbers
+fibonacci_list = generate_fibonacci(50)
+prime_fibonacci_numbers = [num for num in fibonacci_list if is_prime(num)]
+
+# Calculate sum of prime Fibonacci numbers
+sum_prime = sum(prime_fibonacci_numbers)
+
+print("List of first 50 Fibonacci numbers:")
+print(fibonacci_list)
+
+print("\nList of prime Fibonacci numbers:")
+print(prime_fibonacci_numbers)
+
+print("\nSum of prime Fibonacci numbers:")
+print(sum_prime)
