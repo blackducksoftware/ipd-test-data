@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM to generate 20+ lines of code in Python:
+
+"Create a program that simulates a simple bank account system. The program should include functions for depositing money, withdrawing money, checking the account balance, and transferring money between accounts. The program should also have error handling for invalid inputs and display the account balance after each transaction. Use object-oriented programming principles to create the bank account class."
