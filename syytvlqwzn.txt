@@ -1,0 +1,21 @@
+Here is an example of a Python program that accomplishes this task:
+
+```python
+def fibonacci_list(limit):
+    fib_list = [0, 1]
+    while fib_list[-1] + fib_list[-2] <= limit:
+        fib_list.append(fib_list[-1] + fib_list[-2])
+    return fib_list
+
+try:
+    limit = int(input("Enter a limit for the Fibonacci numbers: "))
+    if limit < 0:
+        print("Please enter a positive number.")
+    else:
+        result = fibonacci_list(limit)
+        print("Fibonacci numbers up to limit {}: {}".format(limit, result))
+except ValueError:
+    print("Please enter a valid integer for the limit.")
+```
+
+You can copy and paste this code into a Python environment (such as an IDE or online compiler) and run it to see the Fibonacci numbers generated up to the limit you enter. Feel free to modify the code or ask for further clarification if needed!
