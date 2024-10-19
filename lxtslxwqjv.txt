@@ -1,0 +1,26 @@
+Here's a sample Python program that fulfills the prompt:
+
+```python
+def square_numbers(nums):
+    try:
+        squared_nums = [num**2 for num in nums]
+        sum_squared_nums = sum(squared_nums)
+        return squared_nums, sum_squared_nums
+    except TypeError:
+        return "Input must be a list of numbers."
+    except Exception as e:
+        return f"An error occurred: {e}"
+
+# Taking input from the user
+try:
+    nums = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+    squared_nums, sum_squared_nums = square_numbers(nums)
+    print(f"Squared numbers: {squared_nums}")
+    print(f"Sum of squared numbers: {sum_squared_nums}")
+except ValueError:
+    print("Invalid input. Please enter numbers only.")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+You can run this program in any Python environment and provide a list of numbers as input when prompted. The program will then calculate the square of each number in the list, compute the sum of squared numbers, and print out the results. It also includes error handling to ensure the program runs smoothly even in case of unexpected issues.
