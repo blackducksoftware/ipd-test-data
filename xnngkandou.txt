@@ -1,0 +1,19 @@
+Here is a Python program that accomplishes this task:
+
+```python
+def filter_even_numbers(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    even_numbers.sort(reverse=True)
+    return even_numbers
+
+# Input list of numbers
+numbers = [12, 7, 14, 9, 20, 16, 3]
+
+# Filter even numbers and sort in descending order
+result = filter_even_numbers(numbers)
+
+# Output the result
+print(result)
+```
+
+When you run this program with the input list `[12, 7, 14, 9, 20, 16, 3]`, it will output `[20, 16, 14, 12]`, which are the even numbers in the input list sorted in descending order.
