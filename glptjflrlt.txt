@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Write a program in Python that generates a list of the first 20 prime numbers."
