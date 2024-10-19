@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate 20+ lines of code in Python:
+
+"Please generate a program in Python that reads in a list of numbers from the user, calculates the average of the numbers, and then prints out the average along with the numbers that are greater than the average. Additionally, please include error handling for cases when the user enters non-numeric values."
