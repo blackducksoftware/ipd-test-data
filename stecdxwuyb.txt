@@ -1,0 +1,23 @@
+```python
+import csv
+
+# Function to calculate average grade for each student
+def calculate_average_grade(grades):
+    return sum(grades) / len(grades)
+
+# Read CSV file containing student grades
+with open('student_grades.csv', 'r') as file:
+    reader = csv.reader(file)
+    next(reader)  # Skip header
+    student_grades = {row[0]: list(map(int, row[1:])) for row in reader}
+
+# Calculate average grade for each student
+student_avg_grades = {student: calculate_average_grade(grades) for student, grades in student_grades.items()}
+
+# Write results to a new CSV file
+with open('average_grades.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['Student', 'Average Grade'])
+    for student, avg_grade in student_avg_grades.items():
+        writer.writerow([student, avg_grade])
+```
