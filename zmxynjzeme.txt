@@ -1,0 +1,19 @@
+Sure! Here's a simple Python program that does that:
+
+```python
+def sum_of_list(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+# Input list of numbers
+input_list = [1, 2, 3, 4, 5]
+
+# Call the function with the input list
+result = sum_of_list(input_list)
+
+print(result)
+```
+
+You can replace the `input_list` variable with your own list of numbers to get the sum of those numbers.
