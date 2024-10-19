@@ -1,0 +1,30 @@
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def prime_numbers_in_range(start, end):
+    prime_numbers = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            prime_numbers.append(num)
+    return prime_numbers
+
+def display_results(prime_numbers):
+    print("Prime numbers in the specified range:")
+    for num in prime_numbers:
+        print(num, end=" ")
+    print("\nTotal prime numbers found:", len(prime_numbers))
+
+start_range = int(input("Enter the starting range: "))
+end_range = int(input("Enter the ending range: "))
+
+prime_numbers = prime_numbers_in_range(start_range, end_range)
+display_results(prime_numbers)
+```
+
+This program takes input for a starting and ending range, calculates the prime numbers within that range using the `is_prime` function, and then displays the results in a visually appealing way using the `display_results` function.
