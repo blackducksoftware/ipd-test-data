@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Create a program that takes user input for a list of numbers, checks if each number is prime or composite, and then prints out the result for each number. Make sure to handle any errors or invalid input."
+
+This prompt should generate more than 20 lines of code in a popular programming language like Python, Java, or C++.
