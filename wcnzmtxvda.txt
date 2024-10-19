@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate 20+ lines of code in Python:
+
+Write a program that takes a list of numbers as input and calculates the average of the positive numbers in the list. If there are no positive numbers in the list, the program should output "No positive numbers found." The program should also handle any input errors, such as non-numeric values in the list.
+
+You can ask LLM to generate the code by providing this prompt.
