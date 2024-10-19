@@ -1,0 +1,19 @@
+Sure! Here is the Python program that reverses an input string using a recursive function:
+
+```python
+def reverse_string(s):
+    if len(s) == 0:
+        return s
+    else:
+        return reverse_string(s[1:]) + s[0]
+
+def main():
+    user_input = input("Please enter a string: ")
+    reversed_string = reverse_string(user_input)
+    print("The reversed string is:", reversed_string)
+
+if __name__ == "__main__":
+    main()
+```
+
+This program defines a `reverse_string` function that takes an input string `s` and recursively reverses it. In the `main` function, the user is prompted to enter a string, the `reverse_string` function is called to reverse the input string, and the reversed string is printed. The program handles both uppercase and lowercase characters in the input string.
