@@ -1,0 +1,2 @@
+Prompt for LLM:
+Create a program in Java that simulates a simple library management system. The program should allow the user to add new books with their title, author, and ISBN. The user should also be able to view all books, search for a specific book by title or author, update a book's information, and remove a book from the library. Make sure to handle any errors gracefully.
