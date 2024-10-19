@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Generate a program that calculates the average grade of a list of student grades in Python."
