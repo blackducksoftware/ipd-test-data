@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Can you generate a sorting algorithm in Python that sorts a list of numbers in descending order using the selection sort algorithm? Please make sure to include comments to explain each step of the sorting process."
