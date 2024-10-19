@@ -1,0 +1,64 @@
+Here is an example code implemented in Python:
+
+```python
+class Bank:
+    def __init__(self):
+        self.accounts = {}
+
+    def create_account(self, account_number, initial_balance):
+        if account_number in self.accounts:
+            print("Account already exists!")
+        else:
+            self.accounts[account_number] = initial_balance
+            print("Account created successfully!")
+
+    def deposit(self, account_number, amount):
+        if account_number in self.accounts:
+            self.accounts[account_number] += amount
+            print("Deposit successful! Current balance: ${}".format(self.accounts[account_number]))
+        else:
+            print("Account does not exist!")
+
+    def withdraw(self, account_number, amount):
+        if account_number in self.accounts:
+            if self.accounts[account_number] >= amount:
+                self.accounts[account_number] -= amount
+                print("Withdrawal successful! Current balance: ${}".format(self.accounts[account_number]))
+            else:
+                print("Insufficient funds!")
+        else:
+            print("Account does not exist!")
+
+    def check_balance(self, account_number):
+        if account_number in self.accounts:
+            print("Current balance: ${}".format(self.accounts[account_number]))
+        else:
+            print("Account does not exist!")
+
+    def transfer(self, from_account, to_account, amount):
+        if from_account in self.accounts and to_account in self.accounts:
+            if self.accounts[from_account] >= amount:
+                self.accounts[from_account] -= amount
+                self.accounts[to_account] += amount
+                print("Transfer successful! Current balance in account {}: ${}".format(from_account, self.accounts[from_account]))
+            else:
+                print("Insufficient funds!")
+        else:
+            print("One or more accounts do not exist!")
+
+# Sample usage
+bank = Bank()
+
+bank.create_account("12345", 1000)
+bank.deposit("12345", 500)
+bank.check_balance("12345")
+bank.withdraw("12345", 200)
+bank.check_balance("12345")
+
+bank.create_account("67890", 500)
+bank.transfer("12345", "67890", 300)
+bank.check_balance("12345")
+bank.check_balance("67890")
+```
+
+This program simulates a basic banking system with functions for creating accounts, depositing money, withdrawing money, checking balance, and transferring money between accounts. Error handling is included for cases such as trying to withdraw more money than the current balance or transferring money between non-existent accounts. Feel free to modify and extend this code as needed.
