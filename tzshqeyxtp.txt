@@ -1,0 +1,14 @@
+Sure! Here's a code snippet in Python that calculates the Fibonacci sequence up to a given number:
+
+```python
+def fibonacci_sequence(n):
+    fib_list = [0, 1]
+    while fib_list[-1] + fib_list[-2] <= n:
+        fib_list.append(fib_list[-1] + fib_list[-2])
+    return fib_list
+
+n = int(input("Enter a number: "))
+print(fibonacci_sequence(n))
+```
+
+You can run this code and enter a number to get the Fibonacci sequence up to that number.
