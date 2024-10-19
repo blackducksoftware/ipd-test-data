@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that generates a series of Fibonacci numbers up to a certain limit, with each number in the series being the sum of the two preceding numbers.
