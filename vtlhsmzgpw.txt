@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you please create a program in Python that takes a list of numbers as input and returns the sum of all the numbers in the list?"
