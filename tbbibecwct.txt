@@ -1,0 +1,21 @@
+Here is a simple Python program that simulates a weather forecasting system:
+
+```python
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+def weather_forecast():
+    temperature_fahrenheit = float(input("Enter the current temperature in Fahrenheit: "))
+    
+    if temperature_fahrenheit > 80:
+        print("Recommendation: Bring an umbrella.")
+    else:
+        print("Recommendation: Do not bring an umbrella.")
+    
+    temperature_celsius = fahrenheit_to_celsius(temperature_fahrenheit)
+    print(f"The temperature in Celsius is: {temperature_celsius:.2f} °C")
+
+weather_forecast()
+```
+
+You can run this program in your Python environment, and it will prompt you to input the current temperature in Fahrenheit. Based on the temperature you provide, it will give you a recommendation on whether to bring an umbrella and also display the temperature in Celsius. Feel free to customize and add more features as needed!
