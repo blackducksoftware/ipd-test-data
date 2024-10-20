@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM to generate code for:
+
+Write a program in Python that prompts the user to enter a number and then outputs all the prime numbers up to that number. The program should use a function called is_prime() to determine if a number is prime or not. The program should then create a list of all prime numbers up to the user's input and print out the list.
+
+Feel free to adjust the prompt or programming language as needed!
