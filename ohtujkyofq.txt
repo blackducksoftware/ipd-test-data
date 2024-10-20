@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Create a Python program that takes a list of numbers as input from the user and then calculates the average of those numbers. The program should display the average as output. Additionally, the program should also display the maximum and minimum numbers from the list.
+
+Please generate at least 20 lines of code in Python for this prompt.
