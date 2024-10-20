@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM to generate 20+ lines of code in Python:
+
+"Write a program that takes a list of numbers as input and outputs the sum of all even numbers in the list."
