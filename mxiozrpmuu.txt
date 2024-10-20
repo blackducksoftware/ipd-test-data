@@ -1,0 +1,5 @@
+The `factorial()` function takes an integer `n` as input and recursively calculates the factorial by multiplying `n` with `factorial(n-1)` until reaching the base case of `n == 0`, at which point it returns 1.
+
+The user is prompted to enter a number, which is then stored in the `num` variable. If the number is negative, the program prints a message informing the user that factorial is not defined for negative numbers. If the number is 0, the program prints that the factorial of 0 is 1. Otherwise, the `factorial()` function is called with the input number, and the result is printed out with a message stating the factorial of the input number.
+
+This program effectively demonstrates the use of recursive functions to calculate factorials in Python.
