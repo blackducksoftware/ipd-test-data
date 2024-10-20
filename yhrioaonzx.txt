@@ -1,0 +1,19 @@
+Here's an example implementation in Python:
+
+```python
+def fibonacci(limit):
+    fib_list = [0, 1]
+    while True:
+        next_fib = fib_list[-1] + fib_list[-2]
+        if next_fib > limit:
+            break
+        fib_list.append(next_fib)
+    
+    return fib_list
+
+limit = int(input("Enter the limit for Fibonacci numbers: "))
+fib_list = fibonacci(limit)
+print(fib_list)
+```
+
+You can run this program in any Python environment and enter a limit to generate Fibonacci numbers up to that limit.
