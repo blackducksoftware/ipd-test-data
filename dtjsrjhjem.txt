@@ -1,0 +1,18 @@
+Here is the Python program that fulfills the prompt:
+
+```python
+def even_numbers_sorted(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    even_numbers.sort(reverse=True)
+    return even_numbers
+
+# Example input list of integers
+input_list = [3, 7, 2, 9, 4, 6]
+
+# Get the list of even numbers sorted in descending order
+result = even_numbers_sorted(input_list)
+
+print(result)  # Output: [6, 4, 2]
+```
+
+You can test this program by providing different input lists of integers. Let me know if you have any questions or need further assistance!
