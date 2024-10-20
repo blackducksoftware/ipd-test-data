@@ -1,0 +1,50 @@
+```python
+class ShoppingCart:
+    def __init__(self):
+        self.cart = {}
+
+    def add_item(self, item, price):
+        self.cart[item] = price
+        print(f"{item} added to cart for ${price}")
+
+    def display_cart(self):
+        if not self.cart:
+            print("Your cart is empty.")
+        else:
+            print("Items in your cart:")
+            for item, price in self.cart.items():
+                print(f"- {item}: ${price}")
+
+    def remove_item(self, item):
+        if item in self.cart:
+            del self.cart[item]
+            print(f"{item} removed from cart.")
+        else:
+            print(f"{item} is not in your cart.")
+
+    def calculate_total(self):
+        total = sum(self.cart.values())
+        print(f"Total cost of all items in your cart: ${total}")
+
+    def clear_cart(self):
+        self.cart = {}
+        print("Your cart has been cleared.")
+
+# Test the program
+cart = ShoppingCart()
+cart.add_item("apple", 1.50)
+cart.add_item("banana", 0.75)
+
+cart.display_cart()
+
+cart.add_item("orange", 2.00)
+cart.remove_item("apple")
+
+cart.display_cart()
+
+cart.calculate_total()
+
+cart.clear_cart()
+cart.display_cart()
+```
+This is a simple program that simulates a shopping cart using Python. It allows the user to add items to the cart, display the current items in the cart, remove items from the cart, calculate the total cost of all items in the cart, and clear the cart completely.
