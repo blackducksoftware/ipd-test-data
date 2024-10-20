@@ -1,0 +1,62 @@
+Here is the Python program:
+
+```python
+def calculate_average(numbers):
+    """
+    Function to calculate the average of a list of numbers
+    :param numbers: list of numbers
+    :return: average of the numbers
+    """
+    if not numbers:
+        raise ValueError("Empty list of numbers provided")
+    
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+def find_maximum(numbers):
+    """
+    Function to find the maximum number in a list of numbers
+    :param numbers: list of numbers
+    :return: maximum number
+    """
+    if not numbers:
+        raise ValueError("Empty list of numbers provided")
+    
+    return max(numbers)
+
+def find_minimum(numbers):
+    """
+    Function to find the minimum number in a list of numbers
+    :param numbers: list of numbers
+    :return: minimum number
+    """
+    if not numbers:
+        raise ValueError("Empty list of numbers provided")
+    
+    return min(numbers)
+
+# Input list of numbers
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+numbers = [float(num) for num in numbers]
+
+try:
+    # Calculate average
+    average = calculate_average(numbers)
+    print("Average:", average)
+
+    # Find maximum number
+    maximum = find_maximum(numbers)
+    print("Maximum:", maximum)
+
+    # Find minimum number
+    minimum = find_minimum(numbers)
+    print("Minimum:", minimum)
+
+except ValueError as e:
+    print("Error:", e)
+except Exception as e:
+    print("An error occurred:", e)
+```
+
+You can run this program in your Python environment by copying and pasting the code snippet above. This program will prompt you to enter a list of numbers, calculate the average, and output the maximum and minimum numbers in the list with appropriate error handling.
