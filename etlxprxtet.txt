@@ -1,0 +1,19 @@
+Here is a sample Python program that achieves this:
+
+```python
+def calculate_average(num_list):
+    total = sum(num_list)
+    average = total / len(num_list)
+    return average
+
+# Take input from the user
+input_list = input("Enter a list of numbers separated by a space: ")
+num_list = [int(num) for num in input_list.split()]
+
+# Calculate the average
+result = calculate_average(num_list)
+
+print("The average of the numbers in the list is:", result)
+```
+
+You can run this program and input a list of numbers separated by spaces. The program will calculate the average of all the numbers in the list and display it as output.
