@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! You can ask LLM to generate code for a simple number guessing game in Python. Here is a possible prompt:
+
+"Hey LLM, can you generate code for a number guessing game in Python? The game should allow the player to guess a randomly generated number between 1 and 100. The game should provide feedback to the player on whether their guess is too high or too low. The game should also keep track of the number of attempts the player has made and congratulate the player when they guess the correct number. Thanks in advance!"
