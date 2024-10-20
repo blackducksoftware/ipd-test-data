@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Can you generate code that creates a simple web application using HTML, CSS, and JavaScript that allows users to input a list of items, add them to a list, and then display the list on the screen?"
+
+This prompt should generate at least 20 lines of code in a popular programming language.
