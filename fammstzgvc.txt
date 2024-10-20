@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating 20+ lines of Python code:
+
+"Can you generate a Python script that extracts data from a CSV file, performs some data cleaning and transformation operations, and then visualizes the processed data using matplotlib library? Please include error handling and comments for clarity."
+
+Feel free to customize the prompt based on your specific requirements or preferences.
