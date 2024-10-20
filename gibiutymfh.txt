@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Write a function in Python that takes in a list of numbers and returns a new list containing only the even numbers multiplied by 2. The function should handle both positive and negative numbers.
