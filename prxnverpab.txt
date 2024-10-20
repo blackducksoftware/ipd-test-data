@@ -1,0 +1,8 @@
+add a bit for the response
+Prompt: Write a program to create a simple calculator that can perform addition, subtraction, multiplication, and division operations. The program should prompt the user to enter two numbers and ask for the operation they want to perform. It should then display the result of the operation. The program should continue running until the user decides to exit. 
+
+Make sure to handle any potential errors or edge cases, such as division by zero. 
+
+Language: Python
+
+Thank you!
