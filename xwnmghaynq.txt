@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that calculates the average grade of students in a class. The program should take in the grades of each student as input and output the average grade.
