@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+Prompt: "Write a Python program that takes a list of numbers as input, filters out the even numbers, squares each of the remaining numbers, and then calculates the sum of the squared numbers."
+
+This prompt should result in LLM generating a Python program with 20+ lines of code that accomplishes the specified task.
