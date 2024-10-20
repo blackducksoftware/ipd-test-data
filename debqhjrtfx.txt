@@ -1,0 +1,19 @@
+Here's a Python program that takes a list of numbers as input, squares only the even numbers from the input list, and returns a new list containing those squared even numbers:
+
+```python
+def square_even_numbers(numbers):
+    squared_even_numbers = [x**2 for x in numbers if x % 2 == 0]
+    return squared_even_numbers
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = square_even_numbers(input_list)
+print(result)
+```
+
+When you run this program, it will output:
+
+```
+[4, 16, 36, 64, 100]
+```
+
+This new list contains the squares of the even numbers from the original input list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
