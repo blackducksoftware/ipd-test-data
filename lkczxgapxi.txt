@@ -1,0 +1,19 @@
+Sure! Here is the code generated based on your prompt:
+
+```python
+def calculate_average(numbers):
+    try:
+        total = sum(numbers)
+        average = total / len(numbers)
+        return average
+    except ZeroDivisionError:
+        return "Input list is empty"
+    except TypeError:
+        return "Invalid input. Please provide a list of numbers."
+
+# Example input
+numbers = [1, 2, 3, 4, 5]
+print(calculate_average(numbers))
+```
+
+You can adjust the `numbers` list to any list of numbers you want to calculate the average for. Let me know if you need any further modifications or assistance!
