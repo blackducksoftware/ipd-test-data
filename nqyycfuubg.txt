@@ -1,0 +1,23 @@
+```python
+# Function to calculate the average of a list of numbers
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# Main program
+numbers = []
+
+# Get input from user
+while True:
+    user_input = input("Enter a number (or 'done' to finish): ")
+    if user_input.lower() == 'done':
+        break
+    numbers.append(int(user_input))
+
+if numbers:
+    average = calculate_average(numbers)
+    print("The average of the numbers is:", average)
+else:
+    print("No numbers were inputted.")
+```
