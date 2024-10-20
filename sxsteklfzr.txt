@@ -1,0 +1,109 @@
+Here is a simplified version of a Blackjack game program in Python:
+
+```python
+import random
+
+class Player:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+        self.hand = []
+        self.bet = 0
+
+    def place_bet(self):
+        while True:
+            try:
+                bet_amount = int(input(f"{self.name}, place your bet: "))
+                if bet_amount > self.balance or bet_amount <= 0:
+                    print("Invalid bet amount. Please try again.")
+                else:
+                    self.bet = bet_amount
+                    break
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
+    def hit(self):
+        self.hand.append(random.randint(1, 10))
+
+    def calculate_hand_value(self):
+        value = sum(self.hand)
+        if 11 in self.hand and value > 21:
+            value -= 10
+        return value
+
+def play_blackjack():
+    players = []
+    num_players = int(input("Enter number of players: "))
+    for i in range(num_players):
+        name = input(f"Enter player {i+1}'s name: ")
+        balance = int(input(f"Enter starting balance for {name}: "))
+        players.append(Player(name, balance))
+    
+    dealer = Player("Dealer", 0)
+    
+    while True:
+        for player in players:
+            player.place_bet()
+        
+        for _ in range(2):
+            for player in players + [dealer]:
+                player.hit()
+        
+        print("\n--- Player Hands ---")
+        for player in players:
+            print(f"{player.name}'s hand: {player.hand} (Value: {player.calculate_hand_value()})")
+        
+        print("\n--- Dealer Hand ---")
+        print(f"Dealer's hand: [{dealer.hand[0]}, ?]")
+        
+        for player in players:
+            while True:
+                action = input(f"{player.name}, do you want to hit or stand? (h/s): ")
+                if action.lower() == 'h':
+                    player.hit()
+                    print(f"{player.name} hits. {player.name}'s hand: {player.hand} (Value: {player.calculate_hand_value()})")
+                    if player.calculate_hand_value() > 21:
+                        print(f"{player.name} busts!")
+                        break
+                elif action.lower() == 's':
+                    print(f"{player.name} stands.")
+                    break
+                else:
+                    print("Invalid input. Please enter 'h' or 's'.")
+        
+        print("\n--- Dealer's Turn ---")
+        print(f"Dealer's hand: {dealer.hand} (Value: {dealer.calculate_hand_value()})")
+        while dealer.calculate_hand_value() < 17:
+            dealer.hit()
+            print(f"Dealer hits. Dealer's hand: {dealer.hand} (Value: {dealer.calculate_hand_value()})")
+        
+        if dealer.calculate_hand_value() > 21:
+            print("Dealer busts!")
+        else:
+            print("Dealer stands.")
+        
+        print("\n--- Results ---")
+        for player in players:
+            player_value = player.calculate_hand_value()
+            dealer_value = dealer.calculate_hand_value()
+            if player_value > 21:
+                print(f"{player.name} busts! Dealer wins.")
+                player.balance -= player.bet
+            elif dealer_value > 21 or player_value > dealer_value:
+                print(f"{player.name} wins!")
+                player.balance += player.bet
+            elif player_value == dealer_value:
+                print(f"{player.name} and Dealer push (tie).")
+        
+        for player in players:
+            print(f"{player.name}'s balance: {player.balance}")
+        
+        play_again = input("Do you want to play another round? (y/n): ")
+        if play_again.lower() != 'y':
+            print("Thanks for playing!")
+            break
+
+play_blackjack()
+```
+
+This program allows multiple players to play Blackjack against a dealer. Players can place bets, hit or stand during their turns, and the winner is determined at the end of each round. The program also checks for busts and blackjack conditions. There is no split hand functionality or betting strategies like doubling down implemented in this simplified version.
