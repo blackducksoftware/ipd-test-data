@@ -1,0 +1,67 @@
+Here is a sample Python program that simulates a vending machine:
+
+```python
+class VendingMachine:
+    def __init__(self):
+        self.items = {
+            "1": {"name": "Coke", "price": 1.25},
+            "2": {"name": "Chips", "price": 1.50},
+            "3": {"name": "Candy bar", "price": 1.00},
+            "4": {"name": "Water", "price": 1.00},
+            "5": {"name": "Cookies", "price": 2.00},
+            "6": {"name": "Gum", "price": 0.75},
+            "7": {"name": "Popcorn", "price": 1.75},
+            "8": {"name": "Pretzels", "price": 1.25},
+            "9": {"name": "Juice", "price": 2.50},
+            "10": {"name": "Energy drink", "price": 3.00}
+        }
+        self.balance = 0
+
+    def display_menu(self):
+        print("Welcome to the Vending Machine!")
+        print("Menu:")
+        for key, value in self.items.items():
+            print(f"{key}: {value['name']} - ${value['price']}")
+    
+    def add_money(self):
+        money = float(input("Please enter the amount of money you have ($): "))
+        self.balance += money
+        print(f"Current balance: ${self.balance}")
+    
+    def select_item(self):
+        self.display_menu()
+        item_num = input("Enter the item number you would like to purchase: ")
+        if item_num in self.items:
+            item_price = self.items[item_num]["price"]
+            if self.balance >= item_price:
+                self.balance -= item_price
+                print(f"Thank you for purchasing {self.items[item_num]['name']}! Your remaining balance is ${self.balance}")
+            else:
+                print("Insufficient funds. Please add more money.")
+        else:
+            print("Invalid item number. Please try again.")
+        
+    def start(self):
+        while True:
+            print("\nOptions:")
+            print("1. Add money")
+            print("2. Select an item")
+            print("3. Exit")
+            choice = input("Enter your choice: ")
+
+            if choice == "1":
+                self.add_money()
+            elif choice == "2":
+                self.select_item()
+            elif choice == "3":
+                print("Thank you for using the Vending Machine. Have a nice day!")
+                break
+            else:
+                print("Invalid choice. Please try again.")
+
+# Instantiate the vending machine
+vm = VendingMachine()
+vm.start()
+```
+
+You can run this program and interact with the vending machine by adding money, selecting items for purchase, and seeing your remaining balance. You can customize the items and prices in the `items` dictionary as needed.
