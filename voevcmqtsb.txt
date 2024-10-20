@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program that simulates a game of Rock, Paper, Scissors against the computer. The program should prompt the user to enter their choice (rock, paper, or scissors) and then generate a random choice for the computer. The program should then determine the winner based on the rules of the game (rock beats scissors, scissors beats paper, paper beats rock) and display the result to the user. The game should continue until the user decides to quit.
