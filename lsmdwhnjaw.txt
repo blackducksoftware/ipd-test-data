@@ -1,0 +1,17 @@
+Here is an example of a Python program that calculates the average of a list of numbers using a function:
+
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    return total / len(numbers)
+
+# Input list of numbers
+numbers = [5, 10, 15, 20, 25]
+
+# Calculate average using the function
+average = calculate_average(numbers)
+
+print("The average of the numbers is:", average)
+```
+
+When you run this Python program with the input list `[5, 10, 15, 20, 25]`, it will output `The average of the numbers is: 15.0`.
