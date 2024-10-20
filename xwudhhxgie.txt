@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that simulates a simple shopping cart system. The program should allow the user to add items to the cart, view the items in the cart, remove items from the cart, and calculate the total cost of all items in the cart. Use object-oriented programming principles to create classes for the items and the shopping cart. The program should also handle any errors or edge cases gracefully.
