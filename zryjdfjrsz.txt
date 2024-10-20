@@ -1,0 +1,4 @@
+add a bit for the response
+Here is a prompt you can use:
+
+"Can you write a program that randomly generates a list of 100 numbers between 1 and 1000, and then sorts the list in descending order using [INSERT PROGRAMMING LANGUAGE OF CHOICE]?"
