@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you please generate a code that reads a list of numbers from user input, sorts the list in ascending order, and then calculates the average of the numbers in the list? Please use Python for this task."
