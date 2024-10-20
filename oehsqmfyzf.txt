@@ -1,0 +1,3 @@
+Here's a modified prompt for generating 20+ lines of Java code for the same task:
+
+"Can you generate a Java program that takes an array of integers as input and calculates the average value of the numbers in the array? Please include error handling for invalid input."
