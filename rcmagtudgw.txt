@@ -1,0 +1,68 @@
+Here is the code for the simple web application:
+
+HTML:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Changer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Background Color Changer</h1>
+  
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name"><br>
+  
+  <label for="color">Select a color:</label>
+  <select id="color">
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select><br>
+  
+  <button onclick="changeBackgroundColor()">Change Background Color</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+CSS (styles.css):
+```css
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+input, select {
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+}
+```
+
+JavaScript (script.js):
+```javascript
+function changeBackgroundColor() {
+  var name = document.getElementById("name").value;
+  var color = document.getElementById("color").value;
+  
+  if (name === "") {
+    alert("Please enter your name!");
+    return;
+  }
+  
+  document.body.style.backgroundColor = color;
+}
+```
+
+When the user enters their name, selects a color from the dropdown menu, and clicks the "Change Background Color" button, the background color of the page will change to the selected color. If the user does not enter a name, they will receive an alert message prompting them to do so.
