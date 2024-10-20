@@ -1,0 +1,2 @@
+add a bit for the response
+Sure! How about asking LLM to generate a function in Python that takes in a list of numbers and returns the sum of all even numbers in the list?
