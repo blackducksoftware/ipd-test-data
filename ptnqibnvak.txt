@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you create a program in Python that takes in a list of numbers and outputs only the prime numbers in that list?"
