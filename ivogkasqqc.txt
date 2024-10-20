@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use to ask LLM to generate code in Python:
+
+"Create a Python program that generates a list of prime numbers between 1 and 100. Output the list to the console."
