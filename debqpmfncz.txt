@@ -1,0 +1,15 @@
+```python
+def fibonacci(limit):
+    a, b = 0, 1
+    fib_numbers = []
+    
+    while a <= limit:
+        fib_numbers.append(a)
+        a, b = b, a + b
+        
+    return fib_numbers
+
+limit = int(input("Enter the limit for Fibonacci numbers: "))
+fibonacci_numbers = fibonacci(limit)
+print("Fibonacci numbers up to", limit, "are:", fibonacci_numbers)
+```
