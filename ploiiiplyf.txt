@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that simulates a game of rock, paper, scissors against the computer. The program should take user input for their choice (rock, paper, or scissors) and generate a random choice for the computer. The program should then determine the winner based on the classic rock, paper, scissors rules and display the result to the user. The game should continue until the user chooses to quit.
