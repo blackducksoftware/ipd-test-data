@@ -1,0 +1,2 @@
+add a bit for the response
+Generate a program that simulates a simplified version of a banking system. The program should include functions for creating new accounts, depositing and withdrawing funds from accounts, transferring funds between accounts, checking account balances, and closing accounts if necessary. The program should also keep track of the total amount of funds in the system and display appropriate messages for different actions taken by the user.
