@@ -1,0 +1,25 @@
+Here is the Python code that fulfills the prompt:
+
+```python
+def square_elements(input_list):
+    output_list = []
+    
+    try:
+        for num in input_list:
+            if not isinstance(num, int):
+                raise ValueError("Input list must only contain integers")
+            output_list.append(num ** 2)
+    except ValueError as e:
+        print(e)
+        return []
+    
+    return output_list
+
+# Test cases
+print(square_elements([1, 2, 3]))  # Output: [1, 4, 9]
+print(square_elements([5, -2, 8]))  # Output: [25, 4, 64]
+print(square_elements([]))          # Output: []
+print(square_elements([1, 'a', 3])) # Output: ValueError: Input list must only contain integers
+```
+
+You can copy and paste this code into a Python interpreter or script to test the function with different inputs. Let me know if you need further assistance!
