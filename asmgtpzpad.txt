@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate 20+ lines of code in Python that reads a CSV file, calculates the average of a specific column, and then writes the result to a new CSV file."
