@@ -1,0 +1,17 @@
+Here is a function in Python that takes a list of numbers as input and returns a new list with only the even numbers doubled:
+
+```python
+def double_even_numbers(input_list):
+    if not input_list:
+        return []
+
+    doubled_even_numbers = [num * 2 for num in input_list if num % 2 == 0]
+    return doubled_even_numbers
+
+# Test cases
+print(double_even_numbers([1, 2, 3, 4, 5]))  # Output: [4, 8]
+print(double_even_numbers([6, 7, 8, 9, 10]))  # Output: [12, 16, 20]
+print(double_even_numbers([]))  # Output: []
+```
+
+This function first checks if the input list is empty and returns an empty list if it is. Then, it iterates over each number in the input list and doubles it if it is even. The resulting list of doubled even numbers is returned.
