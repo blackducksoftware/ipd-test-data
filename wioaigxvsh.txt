@@ -1,0 +1,10 @@
+```python
+def odd_numbers_squared(input_list):
+    result = [num ** 2 for num in input_list if num % 2 != 0]
+    return result
+
+# Example
+input_list = [1, 2, 3, 4, 5]
+output_list = odd_numbers_squared(input_list)
+print(output_list)
+```
