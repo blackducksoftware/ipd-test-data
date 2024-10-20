@@ -1,0 +1,28 @@
+Sure! Here's an example function in Python that accomplishes that task:
+
+```python
+def sum_even_numbers(lst):
+    sum_even = 0
+    try:
+        for num in lst:
+            if num % 2 == 0:
+                sum_even += num
+        return sum_even
+    except TypeError:
+        print("Error: Please provide a list of numbers.")
+```
+
+You can call this function by passing in a list of numbers like this:
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+print(sum_even_numbers(numbers))
+```
+
+This will output:
+
+```
+12
+``` 
+
+This function will iterate through the list of numbers and add up all the even numbers. Additionally, it includes error handling to catch any TypeError that may occur if a non-numeric value is passed to the function.
