@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Write a program in Python that takes a list of numbers as input and returns a new list containing only the even numbers from the original list. Make sure to handle edge cases such as empty lists or lists containing non-integer values.
