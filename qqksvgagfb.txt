@@ -1,0 +1,51 @@
+Here is an example code that creates a simple to-do list application in Python using classes and inheritance:
+
+```python
+class Task:
+    def __init__(self, description):
+        self.description = description
+        self.completed = False
+
+    def mark_completed(self):
+        self.completed = True
+
+    def __str__(self):
+        status = "Completed" if self.completed else "Not Completed"
+        return f"Task: {self.description} - Status: {status}"
+
+
+class ToDoList:
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, description):
+        task = Task(description)
+        self.tasks.append(task)
+
+    def display_all_tasks(self):
+        for i, task in enumerate(self.tasks, start=1):
+            print(f"{i}. {task}")
+
+    def mark_task_completed(self, task_number):
+        task = self.tasks[task_number - 1]
+        task.mark_completed()
+        print(f"Task \"{task.description}\" marked as completed.")
+
+
+if __name__ == "__main__":
+    todo_list = ToDoList()
+
+    todo_list.add_task("Buy groceries")
+    todo_list.add_task("Clean the house")
+    todo_list.add_task("Finish homework")
+
+    todo_list.display_all_tasks()
+
+    task_number = int(input("Enter the task number to mark as completed: "))
+    todo_list.mark_task_completed(task_number)
+
+    print("\nUpdated task list:")
+    todo_list.display_all_tasks()
+```
+
+This code creates a simple to-do list application with the ability to add tasks, mark tasks as completed, and display all tasks. The `Task` class represents a single task with a description and completion status, while the `ToDoList` class contains functions for managing tasks such as adding tasks, displaying all tasks, and marking tasks as completed.
