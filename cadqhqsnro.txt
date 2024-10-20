@@ -1,0 +1,29 @@
+Here is your Python program:
+
+```python
+def sum_even_numbers(numbers):
+    even_sum = 0
+    found_even = False
+    
+    for num in numbers:
+        try:
+            if int(num) % 2 == 0:
+                even_sum += int(num)
+                found_even = True
+        except ValueError:
+            print("Error: Non-numeric input found in the list")
+            return
+    
+    if not found_even:
+        print("No even numbers found in the list")
+    else:
+        print("Sum of even numbers:", even_sum)
+
+# Taking input from the user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+
+# Calling the function with input list
+sum_even_numbers(input_list)
+```
+
+You can run this program in your Python environment and provide a list of numbers separated by spaces to get the sum of all the even numbers in the list. The program will also handle non-numeric inputs and display a message if no even numbers are found in the list.
