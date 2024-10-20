@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that takes an input number from the user and outputs the Fibonacci sequence up to that number in Python.
