@@ -1,0 +1,25 @@
+import random
+import string
+
+def generate_password(length):
+    special_chars = "!@#$%^&*()"
+    password = ''
+    
+    # Include at least one of each required character type
+    password += random.choice(string.ascii_uppercase)
+    password += random.choice(string.ascii_lowercase)
+    password += random.choice(string.digits)
+    password += random.choice(special_chars)
+
+    for _ in range(length - 4):
+        password += random.choice(string.ascii_letters + string.digits + special_chars)
+
+    password_list = list(password)
+    random.shuffle(password_list)
+    password = ''.join(password_list)
+
+    return password
+
+# Ensure the generated password is at least 8 characters long
+password = generate_password(random.randint(8, 12))
+print(f"Generated password: {password}")
