@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM to generate 20+ lines of code in Python:
+
+"Can you generate a Python program that calculates the factorial of a number inputted by the user? The program should prompt the user to enter a number, then use a loop to calculate the factorial of that number. Finally, the program should print out the result. Please make sure to include error handling for negative numbers and non-integer inputs."
