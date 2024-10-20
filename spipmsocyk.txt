@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating code in Python:
+
+"Write a program that takes a list of numbers as input and returns a new list containing only the even numbers from the original list. Make sure to handle input validation and error checking."
