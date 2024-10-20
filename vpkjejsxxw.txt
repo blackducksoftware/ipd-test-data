@@ -1,0 +1,2 @@
+add a bit for the response
+Sure, here is a prompt you can use: "Write a program that takes in a list of numbers and returns the sum of all prime numbers in the list. In case there are no prime numbers in the list, return 0."
