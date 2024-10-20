@@ -1,0 +1,28 @@
+LLM Response in C++:
+
+```cpp
+#include <iostream>
+#include <vector>
+
+std::vector<int> squareEvenNumbers(std::vector<int> numbers) {
+    std::vector<int> squaredNumbers;
+    for (int num : numbers) {
+        if (num % 2 == 0) {
+            squaredNumbers.push_back(num * num);
+        }
+    }
+    return squaredNumbers;
+}
+
+int main() {
+    std::vector<int> numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    std::vector<int> result = squareEvenNumbers(numbers);
+
+    for (int num : result) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+```
