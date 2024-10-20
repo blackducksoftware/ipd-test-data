@@ -1,0 +1,27 @@
+Here is an example implementation in Python:
+
+```python
+import random
+import string
+
+def generate_password(length):
+    password = ''
+    characters = string.ascii_letters + string.digits + string.punctuation
+    for _ in range(length):
+        password += random.choice(characters)
+    return password
+
+def main():
+    length = int(input("Enter the desired length of the password: "))
+    while length < 8:
+        print("Password length should be at least 8 characters. Please enter a valid length.")
+        length = int(input("Enter the desired length of the password: "))
+    
+    password = generate_password(length)
+    print("Generated password:", password)
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this Python script and enter the desired length of the password. The program will generate a random password of the specified length with a combination of uppercase letters, lowercase letters, numbers, and special characters.
