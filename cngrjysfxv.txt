@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Can you please generate a function in Python that takes a list of numbers as input and returns the sum of all even numbers in the list? The function should be named 'sum_even_numbers'."
