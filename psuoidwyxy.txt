@@ -1,0 +1,25 @@
+Here is a sample Python program that fulfills the prompt:
+
+```python
+def is_even(num):
+    return num % 2 == 0
+
+def sum_even_numbers(numbers):
+    even_numbers = [num for num in numbers if is_even(num)]
+    sum_even = sum(even_numbers)
+    return even_numbers, sum_even
+
+def main():
+    numbers = input("Enter a list of numbers separated by spaces: ").split()
+    numbers = [int(num) for num in numbers]
+
+    even_numbers, sum_even = sum_even_numbers(numbers)
+
+    print("Even numbers in the list:", even_numbers)
+    print("Sum of even numbers:", sum_even)
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this program in a Python interpreter and test it by entering a list of numbers separated by spaces. It will output the even numbers in the list and their sum.
