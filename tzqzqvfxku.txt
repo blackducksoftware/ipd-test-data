@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+Write a program in Python that generates the Fibonacci sequence up to the 10th number.
