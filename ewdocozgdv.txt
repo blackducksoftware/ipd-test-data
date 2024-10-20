@@ -1,0 +1,9 @@
+
+
+For example, if the user inputs the list of numbers [10, 20, 30, 40, 50], the program will output:
+```
+Average: 30.0
+Numbers above the average: [40, 50]
+``` 
+
+This program uses list comprehension and basic arithmetic operations to efficiently calculate the average and identify numbers above the average.
