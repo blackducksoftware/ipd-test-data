@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+Generate a program in Python that prompts the user to enter a list of numbers separated by commas. The program should then calculate the total sum of the numbers in the list and output the result. Additionally, the program should also find the minimum and maximum numbers in the list, as well as the average of all the numbers. Finally, the program should print out the sorted list of numbers in ascending order.
