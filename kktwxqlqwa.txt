@@ -1,0 +1,40 @@
+Sure! Here is a Python program that sorts a list of integers in ascending order using the merge sort algorithm:
+
+```python
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    mid = len(arr) // 2
+    left_half = arr[:mid]
+    right_half = arr[mid:]
+    
+    left_half = merge_sort(left_half)
+    right_half = merge_sort(right_half)
+    
+    return merge(left_half, right_half)
+
+def merge(left, right):
+    result = []
+    left_index = right_index = 0
+    
+    while left_index < len(left) and right_index < len(right):
+        if left[left_index] < right[right_index]:
+            result.append(left[left_index])
+            left_index += 1
+        else:
+            result.append(right[right_index])
+            right_index += 1
+    
+    result.extend(left[left_index:])
+    result.extend(right[right_index:])
+    
+    return result
+
+# Test the merge sort algorithm
+arr = [12, 11, 13, 5, 6, 7]
+sorted_arr = merge_sort(arr)
+print("Sorted array:", sorted_arr)
+```
+
+This program defines two functions `merge_sort` and `merge` to implement the merge sort algorithm. The `merge_sort` function recursively divides the input list into two halves until each sublist has only one element. Then the `merge` function merges the two sorted sublists into a single sorted list. Finally, the program tests the merge sort algorithm with a sample input list `[12, 11, 13, 5, 6, 7]` and prints the sorted array.
