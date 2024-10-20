@@ -1,0 +1,20 @@
+Sure! Here is a Python program that takes a list of numbers as input and returns the average of the numbers rounded to the nearest whole number:
+
+```python
+def calculate_average(numbers):
+    if len(numbers) == 0:
+        return 0
+    
+    total = sum(numbers)
+    average = total / len(numbers)
+    
+    return round(average)
+
+# Input list of numbers
+numbers = [int(x) for x in input("Enter numbers separated by spaces: ").split()]
+
+# Calculate average and print result
+print("Average of the numbers: ", calculate_average(numbers))
+```
+
+You can run this program in a Python environment and enter a list of numbers separated by spaces. It will then calculate and print the average of the numbers rounded to the nearest whole number.
