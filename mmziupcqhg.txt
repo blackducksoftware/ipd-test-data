@@ -1,0 +1,17 @@
+```python
+def sum_of_odd_numbers(nums):
+    odd_sum = 0
+    for num in nums:
+        if num % 2 != 0:
+            odd_sum += num
+    
+    if odd_sum > 100:
+        odd_sum *= 2
+
+    return odd_sum
+
+# Test the function
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = sum_of_odd_numbers(input_list)
+print("The sum of odd numbers in the list is:", result)
+```
