@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM: 
+
+"Write a program in Python that takes a list of numbers as input and returns a new list containing only the even numbers, in descending order. Ensure the program includes error handling for incorrect input types and empty lists."
