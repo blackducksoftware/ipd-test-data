@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Create a program that simulates a grocery store checkout system. The program should prompt the user to enter the name and price of each item they are purchasing, and calculate the total cost of their items. The program should then apply any applicable discounts or promotions (e.g. buy one get one free) and display the final total. Use Python programming language for this task."
