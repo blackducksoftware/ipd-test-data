@@ -1,0 +1,22 @@
+Here is an example of code generated in Java based on the prompt:
+
+```java
+public class SumOfSquaresOfEvens {
+    public static int sumOfSquaresOfEvens(int[] numbers) {
+        int sumOfSquares = 0;
+        for (int num : numbers) {
+            if (num % 2 == 0) {
+                sumOfSquares += num * num;
+            }
+        }
+        return sumOfSquares;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6};
+        System.out.println(sumOfSquaresOfEvens(numbers)); // Output: 56 (2^2 + 4^2 + 6^2)
+    }
+}
+``` 
+
+This Java code implements a function `sumOfSquaresOfEvens` that takes in an array of integers and returns the sum of the squares of all even numbers in the array. The `main` method demonstrates how to use this function with a sample input array and prints the resulting sum.
