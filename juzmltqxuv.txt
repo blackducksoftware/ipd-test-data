@@ -1,0 +1,42 @@
+Sure! Let's ask LLM to generate a Python program following the prompt provided. 
+
+```python
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+def calculate_median(numbers):
+    sorted_numbers = sorted(numbers)
+    n = len(sorted_numbers)
+    if n % 2 == 0:
+        return (sorted_numbers[n // 2 - 1] + sorted_numbers[n // 2]) / 2
+    else:
+        return sorted_numbers[n // 2]
+
+def calculate_mode(numbers):
+    mode_count = {}
+    for number in numbers:
+        if number in mode_count:
+            mode_count[number] += 1
+        else:
+            mode_count[number] = 1
+    max_count = max(mode_count.values())
+    mode = [key for key, value in mode_count.items() if value == max_count]
+    return mode
+
+def main():
+    numbers = input("Enter a list of numbers separated by spaces: ").split()
+    numbers = [int(num) for num in numbers]
+
+    mean = calculate_mean(numbers)
+    median = calculate_median(numbers)
+    mode = calculate_mode(numbers)
+
+    print(f"Mean: {mean}")
+    print(f"Median: {median}")
+    print(f"Mode: {mode}")
+
+if __name__ == "__main__":
+    main()
+```
+
+You can now run this program in your Python interpreter and input a list of numbers to calculate the mean, median, and mode.
