@@ -1,0 +1,19 @@
+add a bit for the response
+Sure, here is a prompt you can ask LLM for generating 20+ lines of code in Python:
+
+Prompt: Write a program that takes a list of numbers as input and returns the sum of the even numbers in the list.
+
+Expected output:
+```python
+def sum_even_numbers(numbers):
+    total = 0
+    for num in numbers:
+        if num % 2 == 0:
+            total += num
+    return total
+
+numbers = [2, 3, 4, 5, 6, 7, 8]
+print(sum_even_numbers(numbers))
+``` 
+
+Feel free to adjust the prompt if you'd like LLM to generate code in a different programming language.
