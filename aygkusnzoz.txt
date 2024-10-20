@@ -1,0 +1,20 @@
+Here is a simple Python program that generates a Fibonacci sequence up to a user-specified number:
+
+```python
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    
+    while fib_sequence[-1] + fib_sequence[-2] <= n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+
+    return fib_sequence
+
+if __name__ == "__main__":
+    num = int(input("Enter a number: "))
+    fib_sequence = fibonacci(num)
+    
+    print("Fibonacci sequence up to", num, ":")
+    print(fib_sequence)
+```
+
+When you run this program, it will prompt you to enter a number. The program will then generate the Fibonacci sequence up to that number and print out the sequence.
