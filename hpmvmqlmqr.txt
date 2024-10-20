@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Write a program in Python that generates a list of prime numbers up to a user-specified number. The program should prompt the user to enter a number, and then display all prime numbers up to that number. Make sure to include comments explaining how the program works."
+
+Feel free to adjust the prompt as needed for your specific requirements!
