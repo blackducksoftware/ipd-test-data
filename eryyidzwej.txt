@@ -1,0 +1,33 @@
+add a bit for the response
+Prompt: "Write a program in Python that simulates a dice rolling game where the player rolls two dice and tries to get a total sum of 7. The program should keep track of the number of rolls the player takes to reach a sum of 7, and display the average number of rolls it takes to win the game after running it multiple times."
+
+LLM's response may be:
+```python
+import random
+
+def roll_dice():
+    return random.randint(1, 6)
+
+def dice_game():
+    sum = 0
+    rolls = 0
+    while sum != 7:
+        dice1 = roll_dice()
+        dice2 = roll_dice()
+        sum = dice1 + dice2
+        rolls += 1
+    return rolls
+
+def main():
+    num_games = 1000
+    total_rolls = 0
+    for _ in range(num_games):
+        total_rolls += dice_game()
+    average_rolls = total_rolls / num_games
+    print(f"Average number of rolls to win the game: {average_rolls}")
+
+if __name__ == "__main__":
+    main()
+```
+
+This program simulates a dice rolling game where the player rolls two dice and tries to get a sum of 7. It runs the game multiple times, calculates the average number of rolls to win, and then displays the result.
