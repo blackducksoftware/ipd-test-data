@@ -1,0 +1,23 @@
+Sure, here is a Python solution to the prompt:
+
+```python
+def sum_of_even_numbers(numbers):
+    even_sum = 0
+    
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+    
+    return even_sum
+
+if __name__ == "__main__":
+    numbers = input("Enter a list of numbers separated by spaces: ")
+    numbers = list(map(int, numbers.split()))
+
+    result = sum_of_even_numbers(numbers)
+    print(f"The sum of all even numbers in the list is: {result}")
+```
+
+In this solution, we define a function `sum_of_even_numbers` that takes a list of numbers as input and iterates through the list. For each number, we check if it is even by taking the modulo of 2, and if it is even, we add it to the running sum `even_sum`. Finally, we return the sum of all even numbers in the list.
+
+In the main section, we take the user input as a list of numbers separated by spaces, convert it into a list of integers using `map` and `split`, and then call the `sum_of_even_numbers` function to calculate and print the sum of all even numbers in the list.
