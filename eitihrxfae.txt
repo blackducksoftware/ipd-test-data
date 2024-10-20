@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you create a program that takes a list of numbers as input and returns a new list with only the prime numbers included? The program should include functions for checking if a number is prime and for filtering the list. Use Python for the implementation.
