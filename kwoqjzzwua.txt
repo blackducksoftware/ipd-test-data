@@ -1,0 +1,25 @@
+Here is the Python code for the prompt you provided:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+while True:
+    try:
+        num = int(input("Enter a non-negative integer to calculate its factorial: "))
+        if num < 0:
+            print("Please enter a non-negative integer.")
+            continue
+        result = factorial(num)
+        print(f"The factorial of {num} is {result}")
+    except ValueError:
+        print("Invalid input. Please enter a valid non-negative integer.")
+    choice = input("Do you want to calculate another factorial? (yes/no): ")
+    if choice.lower() != 'yes':
+        break
+```
+
+You can run this code in a Python interpreter or an IDE to prompt the user to enter a non-negative integer, calculate its factorial, and ask if they want to calculate another factorial. It handles input validation to ensure that the user enters a non-negative integer. Let me know if you need any more help with this!
