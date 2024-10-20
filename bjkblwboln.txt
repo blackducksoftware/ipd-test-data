@@ -1,0 +1,24 @@
+Here is a Python program that sorts a list of integers in descending order using the bubble sort algorithm:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] < arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+# Test the function
+arr = [64, 34, 25, 12, 22, 11, 90]
+sorted_arr = bubble_sort(arr)
+print("Sorted array in descending order:", sorted_arr)
+```
+
+When you run this program, it will output:
+
+```
+Sorted array in descending order: [90, 64, 34, 25, 22, 12, 11]
+``` 
+
+This means that the input list `[64, 34, 25, 12, 22, 11, 90]` has been sorted in descending order using the bubble sort algorithm.
