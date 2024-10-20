@@ -1,0 +1,78 @@
+import sys
+
+class Inventory:
+    def __init__(self):
+        self.inventory = {}
+
+    def add_item(self, item_name, quantity, price):
+        if item_name in self.inventory:
+            print(f"{item_name} already exists in inventory. Use update_item to modify quantity.")
+        else:
+            self.inventory[item_name] = {"quantity": quantity, "price": price}
+
+    def update_item(self, item_name, new_quantity):
+        if item_name not in self.inventory:
+            print(f"{item_name} does not exist in inventory. Use add_item to add it.")
+        else:
+            self.inventory[item_name]["quantity"] = new_quantity
+
+    def remove_item(self, item_name):
+        if item_name not in self.inventory:
+            print(f"{item_name} does not exist in inventory.")
+        else:
+            del self.inventory[item_name]
+
+    def display_inventory(self):
+        for item, details in self.inventory.items():
+            print(f"{item}: Quantity - {details['quantity']}, Price - {details['price']}")
+
+    def calculate_total_value(self):
+        total_value = 0
+        for item, details in self.inventory.items():
+            total_value += details['quantity'] * details['price']
+        return total_value
+
+def main():
+    store_inventory = Inventory()
+
+    while True:
+        print("\nOptions:")
+        print("1. Add new item")
+        print("2. Update item quantity")
+        print("3. Remove item")
+        print("4. Display current inventory")
+        print("5. Calculate total value of inventory")
+        print("6. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            item_name = input("Enter item name: ")
+            quantity = int(input("Enter quantity: "))
+            price = float(input("Enter price: "))
+            store_inventory.add_item(item_name, quantity, price)
+
+        elif choice == "2":
+            item_name = input("Enter item name: ")
+            new_quantity = int(input("Enter new quantity: "))
+            store_inventory.update_item(item_name, new_quantity)
+
+        elif choice == "3":
+            item_name = input("Enter item name: ")
+            store_inventory.remove_item(item_name)
+
+        elif choice == "4":
+            store_inventory.display_inventory()
+
+        elif choice == "5":
+            total_value = store_inventory.calculate_total_value()
+            print(f"Total value of inventory: ${total_value}")
+
+        elif choice == "6":
+            sys.exit()
+
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
