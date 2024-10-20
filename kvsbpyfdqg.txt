@@ -1,0 +1,22 @@
+Here is an example code snippet in Python that implements the described prompt:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] < arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+# Taking user input for list of numbers
+numbers = [int(x) for x in input("Enter the numbers separated by spaces: ").split()]
+
+# Sorting the list using Bubble Sort
+sorted_numbers = bubble_sort(numbers)
+
+# Output the sorted list
+print("Sorted list in descending order:", sorted_numbers)
+```
+
+You can run this code snippet in a Python environment and test it with your list of numbers. Let me know if you need any further assistance or modifications!
