@@ -1,0 +1,23 @@
+Here is a Python program that generates a list of prime numbers up to a user-defined limit:
+
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+limit = int(input("Enter the limit for prime numbers: "))
+
+if limit < 2:
+    print("There are no prime numbers up to", limit)
+else:
+    prime_numbers = [num for num in range(2, limit + 1) if is_prime(num)]
+    
+    print("Prime numbers up to", limit, "are:")
+    print(prime_numbers)
+```
+
+You can run this program in a Python environment and input a limit to generate a list of prime numbers up to that limit. Let me know if you need any further assistance or modifications.
