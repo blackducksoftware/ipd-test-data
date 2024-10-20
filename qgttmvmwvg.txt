@@ -1,0 +1,21 @@
+Here's a simple Python program that generates a Fibonacci sequence of numbers up to a user-specified limit:
+
+```python
+def fibonacci(limit):
+    a, b = 0, 1
+    sequence = [a, b]
+
+    while a + b <= limit:
+        a, b = b, a + b
+        sequence.append(b)
+
+    return sequence
+
+limit = int(input("Enter the limit for the Fibonacci sequence: "))
+result = fibonacci(limit)
+
+print("Fibonacci sequence up to", limit, ":")
+print(result)
+```
+
+You can run this program in any Python environment and enter a limit as the user input to generate the Fibonacci sequence up to that limit.
