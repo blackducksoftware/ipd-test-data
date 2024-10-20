@@ -1,0 +1,6 @@
+add a bit for the response
+Of course! Here is a prompt you can ask LLM:
+
+"Please generate a program in Python that takes a list of numbers as input and outputs a new list containing only the even numbers from the original list. The program should also include a function that calculates the average of the even numbers in the list."
+
+This prompt should generate at least 20 lines of Python code from LLM. Happy coding!
