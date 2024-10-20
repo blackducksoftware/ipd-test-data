@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you please generate a program that calculates the mean, median, and mode of a given list of numbers in Python?"
