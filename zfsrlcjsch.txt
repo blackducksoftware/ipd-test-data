@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM for generating code in a popular programming language:
+
+Prompt: "Can you generate a program in Python that calculates the factorial of a given number using recursion? Please include comments to explain each step of the process and handle edge cases such as negative numbers or zero."
+
+This prompt should generate a significant amount of code in Python with detailed explanations and error handling for various scenarios.
