@@ -1,0 +1,20 @@
+Here is a simple Python program that calculates the average of a list of numbers input by the user:
+
+```python
+# Function to calculate the average of a list of numbers
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# Main program
+if __name__ == "__main__":
+    try:
+        numbers = [int(num) for num in input("Enter a list of numbers separated by spaces: ").split()]
+        avg = calculate_average(numbers)
+        print("Average of the numbers is:", avg)
+    except ValueError:
+        print("Please enter valid numbers separated by spaces.")
+```
+
+You can copy and paste this code into a Python interpreter or a Python file to run it. The program prompts the user to enter a list of numbers separated by spaces, calculates the average of those numbers, and then prints out the result. If the user enters invalid input (e.g., non-numeric values), the program will print an error message.
