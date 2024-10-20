@@ -1,0 +1,23 @@
+Here is a Python program that fulfills the prompt:
+
+```python
+def sum_of_numbers(input_list):
+    try:
+        total_sum = sum(input_list)
+        return total_sum
+    except TypeError:
+        return "Error: Please input a valid list of numbers."
+
+# Take input from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+
+# Convert input to list of integers
+try:
+    input_list = [int(num) for num in input_list]
+    result = sum_of_numbers(input_list)
+    print(f"The sum of the numbers in the list is: {result}")
+except ValueError:
+    print("Error: Please input a valid list of numbers.")
+```
+
+You can copy and paste this code into a Python interpreter or script to use it.
