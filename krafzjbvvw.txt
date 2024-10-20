@@ -1,0 +1,16 @@
+Certainly! Here's a Python program that accomplishes this task:
+
+```python
+def sum_of_even_numbers(input_list):
+    sum_even = 0
+    for num in input_list:
+        if num % 2 == 0:
+            sum_even += num
+    return sum_even
+
+# Test the function
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum_of_even_numbers(input_list))  # Output should be 30
+```
+
+You can use the `sum_of_even_numbers` function to pass in any list of integers and it will return the sum of all even numbers in the list.
