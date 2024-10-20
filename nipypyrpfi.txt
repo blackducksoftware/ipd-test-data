@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Generate a program in Python that takes a list of numbers as input and returns only the even numbers in the list. Make sure to include error handling for invalid input."
+
+You can ask LLM to generate 20+ lines of code for this prompt in Python.
