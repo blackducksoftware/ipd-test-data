@@ -1,0 +1,4 @@
+add a bit for the response
+Prompt: Write a program in Python that takes in a list of numbers, filters out the even numbers, squares each remaining number, and then sorts the final list in descending order. 
+
+LM will generate the code in response to this prompt.
