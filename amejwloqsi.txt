@@ -1,0 +1,4 @@
+
+When the program is run, it will continue to prompt the user to enter their choice until a valid input of Rock, Paper, or Scissors is given. Once both the user and computer choices are determined, the program will then display the result of the game (whether it's a tie, user wins, or computer wins).
+
+You can run this code in a Python environment to play the game of Rock, Paper, Scissors against the computer opponent.
