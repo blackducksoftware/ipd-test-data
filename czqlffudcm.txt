@@ -1,0 +1,28 @@
+Sure! Here is the Python code for the function that filters out prime numbers from a list of numbers:
+
+```python
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            return False
+    return True
+
+def filter_primes(numbers):
+    prime_numbers = []
+    for num in numbers:
+        if is_prime(num):
+            prime_numbers.append(num)
+    return prime_numbers
+
+# Example usage
+input_list = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(filter_primes(input_list))
+```
+
+In this code snippet, the `is_prime` function is the helper function that checks if a given number is prime. It iterates over all numbers from 2 up to the square root of the input number and checks if any of them divide the number evenly. If none do, the number is prime.
+
+The `filter_primes` function takes a list of numbers as input, iterates over each number in the input list, and uses the `is_prime` function to determine if the number is prime. If it is prime, the number is added to the list of prime numbers. Finally, the function returns the list of prime numbers.
+
+I hope this helps! Let me know if you have any questions or need further clarification.
