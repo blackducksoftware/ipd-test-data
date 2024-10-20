@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you please generate code that implements a basic calculator program in Python that can perform addition, subtraction, multiplication, and division operations on two numbers?
