@@ -1,0 +1,10 @@
+import random
+
+# Generate a random list of 20 numbers between 1 and 100
+random_list = [random.randint(1, 100) for _ in range(20)]
+
+# Sort the list in ascending order
+random_list.sort()
+
+# Output the sorted list to the console
+print(random_list)
