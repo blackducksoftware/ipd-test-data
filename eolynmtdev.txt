@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here's a prompt you can ask LLM:
+
+Could you please generate 20+ lines of Python code that reads a CSV file, filters the data based on a specific condition, sorts the results, and then writes the filtered data back to a new CSV file?
