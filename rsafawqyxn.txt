@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that takes user input for the length of a list and generates a list of random numbers within a specified range. Then, find the largest number in the list and output it along with the index position. Use Python for implementation.
