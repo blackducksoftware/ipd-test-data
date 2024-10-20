@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program that simulates a game of Blackjack. The program should allow the user to play against a computer dealer, following traditional Blackjack rules. Include features such as being able to "hit" or "stand", keeping track of the player's and dealer's hands, and implementing a system for determining the winner of each round.
