@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a function that accepts an array of numbers as input and returns the sum of all even numbers in the array. If the array is empty or does not contain any even numbers, the function should return 0. The function should be named "sumEvenNumbers" and should be written in Python.
