@@ -1,0 +1,11 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM for generating code in Python:
+
+Prompt: Write a Python program that takes user input for a number N and then prints the first N Fibonacci numbers.
+
+Expected output:
+```
+Enter the value of N: 10
+Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34
+```
