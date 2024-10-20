@@ -1,0 +1,14 @@
+add a bit for the response
+Prompt: Write a program that takes in a list of numbers and returns a new list with only the even numbers squared.
+
+LLM Response:
+```python
+def square_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    squared_even_numbers = [num**2 for num in even_numbers]
+    return squared_even_numbers
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+output_list = square_even_numbers(input_list)
+print(output_list)
+```
