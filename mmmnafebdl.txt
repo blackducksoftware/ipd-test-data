@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Generate a function that takes in a list of integers and returns a new list that contains only the even numbers from the original list, sorted in descending order. The function should be implemented in Python.
