@@ -1,0 +1,26 @@
+import math
+
+def calculate_average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
+
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(math.sqrt(number)) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+def check_prime_numbers(numbers):
+    for number in numbers:
+        if is_prime(number):
+            print(f'{number} is a prime number')
+        else:
+            print(f'{number} is not a prime number')
+
+numbers = [2, 3, 5, 7, 11, 13, 17, 19]
+average = calculate_average(numbers)
+print(f'The average of the numbers is: {average}')
+check_prime_numbers(numbers)
