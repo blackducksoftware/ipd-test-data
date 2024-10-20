@@ -1,0 +1,26 @@
+Here is a Python program that does exactly that:
+
+```python
+from statistics import mean, median, mode
+
+# Function to calculate mean, median, and mode of a list of numbers
+def calculate_statistics(nums):
+    sorted_nums = sorted(nums)
+    mean_value = mean(nums)
+    median_value = median(nums)
+    mode_value = mode(nums)
+
+    print("Sorted list: ", sorted_nums)
+    print("Mean: ", mean_value)
+    print("Median: ", median_value)
+    print("Mode: ", mode_value)
+
+# Main program
+if __name__ == "__main__":
+    nums = input("Enter a list of numbers separated by spaces: ").split()
+    nums = [int(num) for num in nums]
+
+    calculate_statistics(nums)
+```
+
+You can run this program by saving it to a Python file (e.g., stats_calculator.py) and running it using a Python interpreter. The program will prompt you to enter a list of numbers separated by spaces, and it will then calculate and display the mean, median, and mode of the values, along with the sorted list in ascending order.
