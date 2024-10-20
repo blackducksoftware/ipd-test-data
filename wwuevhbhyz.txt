@@ -1,0 +1,27 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate 20+ lines of code in Python:
+
+Prompt: Write a program that takes a list of numbers as input and calculates the sum, mean, and median of the numbers.
+
+Expected Output:
+```python
+# importing the statistics module
+import statistics
+
+# taking input from the user
+num_list = [int(x) for x in input("Enter a list of numbers separated by spaces: ").split()]
+
+# calculating the sum of the numbers
+total_sum = sum(num_list)
+print(f"Sum of the numbers: {total_sum}")
+
+# calculating the mean of the numbers
+mean_num = statistics.mean(num_list)
+print(f"Mean of the numbers: {mean_num}")
+
+# calculating the median of the numbers
+median_num = statistics.median(num_list)
+print(f"Median of the numbers: {median_num}")
+```
+
+This code snippet will take a list of numbers as input from the user, calculate the sum, mean, and median of the numbers, and print the results.
