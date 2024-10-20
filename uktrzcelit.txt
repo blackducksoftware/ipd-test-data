@@ -1,0 +1,23 @@
+Here is a sample program in Python that accomplishes this task:
+
+```python
+def calculate_factorial(num):
+    factorial = 1
+    for i in range(1, num + 1):
+        factorial *= i
+    return factorial
+
+while True:
+    try:
+        user_input = int(input("Please enter a number to calculate its factorial: "))
+        if user_input < 0:
+            print("Factorial is not defined for negative numbers. Please enter a non-negative number.")
+        else:
+            result = calculate_factorial(user_input)
+            print(f"The factorial of {user_input} is: {result}")
+            break
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+```
+
+You can run this program in a Python interpreter or a Python IDE, and it will prompt the user to enter a number. It will then calculate the factorial of that number using a loop and display the result. The program also includes error handling to handle invalid input, such as non-integer values.
