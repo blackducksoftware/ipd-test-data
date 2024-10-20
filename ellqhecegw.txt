@@ -1,0 +1,16 @@
+Here's a Python program that does just that:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+num = int(input("Enter a number: "))
+result = factorial(num)
+
+print(f"The factorial of {num} is: {result}")
+```
+
+You can copy and paste this code into a Python interpreter or IDE, run it, and then enter a number when prompted. The program will calculate the factorial of the input number and display it as output.
