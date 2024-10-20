@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Can you generate code in Python to create a simple text-based game where the player navigates through a maze using input commands (up, down, left, right) and the goal is to reach the end of the maze without hitting any walls? Include functions for generating the maze, printing it to the console, and updating the player's position based on their input."
