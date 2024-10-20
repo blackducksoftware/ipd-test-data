@@ -1,0 +1,17 @@
+Python program:
+
+```python
+def sum_of_list_numbers(numbers):
+    total_sum = sum(numbers)
+    return total_sum
+
+# Taking input numbers from the user
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+
+# Calculating the sum of numbers in the list
+result = sum_of_list_numbers(numbers)
+print("Sum of numbers in the list:", result)
+```
+
+This program first takes a list of numbers as input from the user, splits the input string into a list of integers, and then calculates the sum of all the numbers in the list using the `sum()` function. Finally, it prints out the sum of numbers in the list.
