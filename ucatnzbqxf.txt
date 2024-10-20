@@ -1,0 +1,84 @@
+Sure! Here's an example of the program in Java:
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SortNumbers {
+    public static void main(String[] args) {
+        try {
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter a list of numbers separated by spaces: ");
+            String[] numbersStr = input.nextLine().split(" ");
+            int[] numbers = Arrays.stream(numbersStr).mapToInt(Integer::parseInt).toArray();
+            Arrays.sort(numbers);
+            System.out.print("Sorted list in descending order: ");
+            for (int i = numbers.length - 1; i >= 0; i--) {
+                System.out.print(numbers[i] + " ");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Please enter only numbers separated by spaces.");
+        }
+    }
+}
+```
+
+And here's the same program in C++:
+
+```cpp
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    try {
+        std::string input;
+        std::cout << "Enter a list of numbers separated by spaces: ";
+        std::getline(std::cin, input);
+        
+        std::istringstream iss(input);
+        std::vector<int> numbers;
+        int num;
+        while (iss >> num) {
+            numbers.push_back(num);
+        }
+        
+        std::sort(numbers.begin(), numbers.end(), std::greater<int>());
+        
+        std::cout << "Sorted list in descending order: ";
+        for (int i : numbers) {
+            std::cout << i << " ";
+        }
+    } catch (...) {
+        std::cout << "Error: Please enter only numbers separated by spaces." << std::endl;
+    }
+    
+    return 0;
+}
+```
+
+And in JavaScript:
+
+```javascript
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Enter a list of numbers separated by spaces: ', (input) => {
+    try {
+        const numbers = input.split(' ').map(Number);
+        numbers.sort((a, b) => b - a);
+        console.log('Sorted list in descending order:', numbers);
+    } catch (error) {
+        console.log('Error: Please enter only numbers separated by spaces.');
+    }
+
+    rl.close();
+});
+```
+
+These versions of the program in Java, C++, and JavaScript will also handle errors during user input.
