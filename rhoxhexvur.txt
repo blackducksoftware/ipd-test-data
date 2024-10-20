@@ -1,0 +1,25 @@
+Here is a Python program that prompts the user to enter a number and then outputs the reverse of that number:
+
+```python
+def reverse_number(number):
+    is_negative = False
+    if number < 0:
+        is_negative = True
+        number = abs(number)
+
+    reversed_number = int(str(number)[::-1])
+
+    if is_negative:
+        reversed_number *= -1
+    
+    return reversed_number
+
+num = int(input("Enter a number: "))
+reversed_num = reverse_number(num)
+
+print(f"The reverse of {num} is {reversed_num}")
+```
+
+This program defines a function `reverse_number` that takes a number as input and returns the reverse of that number. It first checks if the number is negative and stores this information. Then, it converts the number to a string, reverses it using slicing, and converts it back to an integer. Finally, if the original number was negative, it multiplies the reversed number by -1 to maintain the sign.
+
+The program then prompts the user to enter a number, calls the `reverse_number` function on it, and prints out the result.
