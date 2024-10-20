@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Item {
+    String name;
+    double price;
+
+    public Item(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+}
+
+class ShoppingCart {
+    ArrayList<Item> cart;
+
+    public ShoppingCart() {
+        this.cart = new ArrayList<>();
+    }
+
+    public void addItem(Item item) {
+        cart.add(item);
+    }
+
+    public void removeItem(Item item) {
+        cart.remove(item);
+    }
+
+    public double calculateTotalCost() {
+        double totalCost = 0.0;
+        for (Item item : cart) {
+            totalCost += item.price;
+        }
+        return totalCost;
+    }
+
+    public void displayCart() {
+        System.out.println("Items in the shopping cart:");
+        for (Item item : cart) {
+            System.out.println(item.name + " - $" + item.price);
+        }
+        System.out.println("Total cost: $" + calculateTotalCost());
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ShoppingCart cart = new ShoppingCart();
+        Scanner scanner = new Scanner(System.in);
+
+        // Add items to the cart
+        Item item1 = new Item("Shirt", 20.0);
+        Item item2 = new Item("Pants", 30.0);
+        Item item3 = new Item("Shoes", 50.0);
+
+        cart.addItem(item1);
+        cart.addItem(item2);
+        cart.addItem(item3);
+
+        // Display cart
+        cart.displayCart();
+
+        // Remove an item
+        cart.removeItem(item2);
+
+        // Display updated cart
+        cart.displayCart();
+    }
+}
