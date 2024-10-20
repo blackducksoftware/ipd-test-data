@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you please generate a code snippet in Python that reads a CSV file, extracts the data, filters out any rows containing missing values, and outputs the cleaned data into a new CSV file?
