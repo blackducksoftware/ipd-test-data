@@ -1,0 +1,3 @@
+add a bit for the response
+Sure, here is a prompt you can ask LLM:
+"Write a program in Python that takes a list of numbers as input and sorts them in descending order using the bubble sort algorithm. Include error checking to ensure the input is a list of integers. Additionally, calculate the average of the sorted list and print it out along with the sorted list. Use comments to explain each step of the algorithm and any important decisions made along the way."
