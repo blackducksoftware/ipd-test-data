@@ -1,0 +1,25 @@
+add a bit for the response
+Prompt: Write a program that randomly generates a list of 10 integers between 1 and 100, then calculates the average of the list and finds the maximum and minimum values.
+
+Expected output: A program in Python that accomplishes the task described above.
+
+Example code:
+```python
+import random
+
+# Generate a list of 10 random integers between 1 and 100
+random_numbers = [random.randint(1, 100) for _ in range(10)]
+
+# Calculate the average of the list
+average = sum(random_numbers) / len(random_numbers)
+
+# Find the maximum and minimum values in the list
+max_value = max(random_numbers)
+min_value = min(random_numbers)
+
+# Print the list, average, maximum and minimum values
+print("Random numbers:", random_numbers)
+print("Average:", average)
+print("Maximum value:", max_value)
+print("Minimum value:", min_value)
+```
