@@ -1,0 +1,35 @@
+Here is the Python program for the prompt:
+
+```python
+import statistics
+
+def calculate_mean(nums):
+    return sum(nums) / len(nums)
+
+def calculate_median(nums):
+    return statistics.median(nums)
+
+def calculate_mode(nums):
+    try:
+        return statistics.mode(nums)
+    except statistics.StatisticsError:
+        return "No unique mode found"
+
+def main():
+    try:
+        nums = list(map(float, input("Enter a list of numbers separated by spaces: ").split()))
+        mean = calculate_mean(nums)
+        median = calculate_median(nums)
+        mode = calculate_mode(nums)
+        
+        print(f"Mean: {mean}")
+        print(f"Median: {median}")
+        print(f"Mode: {mode}")
+    except ValueError:
+        print("Invalid input. Please enter a valid list of numbers.")
+
+if __name__ == "__main__":
+    main()
+```
+
+This program takes a list of numbers as input, calculates the mean, median, and mode of the numbers using the functions `calculate_mean`, `calculate_median`, and `calculate_mode`, and displays the results. It also includes error handling for invalid input using a `try-except` block.
