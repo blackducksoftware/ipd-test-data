@@ -1,0 +1,75 @@
+Here is a Python implementation of a Blackjack game:
+
+```python
+import random
+
+def deal_card():
+    cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+    return random.choice(cards)
+
+def calculate_score(hand):
+    score = 0
+    num_ace = 0
+    for card in hand:
+        if card.isdigit():
+            score += int(card)
+        elif card in ['J', 'Q', 'K']:
+            score += 10
+        elif card == 'A':
+            num_ace += 1
+            score += 11
+    while score > 21 and num_ace:
+        score -= 10
+        num_ace -= 1
+    return score
+
+def display_hand(hand):
+    print('Hand:', ', '.join(hand))
+    print('Score:', calculate_score(hand))
+
+def blackjack():
+    user_hand = []
+    dealer_hand = []
+
+    for _ in range(2):
+        user_hand.append(deal_card())
+        dealer_hand.append(deal_card())
+
+    print('Your hand:')
+    display_hand(user_hand)
+    print('Dealer hand:')
+    print('Hand:', dealer_hand[0], ', *')
+    
+    while True:
+        action = input("Do you want to hit or stand? ").lower()
+
+        if action == 'hit':
+            user_hand.append(deal_card())
+            print('Your hand:')
+            display_hand(user_hand)
+
+            if calculate_score(user_hand) > 21:
+                print('Bust! You lose.')
+                break
+        elif action == 'stand':
+            while calculate_score(dealer_hand) < 17:
+                dealer_hand.append(deal_card())
+            
+            print('Your score:', calculate_score(user_hand))
+            print('Dealer score:', calculate_score(dealer_hand))
+            
+            if calculate_score(user_hand) > calculate_score(dealer_hand) or calculate_score(dealer_hand) > 21:
+                print('You win!')
+            elif calculate_score(user_hand) < calculate_score(dealer_hand):
+                print('You lose.')
+            else:
+                print('Push! It\'s a tie.')
+            break
+        else:
+            print('Invalid input. Please try again.')
+
+if __name__ == '__main__':
+    blackjack()
+```
+
+Feel free to run this program in any Python environment to play a game of Blackjack against the computer dealer. You can hit or stand during your turn and the final score will be displayed at the end of the game.
