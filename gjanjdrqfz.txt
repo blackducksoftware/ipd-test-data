@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Hey LLM, can you please generate 20+ lines of Python code that reads a CSV file, preprocesses the data (removes NaN values, converts categorical variables to numerical), trains a random forest classifier on the data, evaluates the model using cross-validation, and outputs the accuracy score and confusion matrix?"
