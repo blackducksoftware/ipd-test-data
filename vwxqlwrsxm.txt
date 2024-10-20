@@ -1,0 +1,22 @@
+```python
+def sieve_of_eratosthenes(n):
+    primes = []
+    is_prime = [True] * (n + 1)
+    is_prime[0] = is_prime[1] = False
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if is_prime[i]:
+            for j in range(i * i, n + 1, i):
+                is_prime[j] = False
+
+    for i in range(2, n + 1):
+        if is_prime[i]:
+            primes.append(i)
+
+    return primes
+
+n = int(input("Enter a number: "))
+print(sieve_of_eratosthenes(n))
+```
+
+This program takes an input number `n` and generates a list of all prime numbers up to `n` using the Sieve of Eratosthenes algorithm. It first creates a list `is_prime` with boolean values indicating whether each number is prime or not. It then iterates through the numbers starting from 2 up to the square root of `n` and marks multiples of each prime number as non-prime. Finally, it creates a list `primes` containing all the prime numbers and returns it.
