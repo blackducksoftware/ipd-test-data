@@ -1,0 +1,17 @@
+```python
+# Read a list of numbers from user input
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+
+# Convert the input numbers to integers
+numbers = [int(num) for num in numbers]
+
+# Sort the list in descending order
+numbers.sort(reverse=True)
+
+# Calculate the sum of the numbers
+sum_of_numbers = sum(numbers)
+
+# Print the sorted list and the sum
+print("Sorted List in Descending Order:", numbers)
+print("Sum of the Numbers:", sum_of_numbers)
+```
