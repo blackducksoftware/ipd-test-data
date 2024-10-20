@@ -1,0 +1,29 @@
+Here is an example Python program that fulfills the given prompt:
+
+```python
+def calculate_stats(numbers):
+    total = sum(numbers)
+    avg = total / len(numbers)
+    max_num = max(numbers)
+    min_num = min(numbers)
+    
+    return total, avg, max_num, min_num
+
+def main():
+    numbers = input("Enter a list of numbers separated by spaces: ")
+    numbers = list(map(float, numbers.split()))
+
+    total, avg, max_num, min_num = calculate_stats(numbers)
+
+    print(f"Sum: {total}")
+    print(f"Average: {avg}")
+    print(f"Maximum: {max_num}")
+    print(f"Minimum: {min_num}")
+
+if __name__ == "__main__":
+    main()
+```
+
+In this program, the user can input a list of numbers separated by spaces. We use the `split()` function to split the input string into a list of strings, and then use `map()` to convert each string to a float. We then calculate the sum, average, maximum, and minimum of the numbers using separate functions. Finally, we print out the results to the user.
+
+To use this program, simply run it in a Python environment and follow the prompts to input the list of numbers.
