@@ -1,0 +1,16 @@
+```python
+def filter_and_sort_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    even_numbers.sort(reverse=True)
+    even_numbers_average = sum(even_numbers) / len(even_numbers) if len(even_numbers) > 0 else 0
+    return even_numbers, even_numbers_average
+
+# Test the program with an example input list
+input_list = [3, 1, 8, 6, 5, 4, 10, 7, 2, 9]
+result, average = filter_and_sort_even_numbers(input_list)
+
+print("Even numbers sorted in descending order:", result)
+print("Average of even numbers:", average)
+```
+
+This program takes a list of numbers as input, filters out the even numbers, sorts them in descending order, calculates the average of the even numbers, and then prints the sorted list and the average.
