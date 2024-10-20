@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Generate code for a program that calculates the average of a list of numbers in Python.
