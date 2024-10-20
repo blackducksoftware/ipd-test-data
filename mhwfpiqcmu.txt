@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Hello LLM, can you help me generate a program in Python that reads a file containing a list of numbers and calculates the sum of all the numbers in the file? Please include error handling in case the file cannot be found or if the content of the file is not numeric. Thank you!"
