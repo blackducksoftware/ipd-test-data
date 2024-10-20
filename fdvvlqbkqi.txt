@@ -1,0 +1,22 @@
+Here's a Python program that calculates the Fibonacci sequence up to a user-specified number of terms:
+
+```python
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    for i in range(2, n):
+        fib_sequence.append(fib_sequence[i-1] + fib_sequence[i-2])
+    return fib_sequence[:n]
+
+# Get user input
+terms = int(input("Enter the number of Fibonacci terms: "))
+
+# Calculate Fibonacci sequence
+fib_terms = fibonacci(terms)
+
+# Display the Fibonacci sequence
+print(f"Fibonacci sequence up to {terms} terms:")
+for term in fib_terms:
+    print(term)
+```
+
+You can run this program in a Python interpreter and enter the number of Fibonacci terms you want to calculate. The program will then display the Fibonacci sequence up to that number of terms.
