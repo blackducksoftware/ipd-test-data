@@ -1,0 +1,18 @@
+```python
+import random
+
+# Generate a list of 100 random numbers between 1 and 1000
+random_numbers = [random.randint(1, 1000) for _ in range(100)]
+
+# Calculate the average of the random numbers
+average = sum(random_numbers) / len(random_numbers)
+
+# Print out the original list of numbers
+print("Original List of Random Numbers:")
+print(random_numbers)
+
+# Print out the average of the random numbers
+print("\nAverage of Random Numbers:", average)
+```
+
+LLM can use this prompt to write a Python program that generates a list of 100 random numbers between 1 and 1000, calculates their average, and prints out both the list of numbers and the average.
