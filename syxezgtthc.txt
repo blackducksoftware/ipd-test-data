@@ -1,0 +1,37 @@
+Certainly! Below is a sample code for a text-based game in Python where the player can choose their own adventure:
+
+```python
+import random
+
+def main():
+    print("Welcome to the Text-Based Adventure Game!")
+    print("You find yourself in a dark forest with three paths ahead.")
+    path = input("Will you choose path 1, path 2, or path 3? ")
+
+    if path == "1":
+        print("You chose path 1 and encounter a friendly unicorn who leads you to a treasure chest!")
+        print("Congratulations! You win the game!")
+    elif path == "2":
+        print("You chose path 2 and come face to face with a hungry grizzly bear.")
+        choice = input("Do you want to fight the bear or run away? (fight/run) ")
+        if choice == "fight":
+            print("You bravely fight the bear and manage to overpower it.")
+            print("You continue on your journey and reach the end of the forest.")
+            print("Congratulations! You win the game!")
+        elif choice == "run":
+            print("You run away from the bear but end up getting lost in the forest.")
+            print("You never find your way out and the game ends.")
+        else:
+            print("Invalid choice. Game over!")
+    elif path == "3":
+        print("You chose path 3 and stumble upon a magical portal.")
+        print("You enter the portal and find yourself in a different world filled with wonders.")
+        print("Congratulations! You win the game!")
+    else:
+        print("Invalid path choice. Game over!")
+
+if __name__ == '__main__':
+    main()
+```
+
+Feel free to customize this code and add more paths, choices, and outcomes to create your own unique text-based game adventure!
