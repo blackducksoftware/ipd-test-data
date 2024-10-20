@@ -1,0 +1,36 @@
+Here is a Python program that simulates a dice rolling game with error handling:
+
+```python
+import random
+
+def roll_dice(num_dice, num_sides):
+    rolls = []
+    for _ in range(num_dice):
+        rolls.append(random.randint(1, num_sides))
+    total = sum(rolls)
+    return rolls, total
+
+while True:
+    num_dice = input("How many dice would you like to roll? ")
+    num_sides = input("How many sides should each die have? ")
+    
+    try:
+        num_dice = int(num_dice)
+        num_sides = int(num_sides)
+        if num_dice <= 0 or num_sides <= 0:
+            raise ValueError
+    except ValueError:
+        print("Please enter a valid positive integer for both the number of dice and number of sides.")
+        continue
+    
+    rolls, total = roll_dice(num_dice, num_sides)
+    
+    print("Rolls:", rolls)
+    print("Total:", total)
+    
+    play_again = input("Would you like to roll again? (yes/no) ")
+    if play_again.lower() != 'yes':
+        break
+```
+
+This program asks the user for the number of dice and number of sides on each die, then simulates rolling the dice and calculates the total sum. It includes error handling to ensure that the user inputs valid positive integers for the number of dice and sides. The program will continue rolling dice until the user chooses to stop.
