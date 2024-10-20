@@ -1,0 +1,2 @@
+add a bit for the response
+Please generate code for a program that calculates the average of a list of numbers and then sorts them in descending order.
