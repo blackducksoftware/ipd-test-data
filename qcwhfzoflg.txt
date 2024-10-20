@@ -1,0 +1,2 @@
+This Python program takes user input for a number and determines if it is a prime number or not. 
+If you input a number and run the program, it will output "Prime" if the number is prime, and "Not Prime" if it is not.
