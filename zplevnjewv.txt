@@ -1,0 +1,5 @@
+add a bit for the response
+Prompt: Implement a function in Python that takes a list of integers as input and returns a new list with only the even numbers squared.
+
+Sample input: [1, 2, 3, 4, 5]
+Expected output: [4, 16]
