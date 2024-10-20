@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt for you to ask LLM:
+
+"Hey LLM, can you please generate 20+ lines of code in Python that creates a simple calculator program? The program should take user input for two numbers and allow the user to perform addition, subtraction, multiplication, and division operations on them. Additionally, the program should handle any potential errors such as division by zero. Thank you!"
