@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that counts the frequency of each word in a given sentence, ignoring punctuation and capitalization.
