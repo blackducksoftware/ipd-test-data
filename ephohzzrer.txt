@@ -1,0 +1,26 @@
+```python
+def fibonacci_sequence(num_terms):
+    fib_seq = []
+    
+    n1, n2 = 0, 1
+    count = 0
+    
+    if num_terms <= 0:
+        return "Please enter a positive integer."
+    elif num_terms == 1:
+        fib_seq.append(n1)
+    else:
+        while count < num_terms:
+            fib_seq.append(n1)
+            nth = n1 + n2
+            n1 = n2
+            n2 = nth
+            count += 1
+    
+    return fib_seq
+
+num_terms = int(input("Enter the number of terms for the Fibonacci sequence: "))
+result = fibonacci_sequence(num_terms)
+print(result)
+```
+This program takes an input for the number of terms the user wants in the Fibonacci sequence and generates the sequence accordingly.
