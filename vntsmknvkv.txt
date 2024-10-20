@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program in Python that takes user input for a list of numbers, sorts the list in ascending order, and then calculates the sum and average of the sorted list.
