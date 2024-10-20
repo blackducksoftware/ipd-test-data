@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM for generating code in Python:
+
+"Can you generate a Python program that reads a list of numbers from the user and then calculates the sum of all the numbers in the list? The program should also display the average of the numbers in the list. Thank you!"
