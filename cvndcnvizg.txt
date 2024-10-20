@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+Prompt: Write a program in Python that calculates the factorial of a given number. The program should prompt the user to enter a number, and then output the factorial of that number.
+
+This prompt should generate at least 20 lines of Python code.
