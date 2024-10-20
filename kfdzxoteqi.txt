@@ -1,0 +1,51 @@
+```
+# Function to merge two arrays in descending order
+def merge(arr1, arr2):
+    result = []
+    i = j = 0
+    
+    # Traverse through both arrays and compare elements
+    while i < len(arr1) and j < len(arr2):
+        if arr1[i] > arr2[j]:
+            result.append(arr1[i])
+            i += 1
+        else:
+            result.append(arr2[j])
+            j += 1
+    
+    # Add remaining elements from both arrays
+    result += arr1[i:]
+    result += arr2[j:]
+    
+    return result
+
+# Function to perform merge sort
+def merge_sort(arr):
+    # Base case: If array has only one element, return it
+    if len(arr) <= 1:
+        return arr
+    
+    # Divide the array into two halves
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    
+    # Merge and sort the divided arrays
+    return merge(left, right)
+
+try:
+    # Prompt user to enter a list of numbers
+    nums = input("Enter a list of numbers separated by spaces: ")
+    arr = [int(num) for num in nums.split()]
+    
+    # Sort the list using merge sort algorithm
+    sorted_arr = merge_sort(arr)
+    
+    # Display the sorted list in descending order
+    print("Sorted list in descending order: ", sorted_arr)
+    
+except ValueError:
+    print("Invalid input. Please enter a list of valid numbers.")
+```
+
+You can run this program in a Python environment and test it by entering a list of numbers to see the sorted list in descending order using the merge sort algorithm. Make sure to follow the instructions and handle any input errors gracefully. Let me know if you have any questions or need further assistance with the program!
