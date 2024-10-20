@@ -1,0 +1,16 @@
+```python
+# Take user input for name
+name = input("Enter your name: ")
+
+# Take user input for age
+age = input("Enter your age: ")
+
+# Take user input for favorite color
+favorite_color = input("Enter your favorite color: ")
+
+# Create personalized greeting message
+greeting_message = f"Hello {name}! You are {age} years old and your favorite color is {favorite_color}."
+
+# Print out personalized greeting message
+print(greeting_message)
+```
