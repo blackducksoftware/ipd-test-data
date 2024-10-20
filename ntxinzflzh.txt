@@ -1,0 +1,1 @@
+Please generate Python code for the prompt: "Create a Python program that simulates a simple ATM machine. The program should allow the user to check their balance, withdraw money, deposit money, and exit the program. Make sure to include error handling for cases such as insufficient funds for withdrawal and invalid user input." Thank you.
