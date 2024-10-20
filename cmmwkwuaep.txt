@@ -1,0 +1,35 @@
+Here is a Python function that accomplishes this task:
+
+```python
+def filter_even_numbers(input_list):
+    if not isinstance(input_list, list):
+        raise ValueError("Input must be a list")
+    
+    result = []
+    
+    for num in input_list:
+        if isinstance(num, (int, float)):
+            if num % 2 == 0:
+                result.append(num)
+        else:
+            raise ValueError("Input list must contain only numeric elements")
+    
+    return result
+
+# Test the function
+input_list = [1, 2, 3, 4, 5, 6, '7']
+try:
+    filtered_list = filter_even_numbers(input_list)
+    print(filtered_list)  # Output: [2, 4, 6]
+except ValueError as e:
+    print(e)
+
+# Test with non-list input
+try:
+    filtered_list = filter_even_numbers(123)
+    print(filtered_list)
+except ValueError as e:
+    print(e)
+```
+
+This function will take a list as input, iterate over each element, check if it's a numeric value, and then check if it's even. If it meets both conditions, it will be added to the result list. The function also includes error handling for cases where the input is not a list or contains non-numeric elements.
