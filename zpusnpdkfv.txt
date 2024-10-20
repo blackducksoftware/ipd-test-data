@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program in Python that simulates a simple weather forecast application. The program should prompt the user to input the day of the week and temperature for that day. Based on the temperature input, the program should display a corresponding weather forecast message (e.g. "Sunny", "Rainy", "Cloudy", etc.). Additionally, the program should calculate and display the average temperature for the week.
