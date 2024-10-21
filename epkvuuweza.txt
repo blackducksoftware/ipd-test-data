@@ -1,0 +1,29 @@
+Certainly! Here is the Python code that accomplishes the task specified in the prompt:
+
+```python
+# List of students and their grades
+students = {
+    'Alice': 90,
+    'Bob': 85,
+    'Charlie': 75,
+    'Diana': 95,
+    'Eve': 88
+}
+
+# Calculate the average grade
+total_grades = sum(students.values())
+average_grade = total_grades / len(students)
+
+# Find the student with the highest grade
+highest_grade_student = max(students, key=students.get)
+highest_grade = students[highest_grade_student]
+
+# Print the student with the highest grade along with their grade
+print(f"The student with the highest grade is {highest_grade_student} with a grade of {highest_grade}.")
+
+# Output the dictionary of students and their grades
+print("Dictionary of students and their grades:")
+print(students)
+```
+
+This code will create a dictionary with key-value pairs for a list of students and their grades, calculate the average grade, and print out the student with the highest grade along with their grade.
