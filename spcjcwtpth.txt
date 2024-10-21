@@ -1,0 +1,22 @@
+Here's a sample Python code that fulfills the given prompt:
+
+```python
+def filter_even_numbers(input_list):
+    try:
+        numbers = [int(num) for num in input_list]
+    except ValueError:
+        return "Error: Please enter only integers in the input list."
+    
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    even_numbers.sort(reverse=True)
+    
+    return even_numbers
+
+# Example input list
+input_list = ['3', '8', '6', '4', '7', '2']
+
+output_list = filter_even_numbers(input_list)
+print(output_list)
+```
+
+You can run this code with your own input list to filter out even numbers and sort them in descending order. Feel free to modify the input list as needed. Let me know if you need any further assistance!
