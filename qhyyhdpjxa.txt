@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Prompt: Generate a program in Python that reads in a list of integers from the user and outputs the sum of all the numbers in the list. The program should also calculate and output the average of the numbers in the list.
+
+Feel free to ask LLM for writing the code based on this prompt!
