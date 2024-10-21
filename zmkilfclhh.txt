@@ -1,0 +1,23 @@
+```python
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def generate_prime_list(age):
+    prime_list = []
+    for i in range(2, age + 1):
+        if is_prime(i):
+            prime_list.append(i)
+    return prime_list
+
+user_age = int(input("Enter your age: "))
+prime_numbers = generate_prime_list(user_age)
+
+print(f"Prime numbers less than or equal to {user_age} are:", prime_numbers)
+```
+
+This program defines a function `is_prime()` to check if a number is prime and another function `generate_prime_list()` to generate a list of prime numbers up to a given age. It takes user input for their age and then generates the list of prime numbers less than or equal to the input age, and finally prints the list.
