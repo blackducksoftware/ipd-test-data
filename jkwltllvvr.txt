@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you please generate 20+ lines of code in Python that takes a list of numbers as input, squares each number in the list, and then calculates the average of the squared numbers?"
