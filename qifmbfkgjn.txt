@@ -1,0 +1,15 @@
+Here is a simple Python program that accomplishes the task described in the prompt:
+
+```python
+def remove_duplicates_and_sort(input_list):
+    unique_list = list(set(input_list))  # Remove duplicates by converting the list to a set
+    unique_list.sort()  # Sort the list in ascending order
+    return unique_list
+
+input_list = [9, 3, 6, 1, 9, 2, 3, 6]
+sorted_list = remove_duplicates_and_sort(input_list)
+
+print(sorted_list)
+```
+
+You can copy and paste this code into a Python interpreter or a Python script file to run it. The `remove_duplicates_and_sort` function takes a list of integers as input, removes any duplicates, sorts the list, and returns the sorted list. Finally, the program prints the sorted list to the console.
