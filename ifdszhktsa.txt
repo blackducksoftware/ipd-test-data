@@ -1,0 +1,2 @@
+
+By reversing the sequence, the numbers are printed in descending order, making it easier to analyze and understand the progression of Fibonacci numbers generated. The program ensures that all Fibonacci numbers generated are less than or equal to the specified limit.
