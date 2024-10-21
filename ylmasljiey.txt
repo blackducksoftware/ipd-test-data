@@ -1,0 +1,21 @@
+Here is the Python program based on the prompt:
+
+```python
+def fibonacci_sequence(n):
+    fib_sequence = [0, 1]
+    while fib_sequence[-1] + fib_sequence[-2] <= n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
+
+def main():
+    user_input = int(input("Enter a number to generate Fibonacci sequence up to: "))
+    fib_sequence = fibonacci_sequence(user_input)
+
+    print("Fibonacci sequence up to", user_input, ":")
+    print(fib_sequence)
+
+if __name__ == "__main__":
+    main()
+```
+
+This program defines a function `fibonacci_sequence(n)` that generates Fibonacci numbers up to `n` and a `main()` function that takes user input and prints the generated Fibonacci sequence. When executed, the program will ask the user for a number and then output the Fibonacci sequence up to that number.
