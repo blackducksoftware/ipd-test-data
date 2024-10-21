@@ -1,0 +1,52 @@
+Here is a Python implementation of a simple tic-tac-toe game:
+
+```python
+def print_board(board):
+    for row in board:
+        print(" | ".join(row))
+        print("-" * 5)
+
+def check_winner(board, player):
+    for row in board:
+        if all([cell == player for cell in row]):
+            return True
+    for col in range(3):
+        if all([board[row][col] == player for row in range(3)]):
+            return True
+    if all([board[i][i] == player for i in range(3)]) or all([board[i][2-i] == player for i in range(3)]):
+        return True
+    return False
+
+def tic_tac_toe():
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    player = "X"
+    moves = 0
+
+    while moves < 9:
+        print_board(board)
+        row = int(input(f"Player {player}, enter the row number (0-2): "))
+        col = int(input(f"Player {player}, enter the col number (0-2): "))
+
+        if 0 <= row < 3 and 0 <= col < 3 and board[row][col] == " ":
+            board[row][col] = player
+            moves += 1
+            if check_winner(board, player):
+                print_board(board)
+                print(f"Congratulations! Player {player} wins!")
+                break
+            player = "O" if player == "X" else "X"
+        else:
+            print("Invalid move. Please try again.")
+
+    if moves == 9:
+        print_board(board)
+        print("It's a tie!")
+
+    restart = input("Do you want to play again? (yes/no) ")
+    if restart.lower() == "yes":
+        tic_tac_toe()
+
+tic_tac_toe()
+```
+
+You can run this program in a Python environment to play the tic-tac-toe game. Just follow the instructions on the screen to make your moves and enjoy the game!
