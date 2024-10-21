@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Create a program in Python that takes a list of numbers as input and calculates the average of the numbers. Display the result with at least 20 lines of code.
