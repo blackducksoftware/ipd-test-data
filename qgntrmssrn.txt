@@ -1,0 +1,17 @@
+add a bit for the response
+Prompt: Write a program that takes an input string and outputs all possible permutations of that string.
+
+LLM Code:
+```
+import itertools
+
+def find_permutations(string):
+    permutations = [''.join(p) for p in itertools.permutations(string)]
+    return permutations
+
+input_string = input("Enter a string: ")
+output = find_permutations(input_string)
+
+for perm in output:
+    print(perm)
+```
