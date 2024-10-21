@@ -1,0 +1,17 @@
+Here's an example code in Python that accomplishes the task described in the prompt:
+
+```python
+def filter_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    sum_of_even_numbers = sum(even_numbers)
+    
+    return even_numbers, sum_of_even_numbers
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+filtered_list, sum_of_even_numbers = filter_even_numbers(input_list)
+
+print("Filtered list of even numbers:", filtered_list)
+print("Sum of even numbers:", sum_of_even_numbers)
+```
+
+You can run this code by copying it into a Python environment. It takes the `input_list`, filters out the even numbers, calculates the sum of the even numbers, and prints both the filtered list and the sum of even numbers as the output.
