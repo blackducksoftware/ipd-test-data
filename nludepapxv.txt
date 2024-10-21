@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt for generating code in Python:
+
+"Write a function that takes a list of integers as input and returns a new list containing only the even numbers from the original list, sorted in descending order. Include error handling to ensure that the input is a list of integers."
