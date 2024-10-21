@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you please generate a program that takes a list of integers as input and returns the sum of all even numbers in the list? The program should include error handling for invalid inputs and should output the total sum at the end."
