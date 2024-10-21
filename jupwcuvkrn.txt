@@ -1,0 +1,9 @@
+import random
+
+# Generate a list of random numbers
+numbers = [random.randint(1, 100) for _ in range(10)]
+print("Original list:", numbers)
+
+# Use list comprehension to filter even numbers
+even_numbers = [num for num in numbers if num % 2 == 0]
+print("Even numbers in the list:", even_numbers)
