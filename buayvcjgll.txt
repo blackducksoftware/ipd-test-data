@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you please generate code to create a program that calculates the average of a list of numbers and outputs the result? Use any popular programming language.
