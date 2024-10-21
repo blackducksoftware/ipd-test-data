@@ -1,0 +1,63 @@
+add a bit for the response
+Prompt: "Can you write a program that takes a list of numbers as input and outputs the sum of all the numbers in the list? Additionally, the program should have error handling to account for any non-numeric inputs."
+
+1. Python
+```python
+def sum_list(numbers):
+    total = 0
+    for num in numbers:
+        try:
+            total += int(num)
+        except ValueError:
+            print("Error: Non-numeric input detected")
+            return None
+    return total
+
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+result = sum_list(numbers)
+if result is not None:
+    print(f"The sum of the numbers is: {result}")
+```
+
+2. Java
+```java
+import java.util.Scanner;
+
+public class SumList {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a list of numbers separated by spaces: ");
+        String[] numbers = scanner.nextLine().split(" ");
+        int total = 0;
+        for (String num : numbers) {
+            try {
+                total += Integer.parseInt(num);
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Non-numeric input detected");
+                return;
+            }
+        }
+        System.out.println("The sum of the numbers is: " + total);
+    }
+}
+```
+
+3. JavaScript
+```javascript
+function sumList(numbers) {
+    let total = 0;
+    numbers.forEach(num => {
+        if (!isNaN(parseInt(num))) {
+            total += parseInt(num);
+        } else {
+            console.log("Error: Non-numeric input detected");
+            return;
+        }
+    });
+    console.log(`The sum of the numbers is: ${total}`);
+}
+
+const input = prompt("Enter a list of numbers separated by spaces: ");
+const numbers = input.split(" ");
+sumList(numbers);
+```
