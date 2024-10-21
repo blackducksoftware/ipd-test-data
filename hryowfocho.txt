@@ -1,0 +1,14 @@
+Here is a Python program that takes in a list of numbers and returns only the even numbers in the list as a new list:
+
+```python
+def get_even_numbers(input_list):
+    even_numbers = [num for num in input_list if num % 2 == 0]
+    return even_numbers
+
+# Test the program
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = get_even_numbers(numbers)
+print(result)
+```
+
+When you run this program with the test list `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, it will output `[2, 4, 6, 8, 10]`, which are the even numbers in the input list.
