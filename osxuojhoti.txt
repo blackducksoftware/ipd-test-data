@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program in Python that takes in a list of numbers and returns only the even numbers sorted in descending order.
