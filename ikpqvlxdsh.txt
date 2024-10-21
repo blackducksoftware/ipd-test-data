@@ -1,0 +1,16 @@
+Sure! Here's a simple Python program that calculates the Fibonacci sequence up to a certain number:
+
+```python
+def fibonacci(n):
+    fib_list = [0, 1]
+    while fib_list[-1] + fib_list[-2] <= n:
+        fib_list.append(fib_list[-1] + fib_list[-2])
+    
+    return fib_list
+
+n = int(input("Enter a number: "))
+fib_sequence = fibonacci(n)
+print("Fibonacci sequence up to", n, "is:", fib_sequence)
+```
+
+You can run this program by pasting it into a Python interpreter or a Python IDE. Then enter a number to calculate the Fibonacci sequence up to that number.
