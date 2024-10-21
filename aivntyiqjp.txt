@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use: 
+
+"Please generate a piece of code in Python that creates a list of all prime numbers between 1 and 100, and prints the result."
