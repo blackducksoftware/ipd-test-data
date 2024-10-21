@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! You can ask LLM the following prompt:
+
+"Write a program in Python that takes a list of numbers as input and calculates the sum of all the numbers in the list. Make sure to include error handling for non-numeric inputs and handle edge cases such as an empty list."
