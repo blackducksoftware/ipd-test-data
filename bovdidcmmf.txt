@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that takes a list of numbers as input and returns the average of the positive numbers in the list. If there are no positive numbers, the program should return 0. Use any popular programming language of your choice.
