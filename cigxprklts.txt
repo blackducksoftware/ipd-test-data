@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+Generate code in Python that simulates a game of Tic-Tac-Toe. Include functions for displaying the game board, checking for a winner, handling player moves, and determining when the game is over. The game should support two players taking turns to place their markers on the board until one player wins or the game ends in a draw.
