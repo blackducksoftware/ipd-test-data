@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Please generate code in Python to calculate the factorial of a given number using a loop.
