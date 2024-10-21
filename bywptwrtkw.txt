@@ -1,0 +1,4 @@
+add a bit for the response
+Sure, here is a prompt you can ask LLM for generating over 20 lines of Python code:
+
+"Can you generate a Python program that reads a list of numbers from input, removes duplicates, sorts them in ascending order, then calculates the average, median, and mode of the remaining values? Additionally, please include comments in the code explaining each step of the process."
