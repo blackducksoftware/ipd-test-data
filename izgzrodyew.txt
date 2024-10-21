@@ -1,0 +1,21 @@
+Here is a sample Python program that meets the prompt:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+try:
+    num = int(input("Enter a number: "))
+    if num < 0:
+        print("Factorial is only defined for non-negative integers.")
+    else:
+        result = factorial(num)
+        print(f"The factorial of {num} is {result}")
+except ValueError:
+    print("Please enter a valid integer.")
+```
+
+This program defines a recursive function `factorial` that calculates the factorial of a given number. It then prompts the user to enter a number and calculates the factorial using the `factorial` function. It also handles any input errors gracefully by displaying an appropriate error message.
