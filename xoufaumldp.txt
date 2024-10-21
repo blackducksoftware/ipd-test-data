@@ -1,0 +1,19 @@
+Here is the Python program that accomplishes the task:
+
+```python
+def get_even_sorted_list(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    even_numbers.sort()
+    return even_numbers
+
+# Input list of numbers
+numbers = [10, 5, 8, 3, 12, 7, 14, 6, 9]
+
+# Get the new list with even numbers sorted in ascending order
+even_sorted_list = get_even_sorted_list(numbers)
+
+# Print the new list
+print(even_sorted_list)
+```
+
+When this program is executed with the given input list `[10, 5, 8, 3, 12, 7, 14, 6, 9]`, it will output `[6, 8, 10, 12, 14]`, which are the even numbers sorted in ascending order.
