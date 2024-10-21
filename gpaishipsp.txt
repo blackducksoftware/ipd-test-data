@@ -1,0 +1,74 @@
+Python code:
+
+```python
+def even_numbers_squared(input_list):
+    return [num*num for num in input_list if num % 2 == 0]
+
+input_list = [1, 2, 3, 4, 5, 6]
+output_list = even_numbers_squared(input_list)
+print(output_list)
+```
+
+Java code:
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static List<Integer> evenNumbersSquared(List<Integer> inputList) {
+        List<Integer> outputList = new ArrayList<>();
+        for (int num : inputList) {
+            if (num % 2 == 0) {
+                outputList.add(num * num);
+            }
+        }
+        return outputList;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> inputList = List.of(1, 2, 3, 4, 5, 6);
+        List<Integer> outputList = evenNumbersSquared(inputList);
+        System.out.println(outputList);
+    }
+}
+```
+
+JavaScript code:
+
+```javascript
+function evenNumbersSquared(inputList) {
+    return inputList.filter(num => num % 2 === 0).map(num => num * num);
+}
+
+const inputList = [1, 2, 3, 4, 5, 6];
+const outputList = evenNumbersSquared(inputList);
+console.log(outputList);
+```
+
+C++ code:
+
+```cpp
+#include <iostream>
+#include <vector>
+
+std::vector<int> evenNumbersSquared(std::vector<int> inputList) {
+    std::vector<int> outputList;
+    for (int num : inputList) {
+        if (num % 2 == 0) {
+            outputList.push_back(num * num);
+        }
+    }
+    return outputList;
+}
+
+int main() {
+    std::vector<int> inputList = {1, 2, 3, 4, 5, 6};
+    std::vector<int> outputList = evenNumbersSquared(inputList);
+    for (int num : outputList) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+```
