@@ -1,0 +1,18 @@
+Here is a Python program that generates a list of Fibonacci numbers up to a user-specified limit:
+
+```python
+def generate_fibonacci(limit):
+    fibonacci_list = [0, 1]
+    while fibonacci_list[-1] + fibonacci_list[-2] <= limit:
+        fibonacci_list.append(fibonacci_list[-1] + fibonacci_list[-2])
+    return fibonacci_list
+
+limit = int(input("Enter the limit for Fibonacci numbers: "))
+
+fibonacci_numbers = generate_fibonacci(limit)
+
+print("Fibonacci numbers up to", limit, "are:")
+print(fibonacci_numbers)
+```
+
+You can run this program and enter a number to generate Fibonacci numbers up to that limit. The program will output the list of Fibonacci numbers up to the specified limit.
