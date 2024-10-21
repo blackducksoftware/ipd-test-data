@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use: 
+
+"Generate a program in Python that simulates a library management system. Include classes for books, patrons, and librarians. Implement functions for checking out and returning books, as well as keeping track of overdue books. Bonus points for implementing a GUI interface for users to interact with the system."
