@@ -1,0 +1,19 @@
+Here is a Python program that accomplishes this task:
+
+```python
+def sum_even_numbers(numbers):
+    sum = 0
+    for num in numbers:
+        if num % 2 == 0:
+            sum += num
+    return sum
+
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Call the function and print the result
+result = sum_even_numbers(numbers)
+print("Sum of even numbers:", result)
+```
+
+You can replace the `numbers` list with any list of numbers you want to calculate the sum of even numbers for. The function `sum_even_numbers` loops through each number in the list and adds it to the sum only if it is even (i.e. its remainder when divided by 2 is 0). Finally, it returns the sum of all even numbers in the list.
