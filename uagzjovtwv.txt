@@ -1,0 +1,6 @@
+add a bit for the response
+Sure, here is a prompt you can use to generate 20+ lines of Python code using LLM:
+
+Prompt: Create a shopping list program in Python that allows users to add, remove, and display items in their shopping list. The program should also calculate the total cost of all items in the list.
+
+You can ask LLM to generate code based on this prompt and it should provide you with 20+ lines of Python code to accomplish this task.
