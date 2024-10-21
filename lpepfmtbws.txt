@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Generate a program in Python that reads a list of numbers, calculates the average of the numbers, and then prints out the numbers that are above the average. Make sure to handle input validation and error checking."
