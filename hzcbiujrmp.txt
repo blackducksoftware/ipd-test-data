@@ -1,0 +1,7 @@
+Output:
+```
+30
+Invalid input. Please provide a list of numbers.
+``` 
+
+The program correctly sums up all the even numbers in the list and also handles the case of invalid input by providing an error message.
