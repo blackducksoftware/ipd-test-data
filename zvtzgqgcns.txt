@@ -1,0 +1,21 @@
+Here is the Python code for a program that calculates the factorial of a given number using recursion:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+try:
+    num = int(input("Enter a number to calculate its factorial: "))
+    if num < 0:
+        print("Factorial is not defined for negative numbers.")
+    else:
+        result = factorial(num)
+        print(f"The factorial of {num} is {result}")
+except ValueError:
+    print("Please enter a valid integer.")
+```
+
+This program prompts the user to enter a number, calculates its factorial using recursion, and then outputs the result. Error handling is implemented to handle non-integer inputs.
