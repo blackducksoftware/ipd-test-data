@@ -1,0 +1,20 @@
+Sure, here is an example program in Python that takes in a list of numbers and sorts them in ascending order using the bubble sort algorithm:
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+# Taking input from user
+nums = input("Enter the list of numbers separated by a space: ")
+nums_list = list(map(int, nums.split()))
+
+sorted_nums = bubble_sort(nums_list)
+print("Sorted numbers in ascending order:", sorted_nums)
+```
+
+This program defines a function `bubble_sort` that implements the bubble sort algorithm and then takes input from the user in the form of a list of numbers. It then calls the `bubble_sort` function to sort the numbers in ascending order and prints the sorted list.
