@@ -1,0 +1,26 @@
+add a bit for the response
+Prompt: Write a program in Python that takes a list of numbers as input and calculates the average of all the numbers in the list. Make sure to include error handling for cases where the input is not a list or if the list is empty. 
+LLM-generated code:
+```python
+def calculate_average(numbers):
+    try:
+        total = 0
+        count = 0
+        for num in numbers:
+            total += num
+            count += 1
+        average = total / count
+        return average
+    except TypeError:
+        print("Error: Input must be a list of numbers")
+    except ZeroDivisionError:
+        print("Error: List cannot be empty")
+# Test the function
+numbers = [5, 10, 15, 20]
+print("Average:", calculate_average(numbers))
+numbers = []
+print("Average:", calculate_average(numbers))
+numbers = "invalid input"
+print("Average:", calculate_average(numbers))
+``` 
+This code includes error handling for both the cases where the input is not a list of numbers or if the list is empty, ensuring the program runs smoothly in any scenario.
