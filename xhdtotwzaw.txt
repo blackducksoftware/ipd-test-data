@@ -1,0 +1,1 @@
+Can you generate Python code that prompts the user to input a list of numbers and then calculates the sum, average, maximum, and minimum of the numbers? Additionally, can you write a function that sorts the list in ascending order and then reverses the sorted list? Finally, can you write a loop that prints each number in the list along with its square and cube?
