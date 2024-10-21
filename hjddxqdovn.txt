@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+Write a function in Python that takes a list of numbers as input and returns a new list that contains only the unique numbers from the original list. The function should remove any duplicates and maintain the original order of the numbers in the new list.
