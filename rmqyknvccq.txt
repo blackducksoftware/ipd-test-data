@@ -1,0 +1,25 @@
+Here's an example of a Python program that does what the prompt asks for:
+
+```python
+def calculate_stats(numbers):
+    try:
+        numbers = [float(num) for num in numbers]
+    except ValueError:
+        return "Invalid input. Please enter a list of numbers."
+    
+    if not numbers:
+        return "Empty list. Please enter at least one number."
+    
+    avg = sum(numbers) / len(numbers)
+    highest = max(numbers)
+    lowest = min(numbers)
+    total = sum(numbers)
+    
+    return f"Average: {avg}\nHighest: {highest}\nLowest: {lowest}\nTotal: {total}"
+
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+result = calculate_stats(numbers)
+print(result)
+```
+
+You can run this program in your Python interpreter and input a list of numbers separated by spaces when prompted. The program will then calculate the average, highest, lowest, and total of the numbers in the list and output the results. It also includes error handling for invalid inputs such as non-numeric values.
