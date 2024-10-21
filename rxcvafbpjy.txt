@@ -1,0 +1,54 @@
+```python
+class Car:
+    def __init__(self, make, model, year, price):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.price = price
+
+class CarRentalSystem:
+    def __init__(self):
+        self.available_cars = [
+            Car("Toyota", "Camry", 2018, 50),
+            Car("Honda", "Accord", 2019, 60),
+            Car("Ford", "Fusion", 2020, 70),
+            Car("Chevrolet", "Malibu", 2017, 45)
+        ]
+        self.rented_cars = []
+
+    def display_available_cars(self):
+        for car in self.available_cars:
+            print(f"{car.year} {car.make} {car.model} - ${car.price} per day")
+
+    def rent_car(self, index, days):
+        if index < len(self.available_cars):
+            car = self.available_cars.pop(index)
+            total_cost = car.price * days
+            self.rented_cars.append((car, days, total_cost))
+            print("Car rented successfully!")
+        else:
+            print("Invalid car index")
+
+    def display_receipt(self):
+        total_cost = 0
+        for car, days, cost in self.rented_cars:
+            print(f"{car.year} {car.make} {car.model} - ${car.price} per day for {days} days = ${cost}")
+            total_cost += cost
+        print(f"Total cost: ${total_cost}")
+
+# Main program
+rental_system = CarRentalSystem()
+
+print("Available cars:")
+rental_system.display_available_cars()
+
+car_index = int(input("Enter the index of the car you want to rent: "))
+rent_days = int(input("Enter the number of days you want to rent the car for: "))
+
+rental_system.rent_car(car_index, rent_days)
+
+print("\nRental Receipt:")
+rental_system.display_receipt()
+```
+
+You can run this program to simulate a car rental system. The program allows users to choose from a list of available cars, rent a car by specifying the car index and number of days, and then displays a receipt with the details of the rental including the total cost.
