@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use:
+
+"Write a program that takes a list of integers as input and returns the sum of all even numbers in the list. If the sum is greater than 100, print 'The sum is greater than 100', otherwise print 'The sum is less than or equal to 100'. Use Python for this task."
