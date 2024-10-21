@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you write a program that generates a random password of a specified length in Python? The program should include options for including uppercase letters, lowercase letters, numbers, and special characters. Additionally, the program should ask the user for the desired length of the password and return the generated password to the user."
