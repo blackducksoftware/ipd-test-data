@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Generate a program in Python that takes a list of numbers as input and calculates the mean, median, and mode of the list. The program should also be able to determine if the list is in ascending, descending, or random order. Include error handling for any invalid inputs.
