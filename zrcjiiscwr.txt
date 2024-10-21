@@ -1,0 +1,26 @@
+```python
+# Program to calculate the average of numbers in a list
+def calculate_average(nums):
+    total = sum(nums)
+    average = total / len(nums)
+    above_average = [num for num in nums if num > average]
+    return average, above_average
+
+# Read a list of numbers from the user
+num_list = []
+n = int(input("Enter the number of elements in the list: "))
+for i in range(n):
+    num = int(input(f"Enter element {i+1}: "))
+    num_list.append(num)
+
+# Calculate average and numbers above average
+avg, above_avg = calculate_average(num_list)
+
+# Print results
+print(f"The average of the numbers is: {avg}")
+print("Numbers greater than the average:")
+for num in above_avg:
+    print(num)
+```
+
+You can run this program in a Python interpreter or IDE to test it with your own list of numbers.
