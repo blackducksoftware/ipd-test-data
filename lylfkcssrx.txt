@@ -1,0 +1,4 @@
+add a bit for the response
+Prompt: Can you please create a function that takes in a list of numbers and returns a new list containing only the even numbers?
+
+Expect a code snippet in Python that follows the prompt.
