@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+Create a program that simulates a simple ATM machine. The program should allow users to check their balance, withdraw money, and deposit money. The user should be able to choose from multiple options in a menu, and the program should display the updated balance after each transaction. The program should also handle errors such as insufficient funds or invalid inputs. Use [popular programming language] for the implementation.
+
+Please note that you will need to replace "[popular programming language]" with the actual programming language you want LLM to code in.
