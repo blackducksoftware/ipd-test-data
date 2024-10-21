@@ -1,0 +1,30 @@
+Here's a Python program that fulfills the prompt:
+
+```python
+import statistics
+
+# Read in list of numbers from user
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers_list = list(map(int, numbers.split()))
+
+# Calculate mean, median, and mode
+mean = statistics.mean(numbers_list)
+median = statistics.median(numbers_list)
+mode = statistics.mode(numbers_list)
+
+# Determine if list is in ascending, descending, or random order
+if numbers_list == sorted(numbers_list):
+    order = "Ascending"
+elif numbers_list == sorted(numbers_list, reverse=True):
+    order = "Descending"
+else:
+    order = "Random"
+
+# Output results
+print("Mean:", mean)
+print("Median:", median)
+print("Mode:", mode)
+print("Order:", order)
+```
+
+You can run this program in a Python environment and input a list of numbers when prompted. It will then calculate the mean, median, and mode of the numbers, as well as determine if the list is in ascending, descending, or random order. Let me know if you have any questions or need further assistance!
