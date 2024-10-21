@@ -1,0 +1,20 @@
+Here is an example of how you can solve this problem in Python:
+
+```python
+def fibonacci_sequence(num):
+    sequence = []
+    a, b = 0, 1
+    while a < num:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+user_input = int(input("Enter a number to generate a Fibonacci sequence: "))
+fib_sequence = fibonacci_sequence(user_input)
+
+print("Fibonacci sequence up to", user_input, ":")
+for num in fib_sequence:
+    print(num)
+```
+
+In this program, we define a function `fibonacci_sequence` that takes a user-specified number and generates the Fibonacci sequence up to that number. We then prompt the user to enter a number, call the `fibonacci_sequence` function with the user input, and print out the Fibonacci sequence up to the specified number.
