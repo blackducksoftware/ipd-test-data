@@ -1,0 +1,22 @@
+Here is a sample program in Python that accomplishes the task described:
+
+```python
+def sort_and_remove_duplicates(numbers):
+    sorted_list = sorted(numbers) # Sort the numbers in ascending order
+    unique_list = []              # Create an empty list to store unique numbers
+    
+    for num in sorted_list:
+        if num not in unique_list:
+            unique_list.append(num) # Add the number to the unique list if it's not already present
+    
+    return unique_list
+
+# Input list of numbers
+numbers = [4, 2, 3, 2, 1, 4, 5, 6, 6, 5]
+
+# Call the function with input list and print the result
+result = sort_and_remove_duplicates(numbers)
+print(result)
+```
+
+When executed with the provided input list `[4, 2, 3, 2, 1, 4, 5, 6, 6, 5]`, this program will output `[1, 2, 3, 4, 5, 6]`, which is the sorted list without any duplicates.
