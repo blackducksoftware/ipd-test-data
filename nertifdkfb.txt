@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Write a program that generates a random list of 20 numbers and then calculates the sum of all numbers in the list.
