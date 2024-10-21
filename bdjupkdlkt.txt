@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: "Can you generate a program in Python that calculates the Fibonacci sequence up to the 20th term and prints the result?"
