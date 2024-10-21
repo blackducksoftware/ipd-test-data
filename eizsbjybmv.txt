@@ -1,0 +1,2 @@
+add a bit for the response
+Design a program that takes user input to create a list of animals and their corresponding habitats. The program should allow users to add new animals and habitats, as well as display the full list of animals and their habitats.
