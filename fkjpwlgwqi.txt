@@ -1,0 +1,2 @@
+add a bit for the response
+"Can you write a program in Python that simulates a dice rolling game where two players take turns rolling a six-sided dice and the first player to reach a total score of 50 wins the game? Please include functions for rolling the dice, keeping track of each player's score, and determining the winner. Bonus points if you add functionality to allow the user to choose how many sides the dice has and the target score to win."
