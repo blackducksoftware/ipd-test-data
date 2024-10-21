@@ -1,0 +1,28 @@
+Here is a program that takes in a list of numbers and calculates the mean, median, and mode in Python:
+
+```python
+import statistics
+
+def calculate_statistics(number_list):
+    # Calculate the mean
+    mean = sum(number_list) / len(number_list)
+    
+    # Calculate the median
+    median = statistics.median(number_list)
+    
+    # Calculate the mode
+    mode = statistics.mode(number_list)
+    
+    return mean, median, mode
+
+# Input list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+mean, median, mode = calculate_statistics(numbers)
+
+print("Mean:", mean)
+print("Median:", median)
+print("Mode:", mode)
+```
+
+In this program, we first import the `statistics` module to help us calculate the mean, median, and mode of the list of numbers. We define a function `calculate_statistics()` that takes in a list of numbers and returns the mean, median, and mode. We then input a list of numbers, call the `calculate_statistics()` function with the list, and print out the results.
