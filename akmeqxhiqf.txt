@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use to ask LLM to generate 20+ lines of code in Python:
+
+"Can you generate a Python program that reads in a list of numbers from the user, calculates the average of those numbers, and then outputs the average along with the highest and lowest numbers in the list?" 
+
+Feel free to modify the prompt to fit your specific needs or preferences.
