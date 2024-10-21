@@ -1,0 +1,18 @@
+def multiply_and_sum(input_list):
+    # Initialize a variable to store the final sum
+    total_sum = 0
+    
+    # Iterate through each number in the input list
+    for num in input_list:
+        # Multiply each number by 2
+        multiplied_num = num * 2
+        # Add the multiplied number to the total sum
+        total_sum += multiplied_num
+    
+    # Return the final sum
+    return total_sum
+
+# Test the function with a sample list of numbers
+sample_list = [1, 2, 3, 4, 5]
+result = multiply_and_sum(sample_list)
+print(result)
