@@ -1,0 +1,26 @@
+Sure! Here is a Python program that does exactly that:
+
+```python
+import statistics
+
+def calculate_stats(numbers):
+    average = sum(numbers) / len(numbers)
+    median = statistics.median(numbers)
+    mode = statistics.mode(numbers)
+    
+    return average, median, mode
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # You can replace this list with any list of numbers you want
+
+average, median, mode = calculate_stats(numbers)
+
+print("Average:", average)
+print("Median:", median)
+print("Mode:", mode)
+```
+
+This program first defines a function called `calculate_stats` that takes a list of numbers as input and calculates the average, median, and mode using the `sum`, `len`, `statistics.median`, and `statistics.mode` functions. 
+
+Then, it creates a list of numbers called `numbers` and calls the `calculate_stats` function with this list. Finally, it prints out the calculated average, median, and mode.
+
+You can replace the `numbers` list with any list of numbers you want to calculate the statistics for. Let me know if you need any further clarification or if you have any specific requirements!
