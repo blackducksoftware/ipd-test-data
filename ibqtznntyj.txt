@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here is a prompt you can use:
+
+"Create a program in Python that takes a list of numbers as input and outputs the sum of all the numbers in the list. Add functionality to also calculate the average of the numbers in the list and display both the sum and average as output."
+
+This prompt should generate 20+ lines of code in Python.
