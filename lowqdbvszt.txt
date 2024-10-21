@@ -1,0 +1,24 @@
+Here is a Python program that generates a list of prime numbers up to a given number using the Sieve of Eratosthenes algorithm:
+
+```python
+def sieve_of_eratosthenes(n):
+    primes = []
+    is_prime = [True] * (n + 1)
+    is_prime[0] = is_prime[1] = False
+    
+    for i in range(2, int(n**0.5)+1):
+        if is_prime[i]:
+            for j in range(i*i, n+1, i):
+                is_prime[j] = False
+                
+    primes = [num for num in range(2, n+1) if is_prime[num]]
+    return primes
+
+# Input the number up to which you want to generate prime numbers
+n = int(input("Enter a number: "))
+
+prime_numbers = sieve_of_eratosthenes(n)
+print("List of prime numbers up to", n, ":", prime_numbers)
+```
+
+You can run this program in a Python environment and input the desired number to generate the list of prime numbers using the Sieve of Eratosthenes algorithm.
