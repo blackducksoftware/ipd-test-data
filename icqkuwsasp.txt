@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here's a prompt you can use to generate 20+ lines of code in Python: 
+
+"Write a program that simulates a simple text-based tic-tac-toe game. The program should allow two players to take turns entering their moves on a 3x3 grid. The game should check for a winner after each move and display the final outcome once the game is over. Include error handling for invalid inputs and ensure that the game can handle ties as well."
