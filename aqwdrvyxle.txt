@@ -1,0 +1,19 @@
+Here is a Python program that accomplishes the task described in the prompt:
+
+```python
+def sum_of_even_numbers_in_list():
+    num_elements = int(input("Enter the number of elements in the list: "))
+    num_list = []
+
+    for i in range(num_elements):
+        num = int(input(f"Enter element {i+1}: "))
+        num_list.append(num)
+
+    sum_of_evens = sum(num for num in num_list if num % 2 == 0)
+
+    print(f"The sum of all even numbers in the list is: {sum_of_evens}")
+
+sum_of_even_numbers_in_list()
+```
+
+You can copy and paste this code into a Python interpreter or IDE to run the program. It will prompt the user to enter the number of elements in the list, then ask the user to input each integer one by one. Finally, the program will output the sum of all the even numbers in the list.
