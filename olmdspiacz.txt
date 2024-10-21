@@ -1,0 +1,6 @@
+add a bit for the response
+Sure! Here's a prompt you can ask LLM:
+
+"Write a program in Python that creates a list of the first 20 Fibonacci numbers."
+
+This should generate more than 20 lines of code in Python. Let me know if you need help with anything else!
