@@ -1,0 +1,35 @@
+Here is the Python program as per the prompt:
+
+```python
+def sum_of_odd_numbers(numbers):
+    # Initialize sum to 0
+    odd_sum = 0
+    
+    # Iterate through each number in the list
+    for num in numbers:
+        # Check if the number is odd
+        if num % 2 != 0:
+            # Add odd number to the sum
+            odd_sum += num
+            
+    # Return the sum of odd numbers
+    return odd_sum
+
+# Test cases
+list1 = [1, 2, 3, 4, 5]
+list2 = [2, 4, 6, 8]
+list3 = []
+
+# Sum of odd numbers in list1
+print(sum_of_odd_numbers(list1))  # Output should be 9
+
+# Sum of odd numbers in list2
+print(sum_of_odd_numbers(list2))  # Output should be 0
+
+# Handling empty list
+print(sum_of_odd_numbers(list3))  # Output should be 0
+```
+
+The program defines a function `sum_of_odd_numbers` that calculates the sum of all odd numbers in a given list. It iterates through the list and checks if each number is odd by using the modulo operator. If a number is odd, it adds it to the running sum `odd_sum`. Finally, the function returns the total sum of odd numbers.
+
+Test cases are included to demonstrate the functionality of the program, including handling cases where the input list is empty or does not contain any odd numbers.
