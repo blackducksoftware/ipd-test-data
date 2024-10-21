@@ -1,0 +1,18 @@
+Here is a simple program that calculates the average of a list of numbers in Python:
+
+```python
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# Example list of numbers
+numbers = [10, 20, 30, 40, 50]
+
+# Calculate the average of the list
+average = calculate_average(numbers)
+
+print("The average of the numbers is:", average)
+```
+
+You can replace the `numbers` list with your own list of numbers to calculate the average of those numbers.
