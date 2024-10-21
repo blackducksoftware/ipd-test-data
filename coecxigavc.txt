@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can use to generate code in any popular programming language:
+
+"Generate a program that takes in a list of numbers and sorts them in descending order. The program should then calculate the average of the sorted numbers and output both the sorted list and the average value."
