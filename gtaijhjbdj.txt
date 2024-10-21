@@ -1,0 +1,36 @@
+```python
+# Importing the statistics module to calculate median and mode
+import statistics
+
+# Function to calculate the average of a list of numbers
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# Function to calculate the median of a list of numbers
+def calculate_median(numbers):
+    median = statistics.median(numbers)
+    return median
+
+# Function to calculate the mode of a list of numbers
+def calculate_mode(numbers):
+    mode = statistics.mode(numbers)
+    return mode
+
+# Taking input from the user for a list of numbers
+numbers = input("Enter a list of numbers separated by spaces: ")
+numbers = list(map(float, numbers.split()))
+
+# Calculating the average, median, and mode of the list of numbers
+average = calculate_average(numbers)
+median = calculate_median(numbers)
+mode = calculate_mode(numbers)
+
+# Displaying the results to the user
+print(f"Average: {average}")
+print(f"Median: {median}")
+print(f"Mode: {mode}")
+```
+
+This Python program takes in a list of numbers as input from the user, calculates the average, median, and mode of the list using functions, and then displays the results to the user. The `statistics` module is used to compute the median and mode of the list. The user is prompted to enter a list of numbers separated by spaces, which is converted into a list of floats. The program then calculates the average, median, and mode of the input list and displays the results to the user.
