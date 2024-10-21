@@ -1,0 +1,20 @@
+Sure, here is a Python program generated based on your prompt:
+
+```python
+def sum_of_squared_even_numbers(numbers):
+    try:
+        even_numbers = [int(num) for num in numbers if int(num) % 2 == 0]
+        squared_even_numbers = [num**2 for num in even_numbers]
+        total_sum = sum(squared_even_numbers)
+        return total_sum
+    except ValueError:
+        print("Invalid input. Please enter only numeric values.")
+
+# Test the function
+numbers = input("Enter a list of numbers separated by spaces: ").split()
+result = sum_of_squared_even_numbers(numbers)
+if result:
+    print(f"The sum of the squared even numbers is: {result}")
+```
+
+This program defines a function `sum_of_squared_even_numbers` that takes a list of numbers as input, extracts the even numbers, squares them, and returns the sum of the squared even numbers. It also includes exception handling for cases where non-numeric values are provided as input.
