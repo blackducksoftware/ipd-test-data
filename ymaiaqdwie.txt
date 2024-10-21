@@ -1,0 +1,16 @@
+```python
+def fibonacci(n):
+    fib_sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b
+    return fib_sequence
+
+n = int(input("Enter the number of terms for Fibonacci sequence: "))
+fib_sequence = fibonacci(n)
+
+print("Fibonacci sequence:")
+print(fib_sequence)
+```
+This program takes a user input for the number of terms in the Fibonacci sequence and calculates the sequence up to that number of terms. The `fibonacci()` function calculates the sequence and returns it as a list, which is then printed out to the user.
