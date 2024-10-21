@@ -1,0 +1,28 @@
+Sure! Here is a program in Python that accomplishes the task:
+
+```python
+def find_unique_values(input_list):
+    unique_values = list(set(input_list))
+    count_unique = len(unique_values)
+    
+    return unique_values, count_unique
+
+def main():
+    input_list = [1, 2, 3, 4, 5, 2, 3, 4, 6, 7, 1, 8, 9, 5]
+    
+    unique_values, count_unique = find_unique_values(input_list)
+    
+    print("Original List:")
+    print(input_list)
+    
+    print("\nUnique Values:")
+    print(unique_values)
+    
+    print("\nTotal Number of Unique Values:")
+    print(count_unique)
+
+if __name__ == "__main__":
+    main()
+```
+
+You can run this program by copying and pasting it into a Python IDE or a text editor, and then executing it. This program will take the input list `[1, 2, 3, 4, 5, 2, 3, 4, 6, 7, 1, 8, 9, 5]`, and return the unique values `[1, 2, 3, 4, 5, 6, 7, 8, 9] with a count of 9 unique values.
