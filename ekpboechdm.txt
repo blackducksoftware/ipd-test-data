@@ -1,0 +1,2 @@
+add a bit for the response
+Prompt: Can you write a program in Python that generates and prints out a Fibonacci sequence up to a user-specified number of terms?
