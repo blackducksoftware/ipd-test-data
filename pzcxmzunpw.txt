@@ -1,0 +1,25 @@
+import numpy as np
+
+def calculate_avg_max_min(input_list):
+    try:
+        # Check if input is a list of numbers
+        if all(isinstance(x, (int, float)) for x in input_list):
+            # Calculate average
+            avg = np.mean(input_list)
+            
+            # Find largest and smallest numbers
+            largest = max(input_list)
+            smallest = min(input_list)
+            
+            return avg, largest, smallest
+        else:
+            raise ValueError("Input is not a list of numbers.")
+    except ValueError as e:
+        return str(e)
+
+# Test the function
+input_list = [1, 2, 3, 4, 5]
+result = calculate_avg_max_min(input_list)
+print("Average:", result[0])
+print("Largest number:", result[1])
+print("Smallest number:", result[2])
