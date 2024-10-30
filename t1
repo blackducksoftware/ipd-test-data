@@ -1,0 +1,24 @@
+// Define an array of numbers
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Function to filter out even numbers
+function filterEvenNumbers(arr) {
+  return arr.filter(num => num % 2 === 0);
+}
+
+// Function to calculate the sum of an array of numbers
+function calculateSum(arr) {
+  return arr.reduce((acc, curr) => acc + curr, 0);
+}
+
+// Function to display even numbers and their sum
+function displayEvenNumbers(arr) {
+  const evenNumbers = filterEvenNumbers(arr);
+  const sumEvenNumbers = calculateSum(evenNumbers);
+  
+  console.log('Even numbers:', evenNumbers);
+  console.log('Sum of even numbers:', sumEvenNumbers);
+}
+
+// Display even numbers and their sum
+displayEvenNumbers(numbers);
