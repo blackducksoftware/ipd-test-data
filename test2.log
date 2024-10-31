@@ -1,0 +1,9 @@
+Bubble sort algorithm:
+
+Start at the beginning of the list
+Compare the first two elements of the list
+If the first element is larger than the second element, swap them
+Move to the next pair of elements and repeat steps 2 and 3 until the end of the list
+Repeat steps 2-4 for each element in the list
+Continue this process until no more swaps need to be made
+The list is now sorted.
