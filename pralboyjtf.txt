@@ -1,0 +1,4 @@
+add a bit for the response
+Sure! Here is a prompt you can ask LLM:
+
+"Please generate a Python script that reads a CSV file containing student grades, calculates the average grade for each student, and outputs the results to a new CSV file. Make sure to include error handling for missing grades and handle cases where the input CSV file is empty."
