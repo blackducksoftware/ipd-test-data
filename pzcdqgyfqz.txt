@@ -1,0 +1,15 @@
+# Function to calculate Fibonacci sequence
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    
+    for i in range(2, n):
+        next_number = fib_sequence[i-1] + fib_sequence[i-2]
+        fib_sequence.append(next_number)
+    
+    return fib_sequence
+
+# Calculate Fibonacci sequence up to 20th number
+fibonacci_20 = fibonacci(20)
+
+# Print Fibonacci sequence up to 20th number
+print(fibonacci_20)
